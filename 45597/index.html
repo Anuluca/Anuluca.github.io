@@ -1,0 +1,602 @@
+<!doctype HTML>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Anuluca的个人网站">
+    <meta name="keywords" content="anuluca,路卡,路卡的自由庭院岛,前端开发,vue,javascript">
+    
+      <link rel="icon" href="/favicon.png" />
+    
+
+    <title>
+        
+          配色参考 - 路卡的自由庭院岛
+        
+    </title>
+
+
+    <!-- Spectre.css framework -->
+    <link rel="stylesheet" href="/css/spectre-exp.min.css">
+    <link rel="stylesheet" href="/css/spectre-icons.min.css">
+    <link rel="stylesheet" href="/css/spectre.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/custom_theme_dark.css">
+    <script src='/js/onBoot.js'></script>
+
+    <!-- theme css & js -->
+    
+<link rel="stylesheet" href="/css/book.css">
+
+    
+<script src="/js/book.js"></script>
+
+
+    <!-- tocbot -->
+    <script src="/js/tocbot.min.js"></script>
+    <link rel="stylesheet" href="/css/tocbot.css">
+
+    <!-- jq -->
+    <script src='https://libs.baidu.com/jquery/1.10.2/jquery.min.js'></script>
+    <!-- katex -->
+
+    
+<script src="/js/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+<body>
+
+<div class="book-container">
+  <div class="book-sidebar">
+    <div class="book-brand">
+  <a href="/">
+    <!-- <img src="/favicon.png"> -->
+    <div>
+      <img id="head_img" src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/g0rY8J.png" />
+    </div>
+    <span>路卡的自由庭院岛</span>
+  </a>
+</div>
+
+    <div class="book-menu scrollbar">
+  <ul>
+<li><a href="/"><img src="https://z3.ax1x.com/2021/08/03/fPOGP1.png" class="l_logo"> 广场</a></li>
+<li><a href="/34223"><img src="https://z3.ax1x.com/2021/08/03/fiCMq0.png" class="l_logo"> 公告栏</a></li>
+</ul>
+<h1 id="img-src-https-z3-ax1x-com-2021-08-03-fiCUMR-png-class-l-logo-技术笔记"><a href="/55454"><img src="https://z3.ax1x.com/2021/08/03/fiCUMR.png" class="l_logo"> 技术笔记</a></h1>
+<!-- ## 乐理笔记
+* [__1__ 五线谱基础知识](/24257) -->
+<h2 id="Javascript-CSS">Javascript/CSS</h2>
+<ul>
+<li><a href="/9271"><strong>31</strong> 处理blob文件下载抛出json格式异常的问题</a></li>
+<li><a href="/39784"><strong>30</strong> CSS设置文字无法被选中</a></li>
+<li><a href="/17809"><strong>29</strong> 伪类和伪元素的区别</a></li>
+<li><a href="/12144"><strong>28</strong> HTML5深色模式自适应</a></li>
+<li><a href="/28283"><strong>27</strong> CSS三角形</a></li>
+<li><a href="/29473"><strong>26</strong> 样式处理器选型</a></li>
+<li><a href="/57469"><strong>25</strong> Html5文字设置渐变色</a></li>
+<li><a href="/8190"><strong>24</strong> Scoped</a></li>
+<li><a href="/60642"><strong>23</strong> css文本超出隐藏显示省略号</a></li>
+<li><a href="/6329"><strong>22</strong> Flex布局属性浅解</a></li>
+<li><a href="/36608"><strong>21</strong> 浏览器兼容性问题整理</a></li>
+<li><a href="/16282"><strong>20</strong> BFC浅解</a></li>
+<li><a href="/21732"><strong>19</strong> 原生js实现简易瀑布流</a></li>
+<li><a href="/29471"><strong>18</strong> Base64转文件进行下载</a></li>
+<li><a href="/41455"><strong>17</strong> js实现中文数组拼音排序</a></li>
+<li><a href="/25199"><strong>16</strong> Promise.race的使用</a></li>
+<li><a href="/36370"><strong>15</strong> 如何将json数据转化为data.json并下载</a></li>
+<li><a href="/53556"><strong>14</strong> 如何发现不安全的正则表达式</a></li>
+<li><a href="/6251"><strong>13</strong> 实现一个函数将json数据转换为queryString编码</a></li>
+<li><a href="/12665"><strong>12</strong> setTimeout和Promise执行顺序</a></li>
+<li><a href="/1079"><strong>11</strong> 原生代码实现文本不可复制及复制监听</a></li>
+<li><a href="/3951"><strong>10</strong> js函数判断是否为纯对象</a></li>
+<li><a href="/59940"><strong>9</strong> js原生实现防抖&amp;节流</a></li>
+<li><a href="/65473"><strong>8</strong> base64和Blob互转</a></li>
+<li><a href="/17315"><strong>7</strong> 对象数组处理</a></li>
+<li><a href="/63659"><strong>6</strong> ES6部分特性浅解</a></li>
+<li><a href="/23627"><strong>5</strong> 使用viewport对页面做响应式处理</a></li>
+<li><a href="/53717"><strong>4</strong> 解决网页加载后没有清除css和js缓存的问题</a></li>
+<li><a href="/28714"><strong>3</strong> JSONP浅解</a></li>
+<li><a href="/22406"><strong>2</strong> 原生页面的一种图片懒加载思路</a></li>
+<li><a href="/16400"><strong>1</strong> 解决页面移动端点击延迟的问题</a></li>
+</ul>
+<!-- * [__38__ replace正则替换全部](/45371) -->
+<!-- * [__35__ 鸭式辩型](/3671) -->
+<!-- * [__33__ ES6新特性总结](/46572) -->
+<!-- * [__32__ js原生实现bind](/33808) -->
+<!-- * [__31__ json数据在JSON.stringify()处理后会输出什么](/44292) -->
+<!-- * [__30__ 如何删除一个cookie](/22854) -->
+<!-- * [__29__ 如何判断当前环境是移动端还是PC端](/64820) -->
+<!-- * [__27__ css动画和js动画的区别](/46573) -->
+<!-- * [__23__ js数组处理相关](/4293) -->
+<!-- * [__19__ js运算符与隐式类型转换](/48125) -->
+<!-- * [__18__ js类型转换](/9956) -->
+<!-- * [__17__ 继承的多种方式及优缺点](/63377) -->
+<!-- * [__16__ 类数组对象和arguments](/58919) -->
+<!-- * [__15__ 执行上下文栈及变量对象](/13542) -->
+<!-- * [__14__ null和undefined的区别](/36481) -->
+<!-- * [__13__ 原型与原型链](/25967) -->
+<!-- * [__12__ 对象转数组](/22053) -->
+<!-- * [__10__ JS浅拷贝和深拷贝](/34161) -->
+<!-- * [__7__ 函数柯里化](/62439) -->
+<!-- * [__1__ 创建对象的多种方式及优缺点](/55792) -->
+<h2 id="Vue-React">Vue/React</h2>
+<ul>
+<li><a href="/53764"><strong>21</strong> browserHistory和hashHistory的差别</a></li>
+<li><a href="/14022"><strong>20</strong> webpack打包项目时会打包已经import但没用到的模块吗</a></li>
+<li><a href="/56565"><strong>19</strong> npmi和npmci的区别</a></li>
+<li><a href="/15120"><strong>18</strong> 如何删除项目中没有用到的package</a></li>
+<li><a href="/52873"><strong>17</strong> React/Vue中的路由(router)基于什么实现原理</a></li>
+<li><a href="/26616"><strong>16</strong> Vue时间戳转换函数</a></li>
+<li><a href="/20181"><strong>15</strong> axios完整接口调用顺序</a></li>
+<li><a href="/15023"><strong>14</strong> 图表插件选型</a></li>
+<li><a href="/56535"><strong>13</strong> AntDesign+Vue3.0项目搭建记录</a></li>
+<li><a href="/44983"><strong>12</strong> React-create-app项目结构</a></li>
+<li><a href="/44250"><strong>11</strong> webpack配置文件说明及使用</a></li>
+<li><a href="/15181"><strong>10</strong> Vue+Ts项目打包</a></li>
+<li><a href="/35751"><strong>9</strong> 配置webpack使项目能在本地打开</a></li>
+<li><a href="/60966"><strong>8</strong> ESLint的一些报警</a></li>
+<li><a href="/46922"><strong>7</strong> Typescript中的Watch与Get、Set</a></li>
+<li><a href="/37025"><strong>6</strong> Vue-CLI项目结构</a></li>
+<li><a href="/45310"><strong>5</strong> 使用Vue-CLI新建Vue+js/Ts项目</a></li>
+<li><a href="/8322"><strong>4</strong> vue-property-decorator用法</a></li>
+<li><a href="/57808"><strong>3</strong> vue-class-component对TS的支持</a></li>
+<li><a href="/61857"><strong>2</strong> 个人对于MVVM模型的理解</a></li>
+<li><a href="/57928"><strong>1</strong> Grid/treeview控件简要介绍</a></li>
+</ul>
+<!-- * [__30__ v-if和v-show的区别](/48172) -->
+<!-- * [__20__ React生命周期](/12366) -->
+<!-- * [__19__ React入门 : 井字棋](/16053) -->
+<!-- * [__15__ Vue删除对象中的某个属性](/34517) -->
+<!-- * [__10__ Vue+Ts父子组件传值](/31754) -->
+<!-- * [__13__ 使用ref实现父组件调用子组件方法](/35933) -->
+<!-- * [__12__ Vue动态修改元素样式](/31560) -->
+<!-- * [__5__ Vue插槽浅解](/36100) -->
+<!-- * [__4__ webpack打包+创建本地服务器](/36398) -->
+<!-- * [__3__ Vue生命周期](/9537) -->
+<h2 id="ElementUI-Ant">ElementUI/Ant</h2>
+<ul>
+<li><a href="/42656"><strong>6</strong> elementUI相同元素合并行</a></li>
+<li><a href="/51249"><strong>5</strong> 去除elementUI打开drawer自带的蓝色框</a></li>
+<li><a href="/527"><strong>4</strong> 监听ElementUItable滚动事件</a></li>
+<li><a href="/33638"><strong>3</strong> ElementUI中Cascader级联选择器动态加载时允许选择任意一级任意一项</a></li>
+<li><a href="/29628"><strong>2</strong> 解决ElementUI中打开Drawer内的dialog黑色遮罩层优先级过高问题</a></li>
+<li><a href="/51077"><strong>1</strong> ElementUI清除el-table的hover样式</a></li>
+</ul>
+<!-- * [__11__ elementUI中input框正整数 + 数字范围限制](/58468) -->
+<!-- * [__6__ elementui的el-input按回车键后执行方法](/37033) -->
+<!-- * [__5__ 基于ElementUI的模糊查询](/40759) -->
+<!-- * [__4__ 设置elementUI的table组件滚动条位置](/3264) -->
+<!-- * [__3__ ElementUI获取table选中的行](/24161) -->
+<!-- * [__2__ ElementUI的Table组件判断当前是勾选状态还是取消勾选状态](/21173) -->
+<h2 id="Others">Others</h2>
+<ul>
+<li><a href="/9999999999">[Tags]</a></li>
+<li><a href="/40123"><strong>44</strong> hexo d遇到的问题记录</a></li>
+<li><a href="/4309"><strong>43</strong> 解决Chrome80版本SameSite属性导致Cookie无法跨域的问题</a></li>
+<li><a href="/47030"><strong>42</strong> 数据库死锁产生的原因</a></li>
+<li><a href="/36865"><strong>41</strong> 初步认识ETL设计</a></li>
+<li><a href="/31076"><strong>40</strong> DB2存储过程遍历循环</a></li>
+<li><a href="/58914"><strong>39</strong> 工作中遇到的关于DB2/mysql的一些问题及解决办法</a></li>
+<li><a href="/10399"><strong>38</strong> 列出所有已合并到master的分支并且删除</a></li>
+<li><a href="/46961"><strong>37</strong> Git常用操作记录</a></li>
+<li><a href="/60761"><strong>36</strong> Gitalk评论插件安装记录</a></li>
+<li><a href="/3681"><strong>35</strong> git修改用户名和提交用邮箱</a></li>
+<li><a href="/28110"><strong>34</strong> fatal:HttpRequestException encountered解决方法</a></li>
+<li><a href="/43663"><strong>33</strong> git更新后出现&quot;Fatal:TaskCanceled Exceptionencountered.&quot;解决方法</a></li>
+<li><a href="/9239"><strong>32</strong> http状态码相关</a></li>
+<li><a href="/44290"><strong>31</strong> 在npm发布package</a></li>
+<li><a href="/7354"><strong>30</strong> 不同端口的localhost的cookie是否共享</a></li>
+<li><a href="/27682"><strong>29</strong> http向https做重定向一般使用哪个状态码</a></li>
+<li><a href="/14581"><strong>28</strong> nocache和nostore的区别</a></li>
+<li><a href="/34114"><strong>27</strong> 使用lighthouse分析前端页面性能</a></li>
+<li><a href="/24381"><strong>26</strong> 浏览器关键渲染路径浅解</a></li>
+<li><a href="/13220"><strong>25</strong> localhost和127.0.0.1的区别</a></li>
+<li><a href="/40971"><strong>24</strong> 什么情况下会发送options请求</a></li>
+<li><a href="/22665"><strong>23</strong> 同一进程的线程共享哪些资源</a></li>
+<li><a href="/47682"><strong>22</strong> Chrome开发者工具中Performance的使用</a></li>
+<li><a href="/writings/32529"><strong>21</strong> zsh和bash的切换</a></li>
+<li><a href="/41922"><strong>20</strong> Mac常规安装nvm并下载指定版本node</a></li>
+<li><a href="/52608"><strong>19</strong> Homebrew大陆安装脚本</a></li>
+<li><a href="/26344"><strong>18</strong> Vscode自定义代码片段</a></li>
+<li><a href="/39572"><strong>17</strong> 不同文件类型转base64后的前缀</a></li>
+<li><a href="/208"><strong>16</strong> VSCode报错<code>Parameter 'xxx' implicitly has an 'any' type</code>解决方法</a></li>
+<li><a href="/9061"><strong>15</strong> 解决win10不插电下显示屏忽亮忽暗的问题</a></li>
+<li><a href="/26426"><strong>14</strong> IDEA与vscode的标签标题换行显示</a></li>
+<li><a href="/38299"><strong>13</strong> Chrome跨域配置</a></li>
+<li><a href="/39020"><strong>12</strong> windows关闭被占用的端口</a></li>
+<li><a href="/9328"><strong>11</strong> Windows下node.js安装与配置</a></li>
+<li><a href="/48737"><strong>10</strong> node is not avalid Win32 application报错解决办法</a></li>
+<li><a href="/27266"><strong>9</strong> VSCode快捷键大全</a></li>
+<li><a href="/35468"><strong>8</strong> 浏览器MixedContent报错</a></li>
+<li><a href="/57510"><strong>7</strong> VSCode个人初始设置</a></li>
+<li><a href="/62449"><strong>6</strong> 面试问题总结</a></li>
+<li><a href="/53675"><strong>5</strong> 跳转到腾讯公益404页面</a></li>
+<li><a href="/1420"><strong>4</strong> 前端常用命令行</a></li>
+<li><a href="/13573"><strong>3</strong> 修改Mac鼠标滚轮逻辑</a></li>
+<li><a href="/30445"><strong>2</strong> HTTP协议详解</a></li>
+<li><a href="/41802"><strong>1</strong> AIX开启及关闭Telnet服务</a></li>
+</ul>
+<!-- * [__31__ linux下查看某一文件夹大小](/63373) -->
+<!-- * [__45__ 初步认识数据仓库](/59321) -->
+<!-- * [__30__ 算法合辑](/53719) -->
+<!-- * [__22__ clipboard.js实现复制功能](/21790) -->
+<!-- * [__7__ VSCode初使用](/39968) -->
+<span id="more"></span>
+<ul>
+<li><a href="/23761"><img src="https://z3.ax1x.com/2021/08/03/fPz6u6.png" class="l_logo"> 游戏档案馆</a></li>
+<li><a href="/23678"><img src="https://z3.ax1x.com/2021/08/03/fipf1A.png" class="l_logo"> 宝可梦后院</a></li>
+</ul>
+<!-- * [<img src="https://z3.ax1x.com/2021/08/27/hQCBN9.png" class="l_logo"> 龙之庭院](/55285) -->
+<!-- * [<img src="https://z3.ax1x.com/2021/08/03/fi9enx.png" class="l_logo"> 八度空间](/28360) -->
+<h1 id="img-src-https-z3-ax1x-com-2021-08-03-fi98gA-png-class-l-logo-杂物室"><a href=""><img src="https://z3.ax1x.com/2021/08/03/fi98gA.png" class="l_logo"> 杂物室</a></h1>
+<h2 id="文章">文章</h2>
+<ul>
+<li><a href="/2285">「流水账」关于博客想记录的一些东西</a></li>
+<li><a href="/56511">2022不正确记忆</a></li>
+<li><a href="/48446">2020不正确记忆</a></li>
+<li><a href="/41678">Markdown Demo</a></li>
+</ul>
+<h2 id="工具">工具</h2>
+<ul>
+<li><a href="/45597">配色参考</a></li>
+<li><a href="/49833">营销号生成器</a></li>
+</ul>
+<h2 id="摄影-后期">摄影 &amp; 后期</h2>
+<ul>
+<li><a href="/21283">随拍</a></li>
+<li><a href="/17773">模型 &amp; 毛绒</a></li>
+</ul>
+<!--more-->
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+    <div class="book-sidebar-bottom">
+      <div class="backlogo" onClick='toOldSite()'>FLASHBACK_</div>
+      <div class="theme-change">
+        <span id="toDarkButton" onClick='changeThemeButton("dark")'>
+          <svg t="1648869433208" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1247" width="200" height="200"><path d="M512 256c-140.8 0-256 115.2-256 256s115.2 256 256 256 256-115.2 256-256-115.2-256-256-256z m0-85.333333c25.6 0 42.666667-17.066667 42.666667-42.666667V42.666667c0-25.6-17.066667-42.666667-42.666667-42.666667s-42.666667 17.066667-42.666667 42.666667v85.333333c0 25.6 17.066667 42.666667 42.666667 42.666667z m0 682.666666c-25.6 0-42.666667 17.066667-42.666667 42.666667v85.333333c0 25.6 17.066667 42.666667 42.666667 42.666667s42.666667-17.066667 42.666667-42.666667v-85.333333c0-25.6-17.066667-42.666667-42.666667-42.666667zM209.066667 268.8c17.066667 17.066667 42.666667 17.066667 59.733333 4.266667 21.333333-17.066667 21.333333-42.666667 4.266667-59.733334l-4.266667-4.266666-59.733333-59.733334c-17.066667-17.066667-42.666667-17.066667-59.733334-4.266666s-17.066667 42.666667-4.266666 59.733333l4.266666 4.266667 59.733334 59.733333z m605.866666 482.133333c-17.066667-17.066667-42.666667-12.8-59.733333 4.266667-17.066667 17.066667-17.066667 42.666667 0 59.733333l59.733333 59.733334c17.066667 17.066667 42.666667 17.066667 59.733334 4.266666s17.066667-42.666667 4.266666-59.733333l-4.266666-4.266667-59.733334-64zM170.666667 512c0-25.6-17.066667-42.666667-42.666667-42.666667H42.666667c-25.6 0-42.666667 17.066667-42.666667 42.666667s17.066667 42.666667 42.666667 42.666667h85.333333c25.6 0 42.666667-17.066667 42.666667-42.666667z m810.666666-42.666667h-85.333333c-25.6 0-42.666667 17.066667-42.666667 42.666667s17.066667 42.666667 42.666667 42.666667h85.333333c25.6 0 42.666667-17.066667 42.666667-42.666667s-17.066667-42.666667-42.666667-42.666667zM209.066667 750.933333L149.333333 810.666667c-17.066667 17.066667-17.066667 42.666667-4.266666 59.733333s42.666667 17.066667 59.733333 4.266667l4.266667-4.266667L268.8 810.666667c17.066667-17.066667 17.066667-42.666667 4.266667-59.733334s-42.666667-17.066667-64 0z m576-469.333333c12.8 0 21.333333-4.266667 29.866666-12.8l59.733334-59.733333c17.066667-17.066667 17.066667-42.666667 4.266666-59.733334-17.066667-17.066667-42.666667-17.066667-59.733333-4.266666l-4.266667 4.266666-59.733333 59.733334c-17.066667 17.066667-17.066667 42.666667 0 59.733333 4.266667 8.533333 17.066667 12.8 29.866667 12.8z" p-id="1248"></path></svg>
+        </span>
+        <span id="toLightButton" onClick='changeThemeButton("light")'>
+          <svg t="1648869509392" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6303" width="200" height="200"><path d="M930.133333 520.533333c-12.8-17.066667-38.4-21.333333-59.733333-8.533333-115.2 85.333333-273.066667 59.733333-358.4-55.466667-34.133333-42.666667-51.2-98.133333-51.2-149.333333 0-55.466667 17.066667-106.666667 46.933333-153.6 12.8-21.333333 8.533333-46.933333-8.533333-59.733333-8.533333-8.533333-17.066667-8.533333-29.866667-8.533334-234.666667 21.333333-405.333333 230.4-384 465.066667s230.4 405.333333 465.066667 384c200.533333-21.333333 358.4-174.933333 384-375.466667 4.266667-12.8 4.266667-29.866667-4.266667-38.4z" p-id="6304" fill="#bfbfbf"></path></svg>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+function add_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.add('show')  
+}
+
+function remove_inner() {
+  let inner = document.querySelector('.sidebar-toggle-inner')
+  inner.classList.remove('show')
+}
+
+function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector('.sidebar-toggle')
+    let sidebar = document.querySelector('.book-sidebar')
+    let content = document.querySelector('.off-canvas-content')
+    if (sidebar_toggle.classList.contains('extend')) { // show
+        sidebar_toggle.classList.remove('extend')
+        sidebar.classList.remove('hide')
+        content.classList.remove('extend')
+    }
+    else { // hide
+        sidebar_toggle.classList.add('extend')
+        sidebar.classList.add('hide')
+        content.classList.add('extend')
+    }
+}
+</script>
+
+  <div class="off-canvas-content">
+    <div class="columns">
+      <div class="column col-10 col-lg-12">
+        <div class="book-navbar">
+          <!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+
+        </div>
+        <div class="book-content">
+          <div class="book-post">
+  <h1 id="配色参考">配色参考</h1>
+<blockquote>
+<p>请使用右侧导航栏定位 👉</p>
+</blockquote>
+<h2 id="按颜色分类">按颜色分类</h2>
+<h4 id="红色">红色</h4>
+<!-- Target -->
+<div style="overflow:hidden">
+    <div class="colorBoard">
+        <button class="btn" data-clipboard-text="#FFFFCC" style="background-color:#FFFFCC">#FFFFCC</button>
+        <button class="btn" data-clipboard-text="#FFFFCC" style="background-color:#CCFFFF">#CCFFFF</button>
+        <button class="btn" data-clipboard-text="#FFFFCC" style="background-color:#FFCCCC">#FFCCCC</button>
+    </div>
+</div>
+<h2 id="特殊主题色">特殊主题色</h2>
+<h4 id="MDN-Web-Docs">MDN Web Docs</h4>
+<p><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/">访问原网站</a></p>
+<div style="overflow:hidden">
+    <div class="colorBoardTheme">
+        <button class="btn" data-clipboard-text="#000000" style="background-color:#000000">#000000</button>
+        <button class="btn" data-clipboard-text="#deebfe" style="background-color:#deebfe">#deebfe</button>
+        <button class="btn" data-clipboard-text="#757575" style="background-color:#757575">#757575</button>
+        <button class="btn" data-clipboard-text="#f4f4f4" style="background-color:#f4f4f4">#f4f4f4</button>
+        <button class="btn" data-clipboard-text="#d5d5d5" style="background-color:#d5d5d5">#d5d5d5</button>
+        <button class="btn" data-clipboard-text="#095381" style="background-color:#095381">#095381</button>
+        <button class="btn" data-clipboard-text="#4388a5" style="background-color:#4388a5">#4388a5</button>
+        <button class="btn" data-clipboard-text="#86c0fd" style="background-color:#86c0fd">#86c0fd</button>
+        <button class="btn" data-clipboard-text="#d1f1df" style="background-color:#d1f1df">#d1f1df</button>
+        <button class="btn" data-clipboard-text="#1b1b1b" style="background-color:#1b1b1b">#1b1b1b</button>
+    </div>
+</div>
+<h4 id="Github">Github</h4>
+<p><a target="_blank" rel="noopener" href="https://github.com/">访问原网站</a></p>
+<div style="overflow:hidden">
+    <div class="colorBoardTheme">
+        <button class="btn" data-clipboard-text="#24292e" style="background-color:#24292e">#24292e</button>
+        <button class="btn" data-clipboard-text="#586069" style="background-color:#586069">#586069</button>
+        <button class="btn" data-clipboard-text="#f6f8fa" style="background-color:#f6f8fa">#f6f8fa</button>
+        <button class="btn" data-clipboard-text="#fafbfc" style="background-color:#fafbfc">#fafbfc</button>
+        <button class="btn" data-clipboard-text="#1269d3" style="background-color:#1269d3">#1269d3</button>
+    </div>
+</div>
+<h4 id="Vscode">Vscode</h4>
+<div style="overflow:hidden">
+    <div class="colorBoardTheme">
+        <button class="btn" data-clipboard-text="#333333" style="background-color:#333333">#333333</button>
+        <button class="btn" data-clipboard-text="#252526" style="background-color:#252526">#252526</button>
+        <button class="btn" data-clipboard-text="#1e1e1e" style="background-color:#1e1e1e">#1e1e1e</button>
+        <button class="btn" data-clipboard-text="#3c3c3c" style="background-color:#3c3c3c">#3c3c3c</button>
+        <button class="btn" data-clipboard-text="#cbcbcb" style="background-color:#cbcbcb">#cbcbcb</button>
+        <button class="btn" data-clipboard-text="#0076c6" style="background-color:#0076c6">#0076c6</button>
+    </div>
+</div>
+<h4 id="推特">推特</h4>
+<p><a target="_blank" rel="noopener" href="https://twitter.com">访问原网站</a></p>
+<div style="overflow:hidden">
+    <div class="colorBoardTheme">
+        <button class="btn" data-clipboard-text="#2aa3ef" style="background-color:#2aa3ef">#2aa3ef</button>
+        <button class="btn" data-clipboard-text="#eff1f1" style="background-color:#eff1f1">#eff1f1</button>
+        <button class="btn" data-clipboard-text="#e9f6fd" style="background-color:#e9f6fd">#e9f6fd</button>
+        <button class="btn" data-clipboard-text="#0f1419" style="background-color:#0f1419">#0f1419</button>
+    </div>
+</div>
+<h4 id="动物森友会">动物森友会</h4>
+<h4 id="Persona-5">Persona 5</h4>
+<h4 id="塞尔达传说：旷野之息">塞尔达传说：旷野之息</h4>
+<h2 id="专辑-ep印象色">专辑/ep印象色</h2>
+<h4 id="寻找周杰伦">寻找周杰伦</h4>
+<div style="overflow:hidden">
+    <div class="colorBoardTheme">
+        <button class="btn" data-clipboard-text="#0b59a3" style="background-color:#0b59a3">#0b59a3</button>
+    </div>
+</div>
+<h4 id="我很忙">我很忙</h4>
+<div style="overflow:hidden">
+    <div class="colorBoardTheme">
+        <button class="btn" data-clipboard-text="#c86189" style="background-color:#c86189">#c86189</button>
+        <button class="btn" data-clipboard-text="#ce9290" style="background-color:#ce9290">#ce9290</button>
+        <button class="btn" data-clipboard-text="#df1124" style="background-color:#df1124">#df1124</button>
+        <button class="btn" data-clipboard-text="#020204" style="background-color:#020204">#020204</button>
+        <button class="btn" data-clipboard-text="#bb9866" style="background-color:#bb9866">#bb9866</button>
+    </div>
+</div>
+<h4 id="地表最强">地表最强</h4>
+<div style="overflow:hidden">
+    <div class="colorBoardTheme">
+        <button class="btn" data-clipboard-text="#f92f8e" style="background-color:#f92f8e">#f92f8e</button>
+        <button class="btn" data-clipboard-text="#080a1c" style="background-color:#080a1c">#080a1c</button>
+        <button class="btn" data-clipboard-text="#357395" style="background-color:#357395">#357395</button>
+        <button class="btn" data-clipboard-text="#d3a4c3" style="background-color:#d3a4c3">#d3a4c3</button>
+    </div>
+</div>
+<h4 id="I’m-ok">I’m ok</h4>
+<div style="overflow:hidden">
+    <div class="colorBoardTheme">
+        <button class="btn" data-clipboard-text="#f9d230" style="background-color:#f9d230">#f9d230</button>
+        <button class="btn" data-clipboard-text="#e0c12a" style="background-color:#e0c12a">#e0c12a</button>
+        <button class="btn" data-clipboard-text="#bd1519" style="background-color:#bd1519">#bd1519</button>
+        <button class="btn" data-clipboard-text="#192210" style="background-color:#192210">#192210</button>
+    </div>
+</div>
+<h4 id="PROGRESSED">PROGRESSED</h4>
+<div style="overflow:hidden">
+    <div class="colorBoardTheme">
+        <button class="btn" data-clipboard-text="#b31c23" style="background-color:#b31c23">#b31c23</button>
+        <button class="btn" data-clipboard-text="#fee156" style="background-color:#fee156">#fee156</button>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script src="/js/clipboard-item.js"></script>
+  <a onclick="go_top()"
+    ><div class="to_top"><div class="to-top-triangle"></div></div
+  ></a>
+</div>
+
+<div class="drink-time">
+  <img style="text-align: center;margin-top:20vh;width:150px;opacity: 0.9;" src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/2F65x1.png"/>
+  <div style="text-align: center;margin-top:20px;font-size:20px">由于某些原因，博客图床于5月26日惨遭爆破，目前正在整理需要的图片并迁移存活的图片到新图床,预计6月10日重新上线网站</div>
+</div>
+
+
+<div class="articleBottom">
+  <b>&nbsp;&nbsp;<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/goDrXd.gif"/>&nbsp;<div><span>THE END</span></div>&nbsp;<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/god8aT.gif"/>&nbsp;&nbsp;</b>
+</div>
+<div class="combtn">
+  <div class="valine_btn"><b>游客评论</b></div>
+  <div class="gitalk_btn"><b>使用Github账号评论</b></div>
+  <div class="moving"></div>
+</div>
+<div>&nbsp;</div>
+
+<div class="book-comments">
+
+    <link rel="stylesheet" href="/css/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <div id="gitalk-container"></div>
+    <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '9ffd086e729163760a2a',
+          clientSecret: '3dc719eec9759df35f5aa9ecb3bcdefd3f5bf9c6',
+          repo: 'Anuluca.github.io',
+          owner: 'anuluca',
+          admin: ['Anuluca'],
+          id: location.pathname,
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')
+    </script>
+
+
+
+<!--    <link rel="stylesheet" href="https://unpkg.com/valine/dist/Valine.min.js">-->
+    <script src="//unpkg.zhimg.com/valine/dist/Valine.min.js"></script>
+    <div id="vcomments" style="margin-top: 100px;"></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'rqHuR8lh2h3Fp2s9v2M8nDYJ-gzGzoHsz',
+            appKey: '9o4oYzzaYVFGG34Vd8ipLztu',
+            notify: false,
+            verify: false,
+            avatar: 'mm',
+            placeholder: '说点什么'
+        });
+    </script>
+</div>
+<a class="aaaaa"
+  style="
+    font-size: 10px;
+    color: #999ca8;
+    width: 55%;
+    text-align: center;
+    padding-top: 100px;
+  "
+>
+© 2018 - 2022 Anuluca
+</a>
+<span class="frsi">
+  ▌友情链接
+  <a
+    href="https://cutekibry.github.io/"
+    target="_blank"
+    class="friendUrl"
+    style="margin-left: 5px"
+    >Tsuki's blog</a
+  >&nbsp;|
+  <a href="http://pokeamice.com/" target="_blank" class="friendUrl">宝可梦友会</a>&nbsp;|
+  <a href="https://austinxt.com/" target="_blank" class="friendUrl">夜航星</a>&nbsp;|
+  <a href="http://www.zoomlgd.com/" target="_blank" class="friendUrl">州力科技</a>&nbsp;
+</span>
+
+ 
+<script src="/js/book-post.js"></script>
+
+
+        </div>
+      </div>
+      <div class="column col-2 hide-lg">
+        <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/me.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Anuluca</div>
+      <div style="font-family: 等线">Update:2023-04-25</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot">
+</div>
+
+<div class="book-tocbot-menu" style="position:fixed;bottom:0px;">
+    <div class="bottom">
+        <span>沉默支撑跃过陌生</span>
+        <div class="links">
+            <a target="_blank" rel="noopener" href="https://twitter.com/TILucario" class="link_l">
+                <div style="background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dabyWQ.png')"></div>
+                <span>推特</span></a>
+            <a target="_blank" rel="noopener" href="https://weibo.com/ryugamine" class="link_l">
+                <div style="background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dabrFS.png')"></div>
+                <span>微博</span></a>
+            <a target="_blank" rel="noopener" href="https://github.com/Anuluca" class="link_l">
+                <div style="background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dabBo8.png')"></div>
+                <span>Github</span></a>
+        </div>
+        <div class="languages">中文 &nbsp;&nbsp;|&nbsp;&nbsp; <a target="_blank" rel="noopener" href="http://AnulucaEn.github.io" class="english">English</a></div>
+    </div>
+
+</div>
+<script src="/js/book-toc.js"></script>
+
+
+</div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="down-line-zhanwei"></div>
+  <div class="down-line"></div> -->
+  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+</div>
+<div class="bottomline"></div>
+<script src="/js/custom.js"></script>
+<div class="clipboard_success">&nbsp;&nbsp;复制成功！</div>
+
+<!-- 切换主题的动画效果 -->
+<div class="change_theme_animes">
+  <div id="cantSeeAnything_white" style="position: fixed;top:0;left:0;right:0;bottom:0;background-color: white;z-index: 999;opacity:0;display:none"></div>
+  <div id="cantSeeAnything_black" style="position: fixed;top:0;left:0;right:0;bottom:0;background-color: black;z-index: 999;opacity:0;display:none"></div>
+  <img id="nike_shine" src="/necrozma_shine.PNG" style="position: fixed;z-index:998;bottom: -400px;margin:0 auto;width: 400px;left: calc(50% - 200px);"/>
+  <img id="nike_dark" src="/necrozma_dark.PNG" style="position: fixed;z-index:998;bottom: -400px;margin:0 auto;width: 400px;left: calc(50% - 200px);"/>
+  <img id="shine" src="/tempshine.png" style="position: fixed;z-index:997;bottom: -100px;margin:0 auto;width: 100px;height:100px;left: calc(50% - 50px);opacity:0"/>
+  <img id="absorb" src="/tempshine.png" style="position: fixed;z-index:997;bottom: -100vh;margin:0 auto;width: 100vw;height:100vh;opacity:0"/>
+</div>
+</body>
+</html>
+
+
+<script src="/js/book.js"></script>

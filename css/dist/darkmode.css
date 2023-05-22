@@ -1,0 +1,101 @@
+.book-menu,
+.book-brand {
+  background-color: #242426 !important;
+}
+
+.off-canvas-content,
+.articleBottom b,
+.cutline b,
+body {
+  background-color: #1c1c1e !important;
+}
+
+.book-sidebar .book-menu .accordion {
+  border-top: 1px solid #242426 !important;
+}
+
+body,
+.book-sidebar .book-menu a,
+.book-sidebar .book-brand a,
+.gitalk_btn {
+  color: white !important;
+}
+
+.off-canvas-content .book-content .book-post h1,
+.off-canvas-content .book-content .book-post h2 {
+  border-bottom: 1px solid #a8a8a8;
+}
+
+.book-sidebar .book-menu .uncollapsible {
+  border-top: 1px solid #343434 !important;
+}
+
+.book-sidebar .book-brand {
+  border-bottom: 1px solid #414142;
+}
+
+.book-sidebar {
+  box-shadow: none !important;
+}
+
+code {
+  background: #000000;
+}
+
+.v[data-class=v] .vwrap,
+.vsubmit {
+  border: 1px solid #2da4e1 !important;
+}
+
+.v[data-class=v] .vwrap .vheader .vinput {
+  border-bottom: 1px dashed white !important;
+}
+
+.off-canvas-content .book-content .book-post h1,
+.off-canvas-content .book-content .book-post h2 {
+  border-bottom: 1px solid #666666 !important;
+}
+
+.book-sidebar .book-menu .current-tab {
+  color: white !important;
+}
+
+.book-sidebar .book-menu h1,
+.book-sidebar .book-menu h2,
+.book-sidebar .book-menu h3,
+.book-sidebar .book-menu h4,
+.book-sidebar .book-menu h5,
+.book-sidebar .book-menu h6 {
+  padding: 0 0.6rem 0 1.25rem;
+  margin: 1.25rem 0 0.7rem 0;
+  font-size: 0.7rem;
+}
+
+.zhegaia,
+.zhegaib,
+.zhegaic,
+.zhegaid {
+  background-color: black;
+}
+
+.book-menu h1 {
+  font-size: 15px;
+}
+
+a {
+  color: #30b2fc !important;
+}
+
+.attention *,
+.tip *,
+.note * {
+  color: #3b4351;
+}
+
+.book-navbar i {
+  color: white !important;
+}
+
+.book-post h1 a {
+  color: white !important;
+}
