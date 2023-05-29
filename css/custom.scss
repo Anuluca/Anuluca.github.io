@@ -1,0 +1,2870 @@
+/* 博文字体设置 */
+* {
+  scroll-behavior: smooth;
+  letter-spacing: 0.6px;
+  font-size: 14px;
+}
+a:link,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+.book-post-custom-title {
+  text-align: center;
+  font-size: 40px;
+  line-height: 80px;
+  height: 80px;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+}
+.book-menu h1 {
+  font-size: 15px;
+  cursor: default;
+  * {
+    font-weight: 800 !important;
+  }
+}
+.book-sidebar .book-brand a span {
+  margin-left: calc(0.5rem - 18px) !important;
+}
+.accordion label {
+  margin-left: 11px;
+}
+.accordion-body ul {
+  margin-bottom: 0;
+}
+.accordion-body li:last-child {
+  margin-bottom: 0 !important;
+}
+.accordion {
+  padding: 0.625rem 0.6rem 0.625rem 1.5rem;
+}
+.book-sidebar .book-menu .uncollapsible {
+  padding-top: 6px;
+}
+/* 标签页设置 */
+.tag-list {
+  margin: 0;
+}
+.tag-list-item {
+  float: left;
+  margin-right: 10px;
+  padding: 1px 15px 1px 15px;
+  list-style: none;
+  border: 1px solid silver;
+  border-radius: 2px;
+}
+.uncollapsible:last-of-type {
+  display: block;
+  border-top: 10px solid red;
+}
+.book-brand {
+  margin-top: -2px;
+}
+.book-brand span {
+  font-size: 17px;
+}
+
+.book-post img {
+  margin-top: 15px;
+  width: 40%;
+  margin-bottom: 5px;
+}
+.book-tocbot {
+  max-height: 30vh !important;
+  padding: 0;
+}
+.book-post-info {
+  max-width: 12rem !important;
+}
+.book-sidebar {
+  box-shadow: 0px 0 9px 0px #cacacad9;
+}
+.hide-lg {
+  margin-top: -44px;
+  padding-top: 40px;
+  // background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dNXh1H.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.off-canvas-content .book-post-info .book-post-meta .author {
+  display: flex;
+  padding: 10px 10px;
+}
+.off-canvas-content .book-post-info .book-post-meta .author .author-img {
+  display: flex;
+  align-items: center;
+  border: 1px solid #0000008a;
+  border-radius: 50%;
+}
+.avatar img {
+  border-radius: 50%;
+  height: 96%;
+  position: relative;
+  width: 96%;
+  z-index: 1;
+  margin: 2%;
+  margin-left: 3%;
+}
+.bottom {
+  width: 11rem;
+  // height: 274px;
+  height: 330px;
+  position: absolute;
+  border-top: 6px solid #2da4e1;
+  left: -23px;
+  bottom: -20px;
+  background-color: rgba(36, 39, 41, 0.69);
+}
+.bottom > span {
+  display: block;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-style: italic;
+  p {
+    margin-bottom: 0;
+  }
+}
+.link_l {
+  padding-left: 15px;
+  display: block;
+  width: 155px;
+  height: 36px;
+  border-radius: 18px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+}
+.bottom a div {
+  width: 28px;
+  height: 28px;
+  float: left;
+  margin-top: 5px;
+}
+.bottom a > span {
+  color: white;
+  font-weight: bold;
+  margin-left: 6px;
+  line-height: 38px;
+}
+.languages {
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+  color: #888d8f;
+  font-weight: bold;
+  // margin-top: 152px;
+  margin-top: 194px;
+}
+.english {
+  color: white !important;
+  display: inline !important;
+}
+.links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*回到旧站*/
+.backtoanulife {
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 15px;
+  background-color: #fd4300;
+  font-size: 40px;
+  color: white;
+  line-height: 100px;
+  text-align: center;
+  text-shadow: 3px 3px #141145;
+  box-shadow: rgb(20, 17, 69) 2px 2px 0px;
+}
+
+.note {
+  margin: 0 !important;
+  border-radius: 0px !important;
+  padding: 10px 16px !important;
+  border: 0 !important;
+  background: linear-gradient(52.78deg, #003edd 30.03%, #0b7bf8 89.59%);
+  p {
+    font-size: 12px !important;
+    color: white !important;
+  }
+}
+
+/*gitalk&valine双评论端*/
+.valine_btn {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  /*background-color: #FFFFFF;*/
+  float: left;
+  text-align: center;
+  color: blue;
+}
+.gitalk_btn {
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  /*background-color: #FFFFFF;*/
+  float: left;
+  text-align: center;
+  color: black;
+}
+.moving {
+  width: 120px;
+  height: 2px;
+  margin-top: 40px;
+  background-color: blue;
+  position: absolute;
+}
+#gitalk-container {
+  display: none;
+}
+#vcomments {
+  margin-top: 20px !important;
+}
+.combtn {
+  width: 302px;
+  height: 42px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+#toDarkButton,
+#toLightButton {
+  color: #6d6d6e;
+  cursor: pointer;
+}
+.book-sidebar-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  box-shadow: 0px 0px 14px 0 #d0d0d0;
+  .backlogo {
+    // background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/YbwVUI.th.png");
+    background-size: contain;
+    // width: 20px;
+    height: 20px;
+    color: #959595;
+    position: absolute;
+    bottom: 9.5px;
+    cursor: pointer;
+    left: 1.2rem;
+    &:hover {
+      color: black;
+      text-decoration: underline;
+    }
+  }
+  .theme-change {
+    height: 20px;
+    position: absolute;
+    bottom: 10px;
+    right: 1.2rem;
+  }
+}
+
+.announce-and-iframe {
+  overflow: hidden;
+  .iframe-div {
+    width: 30%;
+    float: right;
+    margin-right: 10px;
+  }
+  .announce {
+    float: left;
+    width: 65%;
+  }
+}
+
+//随拍
+.suipai {
+  width: 100%;
+  height: auto;
+  a {
+    width: 670px;
+    display: block;
+  }
+}
+.book-sidebar .book-brand a img {
+  width: auto !important;
+  margin-top: 2px;
+}
+.suipai-item {
+  width: 670px;
+  height: 100px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 100px;
+  text-align: center;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s;
+  box-shadow: 0px 1px 5px 0px #a1a1a1;
+  &:hover {
+    box-shadow: 0px 3px 8px 2px #a1a1a1;
+  }
+}
+.bp {
+  width: 670px;
+  height: 100px;
+  background-color: black;
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+}
+.suipai-title {
+  width: 670px;
+  text-align: left;
+  position: relative;
+  float: left;
+  z-index: 100;
+  font-size: 22px;
+  padding-left: 20px;
+}
+.suipai-pages {
+  width: 80px;
+  height: 100px;
+  position: absolute;
+  float: right;
+  right: -80px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  line-height: 100px;
+  text-align: center;
+  font-weight: bold;
+  z-index: 101;
+}
+
+/*作品*/
+.shits {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.myProc {
+  width: 328px;
+  height: 274px;
+  margin-right: 40px;
+  float: left;
+  margin-bottom: 30px;
+  cursor: pointer;
+  // background-color: #f7f8f9;
+  // color: white;
+  position: relative;
+  // border-radius: 10px;
+  // box-shadow: 0px 1px 5px 0px #0c0c0c;
+  /*overflow: hidden;*/
+}
+.shit_title_img {
+  width: 300px;
+  height: 180px;
+  border-radius: 2px;
+  // border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  margin-left: 14px;
+  margin-top: 14px;
+  // &:hover {
+  //   box-shadow: 0px 1px 5px 0px #0c0c0c;
+  // }
+}
+.shits span:last-of-type {
+  display: block;
+  text-align: center;
+  line-height: 13px;
+  font-size: 12px;
+  position: absolute;
+  width: 328px;
+  color: #bfbfbf;
+  height: 12px;
+  bottom: 16px;
+  overflow: hidden;
+}
+.shits span:first-of-type {
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 18px;
+  width: 328px;
+  position: absolute;
+  bottom: 30px;
+}
+.shits i {
+  display: none;
+}
+.cutline {
+  width: 100%;
+  height: 22px;
+  // border-bottom: 1px solid #bebebe;
+  float: none !important;
+  color: #bebebe;
+  text-align: center;
+}
+.cutline b {
+  background-color: white;
+  line-height: 38px;
+  font-size: 20px;
+}
+.off-canvas-content .book-content .book-post > h1:first-child {
+  margin-top: -6px !important;
+}
+.book-sidebar .book-brand {
+  display: block !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100%;
+  position: fixed;
+  // line-height: calc(3.25rem + 8px);
+  padding-top: 0.9rem;
+  border-bottom: 1px solid #e7e7e7;
+  height: calc(3.25rem + 4px) !important;
+  background-color: white;
+  z-index: 20;
+  box-sizing: border-box;
+  a {
+    text-align: center;
+    margin-left: 2.3rem;
+  }
+}
+.author-title {
+  margin-left: 12px;
+}
+.off-canvas-content .book-post-info .book-post-meta .link {
+  margin-left: 5px !important;
+  line-height: 25px;
+  a {
+    color: white !important;
+    background-color: #686a6b;
+    padding: 0 5px;
+    border-radius: 4px;
+  }
+}
+.book-sidebar .book-menu {
+  width: 14rem !important;
+  bottom: 40px !important;
+}
+.book-sidebar {
+  width: 14rem !important;
+  overflow: hidden;
+}
+.book-sidebar .book-menu ul {
+  padding-left: 1.2rem !important;
+  margin-left: 0 !important;
+  padding-top: 4px !important;
+  * {
+    line-height: 1.8 !important;
+  }
+}
+.book-content {
+  padding: 0 2em !important;
+  margin-top: 7px;
+}
+.book-post-meta link {
+  padding-left: 6px;
+}
+.frsi {
+  font-size: 10px;
+  color: #999ca8;
+  width: 55%;
+  text-align: right;
+  position: relative;
+  float: right;
+  z-index: 1;
+}
+
+.l_logo {
+  width: 17px;
+  vertical-align: -3px;
+  margin-right: 6px;
+}
+
+.off-canvas-content {
+  padding: 1.2rem 2.2rem 0.5em 2.2em !important;
+}
+.book-navbar {
+  position: sticky;
+  top: 0;
+  padding-top: 15px !important;
+  z-index: 20;
+  background-color: white !important;
+}
+.drink-time {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 20000;
+  text-align: center;
+  top: 0;
+  left: 0;
+  display: none;
+  color: black;
+  background-color: rgb(238, 238, 238);
+}
+.back-to-main {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 300000;
+  color: black;
+  padding: 10px;
+  cursor: pointer;
+}
+.back-to-main:hover {
+  text-decoration: underline;
+}
+.drink-description {
+  position: fixed;
+  width: 100%;
+  height: 10%;
+  z-index: 20000;
+  color: rgb(70, 105, 16);
+  bottom: 0;
+  background-color: #f8f8f8;
+  left: 0;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/*回到顶部*/
+.book-post {
+  position: relative;
+}
+.to_top {
+  z-index: 1000;
+  width: 49px;
+  height: 49px;
+  bottom: 38px;
+  right: calc(16rem + 5px);
+  display: none;
+  position: fixed;
+  cursor: pointer;
+  .to-top-triangle {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 21px solid #333435;
+    margin-left: 10px;
+    margin-top: 13px;
+  }
+}
+.to_top:hover {
+  background-color: #36a5df;
+}
+.articleBottom {
+  width: 100%;
+  height: 28px;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 30px;
+  color: #bebebe;
+  border-bottom: 1px solid #bebebe;
+  div {
+    display: inline-block;
+    position: relative;
+    width: 68px;
+    height: 30px;
+  }
+  span {
+    position: absolute;
+    top: 13px;
+    display: block;
+    text-align: center;
+    width: 68px;
+  }
+  img {
+    margin-top: 10px;
+    width: auto !important;
+    height: auto !important;
+  }
+}
+.articleBottom b {
+  background-color: white;
+}
+
+/*文章头图*/
+.articlehead {
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  margin-bottom: 20px;
+}
+
+/* 友情链接 */
+.friendUrl {
+  font-size: 10px;
+  color: #999ca8 !important;
+}
+.friendUrl:hover {
+  color: #2da4e1 !important;
+}
+
+.myProjects_shit_title_img {
+  width: 320px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  float: left;
+  /* margin-left: 4px;
+  margin-top: 4px; */
+  box-shadow: 0px 10px 8px -10px black;
+}
+.myProjects_introduce {
+  float: left;
+  height: 200px;
+  margin-left: 20px;
+  padding-left: 15px;
+  border-left: 2px solid #dadee4;
+}
+.little_img {
+  width: 84px;
+  height: 26px;
+  margin: -2px 0 0 0 !important;
+  box-shadow: none !important;
+  display: inline-block !important;
+  position: absolute;
+}
+.book-post-info {
+  background-color: rgba(255, 255, 255, 0.432);
+  border-radius: 20px;
+}
+
+//右侧导航栏背景颜色
+.book-post-info {
+  background-color: transparent;
+}
+
+//新版头图
+.newGuide {
+  width: 62vw;
+  height: 450px;
+  border-radius: 10px;
+  .guide {
+    box-sizing: border-box;
+    margin-left: 10px;
+    float: left;
+    width: calc(25% - 10px);
+    height: 100%;
+    transition: 0.2s;
+    > a > div {
+      box-sizing: content-box;
+      margin-bottom: 10px;
+      width: 100%;
+      height: calc(25% - 7.2px);
+      background-size: 100% auto;
+      background-position: center;
+      overflow: hidden;
+      position: relative;
+      transition: all 0.2s;
+      span {
+        width: 100%;
+        text-align: center;
+        letter-spacing: 1.6px;
+        line-height: 105px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: white;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+      }
+      > div {
+        width: 100%;
+        height: 100%;
+        // background-color: rgba(0, 0, 0, 0.8);
+        // opacity: 0.8;
+        cursor: pointer;
+        transition: 0.1s;
+      }
+    }
+    > a > div:hover {
+      box-shadow: 0px 2px 8px 0px #626262;
+      > span {
+        opacity: 0.8;
+      }
+      > div {
+        // background-color: rgba(0, 0, 0, 0.8);
+        // opacity: 0.4;
+        cursor: pointer;
+        text-decoration: none !important;
+      }
+    }
+    .note_guide {
+      border-radius: 10px;
+      background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/YfLHgA.jpg");
+    }
+    .nintendo_guide {
+      border-radius: 10px;
+      background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/IMG_6139.JPG");
+    }
+    .jay_guide {
+      border-radius: 10px;
+      background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/2145F6682FBCE287815AF6DC59D0C5A5.png");
+    }
+    .home_guide {
+      border-radius: 10px;
+      background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/waoh6O.jpg");
+      background-position: bottom;
+      border: 0;
+    }
+  }
+}
+.zhegaia,
+.zhegaib,
+.zhegaic,
+.zhegaid {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background-color: black;
+  opacity: 0.6;
+}
+.zhegaia {
+  width: 0;
+}
+
+.scrollbar,
+html {
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 1px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #004ed0;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+/* 网页常用颜色 */
+.colorBoard {
+  padding: 10px;
+  width: 230px;
+  height: 90px;
+  float: left;
+  .btn {
+    width: 70px;
+    height: 70px;
+    float: left;
+    padding: 0;
+    text-align: center;
+    border-radius: 0;
+    line-height: 75px;
+    font-size: 6px;
+    cursor: pointer;
+    text-shadow: 0px 0px 2px #000000;
+    border: 0;
+    color: #fff;
+    position: relative;
+    transition: 0.2s all;
+  }
+  .btn:first-of-type {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  .btn:last-of-type {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .btn:hover {
+    box-shadow: inset 0px 0px 7px 0px #00000069;
+    font-weight: bolder;
+    z-index: 1;
+  }
+}
+.colorBoardTheme {
+  padding: 10px;
+  height: 90px;
+  float: left;
+  .btn {
+    width: 70px;
+    height: 70px;
+    float: left;
+    padding: 0;
+    text-align: center;
+    border-radius: 0;
+    line-height: 75px;
+    font-size: 6px;
+    cursor: pointer;
+    text-shadow: 0px 0px 2px #000000;
+    border: 0;
+    color: #fff;
+    position: relative;
+    transition: 0.2s all;
+  }
+  .btn:first-of-type {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  .btn:last-of-type {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .btn:hover {
+    box-shadow: inset 0px 0px 7px 0px #00000069;
+    font-weight: bolder;
+    z-index: 1;
+  }
+}
+
+.book-sidebar .book-menu .accordion {
+  padding: 0.625rem 0.6rem 0.625rem 2rem !important;
+}
+
+.book-sidebar .book-menu h1 {
+  padding: 0 0.6rem 0 1.2rem !important;
+  margin: 1.2rem 0 0.9rem 0 !important;
+}
+.book-sidebar .book-menu .uncollapsible {
+  padding: 0 0.6rem 0 1.25rem;
+  margin: 0 0 0 0;
+}
+.book-sidebar .book-menu li {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem;
+}
+
+.clipboard_success {
+  width: 300px;
+  height: 90px;
+  position: fixed;
+  top: calc(50vh - 50px);
+  left: calc(50vw - 150px);
+  border-radius: 20px;
+  font-size: 50px;
+  line-height: 90px;
+  text-align: center;
+  z-index: 2;
+  box-shadow: 0 0 20px 0px #d6d6d6;
+  background-color: rgba(255, 255, 255, 0.829);
+  display: none;
+  transition: 1s all;
+  cursor: default;
+  opacity: 0;
+}
+
+//机器
+.machine {
+  overflow: hidden;
+  > div {
+    overflow: hidden;
+    > a > div {
+      width: 45%;
+      height: 150px;
+      line-height: 232px;
+      margin: 10px;
+      float: left;
+      background-position: center;
+      background-size: 100% auto;
+      overflow: hidden;
+      cursor: pointer;
+      > span {
+        font-size: 40px;
+        font-weight: bold;
+        font-style: italic;
+        color: #fefefeef;
+        font-family: "Arial Black";
+        margin-left: 10px;
+      }
+    }
+  }
+  > .nin {
+    > a:hover {
+      > div {
+        background-image: none !important;
+        background-color: red;
+        > span {
+          color: white;
+        }
+      }
+    }
+  }
+  > .plays {
+    > a:hover {
+      > div {
+        background-image: none !important;
+        background-color: blue;
+        > span {
+          color: white;
+        }
+      }
+    }
+  }
+  > .xbox {
+    > a:hover {
+      > div {
+        background-image: none !important;
+        background-color: green;
+        > span {
+          color: white;
+        }
+      }
+    }
+  }
+  > .oth {
+    > a:hover {
+      > div {
+        background-image: none !important;
+        background-color: black;
+        > span {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+//玩具页
+.toy_covers {
+  margin-left: -20px;
+  margin-top: -20px;
+  a {
+    width: 100%;
+    height: 100%;
+  }
+  .toy_div {
+    width: 220px;
+    height: 380px;
+    background-size: 100% auto;
+    display: inline-block;
+    position: relative;
+    margin: 30px 20px;
+    transition: all 0.2s;
+    box-shadow: 0px 1px 5px 0px #767676;
+    &:hover {
+      box-shadow: 0px 4px 10px 0px #767676;
+    }
+  }
+  .back_black:hover {
+    opacity: 0.1;
+  }
+  .back_black {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.2s;
+  }
+  .tocount {
+    width: 45px;
+    height: 20px;
+    background-color: rgb(108, 158, 34);
+    position: absolute;
+    right: 0;
+    top: 20px;
+    color: white;
+    text-align: center;
+    z-index: 2;
+  }
+  .descrip {
+    b {
+      font-size: 16px;
+    }
+    font-size: 16px;
+    line-height: 26px;
+    padding: 10px 10px;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+  }
+}
+
+//游戏库
+.pokemon-form {
+  .pokemon-background-pic {
+    width: 100%;
+    height: 300px;
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/2F65x1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: red;
+  }
+  .pokemon-background-name {
+    font-size: 25px;
+    text-align: center;
+    line-height: 55px;
+    font-weight: bold;
+  }
+}
+.book-post {
+  h1 a {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  h1 a:visited {
+    color: #0c53cd !important;
+  }
+}
+.platform {
+  display: inline-block;
+  margin: 50px;
+  width: 280px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
+  padding: 20px 0;
+  border-radius: 24px;
+  .platform-pic,
+  .inner-pic {
+    width: 100%;
+    height: 200px;
+    transition: all 0.2s;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .platform-pic {
+    opacity: 1;
+  }
+  .inner-pic {
+    opacity: 0;
+  }
+  .platform-name {
+    font-size: 25px;
+    text-align: center;
+    line-height: 55px;
+    font-weight: bold;
+    margin-top: 200px;
+  }
+}
+.platform:hover {
+  .inner-pic {
+    opacity: 1;
+  }
+}
+.pc-pic {
+  .platform-pic {
+    background-image: url("https://z3.ax1x.com/2021/08/04/fEfRkq.png");
+  }
+  .inner-pic {
+    background-image: url("https://z3.ax1x.com/2021/08/04/fEfWt0.png");
+  }
+}
+.switch-pic {
+  .platform-pic {
+    background-image: url("https://z3.ax1x.com/2021/08/04/fEfc0s.png");
+  }
+  .inner-pic {
+    background-image: url("https://z3.ax1x.com/2021/08/04/fEfg7n.png");
+  }
+}
+.threeds-pic {
+  .platform-pic {
+    background-image: url("https://z3.ax1x.com/2021/08/04/fEfsXQ.png");
+  }
+  .inner-pic {
+    background-image: url("https://z3.ax1x.com/2021/08/04/fEf6mj.png");
+  }
+}
+.ds-pic {
+  .platform-pic {
+    background-image: url("https://z3.ax1x.com/2021/08/04/fEfD1S.png");
+  }
+  .inner-pic {
+    background-image: url("https://z3.ax1x.com/2021/08/04/fEfr6g.png");
+  }
+}
+.sixfour-pic {
+  .platform-pic {
+    background-image: url("https://z3.ax1x.com/2021/08/04/fEfwff.png");
+  }
+  .inner-pic {
+    background-image: url("https://z3.ax1x.com/2021/08/04/fEfBp8.png");
+  }
+}
+.ngc-pic {
+  .platform-pic {
+    background-image: url("");
+  }
+  .inner-pic {
+    background-image: url("");
+  }
+}
+.gba-pic {
+  .platform-pic {
+    background-image: url("https://z3.ax1x.com/2021/08/04/fEfakt.png");
+  }
+  .inner-pic {
+    background-image: url("https://z3.ax1x.com/2021/08/04/fEfdtP.png");
+  }
+}
+.gbc-pic {
+  .platform-pic {
+    background-image: url("https://z3.ax1x.com/2021/08/04/fEfQfK.png");
+  }
+  .inner-pic {
+    background-image: url("https://z3.ax1x.com/2021/08/04/fEfYmd.png");
+  }
+}
+.gb-pic {
+  .platform-pic {
+    background-image: url("https://z3.ax1x.com/2021/08/04/fEft0A.png");
+  }
+  .inner-pic {
+    background-image: url("https://z3.ax1x.com/2021/08/04/fEfNTI.png");
+  }
+}
+.psv-pic {
+  .platform-pic {
+    background-image: url("https://z3.ax1x.com/2021/08/04/fEf3lD.png");
+  }
+  .inner-pic {
+    background-image: url("https://z3.ax1x.com/2021/08/04/fEf86e.png");
+  }
+}
+.phone-pic {
+  .platform-pic {
+    background-image: url("https://z3.ax1x.com/2021/08/04/fEf1SO.png");
+  }
+  .inner-pic {
+    background-image: url("https://z3.ax1x.com/2021/08/04/fEfGOH.png");
+  }
+}
+
+//分页
+.myPagination {
+  overflow: hidden;
+  margin: 0 auto;
+  > div {
+    float: right;
+    > a {
+      > div {
+        padding: 0 10px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        margin: 3px;
+        border: 1px solid #36a5df;
+        float: left;
+        -moz-user-select: none; /*火狐*/
+        -webkit-user-select: none; /*webkit浏览器*/
+        -ms-user-select: none; /*IE10*/
+        -khtml-user-select: none; /*早期浏览器*/
+        user-select: none;
+        border-radius: 6px;
+        color: #36a5df !important;
+        &:hover {
+          background-color: #36a5df;
+          color: white !important;
+          font-weight: bold;
+        }
+      }
+      > .page_chosen {
+        background-color: #36a5df;
+        color: white !important;
+        font-weight: bold;
+        border-radius: 6px;
+      }
+    }
+  }
+}
+
+// 机器分页
+.machinePagination {
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 50px;
+  > div {
+    float: right;
+    > a {
+      > div {
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        margin: 3px;
+        padding: 0 10px;
+        border: 1px solid #36a5df;
+        float: left;
+        -moz-user-select: none; /*火狐*/
+        -webkit-user-select: none; /*webkit浏览器*/
+        -ms-user-select: none; /*IE10*/
+        -khtml-user-select: none; /*早期浏览器*/
+        user-select: none;
+        border-radius: 6px;
+        color: #36a5df !important;
+        &:hover {
+          background-color: #36a5df;
+          color: white !important;
+          font-weight: bold;
+        }
+      }
+      > .page_chosen {
+        background-color: #36a5df;
+        color: white !important;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// 右下角pm
+.littlePet {
+  width: 100px;
+  height: 100px;
+  cursor: default !important;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  bottom: 30px;
+  right: 18.66666667%;
+  transition: all 0.7s;
+  z-index: 200;
+  &:after {
+    content: "/";
+    margin-left: -170px;
+    margin-top: -28px;
+    width: 200px;
+    /* height: 58px; */
+    background-color: white;
+    transition: all 0.3s;
+    color: black;
+    display: none;
+    padding: 10px;
+    border-radius: 15px;
+  }
+}
+
+.littlePet:hover {
+  &:after {
+    content: "交换场地！";
+    display: block;
+  }
+  width: 150px;
+  height: 150px;
+}
+.pet-poly:hover {
+  transform: rotate(360deg);
+  &:after {
+    margin-left: -210px;
+    content: ".. -....- .-- .- -. - -....- - --- -....- --. --- -....- -... .- -.-. -.- -....- - --- -....- ..--- ----- .---- ---.. ";
+  }
+}
+.pet-luca:hover {
+  &:after {
+    content: "愿波导之力与你同在。";
+  }
+}
+.pet-spr:hover {
+  &:after {
+    content: "火焰球！";
+  }
+}
+.pet-cha:hover {
+  &:after {
+    content: "";
+  }
+}
+
+//ns游戏列表
+.ns-cards {
+  overflow: hidden;
+  padding-left: -10px;
+  .out {
+    width: 220px;
+    height: 398px;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    transition: all 0.1s;
+    position: relative;
+    .ns-card {
+      width: 220px;
+      height: 358px;
+      display: inline-block;
+      background-size: 100% 100%;
+      padding: 0;
+      margin: 0;
+      transition: all 0.2s;
+      box-shadow: 0px 1px 5px 0px #767676;
+      &:hover {
+        box-shadow: 0px 2px 10px 0px #767676;
+      }
+    }
+    .count {
+      width: 0px;
+      height: 40px;
+      background-color: rgba(126, 252, 0, 0.534);
+      overflow: hidden;
+      text-align: center;
+      color: white;
+      font-size: 16px;
+      line-height: 40px;
+      top: 160px;
+      right: 0;
+      z-index: 100;
+      position: absolute;
+      transition: all 0.2s;
+    }
+    .no_co {
+      background-color: rgba(255, 0, 0, 0.548);
+    }
+    .g-t {
+      width: 220px;
+      height: 30px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #3b4351;
+      position: relative;
+      .tt {
+        width: 190px;
+        display: inline-block;
+        margin-top: 6px;
+      }
+      .ver {
+        position: absolute;
+        right: 0;
+        bottom: 9px;
+        color: rgb(173, 173, 173);
+        font-size: 10px;
+        line-height: 10px;
+        font-weight: normal;
+        zoom: 0.81;
+      }
+    }
+  }
+  .ringfit {
+    width: 358px !important;
+    .ns-card,
+    .g-t {
+      width: 358px;
+    }
+  }
+  .out:hover {
+    .ns-card {
+      // opacity: 0.7;
+      box-shadow: 0px 2px 10px 0px #767676;
+    }
+    .count {
+      width: 220px;
+    }
+  }
+}
+
+//pc游戏列表
+.pc-cards {
+  overflow: hidden;
+  padding-left: -10px;
+  .pc-out {
+    width: 220px;
+    height: 314px;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    transition: all 0.1s;
+    position: relative;
+    .pc-card {
+      width: 220px;
+      height: 274px;
+      display: inline-block;
+      background-size: 100% auto;
+      padding: 0;
+      margin: 0;
+      transition: all 0.2s;
+    }
+    .count {
+      width: 0px;
+      height: 40px;
+      background-color: rgba(126, 252, 0, 0.534);
+      overflow: hidden;
+      text-align: center;
+      color: white;
+      font-size: 16px;
+      line-height: 40px;
+      top: 120px;
+      right: 0;
+      z-index: 100;
+      position: absolute;
+      transition: all 0.2s;
+    }
+    .no_co {
+      background-color: rgba(255, 0, 0, 0.548);
+    }
+    .g-t {
+      width: 220px;
+      height: 30px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #3b4351;
+      position: relative;
+      .tt {
+        width: 180px;
+        display: inline-block;
+        margin-top: 6px;
+      }
+      .ver {
+        position: absolute;
+        right: 0;
+        bottom: 9px;
+        color: rgb(173, 173, 173);
+        font-size: 10px;
+        line-height: 10px;
+        font-weight: normal;
+        zoom: 0.81;
+      }
+    }
+  }
+  .pc-out:hover {
+    // .pc-card {
+    //   opacity: 0.7;
+    //   box-shadow: 0px 8px 7px 3px #000000;
+    // }
+    .count {
+      width: 220px;
+    }
+  }
+}
+
+//gba游戏列表
+.gba-cards {
+  overflow: hidden;
+  padding-left: -10px;
+  .gba-en {
+    height: 260px !important;
+    .gba-card {
+      height: 220px !important;
+    }
+    .count {
+      top: 100px !important;
+    }
+  }
+  .gba-out {
+    width: 220px;
+    height: 180px;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    transition: all 0.1s;
+    position: relative;
+    .gba-card {
+      width: 220px;
+      height: 140px;
+      display: inline-block;
+      background-size: 100% 100%;
+      padding: 0;
+      margin: 0;
+      transition: all 0.2s;
+    }
+    .count {
+      width: 0px;
+      height: 40px;
+      background-color: rgba(126, 252, 0, 0.534);
+      overflow: hidden;
+      text-align: center;
+      color: white;
+      font-size: 16px;
+      line-height: 40px;
+      top: 50px;
+      right: 0;
+      z-index: 100;
+      position: absolute;
+      transition: all 0.2s;
+    }
+    .no_co {
+      background-color: rgba(255, 0, 0, 0.548);
+    }
+    .g-t {
+      width: 220px;
+      height: 30px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #3b4351;
+      position: relative;
+      .tt {
+        width: 180px;
+        display: inline-block;
+        margin-top: 6px;
+      }
+      .ver {
+        position: absolute;
+        right: 0;
+        bottom: 9px;
+        color: rgb(173, 173, 173);
+        font-size: 10px;
+        line-height: 10px;
+        font-weight: normal;
+        zoom: 0.81;
+      }
+    }
+  }
+  .gba-out:hover {
+    // .gba-card {
+    //   opacity: 0.7;
+    //   box-shadow: 0px 8px 7px 3px #000000;
+    // }
+    .count {
+      width: 220px;
+    }
+  }
+}
+
+//64游戏列表
+.liusi-cards {
+  overflow: hidden;
+  padding-left: -10px;
+  .liusi-out {
+    width: 220px;
+    height: 340px;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    transition: all 0.1s;
+    position: relative;
+    .liusi-card {
+      width: 220px;
+      height: 300px;
+      display: inline-block;
+      background-size: 100% auto;
+      padding: 0;
+      margin: 0;
+      transition: all 0.2s;
+    }
+    .count {
+      width: 0px;
+      height: 40px;
+      background-color: rgba(126, 252, 0, 0.534);
+      overflow: hidden;
+      text-align: center;
+      color: white;
+      font-size: 16px;
+      line-height: 40px;
+      top: 120px;
+      right: 0;
+      z-index: 100;
+      position: absolute;
+      transition: all 0.2s;
+    }
+    .no_co {
+      background-color: rgba(255, 0, 0, 0.548);
+    }
+    .g-t {
+      width: 220px;
+      height: 30px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #3b4351;
+      position: relative;
+      .tt {
+        width: 180px;
+        display: inline-block;
+        margin-top: 6px;
+      }
+      .ver {
+        position: absolute;
+        right: 0;
+        bottom: 9px;
+        color: rgb(173, 173, 173);
+        font-size: 10px;
+        line-height: 10px;
+        font-weight: normal;
+        zoom: 0.81;
+      }
+    }
+  }
+  .liusi-out:hover {
+    // .liusi-card {
+    //   opacity: 0.7;
+    //   box-shadow: 0px 8px 7px 3px #000000;
+    // }
+    .count {
+      width: 220px;
+    }
+  }
+}
+
+//gb游戏列表
+.gb-cards {
+  overflow: hidden;
+  padding-left: -10px;
+  .gb-out {
+    width: 220px;
+    height: 280px;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    transition: all 0.1s;
+    position: relative;
+    .gb-card {
+      width: 220px;
+      height: 280px;
+      display: inline-block;
+      background-size: 100% 100%;
+      padding: 0;
+      margin: 0;
+      transition: all 0.2s;
+    }
+    .count {
+      width: 0px;
+      height: 40px;
+      background-color: rgba(126, 252, 0, 0.534);
+      overflow: hidden;
+      text-align: center;
+      color: white;
+      font-size: 16px;
+      line-height: 40px;
+      top: 120px;
+      right: 0;
+      z-index: 100;
+      position: absolute;
+      transition: all 0.2s;
+    }
+    .no_co {
+      background-color: rgba(255, 0, 0, 0.548);
+    }
+    .g-t {
+      width: 220px;
+      height: 30px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #3b4351;
+      position: relative;
+      .tt {
+        width: 180px;
+        display: inline-block;
+        margin-top: 6px;
+      }
+      .ver {
+        position: absolute;
+        right: 0;
+        bottom: 9px;
+        color: rgb(173, 173, 173);
+        font-size: 10px;
+        line-height: 10px;
+        font-weight: normal;
+        zoom: 0.81;
+      }
+    }
+  }
+  .gb-out:hover {
+    // .gb-card {
+    //   opacity: 0.7;
+    //   box-shadow: 0px 8px 7px 3px #000000;
+    // }
+    .count {
+      width: 220px;
+    }
+  }
+}
+
+.ds-cards {
+  overflow: hidden;
+  padding-left: -10px;
+  .out {
+    width: 240px;
+    height: 220px;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 60px;
+    transition: all 0.1s;
+    position: relative;
+    .ds-card {
+      width: 240px;
+      height: 220px;
+      display: inline-block;
+      background-size: 100% 100%;
+      padding: 0;
+      margin: 0;
+      transition: all 0.2s;
+    }
+    .count {
+      width: 0px;
+      height: 40px;
+      background-color: rgba(126, 252, 0, 0.534);
+      overflow: hidden;
+      text-align: center;
+      color: white;
+      font-size: 16px;
+      line-height: 40px;
+      top: 100px;
+      right: 0;
+      z-index: 100;
+      position: absolute;
+      transition: all 0.2s;
+    }
+    .no_co {
+      background-color: rgba(255, 0, 0, 0.548);
+    }
+    .g-t {
+      width: 240px;
+      height: 30px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #3b4351;
+      position: relative;
+      .tt {
+        width: 190px;
+        display: inline-block;
+        margin-top: 6px;
+      }
+      .ver {
+        position: absolute;
+        right: 0;
+        bottom: 9px;
+        color: rgb(173, 173, 173);
+        font-size: 10px;
+        line-height: 10px;
+        font-weight: normal;
+        zoom: 0.81;
+      }
+    }
+  }
+  .out:hover {
+    // .ds-card {
+    //   opacity: 0.7;
+    //   box-shadow: 0px 8px 7px 3px #000000;
+    // }
+    .count {
+      width: 240px;
+    }
+  }
+}
+
+.gbc-cards {
+  overflow: hidden;
+  padding-left: -10px;
+  .out {
+    width: 239px;
+    height: 300px;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 60px;
+    transition: all 0.1s;
+    position: relative;
+    .gbc-card {
+      width: 239px;
+      height: 300px;
+      display: inline-block;
+      background-size: 100% 100%;
+      padding: 0;
+      margin: 0;
+      transition: all 0.2s;
+    }
+    .count {
+      width: 0px;
+      height: 40px;
+      background-color: rgba(126, 252, 0, 0.534);
+      overflow: hidden;
+      text-align: center;
+      color: white;
+      font-size: 16px;
+      line-height: 40px;
+      top: 120px;
+      right: 0;
+      z-index: 100;
+      position: absolute;
+      transition: all 0.2s;
+    }
+    .no_co {
+      background-color: rgba(255, 0, 0, 0.548);
+    }
+    .g-t {
+      width: 239px;
+      height: 30px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #3b4351;
+      position: relative;
+      .tt {
+        width: 100px;
+        display: inline-block;
+        margin-top: 6px;
+      }
+      .ver {
+        position: absolute;
+        right: 0;
+        bottom: 9px;
+        color: rgb(173, 173, 173);
+        font-size: 10px;
+        line-height: 10px;
+        font-weight: normal;
+        zoom: 0.81;
+      }
+    }
+  }
+  .out:hover {
+    // .gbc-card {
+    //   opacity: 0.7;
+    //   box-shadow: 0px 8px 7px 3px #000000;
+    // }
+    .count {
+      width: 239px;
+    }
+  }
+}
+
+//手机游戏页面
+.phone-ke {
+  width: 600px;
+  height: 750px;
+  padding-top: 25px;
+  background-color: rgb(29, 29, 29);
+  position: relative;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 10px;
+  transition: all 0.2s;
+  box-shadow: 0px 3px 8px 1px #000000;
+  &:hover {
+    box-shadow: 0px 8px 15px 3px #000000;
+  }
+  .camera {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: black;
+    left: calc(50% - 50px);
+    top: 7px;
+  }
+  .sound {
+    width: 80px;
+    height: 10px;
+    border-radius: 5px;
+    position: absolute;
+    background-color: black;
+    left: calc(50% - 30px);
+    top: 7px;
+  }
+  .back-screen {
+    margin-left: 25px;
+    width: calc(100% - 50px);
+    height: 700px;
+    background-size: 100% auto;
+    background-position: contain;
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/Games/dragolia_lost/Screenshot_20200513-010224.jpg");
+    position: relative;
+    box-shadow: inset 0px 0 8px 0px #000000;
+    .up-left {
+      color: white;
+      margin-left: 8px;
+      line-height: 28px;
+      display: inline-block;
+    }
+    .up-center {
+      color: white;
+      position: absolute;
+      line-height: 25px;
+      display: inline-block;
+      top: 2px;
+      left: calc(50% - 15px);
+    }
+    .down {
+      width: 150px;
+      height: 5px;
+      border-radius: 5px;
+      position: absolute;
+      background-color: white;
+      left: 200px;
+      left: calc(50% - 70px);
+      bottom: 10px;
+    }
+    .out-screen {
+      width: 100%;
+      height: 650px;
+      overflow: scroll;
+      &::-webkit-scrollbar-thumb {
+        display: none;
+      }
+      .inner-screen {
+        vertical-align: top;
+        text-align: center;
+        padding-top: 10px;
+        .app-out {
+          width: 100px;
+          height: 115px;
+          overflow: hidden;
+          display: inline-block;
+          margin-left: 10px;
+          margin-right: 10px;
+          margin-top: 8px;
+          .app-logo {
+            width: 70px;
+            height: 70px;
+            margin-left: 15px;
+            background-size: 100% 100%;
+            line-height: 70px;
+            border-radius: 10px;
+            margin-top: 5px;
+            transition: all 0.1s;
+            background-color: rgb(43, 42, 42);
+            font-weight: bold;
+            color: transparent;
+            box-shadow: 0px 1px 3px 0px #000000;
+          }
+          .app-logo:hover {
+            box-shadow: 0px 2px 7px 1px #000000;
+          }
+          .nopic:hover {
+            box-shadow: 0px 0 7px 1px red !important;
+            background-image: none !important;
+            color: red;
+          }
+          .tt {
+            width: 100%;
+            font-size: 12px;
+            display: block;
+            text-align: center;
+            color: white !important;
+            margin-top: 8px;
+            text-shadow: 0 0 2px black;
+          }
+        }
+      }
+    }
+  }
+}
+
+//最新更新
+
+.guidePic {
+  width: calc(75% - 10px);
+  height: 100%;
+  float: left;
+  background-position: center;
+  border-radius: 10px;
+  background-size: 100% auto;
+  position: relative;
+  transition: all 0.2s;
+  &:hover {
+    box-shadow: 0px 2px 8px 0px #626262;
+  }
+  .title {
+    font-size: 52px;
+    bottom: -26px;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    left: 20px;
+    z-index: 2;
+  }
+}
+
+//头图轮播
+.swiper-container {
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+  height: 100%;
+  border-radius: 10px;
+  .swiper-slide {
+    background-position: center;
+    background-size: 100% auto;
+    background-color: rgb(62, 75, 133);
+    display: block;
+    position: relative;
+    * {
+      color: white !important;
+    }
+  }
+  .swiper-pagination-bullet {
+    width: 30px;
+    border-radius: 3px;
+    height: 6px;
+    opacity: 0.6;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    opacity: 0;
+    transition: all 0.2s;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: white;
+    opacity: 1;
+  }
+  .des {
+    right: 35px;
+    bottom: 22px;
+    position: absolute;
+    .route {
+      font-size: 18px;
+      text-shadow: 1px 1px 2px black;
+    }
+    .route-title {
+      font-size: 38px;
+      text-shadow: 1px 1px 2px black;
+      font-weight: bold;
+    }
+    .update-time {
+      font-size: 10px;
+      text-shadow: 1px 1px 2px black;
+    }
+  }
+}
+.swiper-container:hover {
+  .swiper-button-prev,
+  .swiper-button-next {
+    opacity: 1;
+  }
+}
+
+//训练家卡作品轮播
+.card-container {
+  width: 30rem;
+  margin: 0 auto;
+  overflow: hidden;
+  z-index: 1;
+  height: 300px;
+  border-radius: 6px 0 0 6px;
+  position: relative;
+  .swiper-slide {
+    display: block;
+    position: relative;
+    div {
+      width: 80%;
+      height: 280px;
+      margin: 0 auto;
+      vertical-align: middle;
+      position: relative;
+      img {
+        width: auto;
+        height: 100%;
+        position: absolute;
+        border-radius: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      span {
+        height: 100%;
+        vertical-align: middle;
+        display: inline-block;
+      }
+    }
+    * {
+      color: white !important;
+    }
+  }
+  .swiper-pagination-bullet {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.719);
+    opacity: 0.6;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: white;
+    opacity: 1;
+  }
+  .swiper-pagination {
+    bottom: 0 !important;
+  }
+}
+
+//ps作品轮播
+.ps-container {
+  width: 35rem;
+  margin: 0 auto;
+  overflow: hidden;
+  z-index: 1;
+  height: 600px;
+  border-radius: 6px 0 0 6px;
+  position: relative;
+  .swiper-slide {
+    display: block;
+    position: relative;
+    div {
+      width: 80%;
+      height: 560px;
+      margin: 0 auto;
+      vertical-align: middle;
+      position: relative;
+      img {
+        width: auto;
+        height: auto;
+        position: absolute;
+        border-radius: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -52%);
+      }
+      span {
+        height: 100%;
+        vertical-align: middle;
+        display: inline-block;
+      }
+    }
+    * {
+      color: white !important;
+    }
+  }
+  .swiper-pagination-bullet {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.719);
+    opacity: 0.6;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: white;
+    opacity: 1;
+  }
+  .swiper-pagination {
+    bottom: 0 !important;
+  }
+}
+
+.table-wrapper {
+  overflow: visible !important;
+}
+
+@media (max-width: 300px) {
+  .poke-gen {
+    zoom: 0.2;
+    * {
+      font-size: 0.3rem !important;
+    }
+  }
+  .poke-gen tr td .pokemon-base > div .pokemon-type .type {
+    margin-top: 0 !important;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 420px) {
+  .poke-gen {
+    zoom: 0.3;
+    * {
+      font-size: 0.3rem !important;
+    }
+  }
+  .poke-gen tr td .pokemon-base > div .pokemon-type .type {
+    margin-top: 0 !important;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 500px) {
+  .poke-gen {
+    zoom: 0.2;
+    * {
+      font-size: 0.3rem !important;
+    }
+  }
+  .poke-gen tr td .pokemon-base > div .pokemon-type .type {
+    margin-top: 0 !important;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 550px) {
+  .poke-gen {
+    zoom: 0.4;
+    * {
+      font-size: 0.3rem !important;
+    }
+  }
+  .poke-gen tr td .pokemon-base > div .pokemon-type .type {
+    margin-top: 0 !important;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 1400px) {
+  .poke-gen {
+    zoom: 0.6;
+    * {
+      font-size: 0.3rem !important;
+    }
+  }
+}
+
+// 我的宝可梦日记
+.poke-gen {
+  td:not(.ppp):not(.pokemon-screenshot) {
+    height: 200px;
+  }
+  .pokemon-td {
+    width: 300px;
+    overflow: hidden;
+    padding: 20px 0 !important;
+    > img {
+      margin-top: 5px;
+      height: 150px;
+      width: auto;
+    }
+  }
+  .pokemon-move-td {
+    width: calc(100% - 280px);
+  }
+  .boy {
+    color: #6fa6d8;
+  }
+  .girl {
+    color: #ed4f38;
+  }
+  * {
+    border-color: #69696933 !important;
+  }
+  tr {
+    .ppp {
+      text-align: center !important;
+      background-color: rgba(255, 255, 255, 0.1);
+      background-repeat: no-repeat;
+      background-position: right 18px bottom 17px;
+      background-size: auto 20%;
+      > img {
+        margin: 0 auto !important;
+        margin-top: 5px !important;
+        border-radius: 10px;
+        position: relative;
+        height: 100%;
+        // width: auto!important;
+        z-index: 1;
+      }
+      .back-text {
+        font-size: 300px;
+        width: 100%;
+        font-weight: bold;
+        opacity: 0.1;
+        z-index: 0;
+      }
+      .left-text {
+        text-align: left;
+        position: absolute;
+        top: 0px;
+        left: -30px;
+      }
+      .right-text {
+        text-align: right;
+        position: absolute;
+        top: -100px;
+        right: -40px;
+      }
+      .pokemon-pixel {
+        display: inline-block !important;
+        height: 40px;
+        line-height: 40px;
+        vertical-align: middle;
+        background-color: rgba(168, 168, 168, 0.1);
+        border-radius: 20px;
+        // margin-top: 10px;
+        padding: 0 10px 0 30px;
+        position: relative;
+        z-index: 1;
+        > span,
+        > b {
+          line-height: 40px;
+          margin-right: 20px;
+        }
+        > b {
+          text-shadow: 0 0 1px #000;
+        }
+        img {
+          display: inline-block !important;
+          width: auto !important;
+          margin: 0 !important;
+          vertical-align: middle;
+        }
+        img:last-of-type {
+          margin-right: 15px !important;
+        }
+      }
+    }
+    .pokemon-back {
+      background-position: top 0 left 0;
+      background-size: 120%;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 200%;
+      position: absolute;
+      top: -19%;
+      right: -13%;
+      z-index: 0;
+      opacity: 0.2;
+    }
+    td {
+      position: relative;
+      .po-i {
+        position: relative;
+        z-index: 1;
+      }
+      .pokemon-base {
+        float: left;
+        width: 58%;
+        height: 100%;
+        margin-left: 2%;
+        > div {
+          .pokemon-line1 {
+            span {
+              margin-right: 20px;
+            }
+            > img {
+              display: inline-block !important;
+              width: 40px !important;
+              margin: 0 !important;
+              margin-right: 5px !important;
+              vertical-align: -6px;
+            }
+          }
+          .pokemon-type {
+            overflow: hidden;
+            margin: 5px auto;
+            vertical-align: middle;
+            margin-top: 8px;
+            .level {
+              font-size: 24px;
+              font-weight: bold;
+              float: left;
+              margin-right: 20px;
+            }
+            .type {
+              width: 50px;
+              height: 20px;
+              border-radius: 5px;
+              margin-top: 10px;
+              color: white;
+              float: left;
+              text-align: center;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+      .pokemon-ball {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        z-index: 2;
+        left: 6px;
+        bottom: 21px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0.8;
+      }
+      .pokemon-name {
+        margin-top: -3px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+        b {
+          font-size: 18px;
+        }
+      }
+      .pokemon-move {
+        float: left;
+        width: 40%;
+        margin-top: 24px;
+        .move {
+          width: calc(50% - 40px);
+          display: inline-block;
+          height: 50px;
+          font-size: 20px;
+          font-weight: bold;
+          line-height: 50px;
+          margin: 5px;
+          text-align: center;
+          border-radius: 25px;
+          background-size: 150%;
+          background-position: -5px 0;
+          cursor: default;
+          color: white;
+          background-image: linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.493)
+          );
+          transition: all 0.2s;
+          &:hover {
+            box-shadow: 0px 3px 11px 0px #1d1d1d;
+          }
+        }
+      }
+    }
+    .pokemon-screenshot {
+      text-align: center !important;
+      img {
+        display: inline-block !important;
+        width: 20%;
+        margin: 10px !important;
+      }
+    }
+  }
+}
+
+// 宝可梦属性
+.t-normal {
+  background-color: #9199a1;
+}
+.t-fire {
+  background-color: #fc9c5c;
+}
+.t-water {
+  background-color: #5292d3;
+}
+.t-elec {
+  background-color: #f3d14c;
+}
+.t-grass {
+  background-color: #65ba5f;
+}
+.t-ice {
+  background-color: #77cebf;
+}
+.t-fight {
+  background-color: #cb436b;
+}
+.t-poison {
+  background-color: #a86dc6;
+}
+.t-ground {
+  background-color: #d6784a;
+}
+.t-fly {
+  background-color: #8fa9dc;
+}
+.t-psycho {
+  background-color: #f7727b;
+}
+.t-bug {
+  background-color: #92bf3b;
+}
+.t-rock {
+  background-color: #c5b78e;
+}
+.t-ghost {
+  background-color: #536baa;
+}
+.t-dragon {
+  background-color: #166fc0;
+}
+.t-dark {
+  background-color: #5a5465;
+}
+.t-iron {
+  background-color: #5c8da0;
+}
+.t-fairy {
+  background-color: #ea92e4;
+}
+.shining-pearl-text {
+  color: #e6acbd;
+  font-style: italic;
+}
+.diamond-text {
+  color: #88d2ed;
+}
+.platium-text {
+  color: #b59d20;
+}
+.heartgold-text {
+  color: #f7c748;
+  font-style: italic;
+}
+.white-text {
+  color: #d3d3d3;
+  font-weight: 600;
+}
+.red-text {
+  color: #cd3131;
+}
+.silver-text {
+  color: #d6d6d6;
+}
+.sword-text {
+  color: #1ba3e6;
+  font-style: italic;
+}
+
+.pokemon-generation {
+  display: inline-block;
+  margin: 0 20px;
+  width: 285px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
+  padding: 20px 0;
+  .platform-pic {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .platform-name {
+    font-size: 25px;
+    text-align: center;
+    line-height: 55px;
+    font-weight: bold;
+    margin-top: 200px;
+  }
+}
+.ranger1-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/20111228142552!Pokémon_Ranger_logo.png");
+  }
+}
+.ranger2-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/1600px-Pokémon_Ranger_SoA_logo.png");
+  }
+}
+.ranger3-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/Pokémon_Ranger_Tracks_of_Light_Japanese_logo.png");
+  }
+}
+.column1-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/");
+  }
+}
+.column2-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/");
+  }
+}
+.column3-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/");
+  }
+}
+.column4-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/");
+  }
+}
+.column5-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/");
+  }
+}
+.column6-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/");
+  }
+}
+.dungen1-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/");
+  }
+}
+.dungen2-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/");
+  }
+}
+.dungen3-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/");
+  }
+}
+.dungen4-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/");
+  }
+}
+.dungen5-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/");
+  }
+}
+.dungen6-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/");
+  }
+}
+.dungen7-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/");
+  }
+}
+.dungen8-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/");
+  }
+}
+.emblem-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/宝可梦_绿宝石_商标_日文.png");
+  }
+}
+.diamond-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/宝可梦_钻石_商标_日文.png");
+  }
+}
+.x-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/宝可梦_Ｘ_商标_日文.png");
+  }
+}
+.pla-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/宝可梦传说_阿尔宙斯_商标_简体中文.png");
+  }
+}
+.sw-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/寶可夢_劍_商標_繁體中文.png");
+  }
+}
+.or-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/寶可夢_歐米加紅寶石_圖標_日文.png");
+  }
+}
+.sun-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/精靈寶可夢_太陽_商標_繁體中文.png");
+  }
+}
+.white-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/宝可梦_白_商标_日文.png");
+  }
+}
+.platium-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/宝可梦_白金_商标_日文.png");
+  }
+}
+.red-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/宝可梦_红_商标_日文.png");
+  }
+}
+.bd-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/宝可梦_晶灿钻石_商标_简体中文.png");
+  }
+}
+.sp-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/寶可夢_明亮珍珠_商標_繁體中文.png");
+  }
+}
+.hg-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/宝可梦_心金_商标_日文.png");
+  }
+}
+.silver-pic {
+  .platform-pic {
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/宝可梦_银_商标_日文.png");
+  }
+}
+
+@media (max-width: 959px) {
+  * {
+    letter-spacing: 0.3px !important;
+    font-size: 12px !important;
+  }
+  .phone-ke {
+    width: 100% !important;
+  }
+  .book-sidebar .book-menu h1 {
+    margin-top: -0.3rem !important;
+  }
+  h1 {
+    font-size: 18px !important;
+  }
+  .platform {
+    margin: 0 auto !important;
+    display: block !important;
+  }
+  .book-post-custom-title {
+    font-size: 20px !important;
+    height: 40px;
+    line-height: 40px;
+  }
+  .myProc {
+    zoom: 0.9;
+    span:first-of-type {
+      font-size: 1.5em !important;
+    }
+    span:last-of-type {
+      font-size: 1.1em !important;
+    }
+  }
+  .shits {
+    margin-left: calc(50vw - 185px) !important;
+  }
+  .book-sidebar {
+    box-shadow: none !important;
+  }
+  .to_top {
+    bottom: 2rem !important;
+    right: 2rem !important;
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+  .out {
+    zoom: 0.4;
+    .g-t {
+      span {
+        font-size: 0.5rem !important;
+      }
+      .tt {
+        margin-top: 0.5rem !important;
+      }
+    }
+  }
+  .book-post img {
+    width: auto !important;
+    height: auto !important;
+  }
+  .book-post h1 a {
+    font-size: 18px !important;
+  }
+  h3 {
+    font-size: 16px !important;
+  }
+  .swiper-initialized {
+    width: 100% !important;
+    .swiper-slide div img {
+      height: auto !important;
+    }
+  }
+  legend {
+    font-size: 20px !important;
+    margin-left: -20px;
+  }
+  .toy_covers {
+    margin-left: -10px !important;
+    margin-top: -10px !important;
+    .toy_div {
+      margin-bottom: 0 !important;
+      zoom: 0.4;
+    }
+    .descrip {
+      font-size: 1.5rem !important;
+      b {
+        font-size: 1.5rem !important;
+      }
+    }
+  }
+  .announce-and-iframe .announce {
+    float: none !important;
+    width: auto !important;
+  }
+  .suipai a {
+    width: 100%;
+  }
+  .suipai-item {
+    width: 100% !important;
+    height: 50px !important;
+    line-height: 50px !important;
+  }
+  .accordion-body {
+    > ul > li {
+      padding-left: 6px !important;
+    }
+  }
+  .announce-and-iframe .iframe-div {
+    float: none !important;
+    width: auto !important;
+    margin: 5px !important;
+    margin-top: 30px !important;
+  }
+  .aaaaa {
+    zoom: 0.7;
+  }
+  .book-comments {
+    zoom: 0.8;
+  }
+  .frsi {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+    zoom: 0.7;
+  }
+  .off-canvas-content {
+    padding: 1.6rem 0.75rem !important;
+  }
+  .articlehead {
+    height: 140px !important;
+    background-size: 100% auto;
+  }
+  .machine > div > a > div {
+    width: 100% !important;
+    span {
+      font-size: 21px !important;
+      text-align: center;
+      line-height: 260px;
+    }
+  }
+  .leftgames {
+    width: 100%;
+    overflow: hidden;
+    a {
+      width: 100%;
+    }
+    * {
+      font-size: 10px;
+      line-height: 50px;
+    }
+  }
+  .guide {
+    display: none;
+  }
+  .newGuide {
+    height: 150px !important;
+    width: 100% !important;
+  }
+  .mobileimg {
+    display: none;
+  }
+  .swiper-pagination-bullet {
+    width: 15px !important;
+    height: 2px !important;
+  }
+  .guidePic .title {
+    bottom: -7px !important;
+    left: 6px !important;
+  }
+  .swiper-pagination-bullets {
+    bottom: 0 !important;
+  }
+  .guidePic {
+    width: 100% !important;
+  }
+  .swiper-container {
+    border-radius: 4px !important;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+  .book-sidebar {
+    .book-menu {
+      top: 3.5rem !important;
+    }
+    .book-brand {
+      padding-top: 1.2rem;
+      height: calc(3.6rem + 4px) !important;
+      a {
+        zoom: 0.9;
+        margin-left: 40px;
+      }
+    }
+  }
+  .des {
+    zoom: 0.7;
+  }
+  .swiper-pagination-bullet {
+    border-radius: 2px !important;
+  }
+}
