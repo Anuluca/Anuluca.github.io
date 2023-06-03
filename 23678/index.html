@@ -1,7 +1,6 @@
-<!doctype HTML>
+<!DOCTYPE html>
 <html lang="zh-CN">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="Anuluca的个人网站">
@@ -52,11 +51,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <meta name="generator" content="Hexo 6.0.0"></head>
 
-<body>
+  <body>
+    <div class="body-color">
+      <div class="body-color night"></div>
+      <div class="star-back night"></div>
+    </div>
 
-<div class="book-container">
-  <div class="book-sidebar">
-    <div class="book-brand">
+    <!-- <div class="body-color">
+      <div
+        :class="{
+          'body-color': true,
+          dawn: props.theme === 'dawn',
+          light: props.theme === 'light',
+          night: props.ifDarken
+        }"
+      ></div>
+      <div
+        :class="{ 'star-back': true, dawn: props.theme === 'dawn', light: props.theme === 'light' }"
+      ></div>
+    </div> -->
+
+    <div class="book-container">
+      <div class="book-sidebar">
+        <div class="book-brand">
   <a href="/">
     <!-- <img src="/favicon.png"> -->
     <div>
@@ -65,8 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <span>路卡的自由庭院岛</span>
   </a>
 </div>
-
-    <div class="book-menu scrollbar">
+ <div class="book-menu scrollbar">
   <ul>
 <li><a href="/"><img src="https://z3.ax1x.com/2021/08/03/fPOGP1.png" class="l_logo"> 广场</a></li>
 <li><a href="/34223"><img src="https://z3.ax1x.com/2021/08/03/fiCMq0.png" class="l_logo"> 公告栏</a></li>
@@ -76,6 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
 * [__1__ 五线谱基础知识](/24257) -->
 <h2 id="Javascript-CSS">Javascript/CSS</h2>
 <ul>
+<li><a href="/60132"><strong>24</strong> 常用utils整合</a></li>
 <li><a href="/9271"><strong>23</strong> 处理blob文件下载抛出json格式异常的问题</a></li>
 <li><a href="/17809"><strong>22</strong> 伪类和伪元素的区别</a></li>
 <li><a href="/28283"><strong>21</strong> CSS三角形</a></li>
@@ -112,6 +129,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </ul>
 <h2 id="Element-Antd">Element/Antd</h2>
 <ul>
+<li><a href="/54307"><strong>7</strong> el-table配合sortablejs实现拖拽</a></li>
 <li><a href="/42656"><strong>6</strong> elementUI相同元素合并行</a></li>
 <li><a href="/51249"><strong>5</strong> 去除elementUI打开drawer自带的蓝色框</a></li>
 <li><a href="/527"><strong>4</strong> 监听ElementUItable滚动事件</a></li>
@@ -166,20 +184,49 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <script src="/js/book-menu.js"></script>
 
-    <div class="book-sidebar-bottom">
-      <div class="backlogo" onClick='toOldSite()'>FLASHBACK_</div>
-      <div class="theme-change">
-        <span id="toDarkButton" onClick='changeThemeButton("dark")'>
-          <svg t="1648869433208" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1247" width="200" height="200"><path d="M512 256c-140.8 0-256 115.2-256 256s115.2 256 256 256 256-115.2 256-256-115.2-256-256-256z m0-85.333333c25.6 0 42.666667-17.066667 42.666667-42.666667V42.666667c0-25.6-17.066667-42.666667-42.666667-42.666667s-42.666667 17.066667-42.666667 42.666667v85.333333c0 25.6 17.066667 42.666667 42.666667 42.666667z m0 682.666666c-25.6 0-42.666667 17.066667-42.666667 42.666667v85.333333c0 25.6 17.066667 42.666667 42.666667 42.666667s42.666667-17.066667 42.666667-42.666667v-85.333333c0-25.6-17.066667-42.666667-42.666667-42.666667zM209.066667 268.8c17.066667 17.066667 42.666667 17.066667 59.733333 4.266667 21.333333-17.066667 21.333333-42.666667 4.266667-59.733334l-4.266667-4.266666-59.733333-59.733334c-17.066667-17.066667-42.666667-17.066667-59.733334-4.266666s-17.066667 42.666667-4.266666 59.733333l4.266666 4.266667 59.733334 59.733333z m605.866666 482.133333c-17.066667-17.066667-42.666667-12.8-59.733333 4.266667-17.066667 17.066667-17.066667 42.666667 0 59.733333l59.733333 59.733334c17.066667 17.066667 42.666667 17.066667 59.733334 4.266666s17.066667-42.666667 4.266666-59.733333l-4.266666-4.266667-59.733334-64zM170.666667 512c0-25.6-17.066667-42.666667-42.666667-42.666667H42.666667c-25.6 0-42.666667 17.066667-42.666667 42.666667s17.066667 42.666667 42.666667 42.666667h85.333333c25.6 0 42.666667-17.066667 42.666667-42.666667z m810.666666-42.666667h-85.333333c-25.6 0-42.666667 17.066667-42.666667 42.666667s17.066667 42.666667 42.666667 42.666667h85.333333c25.6 0 42.666667-17.066667 42.666667-42.666667s-17.066667-42.666667-42.666667-42.666667zM209.066667 750.933333L149.333333 810.666667c-17.066667 17.066667-17.066667 42.666667-4.266666 59.733333s42.666667 17.066667 59.733333 4.266667l4.266667-4.266667L268.8 810.666667c17.066667-17.066667 17.066667-42.666667 4.266667-59.733334s-42.666667-17.066667-64 0z m576-469.333333c12.8 0 21.333333-4.266667 29.866666-12.8l59.733334-59.733333c17.066667-17.066667 17.066667-42.666667 4.266666-59.733334-17.066667-17.066667-42.666667-17.066667-59.733333-4.266666l-4.266667 4.266666-59.733333 59.733334c-17.066667 17.066667-17.066667 42.666667 0 59.733333 4.266667 8.533333 17.066667 12.8 29.866667 12.8z" p-id="1248"></path></svg>
-        </span>
-        <span id="toLightButton" onClick='changeThemeButton("light")'>
-          <svg t="1648869509392" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6303" width="200" height="200"><path d="M930.133333 520.533333c-12.8-17.066667-38.4-21.333333-59.733333-8.533333-115.2 85.333333-273.066667 59.733333-358.4-55.466667-34.133333-42.666667-51.2-98.133333-51.2-149.333333 0-55.466667 17.066667-106.666667 46.933333-153.6 12.8-21.333333 8.533333-46.933333-8.533333-59.733333-8.533333-8.533333-17.066667-8.533333-29.866667-8.533334-234.666667 21.333333-405.333333 230.4-384 465.066667s230.4 405.333333 465.066667 384c200.533333-21.333333 358.4-174.933333 384-375.466667 4.266667-12.8 4.266667-29.866667-4.266667-38.4z" p-id="6304" fill="#bfbfbf"></path></svg>
-        </span>
+        <div class="book-sidebar-bottom">
+          <div class="backlogo" onClick="toOldSite()">FLASHBACK_</div>
+          <div class="theme-change">
+            <span id="toDarkButton" onClick='changeThemeButton("dark")'>
+              <svg
+                t="1648869433208"
+                class="icon"
+                viewBox="0 0 1024 1024"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                p-id="1247"
+                width="200"
+                height="200"
+              >
+                <path
+                  d="M512 256c-140.8 0-256 115.2-256 256s115.2 256 256 256 256-115.2 256-256-115.2-256-256-256z m0-85.333333c25.6 0 42.666667-17.066667 42.666667-42.666667V42.666667c0-25.6-17.066667-42.666667-42.666667-42.666667s-42.666667 17.066667-42.666667 42.666667v85.333333c0 25.6 17.066667 42.666667 42.666667 42.666667z m0 682.666666c-25.6 0-42.666667 17.066667-42.666667 42.666667v85.333333c0 25.6 17.066667 42.666667 42.666667 42.666667s42.666667-17.066667 42.666667-42.666667v-85.333333c0-25.6-17.066667-42.666667-42.666667-42.666667zM209.066667 268.8c17.066667 17.066667 42.666667 17.066667 59.733333 4.266667 21.333333-17.066667 21.333333-42.666667 4.266667-59.733334l-4.266667-4.266666-59.733333-59.733334c-17.066667-17.066667-42.666667-17.066667-59.733334-4.266666s-17.066667 42.666667-4.266666 59.733333l4.266666 4.266667 59.733334 59.733333z m605.866666 482.133333c-17.066667-17.066667-42.666667-12.8-59.733333 4.266667-17.066667 17.066667-17.066667 42.666667 0 59.733333l59.733333 59.733334c17.066667 17.066667 42.666667 17.066667 59.733334 4.266666s17.066667-42.666667 4.266666-59.733333l-4.266666-4.266667-59.733334-64zM170.666667 512c0-25.6-17.066667-42.666667-42.666667-42.666667H42.666667c-25.6 0-42.666667 17.066667-42.666667 42.666667s17.066667 42.666667 42.666667 42.666667h85.333333c25.6 0 42.666667-17.066667 42.666667-42.666667z m810.666666-42.666667h-85.333333c-25.6 0-42.666667 17.066667-42.666667 42.666667s17.066667 42.666667 42.666667 42.666667h85.333333c25.6 0 42.666667-17.066667 42.666667-42.666667s-17.066667-42.666667-42.666667-42.666667zM209.066667 750.933333L149.333333 810.666667c-17.066667 17.066667-17.066667 42.666667-4.266666 59.733333s42.666667 17.066667 59.733333 4.266667l4.266667-4.266667L268.8 810.666667c17.066667-17.066667 17.066667-42.666667 4.266667-59.733334s-42.666667-17.066667-64 0z m576-469.333333c12.8 0 21.333333-4.266667 29.866666-12.8l59.733334-59.733333c17.066667-17.066667 17.066667-42.666667 4.266666-59.733334-17.066667-17.066667-42.666667-17.066667-59.733333-4.266666l-4.266667 4.266666-59.733333 59.733334c-17.066667 17.066667-17.066667 42.666667 0 59.733333 4.266667 8.533333 17.066667 12.8 29.866667 12.8z"
+                  p-id="1248"
+                ></path>
+              </svg>
+            </span>
+            <span id="toLightButton" onClick='changeThemeButton("light")'>
+              <svg
+                t="1648869509392"
+                class="icon"
+                viewBox="0 0 1024 1024"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                p-id="6303"
+                width="200"
+                height="200"
+              >
+                <path
+                  d="M930.133333 520.533333c-12.8-17.066667-38.4-21.333333-59.733333-8.533333-115.2 85.333333-273.066667 59.733333-358.4-55.466667-34.133333-42.666667-51.2-98.133333-51.2-149.333333 0-55.466667 17.066667-106.666667 46.933333-153.6 12.8-21.333333 8.533333-46.933333-8.533333-59.733333-8.533333-8.533333-17.066667-8.533333-29.866667-8.533334-234.666667 21.333333-405.333333 230.4-384 465.066667s230.4 405.333333 465.066667 384c200.533333-21.333333 358.4-174.933333 384-375.466667 4.266667-12.8 4.266667-29.866667-4.266667-38.4z"
+                  p-id="6304"
+                  fill="#bfbfbf"
+                ></path>
+              </svg>
+            </span>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+      <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
   <div class="sidebar-toggle-inner"></div>
 </div>
 
@@ -211,11 +258,10 @@ function sidebar_toggle() {
 }
 </script>
 
-  <div class="off-canvas-content">
-    <div class="columns">
-      <div class="column col-10 col-lg-12">
-        <div class="book-navbar">
-          <!-- For Responsive Layout -->
+      <div class="off-canvas-content">
+        <div class="columns">
+          <div class="column col-10 col-lg-12">
+            <div class="book-navbar"><!-- For Responsive Layout -->
 
 <header class="navbar">
   <section class="navbar-section">
@@ -224,16 +270,488 @@ function sidebar_toggle() {
     </a>
   </section>
 </header>
-
-        </div>
-        <div class="book-content">
-          <div class="book-post">
+</div>
+            <div class="book-content"><div class="book-post">
   <style>
     .book-post .note p{
       font-size: 1.2rem !important;
     }
 </style>
-<div class="book-post-custom-title"> 宝可梦后院 </div>
+<div class="book-post-custom-title" style="margin-top:10px"> 宝可梦后院 </div>
+<div class="book-post-custom-describe">数据更新时间：2022年1月31日</div>
+<div class="pokemon-small-title">数据中心</div>
+<div class="pokemon-data-list">
+  <div class="full-saikyo-container">
+    <div class="whatNameSaikyo">
+        <img class="saikyo-img" src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/bigImg/600px-448Lucario.png"/>
+        <span class="saikyo-describe full">全能力最强</span>
+        <div class="saikyo-name">
+          <p>Anu</p>
+          <img class="saikyo-prod" src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/宝可梦_白_商标_日文.png"/>
+        </div>
+    </div>
+    <div id="saikyoRadar"></div>
+  </div>
+  <div class="pokemon-container">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
+              <div>
+                  <img class="saikyo-img" src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/bigImg/1200px-900Kleavor.png"/>
+                  <span class="saikyo-describe atk">最强物攻</span>
+                  <div class="saikyo-name">
+                    <p >P口P</p>
+                    <img class="saikyo-prod" src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/宝可梦传说_阿尔宙斯_商标_简体中文.png"/>
+                  </div>
+              </div>
+          </div>
+          <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
+              <div>
+                  <img class="saikyo-img" src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/bigImg/1200px-900Kleavor.png"/>
+                  <span class="saikyo-describe spa">最强特攻</span>
+                  <div class="saikyo-name">
+                    <p >P口P</p>
+                    <img class="saikyo-prod" src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/宝可梦传说_阿尔宙斯_商标_简体中文.png"/>
+                  </div>
+              </div>
+          </div>
+          <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
+              <div>
+                  <img class="saikyo-img" src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/bigImg/1200px-900Kleavor.png"/>
+                  <span class="saikyo-describe def">最强物防</span>
+                  <div class="saikyo-name">
+                    <p >P口P</p>
+                    <img class="saikyo-prod" src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/宝可梦传说_阿尔宙斯_商标_简体中文.png"/>
+                  </div>
+              </div>
+          </div>
+          <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
+              <div>
+                  <img class="saikyo-img" src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/bigImg/1200px-900Kleavor.png"/>
+                  <span class="saikyo-describe spd">最强特防</span>
+                  <div class="saikyo-name">
+                    <p >P口P</p>
+                    <img class="saikyo-prod" src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/宝可梦传说_阿尔宙斯_商标_简体中文.png"/>
+                  </div>
+              </div>
+          </div>
+          <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
+              <div>
+                  <img class="saikyo-img" src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/bigImg/1200px-900Kleavor.png"/>
+                  <span class="saikyo-describe hp">最强HP</span>
+                  <div class="saikyo-name">
+                    <p >P口P</p>
+                    <img class="saikyo-prod" src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/宝可梦传说_阿尔宙斯_商标_简体中文.png"/>
+                  </div>
+              </div>
+          </div>
+          <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
+              <div>
+                  <img class="saikyo-img" src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/bigImg/1200px-900Kleavor.png"/>
+                  <span class="saikyo-describe sp">最强速度</span>
+                  <div class="saikyo-name">
+                    <p >P口P</p>
+                    <img class="saikyo-prod" src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/icons/宝可梦传说_阿尔宙斯_商标_简体中文.png"/>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- 如果需要分页器 -->
+      <div class="swiper-pagination"></div>
+      <!-- 如果需要导航按钮 -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+  </div>
+</div>
+<div class="pokemon-count-container">
+    <div>
+      <p>总时长(小时)</p>
+      <div>68</div>
+    </div>
+    <div>
+      <p>总数量(通关宝)</p>
+      <div>68</div>
+    </div>
+    <div>
+      <p>总数量(异色宝)</p>
+      <div>68</div>
+    </div>
+    <div>
+      <p>已通关版本</p>
+      <div>68</div>
+    </div>
+    <div>
+      <p>未通关版本</p>
+      <div>68</div>
+    </div>
+  </div>
+<div id="typeLine"></div>
+<div id="gameTimeLine"></div>
+<div id="levelLine"></div>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.4.2/dist/echarts.min.js"></script>
+<script src="../js/dataList.js"></script>
+<script>
+  // 最强
+  var saikyoRadarChartDom = document.getElementById('saikyoRadar');
+  var saikyoRadarMyChart = echarts.init(saikyoRadarChartDom);
+  let saikyoOption = {
+    radar: {
+      splitNumber: 2, // 雷达图圈数设置
+      indicator: [
+        { name: 'HP' },
+        { name: '攻击' },
+        { name: '防御' },
+        { name: '特攻' },
+        { name: '特防' },
+        { name: '速度' }
+      ],
+      axisLine: {
+        lineStyle: {
+          color: "#013A3F",
+        },
+      },
+      splitArea: {
+        show: false,
+        areaStyle: {
+          color: "rgba(255,0,0,0)", // 图表背景的颜色
+        },
+      },
+      splitLine: {
+        show: true,
+        lineStyle: {
+          width: 1,
+          color: "#007781", // 设置网格的颜色
+        },
+      },
+      name: {
+        textStyle: {
+          color: "#8D8D8D",
+          fontSize: 10,
+          fontWeight: "500",
+          fontStyle:'italic',
+          padding: 0,
+        },
+      },
+    },
+    series: [
+      {
+        type: 'radar',
+        data: [
+          {
+            value: [120, 130, 60, 80, 100, 180],
+            symbolSize: 2,
+            symbolColor: "#47EDFC",
+            areaStyle: { color: "rgba(71,237,252,.3)" }, //雷达覆盖区域背景颜色
+            lineStyle: { color: "#47EDFC" },
+            itemStyle: { color: "#47EDFC" },
+            label: {
+              show: true,
+              textBorderColor:'#000',
+              color:'#fff',
+              formatter: function (params) {
+                return params.value;
+              }
+            }
+          }
+        ],
+      }
+    ]
+  }
+saikyoOption && saikyoRadarMyChart.setOption(saikyoOption);
+// 属性列表
+var typeLineChartDom = document.getElementById('typeLine');
+  var typeLineMyChart = echarts.init(typeLineChartDom);
+  let typeLineOption = {
+   title: {
+    text: '属性数量',
+    subtext: '包括双属性宝可梦',
+    textStyle:{
+      color:'#fff'
+    },
+    top:30,
+    left:30
+  },  
+    tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      type: 'shadow'
+    }
+  },
+  grid: {
+    left: '7%',
+    right: '3%',
+    bottom: '8%',
+    top: '20%',
+    containLabel: true
+  },
+  xAxis: {
+    axisLine: {
+      show: true,
+      lineStyle: {
+        color: '#fff'
+      }
+    },
+    type: 'category',
+    data: ['一般', '火', '水', '电', '草', '冰', '格斗', 
+    '毒', '地面', '飞行', '超能力', '虫', '岩石', '幽灵', '龙', '恶','钢','妖精'],
+    "axisLabel":{
+      interval: 0
+      }
+  },
+  yAxis: {
+    type: 'value',
+    axisLine: {
+      show: true,
+      lineStyle: {
+        color: '#fff'
+      }
+    },
+    formatter: "{value} 只",
+  },
+  series: [
+    {
+      label: {
+        show: true,
+        position: 'inside'
+      },
+      markLine:{
+        label:{
+          show:true,
+          formatter:'最大值'
+        },
+        lineStyle:{
+          type:'dashed'
+        },
+        data:[[{type:'min'},{type:'max'}]]
+      },
+      data: typeList,
+      type: 'bar'
+    }
+  ]
+};
+typeLineOption && typeLineMyChart.setOption(typeLineOption);
+// 游戏时间列表
+var gameTimeLineChartDom = document.getElementById('gameTimeLine');
+  var gameTimeLineChart = echarts.init(gameTimeLineChartDom);
+  let gameTimeLineOption = {
+  title: {
+    text: '游戏时长',
+    subtext: '多版本取总和',
+    textStyle: {
+      color: '#fff'
+    },
+    top:30,
+    left:30
+  },
+  tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      type: 'shadow'
+    },
+    formatter: function (params) {
+      let res = '';
+      let unit = '';
+      params.forEach((item, index) => {
+        unit += item.data + '小时 ';
+        if (item.data !== 0) {
+          res += item.marker + item.seriesName + ':  ' + unit + '<br/>';
+        }
+        unit = '';
+      });
+      return res;
+    }
+  },
+  grid: {
+    left: '5%',
+    right: '3%',
+    bottom: '8%',
+    top: '14%',
+    containLabel: true
+  },
+  xAxis: [
+    {
+      type: 'value',
+      axisLabel: {
+        interval: 0
+      },
+          axisLabel: {
+        formatter: '{value} 小时'
+      },
+    axisLine: {
+      show: true,
+      lineStyle: {
+        color: '#fff'
+      }
+    },
+    }
+  ],
+  yAxis: [
+    {
+      type: 'category',
+      data: [
+        '四色',
+        'GSC',
+        '宝石',
+        '火叶',
+        'DPPT',
+        'HGSS',
+        '黑白',
+        '黑白2',
+        'XY',
+        '四色VC',
+        'GSC VC',
+        'ORAS',
+        '日月',
+        'LGPE',
+        '剑盾',
+        '阿尔宙斯',
+        'BDSP',
+        '朱紫'
+      ],
+ axisLine: {
+      show: true,
+      lineStyle: {
+        color: '#fff'
+      },
+    },
+    }
+  ],
+  series:gameTimeList
+  };
+  gameTimeLineOption && gameTimeLineChart.setOption(gameTimeLineOption);
+  // 等级列表
+var levelLineChartDom = document.getElementById('levelLine');
+  var levelLineChart = echarts.init(levelLineChartDom);
+  let levelLineOption = {
+  title: {
+    text: '平均等级',
+    subtext: '多版本取总和',
+    textStyle: {
+      color: '#fff'
+    },
+    top:30,
+    left:30
+  },
+  tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      type: 'shadow'
+    },
+    // formatter: function (params) {
+    //   let res = '';
+    //   let unit = '';
+    //   params.forEach((item, index) => {
+    //     unit += 'Lv.',item.data;
+    //     if (item.data !== 0) {
+    //       res += item.marker + item.seriesName + ':  ' + unit + '<br/>';
+    //     }
+    //     unit = '';
+    //   });
+    //   return res;
+    // }
+  },
+  grid: {
+    left: '5%',
+    right: '3%',
+    bottom: '8%',
+    top: '20%',
+    containLabel: true
+  },
+  xAxis: [
+    {
+      type: 'category',
+      axisLabel: {
+        interval: 0
+      },
+       data: [
+        '四色',
+        'GSC',
+        '宝石',
+        '火叶',
+        'DPPT',
+        'HGSS',
+        '黑白',
+        '黑白2',
+        'XY',
+        '四色VC',
+        'GSC VC',
+        'ORAS',
+        '日月',
+        'LGPE',
+        '剑盾',
+        '阿尔宙斯',
+        'BDSP',
+        '朱紫'
+      ],
+    axisLine: {
+      show: true,
+      lineStyle: {
+        color: '#fff'
+      }
+    },
+    }
+  ],
+  yAxis: [
+    {
+      type: 'value',
+      axisLine: {
+        show: true,
+        lineStyle: {
+          color: '#fff'
+        },
+      },
+       axisLabel: {
+        formatter: 'Lv.{value}'
+      },
+    }
+  ],
+  series:[
+    {
+      label: {
+        show: true,
+        position: 'top',
+        textBorderColor:'#000',
+              color:'#fff',
+      },
+      lineStyle: {
+        color: '#366BB1',
+        width: 5,
+      },
+      markPoint: {
+        data: [
+          { type: 'max', name: 'Max' },
+          { type: 'min', name: 'Min' }
+        ]
+      },
+      markLine: {
+        data: [{ type: 'average', name: 'Avg' ,lineStyle: {
+        color: '#366BB1',
+        width: 3,
+      },}]
+      },
+      areaStyle: {
+        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+          {
+            offset: 0,
+            color: '#F6D247'
+          },
+          {
+            offset: 1,
+            color: '#CBAD39'
+          }
+        ])
+      },
+      data: [10,20,30,40,50,60,70,80,90,100,90,80,70,60,50,40,30,20],
+      type: 'line'
+    }
+  ]
+  };
+  levelLineOption && levelLineChart.setOption(levelLineOption);
+</script>
+<div class="pokemon-small-title">游戏记录 正统作</div>
+<h2 id="第九世代">第九世代</h2>
+<div class="pokemon-generation s-pic">
+  <a href="/32019"><div class="platform-pic"></div></a><div class="platform-name">宝可梦 朱</div>
+</div>
 <h2 id="第八世代">第八世代</h2>
 <div class="pokemon-generation sw-pic">
   <a href="/32019"><div class="platform-pic"></div></a><div class="platform-name">宝可梦 剑</div>
@@ -248,6 +766,12 @@ function sidebar_toggle() {
 <div class="pokemon-generation sun-pic">
   <a href="/32022"><div class="platform-pic"></div></a><div class="platform-name">精灵宝可梦 太阳</div>
 </div>
+<div class="pokemon-generation moon-pic">
+  <a href="/32022"><div class="platform-pic"></div></a><div class="platform-name">精灵宝可梦 月亮</div>
+</div>
+<div class="pokemon-generation eevee-pic">
+  <a href="/32022"><div class="platform-pic"></div></a><div class="platform-name" style="font-size:20px">精灵宝可梦 Let's go！伊布</div>
+</div>
 <h2 id="第六世代">第六世代</h2>
 <div class="pokemon-generation x-pic">
   <a href="/32021"><div class="platform-pic"></div></a><div class="platform-name">宝可梦 X</div>
@@ -258,6 +782,9 @@ function sidebar_toggle() {
 <h2 id="第五世代">第五世代</h2>
 <div class="pokemon-generation white-pic">
   <a href="/37952"><div class="platform-pic"></div></a><div class="platform-name">宝可梦 白</div>
+</div>
+<div class="pokemon-generation white2-pic">
+  <a href="/32022"><div class="platform-pic"></div></a><div class="platform-name">宝可梦 白2</div>
 </div>
 <h2 id="第四世代">第四世代</h2>
 <div class="pokemon-generation diamond-pic">
@@ -340,7 +867,7 @@ function sidebar_toggle() {
 <div class="pokemon-generation ranger3-pic">
   <a href="/404"><div class="platform-pic"></div></a><div class="platform-name">宝可梦巡护员 光的轨迹</div>
 </div> -->
-<h2 id="§-游戏相关攻略整理">§ 游戏相关攻略整理</h2>
+<!-- ## § 游戏相关攻略整理 -->
 <!-- - [从第一世代到第八世代 - 全世代宝可梦传送攻略](/404) -->
 <!-- ### 第一世代 -->
 <!-- - [《宝可梦：红》二周目全流程+全特殊宝可梦攻略](/404) -->
@@ -411,7 +938,9 @@ function sidebar_toggle() {
 
 - [《Pokemon 25th 纪念短片》](/404)
 - [《Gotcha！》](/404) -->
-
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> 
+<script src="/js/pokemon.js"></script>
   <a onclick="go_top()"
     ><div class="to_top"><div class="to-top-triangle"></div></div
   ></a>
@@ -444,6 +973,7 @@ function sidebar_toggle() {
   <div class="gitalk_btn"><b>使用Github账号评论</b></div>
   <div class="moving"></div>
 </div>
+<div class="footer-com"></div>
 <div>&nbsp;</div>
 
 <div class="book-comments">
@@ -512,11 +1042,10 @@ function sidebar_toggle() {
  
 <script src="/js/book-post.js"></script>
 
-
-        </div>
-      </div>
-      <div class="column col-2 hide-lg">
-        <div class="book-post-info">
+</div>
+          </div>
+          <div class="column col-2 hide-lg">
+            <div class="book-post-info">
   
     <div class="book-post-meta">
 
@@ -546,50 +1075,48 @@ function sidebar_toggle() {
 
   <div class="book-tocbot"></div>
 
-<div class="book-tocbot-menu" style="position: fixed; bottom: 0px">
-  <div class="bottom">
-    <span>
-      <p>優しい人にならなくちゃ,</p>
-      <p>心が悴む前に。</p>
-    </span>
-    <div class="links">
-      <a target="_blank" rel="noopener" href="https://twitter.com/TILucario" class="link_l">
-        <div
-          style="
-            background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dabyWQ.png');
-          "
-        ></div>
-        <span>推特</span></a
-      >
-      <a target="_blank" rel="noopener" href="https://space.bilibili.com/128735968" class="link_l">
-        <div
-          style="
-            background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dabrFS.png');
-          "
-        ></div>
-        <span>Bilibili</span></a
-      >
-      <a target="_blank" rel="noopener" href="https://weibo.com/ryugamine" class="link_l">
-        <div
-          style="
-            background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dabrFS.png');
-          "
-        ></div>
-        <span>微博</span></a
-      >
-      <a target="_blank" rel="noopener" href="https://github.com/Anuluca" class="link_l">
-        <div
-          style="
-            background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dabBo8.png');
-          "
-        ></div>
-        <span>Github</span></a
-      >
-    </div>
-    <div class="languages">
-      中文 &nbsp;&nbsp;|&nbsp;&nbsp;
-      <a target="_blank" rel="noopener" href="http://AnulucaEn.github.io" class="english">English</a>
-    </div>
+<div class="bottom">
+  <span>
+    <p>優しい人にならなくちゃ,</p>
+    <p>心が悴む前に。</p>
+  </span>
+  <div class="links">
+    <a target="_blank" rel="noopener" href="https://twitter.com/TILucario" class="link_l">
+      <div
+        style="
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dabyWQ.png');
+        "
+      ></div>
+      <span>推特</span></a
+    >
+    <a target="_blank" rel="noopener" href="https://space.bilibili.com/128735968" class="link_l">
+      <div
+        style="
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dabrFS.png');
+        "
+      ></div>
+      <span>Bilibili</span></a
+    >
+    <a target="_blank" rel="noopener" href="https://weibo.com/ryugamine" class="link_l">
+      <div
+        style="
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dabrFS.png');
+        "
+      ></div>
+      <span>微博</span></a
+    >
+    <a target="_blank" rel="noopener" href="https://github.com/Anuluca" class="link_l">
+      <div
+        style="
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dabBo8.png');
+        "
+      ></div>
+      <span>Github</span></a
+    >
+  </div>
+  <div class="languages">
+    中文 &nbsp;&nbsp;|&nbsp;&nbsp;
+    <a target="_blank" rel="noopener" href="http://AnulucaEn.github.io" class="english">English</a>
   </div>
 </div>
 
@@ -597,28 +1124,104 @@ function sidebar_toggle() {
 
 
 </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <!-- <div class="down-line-zhanwei"></div>
+      <!-- <div class="down-line-zhanwei"></div>
   <div class="down-line"></div> -->
-  <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
-</div>
-<div class="bottomline"></div>
-<script src="/js/custom.js"></script>
-<div class="clipboard_success">&nbsp;&nbsp;复制成功！</div>
+      <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+    </div>
+    <div class="bottomline"></div>
+    <script src="/js/nprogress.js"></script>
+    <link rel="stylesheet" href="/css/nprogress.css" />
+    <script src="/js/custom.js"></script>
+    <div class="clipboard_success">&nbsp;&nbsp;复制成功！</div>
 
-<!-- 切换主题的动画效果 -->
-<div class="change_theme_animes">
-  <div id="cantSeeAnything_white" style="position: fixed;top:0;left:0;right:0;bottom:0;background-color: white;z-index: 999;opacity:0;display:none"></div>
-  <div id="cantSeeAnything_black" style="position: fixed;top:0;left:0;right:0;bottom:0;background-color: black;z-index: 999;opacity:0;display:none"></div>
-  <img id="nike_shine" src="/necrozma_shine.PNG" style="position: fixed;z-index:998;bottom: -400px;margin:0 auto;width: 400px;left: calc(50% - 200px);"/>
-  <img id="nike_dark" src="/necrozma_dark.PNG" style="position: fixed;z-index:998;bottom: -400px;margin:0 auto;width: 400px;left: calc(50% - 200px);"/>
-  <img id="shine" src="/tempshine.png" style="position: fixed;z-index:997;bottom: -100px;margin:0 auto;width: 100px;height:100px;left: calc(50% - 50px);opacity:0"/>
-  <img id="absorb" src="/tempshine.png" style="position: fixed;z-index:997;bottom: -100vh;margin:0 auto;width: 100vw;height:100vh;opacity:0"/>
-</div>
-</body>
+    <!-- 切换主题的动画效果 -->
+    <div class="change_theme_animes">
+      <div
+        id="cantSeeAnything_white"
+        style="
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: white;
+          z-index: 999;
+          opacity: 0;
+          display: none;
+        "
+      ></div>
+      <div
+        id="cantSeeAnything_black"
+        style="
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: black;
+          z-index: 999;
+          opacity: 0;
+          display: none;
+        "
+      ></div>
+      <img
+        id="nike_shine"
+        src="/necrozma_shine.PNG"
+        style="
+          position: fixed;
+          z-index: 998;
+          bottom: -400px;
+          margin: 0 auto;
+          width: 400px;
+          left: calc(50% - 200px);
+        "
+      />
+      <img
+        id="nike_dark"
+        src="/necrozma_dark.PNG"
+        style="
+          position: fixed;
+          z-index: 998;
+          bottom: -400px;
+          margin: 0 auto;
+          width: 400px;
+          left: calc(50% - 200px);
+        "
+      />
+      <img
+        id="shine"
+        src="/tempshine.png"
+        style="
+          position: fixed;
+          z-index: 997;
+          bottom: -100px;
+          margin: 0 auto;
+          width: 100px;
+          height: 100px;
+          left: calc(50% - 50px);
+          opacity: 0;
+        "
+      />
+      <img
+        id="absorb"
+        src="/tempshine.png"
+        style="
+          position: fixed;
+          z-index: 997;
+          bottom: -100vh;
+          margin: 0 auto;
+          width: 100vw;
+          height: 100vh;
+          opacity: 0;
+        "
+      />
+    </div>
+  </body>
 </html>
 
 
 <script src="/js/book.js"></script>
+
