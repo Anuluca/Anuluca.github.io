@@ -1,7 +1,3 @@
-.book-menu,
-.book-brand {
-  background-color: #242426 !important; }
-
 .off-canvas-content,
 .articleBottom b,
 .cutline b,
@@ -178,9 +174,6 @@ a {
 @media (max-width: 959px) {
   .book-brand a {
     margin-left: 32px !important; } }
-
-.book-navbar {
-  background-color: #1c1c1e !important; }
 
 .star-back.night .star {
   background: #f7f7b6; }
