@@ -81,7 +81,10 @@ document.addEventListener('DOMContentLoaded', function () {
   <a href="/">
     <!-- <img src="/favicon.png"> -->
     <div>
-      <img id="head_img" src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/g0rY8J.png" />
+      <img
+        id="head_img"
+        src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/g0rY8J.png"
+      />
     </div>
     <span>路卡的自由庭院岛</span>
   </a>
@@ -91,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <li><a href="/"><img src="https://z3.ax1x.com/2021/08/03/fPOGP1.png" class="l_logo"> 广场</a></li>
 <li><a href="/34223"><img src="https://z3.ax1x.com/2021/08/03/fiCMq0.png" class="l_logo"> 公告栏</a></li>
 </ul>
-<h1 id="img-src-https-z3-ax1x-com-2021-08-03-fiCUMR-png-class-l-logo-技术笔记"><a href="/14567"><img src="https://z3.ax1x.com/2021/08/03/fiCUMR.png" class="l_logo"> 技术笔记</a></h1>
+<h1 id="img-src-https-z3-ax1x-com-2021-08-03-fiCUMR-png-class-l-logo-前端笔记"><a href="/14567"><img src="https://z3.ax1x.com/2021/08/03/fiCUMR.png" class="l_logo"> 前端笔记</a></h1>
 <!-- ## 乐理笔记
 * [__1__ 五线谱基础知识](/24257) -->
 <h2 id="Javascript-CSS">Javascript/CSS</h2>
@@ -167,8 +170,8 @@ document.addEventListener('DOMContentLoaded', function () {
 <ul>
 <li><a href="/58027">关于开发中途弃坑的新版个人网站</a></li>
 <li><a href="/2285">「流水账」关于博客想记录的一些东西</a></li>
-<li><a href="/56511">2022不正确记忆</a></li>
-<li><a href="/48446">2020不正确记忆</a></li>
+<li><a href="/404">2022不正确记忆</a></li>
+<li><a href="/404">2020不正确记忆</a></li>
 <li><a href="/41678">Markdown Demo</a></li>
 </ul>
 <h2 id="工具">工具</h2>
@@ -188,81 +191,54 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <script src="/js/book-menu.js"></script>
 
-        <div class="book-sidebar-bottom">
-          <div class="backlogo" onClick="toOldSite()">FLASHBACK_</div>
-          <div class="theme-change">
-            <span id="toDarkButton" onClick='changeThemeButton("dark")'>
-              <svg
-                t="1648869433208"
-                class="icon"
-                viewBox="0 0 1024 1024"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                p-id="1247"
-                width="200"
-                height="200"
-              >
-                <path
-                  d="M512 256c-140.8 0-256 115.2-256 256s115.2 256 256 256 256-115.2 256-256-115.2-256-256-256z m0-85.333333c25.6 0 42.666667-17.066667 42.666667-42.666667V42.666667c0-25.6-17.066667-42.666667-42.666667-42.666667s-42.666667 17.066667-42.666667 42.666667v85.333333c0 25.6 17.066667 42.666667 42.666667 42.666667z m0 682.666666c-25.6 0-42.666667 17.066667-42.666667 42.666667v85.333333c0 25.6 17.066667 42.666667 42.666667 42.666667s42.666667-17.066667 42.666667-42.666667v-85.333333c0-25.6-17.066667-42.666667-42.666667-42.666667zM209.066667 268.8c17.066667 17.066667 42.666667 17.066667 59.733333 4.266667 21.333333-17.066667 21.333333-42.666667 4.266667-59.733334l-4.266667-4.266666-59.733333-59.733334c-17.066667-17.066667-42.666667-17.066667-59.733334-4.266666s-17.066667 42.666667-4.266666 59.733333l4.266666 4.266667 59.733334 59.733333z m605.866666 482.133333c-17.066667-17.066667-42.666667-12.8-59.733333 4.266667-17.066667 17.066667-17.066667 42.666667 0 59.733333l59.733333 59.733334c17.066667 17.066667 42.666667 17.066667 59.733334 4.266666s17.066667-42.666667 4.266666-59.733333l-4.266666-4.266667-59.733334-64zM170.666667 512c0-25.6-17.066667-42.666667-42.666667-42.666667H42.666667c-25.6 0-42.666667 17.066667-42.666667 42.666667s17.066667 42.666667 42.666667 42.666667h85.333333c25.6 0 42.666667-17.066667 42.666667-42.666667z m810.666666-42.666667h-85.333333c-25.6 0-42.666667 17.066667-42.666667 42.666667s17.066667 42.666667 42.666667 42.666667h85.333333c25.6 0 42.666667-17.066667 42.666667-42.666667s-17.066667-42.666667-42.666667-42.666667zM209.066667 750.933333L149.333333 810.666667c-17.066667 17.066667-17.066667 42.666667-4.266666 59.733333s42.666667 17.066667 59.733333 4.266667l4.266667-4.266667L268.8 810.666667c17.066667-17.066667 17.066667-42.666667 4.266667-59.733334s-42.666667-17.066667-64 0z m576-469.333333c12.8 0 21.333333-4.266667 29.866666-12.8l59.733334-59.733333c17.066667-17.066667 17.066667-42.666667 4.266666-59.733334-17.066667-17.066667-42.666667-17.066667-59.733333-4.266666l-4.266667 4.266666-59.733333 59.733334c-17.066667 17.066667-17.066667 42.666667 0 59.733333 4.266667 8.533333 17.066667 12.8 29.866667 12.8z"
-                  p-id="1248"
-                ></path>
-              </svg>
-            </span>
-            <span id="toLightButton" onClick='changeThemeButton("light")'>
-              <svg
-                t="1648869509392"
-                class="icon"
-                viewBox="0 0 1024 1024"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                p-id="6303"
-                width="200"
-                height="200"
-              >
-                <path
-                  d="M930.133333 520.533333c-12.8-17.066667-38.4-21.333333-59.733333-8.533333-115.2 85.333333-273.066667 59.733333-358.4-55.466667-34.133333-42.666667-51.2-98.133333-51.2-149.333333 0-55.466667 17.066667-106.666667 46.933333-153.6 12.8-21.333333 8.533333-46.933333-8.533333-59.733333-8.533333-8.533333-17.066667-8.533333-29.866667-8.533334-234.666667 21.333333-405.333333 230.4-384 465.066667s230.4 405.333333 465.066667 384c200.533333-21.333333 358.4-174.933333 384-375.466667 4.266667-12.8 4.266667-29.866667-4.266667-38.4z"
-                  p-id="6304"
-                  fill="#bfbfbf"
-                ></path>
-              </svg>
-            </span>
-          </div>
-        </div>
+        <div class="book-sidebar-bottom"></div>
       </div>
+      <div class="backlogo" onClick="toOldSite()">FLASHBACK</div>
 
-      <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+      <div
+  class="sidebar-toggle"
+  onclick="sidebar_toggle()"
+  onmouseover="add_inner()"
+  onmouseleave="remove_inner()"
+>
   <div class="sidebar-toggle-inner"></div>
 </div>
 
 <script>
-function add_inner() {
-  let inner = document.querySelector('.sidebar-toggle-inner')
-  inner.classList.add('show')  
-}
+  function add_inner() {
+    let inner = document.querySelector(".sidebar-toggle-inner");
+    inner.classList.add("show");
+  }
 
-function remove_inner() {
-  let inner = document.querySelector('.sidebar-toggle-inner')
-  inner.classList.remove('show')
-}
+  function remove_inner() {
+    let inner = document.querySelector(".sidebar-toggle-inner");
+    inner.classList.remove("show");
+  }
 
-function sidebar_toggle() {
-    let sidebar_toggle = document.querySelector('.sidebar-toggle')
-    let sidebar = document.querySelector('.book-sidebar')
-    let content = document.querySelector('.off-canvas-content')
-    if (sidebar_toggle.classList.contains('extend')) { // show
-        sidebar_toggle.classList.remove('extend')
-        sidebar.classList.remove('hide')
-        content.classList.remove('extend')
+  function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector(".sidebar-toggle");
+    let sidebar = document.querySelector(".book-sidebar");
+    let content = document.querySelector(".off-canvas-content");
+    let footerCom = document.querySelector(".footer-com");
+    if (sidebar_toggle.classList.contains("extend")) {
+      // show
+      sidebar_toggle.classList.remove("extend");
+      footerCom.style.left = "14rem";
+      sidebar.classList.remove("hide");
+      content.classList.remove("extend");
+    } else {
+      // hide
+      footerCom.style.left = "0";
+      sidebar_toggle.classList.add("extend");
+      sidebar.classList.add("hide");
+      content.classList.add("extend");
     }
-    else { // hide
-        sidebar_toggle.classList.add('extend')
-        sidebar.classList.add('hide')
-        content.classList.add('extend')
-    }
-}
+  }
 </script>
 
+
       <div class="off-canvas-content">
+        <div class="footer-com"></div>
         <div class="columns">
           <div class="column col-10 col-lg-12">
             <div class="book-navbar"><!-- For Responsive Layout -->
@@ -278,7 +254,7 @@ function sidebar_toggle() {
             <div class="book-content"><div class="book-post">
   <h1 id="swig￼9-font-color-gray-91-font">原型与原型链 <font color="gray">#91</font></h1>
 <p><strong>Anuluca</strong>     <strong>Date :</strong> 2021-01-12   <strong>Tags :</strong> 2</p>
-<div class = "articlehead" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/Games/animal_crossing/2020091821185400-02CB906EA538A35643C1E1484C4B947D.jpg')"></div>
+<div class = "articlehead" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/Games/animal_crossing/2020091821185400-02CB906EA538A35643C1E1484C4B947D.jpg')"></div>
 <h2 id="1-引入：构造函数创建实例对象">1.引入：构造函数创建实例对象</h2>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">Person</span>(<span class="params"></span>) &#123; </span><br><span class="line"></span><br><span class="line">&#125;<span class="comment">// Person为构造函数</span></span><br><span class="line"><span class="keyword">var</span> person = <span class="keyword">new</span> <span class="title class_">Person</span>();<span class="comment">// person为实例对象</span></span><br><span class="line">person.<span class="property">name</span> = <span class="string">&#x27;张三&#x27;</span>;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person.<span class="property">name</span>) <span class="comment">// 张三</span></span><br></pre></td></tr></table></figure>
 <h2 id="prototype">prototype</h2>
@@ -286,19 +262,19 @@ function sidebar_toggle() {
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">Person</span>(<span class="params"></span>) &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="title class_">Person</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">name</span> = <span class="string">&#x27;张三&#x27;</span>;</span><br><span class="line"><span class="keyword">var</span> person1 = <span class="keyword">new</span> <span class="title class_">Person</span>();</span><br><span class="line"><span class="keyword">var</span> person2 = <span class="keyword">new</span> <span class="title class_">Person</span>();</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person1.<span class="property">name</span>) <span class="comment">// 张三</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person2.<span class="property">name</span>) <span class="comment">// 张三</span></span><br></pre></td></tr></table></figure>
 <p>此时，函数的 prototype 属性指向了一个对象，这个对象就是当前实例对象的原型，也就是<code>person1</code>和<code>person2</code>的原型。<br>
 <strong>每一个js对象（函数也是对象）创建的时候都会关联一个“原型对象”，且继承它的原型属性</strong><br>
-<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/sYp7PU.png" alt=""><br>
+<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/sYp7PU.png" alt=""><br>
 prototype是<strong>构造函数</strong>指向<strong>原型</strong>的属性，那么该如何表示<strong>实例对象</strong>和<strong>原型</strong>之间的关系呢，这时候就要讲到第二个属性：</p>
 <h2 id="proto">__ proto __</h2>
 <p><strong>__proto__是每个js对象都有的属性，它会指向对象的原型。</strong></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">Person</span>(<span class="params"></span>)&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> person = <span class="keyword">new</span> <span class="title class_">Person</span>();</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(person.<span class="property">__proto_</span> === <span class="title class_">Person</span>.<span class="property"><span class="keyword">prototype</span></span>);  <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
 <p>将__proto__更新至关系图：<br>
-<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/stVyhn.png" alt=""></p>
+<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/stVyhn.png" alt=""></p>
 <p>既然构造函数和实例对象都有指向原型的属性，那么原型是否有属性指向构造函数和实例？</p>
 <h2 id="constructor">constructor</h2>
 <p>原型没有指向实例的属性，但有指向构造函数但属性，因为一个构造函数可以产生多个实例，所以不能直接指向实例。<strong>每个原型都有一个constructor属性指向构造函数</strong>。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">Person</span>(<span class="params"></span>)&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Person</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">constructor</span> == <span class="title class_">Person</span>); <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
 <p>将constructor更新至关系图：<br>
-<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/stZn4s.png" alt=""></p>
+<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/stZn4s.png" alt=""></p>
 <p>**补充：**person 中并没有 constructor 属性，原型才有，这里读取到的是person原型的consturctor属性。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">person.<span class="property">constructor</span> === <span class="title class_">Person</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">constructor</span></span><br></pre></td></tr></table></figure>
 <h2 id="初步总结">初步总结</h2>
@@ -312,7 +288,7 @@ prototype是<strong>构造函数</strong>指向<strong>原型</strong>的属性�
 <p>在前面讲到，原型也是个对象，毕竟原型也有属性可以指向构造函数，那么原型自然也可以有自己的原型。原型对象的创建方式：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="title class_">Object</span>();</span><br><span class="line">obj.<span class="property">name</span> = <span class="string">&#x27;Kevin&#x27;</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(obj.<span class="property">name</span>) <span class="comment">// Kevin</span></span><br></pre></td></tr></table></figure>
 <p>原型对象通过Object函数生成，结合上面的知识点，实例的__proto__指向构造函数的prototype，此时再更新关系图：<br>
-<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/ste7y6.png" alt=""><br>
+<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/ste7y6.png" alt=""><br>
 那么Object.prototype的原型呢：</p>
 <h2 id="原型链">原型链</h2>
 <p>此时我们尝试打印出来Object.prototype的原型：</p>
@@ -321,7 +297,7 @@ prototype是<strong>构造函数</strong>指向<strong>原型</strong>的属性�
 所以这里说明，<strong>Object.prototype 没有原型</strong>。<br>
 所以前面说的查找属性的时候查到 Object.prototype 就可以停止查找了。<br>
 更新关系图：<br>
-<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/stuPIg.png" alt=""><br>
+<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/stuPIg.png" alt=""><br>
 <strong>图中相互关联的原型组成的链状结构就是原型链，也就是蓝色的这条线。</strong></p>
 
   <a onclick="go_top()"
@@ -332,7 +308,7 @@ prototype是<strong>构造函数</strong>指向<strong>原型</strong>的属性�
 <div class="drink-time">
   <img
     style="text-align: center; margin-top: 20vh; width: 150px; opacity: 0.9"
-    src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/2F65x1.png"
+    src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/2F65x1.png"
   />
   <div style="text-align: center; margin-top: 20px; font-size: 20px">
     由于某些原因，博客图床于5月26日惨遭爆破，目前正在整理需要的图片并迁移存活的图片到新图床,预计6月10日重新上线网站
@@ -341,22 +317,23 @@ prototype是<strong>构造函数</strong>指向<strong>原型</strong>的属性�
 
 
 <div class="articleBottom">
+  <i></i>
   <b
     >&nbsp;&nbsp;<img
-      src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/goDrXd.gif"
+      src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/goDrXd.gif"
     />&nbsp;
     <div><span>THE END</span></div>
     &nbsp;<img
-      src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/god8aT.gif"
+      src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/god8aT.gif"
     />&nbsp;&nbsp;</b
   >
+  <i></i>
 </div>
 <div class="combtn">
   <div class="valine_btn"><b>游客评论</b></div>
   <div class="gitalk_btn"><b>使用Github账号评论</b></div>
   <div class="moving"></div>
 </div>
-<div class="footer-com"></div>
 <div>&nbsp;</div>
 
 <div class="book-comments">
@@ -476,7 +453,7 @@ prototype是<strong>构造函数</strong>指向<strong>原型</strong>的属性�
     <a target="_blank" rel="noopener" href="https://twitter.com/TILucario" class="link_l">
       <div
         style="
-          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dabyWQ.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabyWQ.png');
         "
       ></div>
       <span>推特</span></a
@@ -484,7 +461,7 @@ prototype是<strong>构造函数</strong>指向<strong>原型</strong>的属性�
     <a target="_blank" rel="noopener" href="https://space.bilibili.com/128735968" class="link_l">
       <div
         style="
-          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dabrFS.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabrFS.png');
         "
       ></div>
       <span>Bilibili</span></a
@@ -492,7 +469,7 @@ prototype是<strong>构造函数</strong>指向<strong>原型</strong>的属性�
     <a target="_blank" rel="noopener" href="https://weibo.com/ryugamine" class="link_l">
       <div
         style="
-          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dabrFS.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabrFS.png');
         "
       ></div>
       <span>微博</span></a
@@ -500,7 +477,7 @@ prototype是<strong>构造函数</strong>指向<strong>原型</strong>的属性�
     <a target="_blank" rel="noopener" href="https://github.com/Anuluca" class="link_l">
       <div
         style="
-          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dabBo8.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabBo8.png');
         "
       ></div>
       <span>Github</span></a

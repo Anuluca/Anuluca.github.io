@@ -81,7 +81,10 @@ document.addEventListener('DOMContentLoaded', function () {
   <a href="/">
     <!-- <img src="/favicon.png"> -->
     <div>
-      <img id="head_img" src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/g0rY8J.png" />
+      <img
+        id="head_img"
+        src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/g0rY8J.png"
+      />
     </div>
     <span>路卡的自由庭院岛</span>
   </a>
@@ -91,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <li><a href="/"><img src="https://z3.ax1x.com/2021/08/03/fPOGP1.png" class="l_logo"> 广场</a></li>
 <li><a href="/34223"><img src="https://z3.ax1x.com/2021/08/03/fiCMq0.png" class="l_logo"> 公告栏</a></li>
 </ul>
-<h1 id="img-src-https-z3-ax1x-com-2021-08-03-fiCUMR-png-class-l-logo-技术笔记"><a href="/14567"><img src="https://z3.ax1x.com/2021/08/03/fiCUMR.png" class="l_logo"> 技术笔记</a></h1>
+<h1 id="img-src-https-z3-ax1x-com-2021-08-03-fiCUMR-png-class-l-logo-前端笔记"><a href="/14567"><img src="https://z3.ax1x.com/2021/08/03/fiCUMR.png" class="l_logo"> 前端笔记</a></h1>
 <!-- ## 乐理笔记
 * [__1__ 五线谱基础知识](/24257) -->
 <h2 id="Javascript-CSS">Javascript/CSS</h2>
@@ -167,8 +170,8 @@ document.addEventListener('DOMContentLoaded', function () {
 <ul>
 <li><a href="/58027">关于开发中途弃坑的新版个人网站</a></li>
 <li><a href="/2285">「流水账」关于博客想记录的一些东西</a></li>
-<li><a href="/56511">2022不正确记忆</a></li>
-<li><a href="/48446">2020不正确记忆</a></li>
+<li><a href="/404">2022不正确记忆</a></li>
+<li><a href="/404">2020不正确记忆</a></li>
 <li><a href="/41678">Markdown Demo</a></li>
 </ul>
 <h2 id="工具">工具</h2>
@@ -188,81 +191,54 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <script src="/js/book-menu.js"></script>
 
-        <div class="book-sidebar-bottom">
-          <div class="backlogo" onClick="toOldSite()">FLASHBACK_</div>
-          <div class="theme-change">
-            <span id="toDarkButton" onClick='changeThemeButton("dark")'>
-              <svg
-                t="1648869433208"
-                class="icon"
-                viewBox="0 0 1024 1024"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                p-id="1247"
-                width="200"
-                height="200"
-              >
-                <path
-                  d="M512 256c-140.8 0-256 115.2-256 256s115.2 256 256 256 256-115.2 256-256-115.2-256-256-256z m0-85.333333c25.6 0 42.666667-17.066667 42.666667-42.666667V42.666667c0-25.6-17.066667-42.666667-42.666667-42.666667s-42.666667 17.066667-42.666667 42.666667v85.333333c0 25.6 17.066667 42.666667 42.666667 42.666667z m0 682.666666c-25.6 0-42.666667 17.066667-42.666667 42.666667v85.333333c0 25.6 17.066667 42.666667 42.666667 42.666667s42.666667-17.066667 42.666667-42.666667v-85.333333c0-25.6-17.066667-42.666667-42.666667-42.666667zM209.066667 268.8c17.066667 17.066667 42.666667 17.066667 59.733333 4.266667 21.333333-17.066667 21.333333-42.666667 4.266667-59.733334l-4.266667-4.266666-59.733333-59.733334c-17.066667-17.066667-42.666667-17.066667-59.733334-4.266666s-17.066667 42.666667-4.266666 59.733333l4.266666 4.266667 59.733334 59.733333z m605.866666 482.133333c-17.066667-17.066667-42.666667-12.8-59.733333 4.266667-17.066667 17.066667-17.066667 42.666667 0 59.733333l59.733333 59.733334c17.066667 17.066667 42.666667 17.066667 59.733334 4.266666s17.066667-42.666667 4.266666-59.733333l-4.266666-4.266667-59.733334-64zM170.666667 512c0-25.6-17.066667-42.666667-42.666667-42.666667H42.666667c-25.6 0-42.666667 17.066667-42.666667 42.666667s17.066667 42.666667 42.666667 42.666667h85.333333c25.6 0 42.666667-17.066667 42.666667-42.666667z m810.666666-42.666667h-85.333333c-25.6 0-42.666667 17.066667-42.666667 42.666667s17.066667 42.666667 42.666667 42.666667h85.333333c25.6 0 42.666667-17.066667 42.666667-42.666667s-17.066667-42.666667-42.666667-42.666667zM209.066667 750.933333L149.333333 810.666667c-17.066667 17.066667-17.066667 42.666667-4.266666 59.733333s42.666667 17.066667 59.733333 4.266667l4.266667-4.266667L268.8 810.666667c17.066667-17.066667 17.066667-42.666667 4.266667-59.733334s-42.666667-17.066667-64 0z m576-469.333333c12.8 0 21.333333-4.266667 29.866666-12.8l59.733334-59.733333c17.066667-17.066667 17.066667-42.666667 4.266666-59.733334-17.066667-17.066667-42.666667-17.066667-59.733333-4.266666l-4.266667 4.266666-59.733333 59.733334c-17.066667 17.066667-17.066667 42.666667 0 59.733333 4.266667 8.533333 17.066667 12.8 29.866667 12.8z"
-                  p-id="1248"
-                ></path>
-              </svg>
-            </span>
-            <span id="toLightButton" onClick='changeThemeButton("light")'>
-              <svg
-                t="1648869509392"
-                class="icon"
-                viewBox="0 0 1024 1024"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                p-id="6303"
-                width="200"
-                height="200"
-              >
-                <path
-                  d="M930.133333 520.533333c-12.8-17.066667-38.4-21.333333-59.733333-8.533333-115.2 85.333333-273.066667 59.733333-358.4-55.466667-34.133333-42.666667-51.2-98.133333-51.2-149.333333 0-55.466667 17.066667-106.666667 46.933333-153.6 12.8-21.333333 8.533333-46.933333-8.533333-59.733333-8.533333-8.533333-17.066667-8.533333-29.866667-8.533334-234.666667 21.333333-405.333333 230.4-384 465.066667s230.4 405.333333 465.066667 384c200.533333-21.333333 358.4-174.933333 384-375.466667 4.266667-12.8 4.266667-29.866667-4.266667-38.4z"
-                  p-id="6304"
-                  fill="#bfbfbf"
-                ></path>
-              </svg>
-            </span>
-          </div>
-        </div>
+        <div class="book-sidebar-bottom"></div>
       </div>
+      <div class="backlogo" onClick="toOldSite()">FLASHBACK</div>
 
-      <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+      <div
+  class="sidebar-toggle"
+  onclick="sidebar_toggle()"
+  onmouseover="add_inner()"
+  onmouseleave="remove_inner()"
+>
   <div class="sidebar-toggle-inner"></div>
 </div>
 
 <script>
-function add_inner() {
-  let inner = document.querySelector('.sidebar-toggle-inner')
-  inner.classList.add('show')  
-}
+  function add_inner() {
+    let inner = document.querySelector(".sidebar-toggle-inner");
+    inner.classList.add("show");
+  }
 
-function remove_inner() {
-  let inner = document.querySelector('.sidebar-toggle-inner')
-  inner.classList.remove('show')
-}
+  function remove_inner() {
+    let inner = document.querySelector(".sidebar-toggle-inner");
+    inner.classList.remove("show");
+  }
 
-function sidebar_toggle() {
-    let sidebar_toggle = document.querySelector('.sidebar-toggle')
-    let sidebar = document.querySelector('.book-sidebar')
-    let content = document.querySelector('.off-canvas-content')
-    if (sidebar_toggle.classList.contains('extend')) { // show
-        sidebar_toggle.classList.remove('extend')
-        sidebar.classList.remove('hide')
-        content.classList.remove('extend')
+  function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector(".sidebar-toggle");
+    let sidebar = document.querySelector(".book-sidebar");
+    let content = document.querySelector(".off-canvas-content");
+    let footerCom = document.querySelector(".footer-com");
+    if (sidebar_toggle.classList.contains("extend")) {
+      // show
+      sidebar_toggle.classList.remove("extend");
+      footerCom.style.left = "14rem";
+      sidebar.classList.remove("hide");
+      content.classList.remove("extend");
+    } else {
+      // hide
+      footerCom.style.left = "0";
+      sidebar_toggle.classList.add("extend");
+      sidebar.classList.add("hide");
+      content.classList.add("extend");
     }
-    else { // hide
-        sidebar_toggle.classList.add('extend')
-        sidebar.classList.add('hide')
-        content.classList.add('extend')
-    }
-}
+  }
 </script>
 
+
       <div class="off-canvas-content">
+        <div class="footer-com"></div>
         <div class="columns">
           <div class="column col-10 col-lg-12">
             <div class="book-navbar"><!-- For Responsive Layout -->
@@ -282,47 +258,35 @@ function sidebar_toggle() {
         <div class="title">UPDATED</div>
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <a href="/4500" class="swiper-slide" style="background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/Games/red2/0_0%20(5).jpg')">
+                <!-- 0-------------------- -->
+                <a href="/56308" class="swiper-slide" style="background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/Games/forza4/Snipaste_2022-04-19_16-28-48.png')">
                 <div class="des"  data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
                     <div class="route">游戏档案馆 / PC</div>
-                    <div class="route-title">荒野大镖客2：救赎</div>
-                    <div class="update-time">UPDATE DATE: 2022-04-18</div>
+                    <div class="route-title">极限竞速：地平线 4</div>
+                    <div class="update-time">UPDATE DATE: 2023-06-05</div>
                 </div></a>
-                <a href="/46678" class="swiper-slide" style="background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/Games/tombraidershadow/20220107142259.jpg')">
+                <!-- 1-------------------- -->
+                <a href="/36247" class="swiper-slide" style="background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/Games/acu/20211218211819_1.jpg')">
                 <div class="des"  data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
                     <div class="route">游戏档案馆 / PC</div>
-                    <div class="route-title">古墓丽影：暗影</div>
-                    <div class="update-time">UPDATE DATE: 2022-04-18</div>
+                    <div class="route-title">刺客信条：大革命</div>
+                    <div class="update-time">UPDATE DATE: 2023-06-05</div>
                 </div></a>
-                <a href="/24156" class="swiper-slide" style="background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/Games/rich4/Windows%20XP%20Professional-2022-03-13-14-52-33.png')">
+                <!-- 2-------------------- -->
+                <!-- 3-------------------- -->
+                <!-- 4-------------------- -->
+                <a href="/55881" class="swiper-slide" style="background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/Games/objective/20220418005220_1.jpg')">
                 <div class="des"  data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
                     <div class="route">游戏档案馆 / PC</div>
-                    <div class="route-title">大富翁4：超时空之旅</div>
-                    <div class="update-time">UPDATE DATE: 2022-04-18</div>
+                    <div class="route-title">大逆转裁判2：成步堂龙之介的觉悟</div>
+                    <div class="update-time">UPDATE DATE: 2023-06-05</div>
                 </div></a>
-                <a href="/3551" class="swiper-slide" style="background-image: url('http://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/photos/ultramanZero/DSC02436.jpg')">
-                <div class="des"  data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
-                    <div class="route">摄影 & 后期 / 随拍</div>
-                    <div class="route-title">赛罗奥特曼 皮套摄影</div>
-                    <div class="update-time">UPDATE DATE: 2021-09-07</div>
-                </div></a>
-                <a href="/8657" class="swiper-slide" style="background-image: url('http://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/photos/ultramanZ/DSC02242.jpg');background-position:0 -200px">
+                <!-- 5-------------------- -->
+                <a href="/8657" class="swiper-slide" style="background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/photos/ultramanZ/DSC02242.jpg');background-position:0 -200px">
                 <div class="des"  data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
                     <div class="route">摄影 & 后期 / 随拍</div>
                     <div class="route-title">泽塔奥特曼 皮套摄影</div>
                     <div class="update-time">UPDATE DATE: 2021-09-07</div>
-                </div></a>
-                <a href="/23882" class="swiper-slide" style="background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/photos/DragaliaLost/D476D32C3AE35E4DA80327331EBF5BFD.jpg')">
-                <div class="des"  data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
-                    <div class="route">摄影 & 后期 / 随拍</div>
-                    <div class="route-title">DRAGALIA LOST SONG COLLECTION</div>
-                    <div class="update-time">UPDATE DATE: 2021-09-07</div>
-                </div></a>
-                <a href="/25682" class="swiper-slide" style="background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/Games/xenoblade/2021081020171900-8625352D7931559E8BE3042D46DE9738.jpg')">
-                <div class="des"  data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
-                    <div class="route">游戏档案馆 / Nintendo Switch</div>
-                    <div class="route-title">异度神剑 决定版</div>
-                    <div class="update-time">UPDATE DATE: 2021-09-03</div>
                 </div></a>
             </div>
             <!-- 如果需要分页器 -->
@@ -333,7 +297,7 @@ function sidebar_toggle() {
         </div>
     </div>
     <div class="guide">
-        <a href="/14567"><div class="note_guide"><div><div class="zhegaia"></div></div><span>技术笔记</span></div></a>
+        <a href="/14567"><div class="note_guide"><div><div class="zhegaia"></div></div><span>前端笔记</span></div></a>
         <a href="/23678"><div class="nintendo_guide"><div><div class="zhegaib"></div></div><span>宝可梦后院</span></div></a>
         <a href="/404"><div class="jay_guide"><div><div class="zhegaic"></div></div><span>八度空间</span></div></a>
         <a href="/23761"><div class="home_guide"><div><div class="zhegaid"></div></div><span>游戏档案馆</span></div></a>
@@ -352,40 +316,40 @@ function sidebar_toggle() {
 <div class="note">
 <p>由于小站访问人数少且记录内容较多，本站部分页面没有针对大部分手机适配，请尽量使用PC端浏览。</p>
 </div>
-<h1 id="工作经历">工作经历</h1>
+<h1 id="历史项目">历史项目</h1>
 <div class = "shits">
    <div class="myProc">
-        <div class = "shit_title_img" style = "background-image:url('http://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/pingan.jpg')" onclick=""></div>
+        <div class = "shit_title_img" style = "background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/pingan.jpg')" onclick=""></div>
         <i>/projects</i>
         <span>江西信通 绩效管理</span>
         <span>前端开发&nbsp;&nbsp;&nbsp;2023.3-now&nbsp;&nbsp;&nbsp;未上线</span>
     </div>
-    <div class="myProc">
-        <div class = "shit_title_img" style = "background-image:url('http://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/pingan.jpg')" onclick=""></div>
+    <!-- <div class="myProc">
+        <div class = "shit_title_img" style = "background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/pingan.jpg')" onclick=""></div>
         <i>/projects</i>
         <span>个人网站 MegaAnuluca</span>
         <span>前端开发&nbsp;&nbsp;&nbsp;2023.3-2023.5&nbsp;&nbsp;&nbsp;未上线</span>
-    </div>
+    </div> -->
     <div class="myProc">
-        <div class = "shit_title_img" style = "background-image:url('http://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/pingan.jpg')" onclick=""></div>
+        <div class = "shit_title_img" style = "background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/pingan.jpg')" onclick=""></div>
         <i>/projects</i>
         <span>文因互联 飞梭平台</span>
         <span>前端开发&nbsp;&nbsp;&nbsp;2022.1-2022.7&nbsp;&nbsp;&nbsp;已上线</span>
     </div>
     <div class="myProc">
-        <div class = "shit_title_img" style = "background-image:url('http://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/pingan.jpg')" onclick=""></div>
+        <div class = "shit_title_img" style = "background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/pingan.jpg')" onclick=""></div>
         <i>/projects</i>
         <span>中国平安 证券项目</span>
         <span>前端开发&nbsp;&nbsp;&nbsp;2020.9-2022.1&nbsp;&nbsp;&nbsp;已上线</span>
     </div>
     <div class="myProc">
-        <div class = "shit_title_img" style = "background-image:url('http://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dJKhUe.jpg')" onclick=""></div>
+        <div class = "shit_title_img" style = "background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dJKhUe.jpg')" onclick=""></div>
         <i>/projects</i>
         <span>江西中烟 综合营销管理系统</span>
         <span>前端开发&nbsp;&nbsp;&nbsp;2019.9-2020.9&nbsp;&nbsp;&nbsp;上线项目改造</span>
     </div>
     <div class="myProc">
-        <div class = "shit_title_img" style = "background-image:url('http://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dJKRHO.jpg')"></div>
+        <div class = "shit_title_img" style = "background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dJKRHO.jpg')"></div>
         <i>/projects</i>
         <span>江西中烟 零售订单系统</span>
         <span>前端开发&nbsp;&nbsp;&nbsp;2019.9-2020.9&nbsp;&nbsp;&nbsp;上线项目改造</span>
@@ -399,52 +363,47 @@ function sidebar_toggle() {
     <div class="swiper-wrapper">
         <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
             <div>
-                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/Toys/dbZtWn.jpg"/>
+                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/Toys/dbZtWn.jpg"/>
             </div>
         </div>
         <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
             <div>
-                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/Toys/DSC01359.jpg"/>
+                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/Toys/DSC01359.jpg"/>
             </div>
         </div>
         <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
             <div>
-                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/Toys/deXAXt.jpg"/>
+                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/Toys/deXAXt.jpg"/>
             </div>
         </div>
         <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
             <div>
-                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/Toys/DSC02740_ps_weibo.jpg"/>
+                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/Toys/DSC02740_ps_weibo.jpg"/>
             </div>
         </div>
         <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
             <div>
-                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/Toys/dVDDhR.jpg"/>
+                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/Toys/dVDDhR.jpg"/>
             </div>
         </div>
         <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
             <div>
-                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/Toys/dVD0AJ.jpg"/>
+                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/Toys/dVD0AJ.jpg"/>
             </div>
         </div>
         <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
             <div>
-                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/Toys/DSC01561217.jpg"/>
+                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/Toys/DSC01561217.jpg"/>
             </div>
         </div>
         <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
             <div>
-                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/Toys/dVDBN9.jpg"/>
+                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/Toys/dVDBN9.jpg"/>
             </div>
         </div>
         <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
             <div>
-                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/Toys/deOTkF.jpg"/>
-            </div>
-        </div>
-        <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
-            <div>
-                <img src=""/>
+                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/Toys/deOTkF.jpg"/>
             </div>
         </div>
         <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
@@ -454,7 +413,12 @@ function sidebar_toggle() {
         </div>
         <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
             <div>
-                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/Toys/DgViff.jpg"/>
+                <img src=""/>
+            </div>
+        </div>
+        <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
+            <div>
+                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/Toys/DgViff.jpg"/>
             </div>
         </div>
         <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
@@ -464,12 +428,12 @@ function sidebar_toggle() {
         </div>
         <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
             <div>
-                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/Toys/DSC01295.jpg"/>
+                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/Toys/DSC01295.jpg"/>
             </div>
         </div>
         <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
             <div>
-                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/Toys/dVDx4s.jpg"/>
+                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/Toys/dVDx4s.jpg"/>
             </div>
         </div>
     </div>
@@ -487,57 +451,57 @@ function sidebar_toggle() {
     <div class="swiper-wrapper">
         <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
             <div>
-                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/cards/red.png"/>
+                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/MyPokemonDaily/cards/red.png"/>
             </div>
         </div>
         <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
             <div>
-                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/cards/silver.png"/>
+                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/MyPokemonDaily/cards/silver.png"/>
             </div>
         </div>
         <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
             <div>
-                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/cards/dia.png"/>
+                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/MyPokemonDaily/cards/dia.png"/>
             </div>
         </div>
         <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
             <div>
-                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/cards/hg.png"/>
+                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/MyPokemonDaily/cards/hg.png"/>
             </div>
         </div>
         <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
             <div>
-                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/cards/Pt.png"/>
+                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/MyPokemonDaily/cards/Pt.png"/>
             </div>
         </div>
         <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
             <div>
-                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/cards/white.png"/>
+                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/MyPokemonDaily/cards/white.png"/>
             </div>
         </div>
         <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
             <div>
-                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/cards/Trainer_Card_XY_Gree2n.png"/>
+                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/MyPokemonDaily/cards/Trainer_Card_XY_Gree2n.png"/>
             </div>
         </div>
         <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
             <div>
-                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/cards/a8umy-8dx02f.png"/>
+                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/MyPokemonDaily/cards/a8umy-8dx02f.png"/>
             </div>
         </div>
         <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
             <div>
-                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/cards/训练家证1.png"/>
+                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/MyPokemonDaily/cards/训练家证1.png"/>
             </div>
         </div>
         <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
             <div>
-                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/cards/训练家卡片_正面_swsh2.png"/>
+                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/MyPokemonDaily/cards/训练家卡片_正面_swsh2.png"/>
             </div>
         </div>
         <div class="swiper-slide" data-swiper-parallax="-100" data-swiper-parallax-duration="700" data-swiper-parallax-opacity="0.1" data-swiper-parallax-scale="0.5">
             <div>
-                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/MyPokemonDaily/cards/训练家卡片_正面_bdsp2.png"/>
+                <img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/MyPokemonDaily/cards/训练家卡片_正面_bdsp2.png"/>
             </div>
         </div>
     </div>
@@ -573,8 +537,8 @@ function sidebar_toggle() {
 <blockquote>
 <p>QQ：1248810927<br>
 E-mail：<span alt="mail"><a href="mailto:tilucario@outlook.com">tilucario@outlook.com</a></span><br>
-Bilibili：<s>Anuluca</s> <a target="_blank" rel="noopener" href="https://space.bilibili.com/128735968">Anuluca</a><br>
-微博：<s>Anuluca</s> <a target="_blank" rel="noopener" href="https://weibo.com/ryugamine">Anuluca</a><br>
+Bilibili：<a target="_blank" rel="noopener" href="https://space.bilibili.com/128735968">Anuluca</a><br>
+微博：<s>Anu_Life</s> <a target="_blank" rel="noopener" href="https://weibo.com/ryugamine">Anuluca</a><br>
 Twitter：<a target="_blank" rel="noopener" href="https://twitter.com/TILucario">Anuluca</a><br>
 Steam：<a target="_blank" rel="noopener" href="https://steamcommunity.com/id/Anuluca/">Anuluca</a><br>
 Github：<a target="_blank" rel="noopener" href="https://github.com/Anuluca">Anuluca</a><br>
@@ -600,7 +564,7 @@ Nintendo Switch：SW-5196-7347-2898</p>
 <div class="drink-time">
   <img
     style="text-align: center; margin-top: 20vh; width: 150px; opacity: 0.9"
-    src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/2F65x1.png"
+    src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/2F65x1.png"
   />
   <div style="text-align: center; margin-top: 20px; font-size: 20px">
     由于某些原因，博客图床于5月26日惨遭爆破，目前正在整理需要的图片并迁移存活的图片到新图床,预计6月10日重新上线网站
@@ -609,22 +573,23 @@ Nintendo Switch：SW-5196-7347-2898</p>
 
 
 <div class="articleBottom">
+  <i></i>
   <b
     >&nbsp;&nbsp;<img
-      src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/goDrXd.gif"
+      src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/goDrXd.gif"
     />&nbsp;
     <div><span>THE END</span></div>
     &nbsp;<img
-      src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/god8aT.gif"
+      src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/god8aT.gif"
     />&nbsp;&nbsp;</b
   >
+  <i></i>
 </div>
 <div class="combtn">
   <div class="valine_btn"><b>游客评论</b></div>
   <div class="gitalk_btn"><b>使用Github账号评论</b></div>
   <div class="moving"></div>
 </div>
-<div class="footer-com"></div>
 <div>&nbsp;</div>
 
 <div class="book-comments">
@@ -735,7 +700,7 @@ Nintendo Switch：SW-5196-7347-2898</p>
     <a target="_blank" rel="noopener" href="https://twitter.com/TILucario" class="link_l">
       <div
         style="
-          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dabyWQ.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabyWQ.png');
         "
       ></div>
       <span>推特</span></a
@@ -743,7 +708,7 @@ Nintendo Switch：SW-5196-7347-2898</p>
     <a target="_blank" rel="noopener" href="https://space.bilibili.com/128735968" class="link_l">
       <div
         style="
-          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dabrFS.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabrFS.png');
         "
       ></div>
       <span>Bilibili</span></a
@@ -751,7 +716,7 @@ Nintendo Switch：SW-5196-7347-2898</p>
     <a target="_blank" rel="noopener" href="https://weibo.com/ryugamine" class="link_l">
       <div
         style="
-          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dabrFS.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabrFS.png');
         "
       ></div>
       <span>微博</span></a
@@ -759,7 +724,7 @@ Nintendo Switch：SW-5196-7347-2898</p>
     <a target="_blank" rel="noopener" href="https://github.com/Anuluca" class="link_l">
       <div
         style="
-          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dabBo8.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabBo8.png');
         "
       ></div>
       <span>Github</span></a

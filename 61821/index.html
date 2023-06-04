@@ -81,7 +81,10 @@ document.addEventListener('DOMContentLoaded', function () {
   <a href="/">
     <!-- <img src="/favicon.png"> -->
     <div>
-      <img id="head_img" src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/g0rY8J.png" />
+      <img
+        id="head_img"
+        src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/g0rY8J.png"
+      />
     </div>
     <span>路卡的自由庭院岛</span>
   </a>
@@ -91,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <li><a href="/"><img src="https://z3.ax1x.com/2021/08/03/fPOGP1.png" class="l_logo"> 广场</a></li>
 <li><a href="/34223"><img src="https://z3.ax1x.com/2021/08/03/fiCMq0.png" class="l_logo"> 公告栏</a></li>
 </ul>
-<h1 id="img-src-https-z3-ax1x-com-2021-08-03-fiCUMR-png-class-l-logo-技术笔记"><a href="/14567"><img src="https://z3.ax1x.com/2021/08/03/fiCUMR.png" class="l_logo"> 技术笔记</a></h1>
+<h1 id="img-src-https-z3-ax1x-com-2021-08-03-fiCUMR-png-class-l-logo-前端笔记"><a href="/14567"><img src="https://z3.ax1x.com/2021/08/03/fiCUMR.png" class="l_logo"> 前端笔记</a></h1>
 <!-- ## 乐理笔记
 * [__1__ 五线谱基础知识](/24257) -->
 <h2 id="Javascript-CSS">Javascript/CSS</h2>
@@ -167,8 +170,8 @@ document.addEventListener('DOMContentLoaded', function () {
 <ul>
 <li><a href="/58027">关于开发中途弃坑的新版个人网站</a></li>
 <li><a href="/2285">「流水账」关于博客想记录的一些东西</a></li>
-<li><a href="/56511">2022不正确记忆</a></li>
-<li><a href="/48446">2020不正确记忆</a></li>
+<li><a href="/404">2022不正确记忆</a></li>
+<li><a href="/404">2020不正确记忆</a></li>
 <li><a href="/41678">Markdown Demo</a></li>
 </ul>
 <h2 id="工具">工具</h2>
@@ -188,81 +191,54 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <script src="/js/book-menu.js"></script>
 
-        <div class="book-sidebar-bottom">
-          <div class="backlogo" onClick="toOldSite()">FLASHBACK_</div>
-          <div class="theme-change">
-            <span id="toDarkButton" onClick='changeThemeButton("dark")'>
-              <svg
-                t="1648869433208"
-                class="icon"
-                viewBox="0 0 1024 1024"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                p-id="1247"
-                width="200"
-                height="200"
-              >
-                <path
-                  d="M512 256c-140.8 0-256 115.2-256 256s115.2 256 256 256 256-115.2 256-256-115.2-256-256-256z m0-85.333333c25.6 0 42.666667-17.066667 42.666667-42.666667V42.666667c0-25.6-17.066667-42.666667-42.666667-42.666667s-42.666667 17.066667-42.666667 42.666667v85.333333c0 25.6 17.066667 42.666667 42.666667 42.666667z m0 682.666666c-25.6 0-42.666667 17.066667-42.666667 42.666667v85.333333c0 25.6 17.066667 42.666667 42.666667 42.666667s42.666667-17.066667 42.666667-42.666667v-85.333333c0-25.6-17.066667-42.666667-42.666667-42.666667zM209.066667 268.8c17.066667 17.066667 42.666667 17.066667 59.733333 4.266667 21.333333-17.066667 21.333333-42.666667 4.266667-59.733334l-4.266667-4.266666-59.733333-59.733334c-17.066667-17.066667-42.666667-17.066667-59.733334-4.266666s-17.066667 42.666667-4.266666 59.733333l4.266666 4.266667 59.733334 59.733333z m605.866666 482.133333c-17.066667-17.066667-42.666667-12.8-59.733333 4.266667-17.066667 17.066667-17.066667 42.666667 0 59.733333l59.733333 59.733334c17.066667 17.066667 42.666667 17.066667 59.733334 4.266666s17.066667-42.666667 4.266666-59.733333l-4.266666-4.266667-59.733334-64zM170.666667 512c0-25.6-17.066667-42.666667-42.666667-42.666667H42.666667c-25.6 0-42.666667 17.066667-42.666667 42.666667s17.066667 42.666667 42.666667 42.666667h85.333333c25.6 0 42.666667-17.066667 42.666667-42.666667z m810.666666-42.666667h-85.333333c-25.6 0-42.666667 17.066667-42.666667 42.666667s17.066667 42.666667 42.666667 42.666667h85.333333c25.6 0 42.666667-17.066667 42.666667-42.666667s-17.066667-42.666667-42.666667-42.666667zM209.066667 750.933333L149.333333 810.666667c-17.066667 17.066667-17.066667 42.666667-4.266666 59.733333s42.666667 17.066667 59.733333 4.266667l4.266667-4.266667L268.8 810.666667c17.066667-17.066667 17.066667-42.666667 4.266667-59.733334s-42.666667-17.066667-64 0z m576-469.333333c12.8 0 21.333333-4.266667 29.866666-12.8l59.733334-59.733333c17.066667-17.066667 17.066667-42.666667 4.266666-59.733334-17.066667-17.066667-42.666667-17.066667-59.733333-4.266666l-4.266667 4.266666-59.733333 59.733334c-17.066667 17.066667-17.066667 42.666667 0 59.733333 4.266667 8.533333 17.066667 12.8 29.866667 12.8z"
-                  p-id="1248"
-                ></path>
-              </svg>
-            </span>
-            <span id="toLightButton" onClick='changeThemeButton("light")'>
-              <svg
-                t="1648869509392"
-                class="icon"
-                viewBox="0 0 1024 1024"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                p-id="6303"
-                width="200"
-                height="200"
-              >
-                <path
-                  d="M930.133333 520.533333c-12.8-17.066667-38.4-21.333333-59.733333-8.533333-115.2 85.333333-273.066667 59.733333-358.4-55.466667-34.133333-42.666667-51.2-98.133333-51.2-149.333333 0-55.466667 17.066667-106.666667 46.933333-153.6 12.8-21.333333 8.533333-46.933333-8.533333-59.733333-8.533333-8.533333-17.066667-8.533333-29.866667-8.533334-234.666667 21.333333-405.333333 230.4-384 465.066667s230.4 405.333333 465.066667 384c200.533333-21.333333 358.4-174.933333 384-375.466667 4.266667-12.8 4.266667-29.866667-4.266667-38.4z"
-                  p-id="6304"
-                  fill="#bfbfbf"
-                ></path>
-              </svg>
-            </span>
-          </div>
-        </div>
+        <div class="book-sidebar-bottom"></div>
       </div>
+      <div class="backlogo" onClick="toOldSite()">FLASHBACK</div>
 
-      <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+      <div
+  class="sidebar-toggle"
+  onclick="sidebar_toggle()"
+  onmouseover="add_inner()"
+  onmouseleave="remove_inner()"
+>
   <div class="sidebar-toggle-inner"></div>
 </div>
 
 <script>
-function add_inner() {
-  let inner = document.querySelector('.sidebar-toggle-inner')
-  inner.classList.add('show')  
-}
+  function add_inner() {
+    let inner = document.querySelector(".sidebar-toggle-inner");
+    inner.classList.add("show");
+  }
 
-function remove_inner() {
-  let inner = document.querySelector('.sidebar-toggle-inner')
-  inner.classList.remove('show')
-}
+  function remove_inner() {
+    let inner = document.querySelector(".sidebar-toggle-inner");
+    inner.classList.remove("show");
+  }
 
-function sidebar_toggle() {
-    let sidebar_toggle = document.querySelector('.sidebar-toggle')
-    let sidebar = document.querySelector('.book-sidebar')
-    let content = document.querySelector('.off-canvas-content')
-    if (sidebar_toggle.classList.contains('extend')) { // show
-        sidebar_toggle.classList.remove('extend')
-        sidebar.classList.remove('hide')
-        content.classList.remove('extend')
+  function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector(".sidebar-toggle");
+    let sidebar = document.querySelector(".book-sidebar");
+    let content = document.querySelector(".off-canvas-content");
+    let footerCom = document.querySelector(".footer-com");
+    if (sidebar_toggle.classList.contains("extend")) {
+      // show
+      sidebar_toggle.classList.remove("extend");
+      footerCom.style.left = "14rem";
+      sidebar.classList.remove("hide");
+      content.classList.remove("extend");
+    } else {
+      // hide
+      footerCom.style.left = "0";
+      sidebar_toggle.classList.add("extend");
+      sidebar.classList.add("hide");
+      content.classList.add("extend");
     }
-    else { // hide
-        sidebar_toggle.classList.add('extend')
-        sidebar.classList.add('hide')
-        content.classList.add('extend')
-    }
-}
+  }
 </script>
 
+
       <div class="off-canvas-content">
+        <div class="footer-com"></div>
         <div class="columns">
           <div class="column col-10 col-lg-12">
             <div class="book-navbar"><!-- For Responsive Layout -->
@@ -284,72 +260,72 @@ function sidebar_toggle() {
 </style>
 <h1 id="⬅︎-游戏档案馆-PC"><a href="/23761">⬅︎ 游戏档案馆</a> / PC</h1>
 <div class="pc-cards">
-<a href="/15406"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/')"></div><div class="g-t"><span class="tt">女神异闻录5：皇家版</span></div><div class="count no_co">暂无截图</div></div></a>
-<a href="/3242"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/')"></div><div class="g-t"><span class="tt">初音未来 歌姬计划 MEGA39's+</span></div><div class="count no_co">暂无截图</div></div></a>
-  <a href="/55881"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/objection.png')"></div><div class="g-t"><span class="tt">大逆转裁判2 : 成步堂龙之介的觉悟</span></div><div class="count no_co">暂无截图</div></div></a>
-  <a href="/4500"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/red.png')"></div><div class="g-t"><span class="tt">荒野大镖客2 : 救赎</span><span class="ver">Epic</span></div><div class="count">33张截图</div></div></a>
-  <a href="/53693"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/ac1.png')"></div><div class="g-t"><span class="tt">刺客信条</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-  <a href="/42128"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/ac2.png')"></div><div class="g-t"><span class="tt">刺客信条 2</span><span class="ver">Steam</span></div><div class="count">19张截图</div></div></a>
-  <a href="/7897"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/acb.png')"></div><div class="g-t"><span class="tt">刺客信条 : 兄弟会</span><span class="ver">Steam</span></div><div class="count">30张截图</div></div></a>
-  <a href="/60387"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/acr.png')"></div><div class="g-t"><span class="tt">刺客信条 : 启示录</span><span class="ver">Steam</span></div><div class="count">41张截图</div></div></a>
-  <a href="/25682"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/ac3.png')"></div><div class="g-t"><span class="tt">刺客信条 3：重制版</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-  <a href="/44040"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/ac4.png')"></div><div class="g-t"><span class="tt">刺客信条 4 : 黑旗</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-  <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/acrogue.png')"></div><div class="g-t"><span class="tt">刺客信条 : 叛变</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-  <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/acu.png')"></div><div class="g-t"><span class="tt">刺客信条 : 大革命</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-  <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/acs.png')"></div><div class="g-t"><span class="tt">刺客信条 : 枭雄</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-  <a href="/33481"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/acorigin.png')"></div><div class="g-t"><span class="tt">刺客信条 : 起源</span><span class="ver">Steam</span></div><div class="count">54张截图</div></div></a>
-  <a href="/35782"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/acodessy.png')"></div><div class="g-t"><span class="tt">刺客信条 : 奥德赛</span><span class="ver">Steam</span></div><div class="count">18张截图</div></div></a>
-  <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/acv.png')"></div><div class="g-t"><span class="tt">刺客信条 : 英灵殿</span><span class="ver">UPLAY</span></div><div class="count no_co">暂无截图</div></div></a>
-  <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/accchina.png')"></div><div class="g-t"><span class="tt">刺客信条编年史 : 中国</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-  <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/accindia.png')"></div><div class="g-t"><span class="tt">刺客信条编年史 : 印度</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-  <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/accrusssia.png')"></div><div class="g-t"><span class="tt">刺客信条编年史 : 俄罗斯</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-  <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/acl.png')"></div><div class="g-t"><span class="tt">刺客信条 : 解放 重制版</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-  <a href="/35219"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/batmanarkamasylum.png')"></div><div class="g-t"><span class="tt">蝙蝠侠：阿卡姆疯人院</span><span class="ver">Steam</span></div><div class="count">13张截图</div></div></a>
-  <a href="/61012"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/batmanarkamcity.png')"></div><div class="g-t"><span class="tt">蝙蝠侠：阿卡姆之城</span><span class="ver">Steam</span></div><div class="count">8张截图</div></div></a>
-  <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/batmanarkamorigin.png')"></div><div class="g-t"><span class="tt">蝙蝠侠：阿卡姆起源</span><span class="ver">Steam</span></div><div class="count no-co">暂无截图</div></div></a>
-  <a href="/29998"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/batmanarkamknight.png')"></div><div class="g-t"><span class="tt">蝙蝠侠：阿卡姆骑士</span><span class="ver">Steam</span></div><div class="count">13张截图</div></div></a>
-   <a href="/44315"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/')"></div><div class="g-t"><span class="tt">巫师 3</span><span class="ver">Steam</span></div><div class="count">13张截图</div></div></a>
-  <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/alanwake.png')"></div><div class="g-t"><span class="tt">心灵杀手</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-  <a href="/48167"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/quantumbreak.png')"></div><div class="g-t"><span class="tt">量子破碎</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-  <a href="/1359"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/bayonetta.png')"></div><div class="g-t"><span class="tt">猎天使魔女</span><span class="ver">Steam</span></div><div class="count">7张截图</div></div></a>
-  <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/cyber.png')"></div><div class="g-t"><span class="tt">赛博朋克 2077</span><span class="ver">GOG</span></div><div class="count no_co">暂无截图</div></div></a>
-  <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/danganronpa.png')"></div><div class="g-t"><span class="tt">枪弹辩驳：希望学园与绝望高中生</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-  <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/danganronpa2.png')"></div><div class="g-t"><span class="tt">超级枪弹辩驳 2</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/overwatch.png')"></div><div class="g-t"><span class="tt">守望先锋</span><span class="ver">战网</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/destiny2.png')"></div><div class="g-t"><span class="tt">命运 2</span><span class="ver">战网</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/gta5.png')"></div><div class="g-t"><span class="tt">侠盗猎车手 5</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/halo.png')"></div><div class="g-t"><span class="tt">光环 : 士官长合辑</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/garrysmod.png')"></div><div class="g-t"><span class="tt">garry‘s mod</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/l4d2.png')"></div><div class="g-t"><span class="tt">求生之路 2</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/portal.png')"></div><div class="g-t"><span class="tt">传送门</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/portal2.png')"></div><div class="g-t"><span class="tt">传送门 2</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/legomarvelsuperheroes.png')"></div><div class="g-t"><span class="tt">乐高 : 漫威超级英雄</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/41403"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/legoAvengers.png')"></div><div class="g-t"><span class="tt">乐高 : 复仇者联盟</span><span class="ver">Steam</span></div><div class="count">16张截图</div></div></a>
-   <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/legostarwarstheforce.png')"></div><div class="g-t"><span class="tt">乐高 : 星球大战 原力觉醒</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/limbo.png')"></div><div class="g-t"><span class="tt">LIMBO</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/46777"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/mc.png')"></div><div class="g-t"><span class="tt">我的世界</span><span class="ver">微软商店</span></div><div class="count">3张截图</div></div></a>
-   <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/pvz.png')"></div><div class="g-t"><span class="tt">植物大战僵尸</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/zumadeluxe.png')"></div><div class="g-t"><span class="tt">祖马：豪华版</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/tombraider.png')"></div><div class="g-t"><span class="tt">古墓丽影</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/riseofthetombraider.png')"></div><div class="g-t"><span class="tt">古墓丽影：崛起</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/46678"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/tombraidershadow.png')"></div><div class="g-t"><span class="tt">古墓丽影：暗影</span><span class="ver">Epic</span></div><div class="count">15张截图</div></div></a>
-   <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/sonicmania.png')"></div><div class="g-t"><span class="tt">索尼克 狂欢</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/southpark.png')"></div><div class="g-t"><span class="tt">南方公园 : 真理之杖</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/stanley.png')"></div><div class="g-t"><span class="tt">史丹利的寓言</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/stronghold2.png')"></div><div class="g-t"><span class="tt">要塞 2</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/strongholdcrusader.png')"></div><div class="g-t"><span class="tt">要塞 : 十字军东征</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/supermeatboy.png')"></div><div class="g-t"><span class="tt">超级食肉男孩</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/thebindingofissacafterbirth.png')"></div><div class="g-t"><span class="tt">以撒的结合 : 胎衣 +</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/undertale.png')"></div><div class="g-t"><span class="tt">Undertale</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/watchdogs.png')"></div><div class="g-t"><span class="tt">看门狗</span><span class="ver">UPLAY</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/2974"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/watchdogs2.png')"></div><div class="g-t"><span class="tt">看门狗 2</span><span class="ver">Steam</span></div><div class="count">2张截图</div></div></a>
-   <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/xiuru.png')"></div><div class="g-t"><span class="tt">羞辱</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/xiuru2.png')"></div><div class="g-t"><span class="tt">羞辱 2</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/forzahorizon4.png')"></div><div class="g-t"><span class="tt">极限竞速：地平线 4</span><span class="ver">微软商店</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/404"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/drawguess.png')"></div><div class="g-t"><span class="tt">Draw & Guess</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/10861"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/grifsydrome.png')"></div><div class="g-t"><span class="tt">GRIEFSYNDROME</span><span class="ver">Twilight Frontier</span></div><div class="count">3张截图</div></div></a>
-   <a href="/24156"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/rich4.png')"></div><div class="g-t"><span class="tt">大富翁4 : 超时空之旅</span><span class="ver">大宇科技</span></div><div class="count">15张截图</div></div></a>
-   <a href="/35958"><div class="pc-out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/GameCovers/PC/fx.png')"></div><div class="g-t"><span class="tt">返校</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+<a href="/15406"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/')"></div><div class="g-t"><span class="tt">女神异闻录5：皇家版</span></div><div class="count no_co">暂无截图</div></div></a>
+<a href="/3242"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/')"></div><div class="g-t"><span class="tt">初音未来 歌姬计划 MEGA39's+</span></div><div class="count no_co">暂无截图</div></div></a>
+  <a href="/55881"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/objection.png')"></div><div class="g-t"><span class="tt">大逆转裁判2 : 成步堂龙之介的觉悟</span></div><div class="count">35张图片</div></div></a>
+  <a href="/4500"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/red.png')"></div><div class="g-t"><span class="tt">荒野大镖客2 : 救赎</span><span class="ver">Epic</span></div><div class="count">29张图片</div></div></a>
+  <a href="/53693"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/ac1.png')"></div><div class="g-t"><span class="tt">刺客信条</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+  <a href="/42128"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/ac2.png')"></div><div class="g-t"><span class="tt">刺客信条 2</span><span class="ver">Steam</span></div><div class="count">12张图片</div></div></a>
+  <a href="/7897"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/acb.png')"></div><div class="g-t"><span class="tt">刺客信条 : 兄弟会</span><span class="ver">Steam</span></div><div class="count">20张图片</div></div></a>
+  <a href="/60387"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/acr.png')"></div><div class="g-t"><span class="tt">刺客信条 : 启示录</span><span class="ver">Steam</span></div><div class="count">33张图片</div></div></a>
+  <a href="/25682"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/ac3.png')"></div><div class="g-t"><span class="tt">刺客信条 3：重制版</span><span class="ver">Steam</span></div><div class="count">28张图片</div></div></a>
+  <a href="/44040"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/ac4.png')"></div><div class="g-t"><span class="tt">刺客信条 4 : 黑旗</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+  <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/acrogue.png')"></div><div class="g-t"><span class="tt">刺客信条 : 叛变</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+  <a href="/36247"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/acu.png')"></div><div class="g-t"><span class="tt">刺客信条 : 大革命</span><span class="ver">Steam</span></div><div class="count">30张图片</div></div></a>
+  <a href="/2621"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/acs.png')"></div><div class="g-t"><span class="tt">刺客信条 : 枭雄</span><span class="ver">Steam</span></div><div class="count">18张图片</div></div></a>
+  <a href="/33481"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/acorigin.png')"></div><div class="g-t"><span class="tt">刺客信条 : 起源</span><span class="ver">Steam</span></div><div class="count">54张图片</div></div></a>
+  <a href="/35782"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/acodessy.png')"></div><div class="g-t"><span class="tt">刺客信条 : 奥德赛</span><span class="ver">Steam</span></div><div class="count">18张图片</div></div></a>
+  <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/acv.png')"></div><div class="g-t"><span class="tt">刺客信条 : 英灵殿</span><span class="ver">UPLAY</span></div><div class="count no_co">暂无截图</div></div></a>
+  <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/accchina.png')"></div><div class="g-t"><span class="tt">刺客信条编年史 : 中国</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+  <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/accindia.png')"></div><div class="g-t"><span class="tt">刺客信条编年史 : 印度</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+  <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/accrusssia.png')"></div><div class="g-t"><span class="tt">刺客信条编年史 : 俄罗斯</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+  <a href="/10519"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/acl.png')"></div><div class="g-t"><span class="tt">刺客信条 : 解放 重制版</span><span class="ver">Steam</span></div><div class="count">4张图片</div></div></a>
+  <a href="/35219"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/batmanarkamasylum.png')"></div><div class="g-t"><span class="tt">蝙蝠侠：阿卡姆疯人院</span><span class="ver">Steam</span></div><div class="count">4张图片</div></div></a>
+  <a href="/32453"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/batmanarkamcity.png')"></div><div class="g-t"><span class="tt">蝙蝠侠：阿卡姆之城</span><span class="ver">Steam</span></div><div class="count">7张图片</div></div></a>
+  <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/batmanarkamorigin.png')"></div><div class="g-t"><span class="tt">蝙蝠侠：阿卡姆起源</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+  <a href="/29998"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/batmanarkamknight.png')"></div><div class="g-t"><span class="tt">蝙蝠侠：阿卡姆骑士</span><span class="ver">Steam</span></div><div class="count">13张图片</div></div></a>
+   <a href="/44315"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/witcher.png')"></div><div class="g-t"><span class="tt">巫师 3</span><span class="ver">Steam</span></div><div class="count">13张图片</div></div></a>
+  <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/alanwake.png')"></div><div class="g-t"><span class="tt">心灵杀手</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+  <a href="/48168"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/quantumbreak.png')"></div><div class="g-t"><span class="tt">量子破碎</span><span class="ver">Steam</span></div><div class="count">13张图片</div></div></a>
+  <a href="/1359"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/bayonetta.png')"></div><div class="g-t"><span class="tt">猎天使魔女</span><span class="ver">Steam</span></div><div class="count">5张图片</div></div></a>
+  <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/cyber.png')"></div><div class="g-t"><span class="tt">赛博朋克 2077</span><span class="ver">GOG</span></div><div class="count no_co">暂无截图</div></div></a>
+  <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/danganronpa.png')"></div><div class="g-t"><span class="tt">枪弹辩驳：希望学园与绝望高中生</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+  <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/danganronpa2.png')"></div><div class="g-t"><span class="tt">超级枪弹辩驳 2</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+   <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/overwatch.png')"></div><div class="g-t"><span class="tt">守望先锋</span><span class="ver">战网</span></div><div class="count no_co">暂无截图</div></div></a>
+   <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/destiny2.png')"></div><div class="g-t"><span class="tt">命运 2</span><span class="ver">战网</span></div><div class="count no_co">暂无截图</div></div></a>
+   <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/gta5.png')"></div><div class="g-t"><span class="tt">侠盗猎车手 5</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+   <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/halo.png')"></div><div class="g-t"><span class="tt">光环 : 士官长合辑</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+   <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/garrysmod.png')"></div><div class="g-t"><span class="tt">garry‘s mod</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+   <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/l4d2.png')"></div><div class="g-t"><span class="tt">求生之路 2</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+   <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/portal.png')"></div><div class="g-t"><span class="tt">传送门</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+   <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/portal2.png')"></div><div class="g-t"><span class="tt">传送门 2</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+   <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/legomarvelsuperheroes.png')"></div><div class="g-t"><span class="tt">乐高 : 漫威超级英雄</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+   <a href="/41403"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/legoAvengers.png')"></div><div class="g-t"><span class="tt">乐高 : 复仇者联盟</span><span class="ver">Steam</span></div><div class="count">15张图片</div></div></a>
+   <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/legostarwarstheforce.png')"></div><div class="g-t"><span class="tt">乐高 : 星球大战 原力觉醒</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+   <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/limbo.png')"></div><div class="g-t"><span class="tt">LIMBO</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+   <a href="/46777"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/mc.png')"></div><div class="g-t"><span class="tt">我的世界</span><span class="ver">微软商店</span></div><div class="count">3张图片</div></div></a>
+   <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/pvz.png')"></div><div class="g-t"><span class="tt">植物大战僵尸</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+   <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/zumadeluxe.png')"></div><div class="g-t"><span class="tt">祖马：豪华版</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+   <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/tombraider.png')"></div><div class="g-t"><span class="tt">古墓丽影</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+   <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/riseofthetombraider.png')"></div><div class="g-t"><span class="tt">古墓丽影：崛起</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+   <a href="/46678"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/tombraidershadow.png')"></div><div class="g-t"><span class="tt">古墓丽影：暗影</span><span class="ver">Epic</span></div><div class="count">10张图片</div></div></a>
+   <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/sonicmania.png')"></div><div class="g-t"><span class="tt">索尼克 狂欢</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+   <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/southpark.png')"></div><div class="g-t"><span class="tt">南方公园 : 真理之杖</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+   <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/stanley.png')"></div><div class="g-t"><span class="tt">史丹利的寓言</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+   <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/stronghold2.png')"></div><div class="g-t"><span class="tt">要塞 2</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+   <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/strongholdcrusader.png')"></div><div class="g-t"><span class="tt">要塞 : 十字军东征</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+   <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/supermeatboy.png')"></div><div class="g-t"><span class="tt">超级食肉男孩</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+   <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/thebindingofissacafterbirth.png')"></div><div class="g-t"><span class="tt">以撒的结合 : 胎衣 +</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+   <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/undertale.png')"></div><div class="g-t"><span class="tt">Undertale</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+   <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/watchdogs.png')"></div><div class="g-t"><span class="tt">看门狗</span><span class="ver">UPLAY</span></div><div class="count no_co">暂无截图</div></div></a>
+   <a href="/2974"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/watchdogs2.png')"></div><div class="g-t"><span class="tt">看门狗 2</span><span class="ver">Steam</span></div><div class="count">2张图片</div></div></a>
+   <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/xiuru.png')"></div><div class="g-t"><span class="tt">羞辱</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+   <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/xiuru2.png')"></div><div class="g-t"><span class="tt">羞辱 2</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+   <a href="/56308"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/forzahorizon4.png')"></div><div class="g-t"><span class="tt">极限竞速：地平线 4</span><span class="ver">微软商店</span></div><div class="count">64张图片</div></div></a>
+   <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/drawguess.png')"></div><div class="g-t"><span class="tt">Draw & Guess</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
+   <a href="/10861"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/grifsydrome.png')"></div><div class="g-t"><span class="tt">GRIEFSYNDROME</span><span class="ver">Twilight Frontier</span></div><div class="count">3张图片</div></div></a>
+   <a href="/24156"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/rich4.png')"></div><div class="g-t"><span class="tt">大富翁4 : 超时空之旅</span><span class="ver">大宇科技</span></div><div class="count">13张图片</div></div></a>
+   <a href="/35958"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/fx.png')"></div><div class="g-t"><span class="tt">返校</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
 </div>
 <div class="machinePagination">
   <div>
@@ -365,7 +341,7 @@ function sidebar_toggle() {
 <div class="drink-time">
   <img
     style="text-align: center; margin-top: 20vh; width: 150px; opacity: 0.9"
-    src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/2F65x1.png"
+    src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/2F65x1.png"
   />
   <div style="text-align: center; margin-top: 20px; font-size: 20px">
     由于某些原因，博客图床于5月26日惨遭爆破，目前正在整理需要的图片并迁移存活的图片到新图床,预计6月10日重新上线网站
@@ -374,22 +350,23 @@ function sidebar_toggle() {
 
 
 <div class="articleBottom">
+  <i></i>
   <b
     >&nbsp;&nbsp;<img
-      src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/goDrXd.gif"
+      src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/goDrXd.gif"
     />&nbsp;
     <div><span>THE END</span></div>
     &nbsp;<img
-      src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/god8aT.gif"
+      src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/god8aT.gif"
     />&nbsp;&nbsp;</b
   >
+  <i></i>
 </div>
 <div class="combtn">
   <div class="valine_btn"><b>游客评论</b></div>
   <div class="gitalk_btn"><b>使用Github账号评论</b></div>
   <div class="moving"></div>
 </div>
-<div class="footer-com"></div>
 <div>&nbsp;</div>
 
 <div class="book-comments">
@@ -500,7 +477,7 @@ function sidebar_toggle() {
     <a target="_blank" rel="noopener" href="https://twitter.com/TILucario" class="link_l">
       <div
         style="
-          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dabyWQ.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabyWQ.png');
         "
       ></div>
       <span>推特</span></a
@@ -508,7 +485,7 @@ function sidebar_toggle() {
     <a target="_blank" rel="noopener" href="https://space.bilibili.com/128735968" class="link_l">
       <div
         style="
-          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dabrFS.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabrFS.png');
         "
       ></div>
       <span>Bilibili</span></a
@@ -516,7 +493,7 @@ function sidebar_toggle() {
     <a target="_blank" rel="noopener" href="https://weibo.com/ryugamine" class="link_l">
       <div
         style="
-          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dabrFS.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabrFS.png');
         "
       ></div>
       <span>微博</span></a
@@ -524,7 +501,7 @@ function sidebar_toggle() {
     <a target="_blank" rel="noopener" href="https://github.com/Anuluca" class="link_l">
       <div
         style="
-          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dabBo8.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabBo8.png');
         "
       ></div>
       <span>Github</span></a

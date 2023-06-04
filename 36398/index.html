@@ -81,7 +81,10 @@ document.addEventListener('DOMContentLoaded', function () {
   <a href="/">
     <!-- <img src="/favicon.png"> -->
     <div>
-      <img id="head_img" src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/g0rY8J.png" />
+      <img
+        id="head_img"
+        src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/g0rY8J.png"
+      />
     </div>
     <span>路卡的自由庭院岛</span>
   </a>
@@ -91,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <li><a href="/"><img src="https://z3.ax1x.com/2021/08/03/fPOGP1.png" class="l_logo"> 广场</a></li>
 <li><a href="/34223"><img src="https://z3.ax1x.com/2021/08/03/fiCMq0.png" class="l_logo"> 公告栏</a></li>
 </ul>
-<h1 id="img-src-https-z3-ax1x-com-2021-08-03-fiCUMR-png-class-l-logo-技术笔记"><a href="/14567"><img src="https://z3.ax1x.com/2021/08/03/fiCUMR.png" class="l_logo"> 技术笔记</a></h1>
+<h1 id="img-src-https-z3-ax1x-com-2021-08-03-fiCUMR-png-class-l-logo-前端笔记"><a href="/14567"><img src="https://z3.ax1x.com/2021/08/03/fiCUMR.png" class="l_logo"> 前端笔记</a></h1>
 <!-- ## 乐理笔记
 * [__1__ 五线谱基础知识](/24257) -->
 <h2 id="Javascript-CSS">Javascript/CSS</h2>
@@ -167,8 +170,8 @@ document.addEventListener('DOMContentLoaded', function () {
 <ul>
 <li><a href="/58027">关于开发中途弃坑的新版个人网站</a></li>
 <li><a href="/2285">「流水账」关于博客想记录的一些东西</a></li>
-<li><a href="/56511">2022不正确记忆</a></li>
-<li><a href="/48446">2020不正确记忆</a></li>
+<li><a href="/404">2022不正确记忆</a></li>
+<li><a href="/404">2020不正确记忆</a></li>
 <li><a href="/41678">Markdown Demo</a></li>
 </ul>
 <h2 id="工具">工具</h2>
@@ -188,81 +191,54 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <script src="/js/book-menu.js"></script>
 
-        <div class="book-sidebar-bottom">
-          <div class="backlogo" onClick="toOldSite()">FLASHBACK_</div>
-          <div class="theme-change">
-            <span id="toDarkButton" onClick='changeThemeButton("dark")'>
-              <svg
-                t="1648869433208"
-                class="icon"
-                viewBox="0 0 1024 1024"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                p-id="1247"
-                width="200"
-                height="200"
-              >
-                <path
-                  d="M512 256c-140.8 0-256 115.2-256 256s115.2 256 256 256 256-115.2 256-256-115.2-256-256-256z m0-85.333333c25.6 0 42.666667-17.066667 42.666667-42.666667V42.666667c0-25.6-17.066667-42.666667-42.666667-42.666667s-42.666667 17.066667-42.666667 42.666667v85.333333c0 25.6 17.066667 42.666667 42.666667 42.666667z m0 682.666666c-25.6 0-42.666667 17.066667-42.666667 42.666667v85.333333c0 25.6 17.066667 42.666667 42.666667 42.666667s42.666667-17.066667 42.666667-42.666667v-85.333333c0-25.6-17.066667-42.666667-42.666667-42.666667zM209.066667 268.8c17.066667 17.066667 42.666667 17.066667 59.733333 4.266667 21.333333-17.066667 21.333333-42.666667 4.266667-59.733334l-4.266667-4.266666-59.733333-59.733334c-17.066667-17.066667-42.666667-17.066667-59.733334-4.266666s-17.066667 42.666667-4.266666 59.733333l4.266666 4.266667 59.733334 59.733333z m605.866666 482.133333c-17.066667-17.066667-42.666667-12.8-59.733333 4.266667-17.066667 17.066667-17.066667 42.666667 0 59.733333l59.733333 59.733334c17.066667 17.066667 42.666667 17.066667 59.733334 4.266666s17.066667-42.666667 4.266666-59.733333l-4.266666-4.266667-59.733334-64zM170.666667 512c0-25.6-17.066667-42.666667-42.666667-42.666667H42.666667c-25.6 0-42.666667 17.066667-42.666667 42.666667s17.066667 42.666667 42.666667 42.666667h85.333333c25.6 0 42.666667-17.066667 42.666667-42.666667z m810.666666-42.666667h-85.333333c-25.6 0-42.666667 17.066667-42.666667 42.666667s17.066667 42.666667 42.666667 42.666667h85.333333c25.6 0 42.666667-17.066667 42.666667-42.666667s-17.066667-42.666667-42.666667-42.666667zM209.066667 750.933333L149.333333 810.666667c-17.066667 17.066667-17.066667 42.666667-4.266666 59.733333s42.666667 17.066667 59.733333 4.266667l4.266667-4.266667L268.8 810.666667c17.066667-17.066667 17.066667-42.666667 4.266667-59.733334s-42.666667-17.066667-64 0z m576-469.333333c12.8 0 21.333333-4.266667 29.866666-12.8l59.733334-59.733333c17.066667-17.066667 17.066667-42.666667 4.266666-59.733334-17.066667-17.066667-42.666667-17.066667-59.733333-4.266666l-4.266667 4.266666-59.733333 59.733334c-17.066667 17.066667-17.066667 42.666667 0 59.733333 4.266667 8.533333 17.066667 12.8 29.866667 12.8z"
-                  p-id="1248"
-                ></path>
-              </svg>
-            </span>
-            <span id="toLightButton" onClick='changeThemeButton("light")'>
-              <svg
-                t="1648869509392"
-                class="icon"
-                viewBox="0 0 1024 1024"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                p-id="6303"
-                width="200"
-                height="200"
-              >
-                <path
-                  d="M930.133333 520.533333c-12.8-17.066667-38.4-21.333333-59.733333-8.533333-115.2 85.333333-273.066667 59.733333-358.4-55.466667-34.133333-42.666667-51.2-98.133333-51.2-149.333333 0-55.466667 17.066667-106.666667 46.933333-153.6 12.8-21.333333 8.533333-46.933333-8.533333-59.733333-8.533333-8.533333-17.066667-8.533333-29.866667-8.533334-234.666667 21.333333-405.333333 230.4-384 465.066667s230.4 405.333333 465.066667 384c200.533333-21.333333 358.4-174.933333 384-375.466667 4.266667-12.8 4.266667-29.866667-4.266667-38.4z"
-                  p-id="6304"
-                  fill="#bfbfbf"
-                ></path>
-              </svg>
-            </span>
-          </div>
-        </div>
+        <div class="book-sidebar-bottom"></div>
       </div>
+      <div class="backlogo" onClick="toOldSite()">FLASHBACK</div>
 
-      <div class="sidebar-toggle" onclick="sidebar_toggle()" onmouseover="add_inner()" onmouseleave="remove_inner()">
+      <div
+  class="sidebar-toggle"
+  onclick="sidebar_toggle()"
+  onmouseover="add_inner()"
+  onmouseleave="remove_inner()"
+>
   <div class="sidebar-toggle-inner"></div>
 </div>
 
 <script>
-function add_inner() {
-  let inner = document.querySelector('.sidebar-toggle-inner')
-  inner.classList.add('show')  
-}
+  function add_inner() {
+    let inner = document.querySelector(".sidebar-toggle-inner");
+    inner.classList.add("show");
+  }
 
-function remove_inner() {
-  let inner = document.querySelector('.sidebar-toggle-inner')
-  inner.classList.remove('show')
-}
+  function remove_inner() {
+    let inner = document.querySelector(".sidebar-toggle-inner");
+    inner.classList.remove("show");
+  }
 
-function sidebar_toggle() {
-    let sidebar_toggle = document.querySelector('.sidebar-toggle')
-    let sidebar = document.querySelector('.book-sidebar')
-    let content = document.querySelector('.off-canvas-content')
-    if (sidebar_toggle.classList.contains('extend')) { // show
-        sidebar_toggle.classList.remove('extend')
-        sidebar.classList.remove('hide')
-        content.classList.remove('extend')
+  function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector(".sidebar-toggle");
+    let sidebar = document.querySelector(".book-sidebar");
+    let content = document.querySelector(".off-canvas-content");
+    let footerCom = document.querySelector(".footer-com");
+    if (sidebar_toggle.classList.contains("extend")) {
+      // show
+      sidebar_toggle.classList.remove("extend");
+      footerCom.style.left = "14rem";
+      sidebar.classList.remove("hide");
+      content.classList.remove("extend");
+    } else {
+      // hide
+      footerCom.style.left = "0";
+      sidebar_toggle.classList.add("extend");
+      sidebar.classList.add("hide");
+      content.classList.add("extend");
     }
-    else { // hide
-        sidebar_toggle.classList.add('extend')
-        sidebar.classList.add('hide')
-        content.classList.add('extend')
-    }
-}
+  }
 </script>
 
+
       <div class="off-canvas-content">
+        <div class="footer-com"></div>
         <div class="columns">
           <div class="column col-10 col-lg-12">
             <div class="book-navbar"><!-- For Responsive Layout -->
@@ -281,7 +257,7 @@ function sidebar_toggle() {
 <div class="attention">
 <p>❗️ 此笔记写于2020年，请注意实效性</p>
 </div>
-<div class = "articlehead" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/Games/animal_crossing/2020040412414000-02CB906EA538A35643C1E1484C4B947D.jpg')"></div>
+<div class = "articlehead" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/Games/animal_crossing/2020040412414000-02CB906EA538A35643C1E1484C4B947D.jpg')"></div>
 <blockquote>
 <p>20条纪念~</p>
 </blockquote>
@@ -298,7 +274,7 @@ function sidebar_toggle() {
 <li>hello.js --放在src文件夹中；</li>
 <li>index.js --放在src文件夹中；<br>
 此时，项目结构如下：<br>
-<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dqLEPe.png" alt=""><br>
+<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dqLEPe.png" alt=""><br>
 在index.html中写下html代码，引入打包后的js文件：</li>
 </ul>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Webpack Project<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&#x27;root&#x27;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;bundle.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>   <span class="comment">&lt;!--这是打包之后的js文件，暂时命名为bundle.js--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -312,9 +288,9 @@ function sidebar_toggle() {
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">// webpack全局安装的情况下</span><br><span class="line">webpack src/index.js --output dist/bundle.js  </span><br><span class="line">// --output可简写为-o</span><br></pre></td></tr></table></figure>
 <p>这时就生成了bundle.js供index.html文件引用<br>
 结果如下：<br>
-<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dqOaSH.png" alt=""><br>
+<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dqOaSH.png" alt=""><br>
 可以看出webpack同时编译了index.js和hello.js,现在打开index.html,可以看到如下结果:<br>
-<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dqODmt.png" alt=""><br>
+<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dqODmt.png" alt=""><br>
 打包完成~</p>
 <h4 id="5-通过配置文件来使用webpack">5. 通过配置文件来使用webpack</h4>
 <p>虽然打包好了，但上述办法在真实工作环境中一般是不会用的，一般我们创建配置文件来打包：<br>
@@ -329,7 +305,7 @@ function sidebar_toggle() {
 <p>注：path.join的功能是拼接路径片段。</p>
 </blockquote>
 <p>有了这个配置文件，我们只需在终端中运行webpack命令就可进行打包，这条命令会自动引用webpack.config.js文件中的配置选项，示例如下：<br>
-<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dqXCtO.png" alt=""><br>
+<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dqXCtO.png" alt=""><br>
 这样就完成了配置文件打包</p>
 <h4 id="6-更智能的打包方式">6.更智能的打包方式</h4>
 <p>除了使用webpack命令打包，还可以把这些命令都集成起来，这时候之前的package.json文件就派上用场了。<br>
@@ -342,7 +318,7 @@ function sidebar_toggle() {
 </blockquote>
 <p>这样就可以在终端中直接执行npm start命令来进行打包，start命令比较特殊，可以直接npm加上start就可以执行，如果我们想起其他的名称，如build时，就需要使用npm run加上build，即npm run build命令。<br>
 现在执行npm start命令：<br>
-<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dqXCtO.png" alt=""><br>
+<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dqXCtO.png" alt=""><br>
 这样我们就学会了webpack所有的打包方式</p>
 <h2 id="二、构建本地服务器">二、构建本地服务器</h2>
 <p>通过打开文件查看页面比较麻烦，此时我们可以构建本地服务器来查看，这样在开发调试的过程中会更加方便。</p>
@@ -362,14 +338,14 @@ function sidebar_toggle() {
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;name&quot;</span>: <span class="string">&quot;webpack-project&quot;</span>,</span><br><span class="line">  <span class="string">&quot;version&quot;</span>: <span class="string">&quot;1.0.0&quot;</span>,</span><br><span class="line">  <span class="string">&quot;description&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">  <span class="string">&quot;main&quot;</span>: <span class="string">&quot;index.js&quot;</span>,</span><br><span class="line">  <span class="string">&quot;scripts&quot;</span>: &#123;</span><br><span class="line">    <span class="string">&quot;build&quot;</span>: <span class="string">&quot;webpack&quot;</span>,</span><br><span class="line">    <span class="string">&quot;dev&quot;</span>: <span class="string">&quot;webpack-dev-server --open&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="string">&quot;keywords&quot;</span>: [],</span><br><span class="line">  <span class="string">&quot;author&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">  <span class="string">&quot;license&quot;</span>: <span class="string">&quot;ISC&quot;</span>,</span><br><span class="line">  <span class="string">&quot;devDependencies&quot;</span>: &#123;</span><br><span class="line">    <span class="string">&quot;webpack&quot;</span>: <span class="string">&quot;^4.23.1&quot;</span>,</span><br><span class="line">    <span class="string">&quot;webpack-cli&quot;</span>: <span class="string">&quot;^3.1.2&quot;</span>,</span><br><span class="line">    <span class="string">&quot;webpack-dev-server&quot;</span>: <span class="string">&quot;^3.1.10&quot;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>我们把<code>start</code>命令名称改为了<code>build</code>，这样比较语义化，平时的脚手架也多数采用这个名称，我们用<code>dev</code>（development的缩写，意指开发环境）来启动本地服务器，<code>webpack-dev-server</code>就是启动服务器的命令，<code>--open</code>是用于启动完服务器后自动打开浏览器，这时候自定义命令方式的便捷性就体现出来了，可以多个命令集成在一起运行，即定义了一个<code>dev</code>命令名称就可以同时运行了<code>webpack-dev-server</code>和<code>--open</code>两个命令。</p>
 <p>现在在终端输入<code>npm run dev</code>运行服务器：<br>
-<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dXFDHS.png" alt=""><br>
+<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dXFDHS.png" alt=""><br>
 这样即可在<code>http://localhost:8088/</code>中查看页面(退出服务器，可使用<code>ctrl+c</code>后，再按<code>y</code>确认，即可退出服务器运行)</p>
 <h4 id="2-Source-Maps调试配置">2. Source Maps调试配置</h4>
 <p>作为开发，代码调试当然少不了，那么问题来了，经过打包后的文件，你是不容易找到出错的地方的，<code>Source Map</code>就是用来解决这个问题的。</p>
 <p>通过如下配置，会在打包时生成对应于打包文件的<code>.map</code>文件，使得编译后的代码可读性更高，更易于调试。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// webpack.config.js</span></span><br><span class="line"><span class="keyword">const</span> path = <span class="built_in">require</span>(<span class="string">&#x27;path&#x27;</span>);</span><br><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">    <span class="attr">entry</span>: path.<span class="title function_">join</span>(__dirname, <span class="string">&quot;/src/index.js&quot;</span>), <span class="comment">// 入口文件</span></span><br><span class="line">    <span class="attr">output</span>: &#123;</span><br><span class="line">        <span class="attr">path</span>: path.<span class="title function_">join</span>( __dirname, <span class="string">&quot;/dist&quot;</span>), <span class="comment">//打包后的文件存放的地方</span></span><br><span class="line">        <span class="attr">filename</span>: <span class="string">&quot;bundle.js&quot;</span> <span class="comment">//打包后输出文件的文件名</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">devServer</span>: &#123;</span><br><span class="line">        <span class="attr">contentBase</span>: <span class="string">&quot;./dist&quot;</span>, <span class="comment">// 本地服务器所加载文件的目录</span></span><br><span class="line">        <span class="attr">port</span>: <span class="string">&quot;8088&quot;</span>,  <span class="comment">// 设置端口号为8088</span></span><br><span class="line">        <span class="attr">inline</span>: <span class="literal">true</span>, <span class="comment">// 文件修改后实时刷新</span></span><br><span class="line">        <span class="attr">historyApiFallback</span>: <span class="literal">true</span>, <span class="comment">//不跳转</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">devtool</span>: <span class="string">&#x27;source-map&#x27;</span>  <span class="comment">// 会生成对于调试的完整的.map文件，但同时也会减慢打包速度</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>配置好后，再次运行<code>npm run build</code>进行打包，这时会发现在<code>dist</code>文件夹中多出了一个<code>bundle.js.map</code>文件如下：<br>
-<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dXkpUe.png" alt=""><br>
+<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dXkpUe.png" alt=""><br>
 如果代码有bug，在浏览器的调试工具中会提示错误出现的位置，这就是<code>devtool: 'source-map'</code>配置项的作用。</p>
 
   <a onclick="go_top()"
@@ -380,7 +356,7 @@ function sidebar_toggle() {
 <div class="drink-time">
   <img
     style="text-align: center; margin-top: 20vh; width: 150px; opacity: 0.9"
-    src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/2F65x1.png"
+    src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/2F65x1.png"
   />
   <div style="text-align: center; margin-top: 20px; font-size: 20px">
     由于某些原因，博客图床于5月26日惨遭爆破，目前正在整理需要的图片并迁移存活的图片到新图床,预计6月10日重新上线网站
@@ -389,22 +365,23 @@ function sidebar_toggle() {
 
 
 <div class="articleBottom">
+  <i></i>
   <b
     >&nbsp;&nbsp;<img
-      src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/goDrXd.gif"
+      src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/goDrXd.gif"
     />&nbsp;
     <div><span>THE END</span></div>
     &nbsp;<img
-      src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/god8aT.gif"
+      src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/god8aT.gif"
     />&nbsp;&nbsp;</b
   >
+  <i></i>
 </div>
 <div class="combtn">
   <div class="valine_btn"><b>游客评论</b></div>
   <div class="gitalk_btn"><b>使用Github账号评论</b></div>
   <div class="moving"></div>
 </div>
-<div class="footer-com"></div>
 <div>&nbsp;</div>
 
 <div class="book-comments">
@@ -524,7 +501,7 @@ function sidebar_toggle() {
     <a target="_blank" rel="noopener" href="https://twitter.com/TILucario" class="link_l">
       <div
         style="
-          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dabyWQ.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabyWQ.png');
         "
       ></div>
       <span>推特</span></a
@@ -532,7 +509,7 @@ function sidebar_toggle() {
     <a target="_blank" rel="noopener" href="https://space.bilibili.com/128735968" class="link_l">
       <div
         style="
-          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dabrFS.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabrFS.png');
         "
       ></div>
       <span>Bilibili</span></a
@@ -540,7 +517,7 @@ function sidebar_toggle() {
     <a target="_blank" rel="noopener" href="https://weibo.com/ryugamine" class="link_l">
       <div
         style="
-          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dabrFS.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabrFS.png');
         "
       ></div>
       <span>微博</span></a
@@ -548,7 +525,7 @@ function sidebar_toggle() {
     <a target="_blank" rel="noopener" href="https://github.com/Anuluca" class="link_l">
       <div
         style="
-          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/dabBo8.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabBo8.png');
         "
       ></div>
       <span>Github</span></a

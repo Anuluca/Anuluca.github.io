@@ -30,7 +30,11 @@ body,
   border-color: #cecece !important;
 }
 
-.v[data-class=v] .status-bar, .v[data-class=v] .veditor, .v[data-class=v] .vinput, .v[data-class=v] p, .v[data-class=v] pre code {
+.v[data-class="v"] .status-bar,
+.v[data-class="v"] .veditor,
+.v[data-class="v"] .vinput,
+.v[data-class="v"] p,
+.v[data-class="v"] pre code {
   color: #eee !important;
 }
 
@@ -50,12 +54,12 @@ code {
   background: #000000;
 }
 
-.v[data-class=v] .vwrap,
+.v[data-class="v"] .vwrap,
 .vsubmit {
   border: 1px solid #9a9a9a !important;
 }
 
-.v[data-class=v] .vwrap .vheader .vinput {
+.v[data-class="v"] .vwrap .vheader .vinput {
   border-bottom: 1px dashed white !important;
 }
 
@@ -131,15 +135,18 @@ a {
   border-bottom: 21px solid white;
 }
 
-.machinePagination > div > a > div, .myPagination > div > a > div {
+.machinePagination > div > a > div,
+.myPagination > div > a > div {
   border: 1px solid #808080;
   color: white !important;
 }
-.machinePagination > div > a > div:hover, .myPagination > div > a > div:hover {
+.machinePagination > div > a > div:hover,
+.myPagination > div > a > div:hover {
   background-color: white;
   color: black !important;
 }
-.machinePagination > div > a > .page_chosen, .myPagination > div > a > .page_chosen {
+.machinePagination > div > a > .page_chosen,
+.myPagination > div > a > .page_chosen {
   background-color: white;
   color: black !important;
 }
@@ -156,7 +163,13 @@ a {
   background-image: linear-gradient(90deg, transparent, rgba(2, 2, 2, 0.699));
 }
 
-.ns-card, .pc-card, .gba-card, .liusi-card, .gb-card, .ds-card, .gbc-card {
+.ns-card,
+.pc-card,
+.gba-card,
+.liusi-card,
+.gb-card,
+.ds-card,
+.gbc-card {
   box-shadow: 0px 3px 5px 1px #000000;
 }
 
@@ -164,7 +177,13 @@ a {
   color: white !important;
 }
 
-.out:hover .ns-card, .out:hover .pc-card, .out:hover .gba-card, .out:hover .liusi-card, .out:hover .gb-card, .out:hover .ds-card, .out:hover .gbc-card {
+.out:hover .ns-card,
+.out:hover .pc-card,
+.out:hover .gba-card,
+.out:hover .liusi-card,
+.out:hover .gb-card,
+.out:hover .ds-card,
+.out:hover .gbc-card {
   opacity: 0.7;
   box-shadow: 0px 8px 7px 3px #000000;
 }
@@ -188,12 +207,8 @@ a {
 }
 
 .book-sidebar-bottom {
-  background: #242426;
-  box-shadow: 0px 0px 14px 0 #0a0a0a;
-}
-
-.backlogo:hover {
-  color: white !important;
+  background: #252525;
+  box-shadow: 0px 0px 11px 6px #2626268a;
 }
 
 @media (max-width: 959px) {

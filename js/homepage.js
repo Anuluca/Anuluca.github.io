@@ -4,7 +4,7 @@ $(".note_guide").mouseenter(function () {
   $(".zhegaib,.zhegaic,.zhegaid").stop().animate({ width: "100%" }, 150);
   $(".guidePic").css({
     backgroundImage:
-      "url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/YfLHgA.jpg')",
+      "url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/YfLHgA.jpg')",
   });
 });
 $(".nintendo_guide").mouseenter(function () {
@@ -12,7 +12,7 @@ $(".nintendo_guide").mouseenter(function () {
   $(".zhegaia,.zhegaic,.zhegaid").stop().animate({ width: "100%" }, 150);
   $(".guidePic").css({
     backgroundImage:
-      "url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/IMG_6139.JPG')",
+      "url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/IMG_6139.JPG')",
   });
 });
 $(".jay_guide").mouseenter(function () {
@@ -20,7 +20,7 @@ $(".jay_guide").mouseenter(function () {
   $(".zhegaia,.zhegaib,.zhegaid").stop().animate({ width: "100%" }, 150);
   $(".guidePic").css({
     backgroundImage:
-      "url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/2145F6682FBCE287815AF6DC59D0C5A5.png')",
+      "url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/2145F6682FBCE287815AF6DC59D0C5A5.png')",
   });
 });
 $(".home_guide").mouseenter(function () {
@@ -28,7 +28,7 @@ $(".home_guide").mouseenter(function () {
   $(".zhegaia,.zhegaib,.zhegaic").stop().animate({ width: "100%" }, 150);
   $(".guidePic").css({
     backgroundImage:
-      "url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@1.2/other/waoh6O.jpg')",
+      "url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/waoh6O.jpg')",
   });
 });
 
@@ -40,17 +40,15 @@ $(".home_guide").mouseenter(function () {
 //作品
 $(".shits>div")
   .mouseenter(function () {
-    $(this)
-      .find(".shit_title_img")
-      .animate(
-        {
-          width: "310px",
-          height: "190px",
-          marginTop: "10px",
-          marginLeft: "8px",
-        },
-        150
-      );
+    $(this).find(".shit_title_img").animate(
+      {
+        width: "310px",
+        height: "190px",
+        marginTop: "10px",
+        marginLeft: "8px",
+      },
+      150
+    );
     $(this)
       .find("span:first-of-type")
       .animate({ bottom: "20px", fontSize: "22px" }, 80);
@@ -58,17 +56,15 @@ $(".shits>div")
   })
   .stop()
   .mouseleave(function () {
-    $(this)
-      .find(".shit_title_img")
-      .animate(
-        {
-          width: "300px",
-          height: "180px",
-          marginTop: "14px",
-          marginLeft: "14px",
-        },
-        150
-      );
+    $(this).find(".shit_title_img").animate(
+      {
+        width: "300px",
+        height: "180px",
+        marginTop: "14px",
+        marginLeft: "14px",
+      },
+      150
+    );
     $(this)
       .find("span:first-of-type")
       .animate({ bottom: "30px", fontSize: "18px" }, 80);
@@ -101,8 +97,8 @@ var mySwiper = new Swiper(".swiper-container", {
 });
 //如果你初始化时没有定义Swiper实例，后面也可以通过Swiper的HTML元素来获取该实例
 new Swiper(".swiper-container");
-var mySwiper = document.querySelector(".swiper-container").swiper;
-mySwiper.slideNext();
+// var mySwiper = document.querySelector(".swiper-container").swiper;
+// mySwiper.slideNext();
 
 var psSwiper = new Swiper(".ps-container", {
   autoplay: false, //自动滑动
@@ -120,8 +116,8 @@ var psSwiper = new Swiper(".ps-container", {
 });
 //如果你初始化时没有定义Swiper实例，后面也可以通过Swiper的HTML元素来获取该实例
 new Swiper(".ps-container");
-var psSwiper = document.querySelector(".ps-container").swiper;
-psSwiper.slideNext();
+// var psSwiper = document.querySelector(".ps-container").swiper;
+// psSwiper.slideNext();
 
 var cardSwiper = new Swiper(".card-container", {
   autoplay: false, //自动滑动
@@ -139,5 +135,5 @@ var cardSwiper = new Swiper(".card-container", {
 });
 //如果你初始化时没有定义Swiper实例，后面也可以通过Swiper的HTML元素来获取该实例
 new Swiper(".card-container");
-var cardSwiper = document.querySelector(".card-container").swiper;
-cardSwiper.slideNext();
+// var cardSwiper = document.querySelector(".card-container").swiper;
+// cardSwiper.slideNext();
