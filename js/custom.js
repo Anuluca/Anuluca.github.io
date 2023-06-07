@@ -36,6 +36,16 @@ $(document).ready(function () {
   });
 });
 
+//  获取当前主题
+function getTheme() {
+  if (!localStorage.getItem("theme")) {
+    localStorage.setItem("theme", "dark");
+  }
+  $("#body-color").removeClass();
+  $("#body-color").addClass(localStorage.getItem("theme"));
+}
+getTheme();
+
 // //获取当前时间
 // var ifDrink = (new Date()).getHours()
 
@@ -53,20 +63,20 @@ $(function () {
         */
   };
   console.log(str.getMultiLine());
-  let theme = sessionStorage.getItem("theme");
-  if (theme === "light") {
-    $("#toLightButton").css({ display: "none" });
-    $("#toDarkButton").css({ display: "block" });
-  } else {
-    $("#toLightButton").css({ display: "block" });
-    $("#toDarkButton").css({ display: "none" });
-  }
-  showOrHideToTop();
+  // let theme = sessionStorage.getItem("theme");
+  // if (theme === "light") {
+  //   $("#toLightButton").css({ display: "none" });
+  //   $("#toDarkButton").css({ display: "block" });
+  // } else {
+  //   $("#toLightButton").css({ display: "block" });
+  //   $("#toDarkButton").css({ display: "none" });
+  // }
+  // showOrHideToTop();
 });
 
-$(window).scroll(function () {
-  showOrHideToTop();
-});
+// $(window).scroll(function () {
+//   showOrHideToTop();
+// });
 
 Function.prototype.getMultiLine = function () {
   var lines = new String(this);
@@ -74,13 +84,13 @@ Function.prototype.getMultiLine = function () {
   return lines;
 };
 
-function showOrHideToTop() {
-  if ($(window).scrollTop() > $("html").height() / 2) {
-    $(".to_top").fadeIn(300);
-  } else {
-    $(".to_top").fadeOut(200);
-  }
-}
+// function showOrHideToTop() {
+//   if ($(window).scrollTop() > $("html").height() / 2) {
+//     $(".to_top").fadeIn(300);
+//   } else {
+//     $(".to_top").fadeOut(200);
+//   }
+// }
 
 //gitalk&valine双评论端
 $(".gitalk_btn").click(function () {
@@ -123,3 +133,16 @@ $(".link_l")
 window.onload = function () {
   NProgress.done();
 };
+
+function changeSidebarSize() {
+  if (!$(".book-sidebar-bottom").hasClass("sidebar-open")) {
+    $(".book-sidebar-bottom").addClass("sidebar-open");
+  } else {
+    $(".book-sidebar-bottom").removeClass("sidebar-open");
+  }
+}
+
+function changeTheme(type) {
+  localStorage.setItem("theme", type);
+  getTheme();
+}

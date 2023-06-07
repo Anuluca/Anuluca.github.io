@@ -56,9 +56,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   <body>
-    <div class="body-color">
-      <div class="body-color night"></div>
-      <div class="star-back night"></div>
+    <div id="body-color" class="">
+      <div class="back-color"></div>
+      <div class="star-back"></div>
     </div>
 
     <!-- <div class="body-color">
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
         src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/g0rY8J.png"
       />
     </div>
-    <span>路卡的自由庭院岛</span>
+    <span>路卡的自由庭院岛 <b>3.0</b></span>
   </a>
 </div>
  <div class="book-menu scrollbar">
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </ul>
 <h2 id="Vue-React">Vue/React</h2>
 <ul>
-<li><a href="/52873"><strong>7</strong> React/Vue中的路由(router)基于什么实现原理</a></li>
+<li><a href="/52873"><strong>7</strong> React/Vue中的路由基于什么实现原理</a></li>
 <li><a href="/26616"><strong>6</strong> Vue时间戳转换函数</a></li>
 <li><a href="/20181"><strong>5</strong> axios完整接口调用顺序</a></li>
 <li><a href="/15023"><strong>4</strong> 图表插件选型</a></li>
@@ -191,9 +191,30 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <script src="/js/book-menu.js"></script>
 
-        <div class="book-sidebar-bottom"></div>
+        <div class="book-sidebar-bottom">
+          <div class="sidebar-title" onclick="changeSidebarSize()">
+            <b>》</b>
+            <span>主题切换</span>
+          </div>
+          <div class="theme-group">
+            <!-- 黄昏之鬃 -->
+            <div
+              style="
+                background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dawn.jpg');
+              "
+              onclick="changeTheme('dawn')"
+            ></div>
+            <!-- 暗影夺辉 -->
+            <div
+              style="
+                background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dark.jpg');
+              "
+              onclick="changeTheme('dark')"
+            ></div>
+          </div>
+        </div>
       </div>
-      <div class="backlogo" onClick="toOldSite()">FLASHBACK</div>
+      <!-- <div class="backlogo" onClick="toOldSite()">FLASHBACK</div> -->
 
       <div
   class="sidebar-toggle"
@@ -220,16 +241,21 @@ document.addEventListener('DOMContentLoaded', function () {
     let sidebar = document.querySelector(".book-sidebar");
     let content = document.querySelector(".off-canvas-content");
     let footerCom = document.querySelector(".footer-com");
+    let backToTop = document.querySelector(".back-to-top");
     if (sidebar_toggle.classList.contains("extend")) {
       // show
       sidebar_toggle.classList.remove("extend");
-      footerCom.style.left = "14rem";
+      footerCom.style.left = "calc(14rem + 6px)";
+      footerCom.style.width = "calc(84% - 13.65rem - 6px)";
+      backToTop.style.left = " calc(84% - 5.35rem)";
       sidebar.classList.remove("hide");
       content.classList.remove("extend");
     } else {
       // hide
-      footerCom.style.left = "0";
+      footerCom.style.left = "4px";
+      footerCom.style.width = "calc(84% - 1.65rem - 12px)";
       sidebar_toggle.classList.add("extend");
+      backToTop.style.left = "calc(84% - 7.75rem)";
       sidebar.classList.add("hide");
       content.classList.add("extend");
     }
@@ -238,6 +264,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
       <div class="off-canvas-content">
+        <div class="back-to-top" onclick="go_top()">回到顶部</div>
         <div class="footer-com"></div>
         <div class="columns">
           <div class="column col-10 col-lg-12">
@@ -439,7 +466,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <a target="_blank" rel="noopener" href="https://space.bilibili.com/128735968" class="link_l">
       <div
         style="
-          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabrFS.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabprFS.png');
         "
       ></div>
       <span>Bilibili</span></a
@@ -485,7 +512,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="clipboard_success">&nbsp;&nbsp;复制成功！</div>
 
     <!-- 切换主题的动画效果 -->
-    <div class="change_theme_animes">
+    <!-- <div class="change_theme_animes">
       <div
         id="cantSeeAnything_white"
         style="
@@ -565,7 +592,7 @@ document.addEventListener('DOMContentLoaded', function () {
           opacity: 0;
         "
       />
-    </div>
+    </div> -->
   </body>
 </html>
 

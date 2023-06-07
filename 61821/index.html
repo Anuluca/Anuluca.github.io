@@ -56,9 +56,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   <body>
-    <div class="body-color">
-      <div class="body-color night"></div>
-      <div class="star-back night"></div>
+    <div id="body-color" class="">
+      <div class="back-color"></div>
+      <div class="star-back"></div>
     </div>
 
     <!-- <div class="body-color">
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
         src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/g0rY8J.png"
       />
     </div>
-    <span>路卡的自由庭院岛</span>
+    <span>路卡的自由庭院岛 <b>3.0</b></span>
   </a>
 </div>
  <div class="book-menu scrollbar">
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </ul>
 <h2 id="Vue-React">Vue/React</h2>
 <ul>
-<li><a href="/52873"><strong>7</strong> React/Vue中的路由(router)基于什么实现原理</a></li>
+<li><a href="/52873"><strong>7</strong> React/Vue中的路由基于什么实现原理</a></li>
 <li><a href="/26616"><strong>6</strong> Vue时间戳转换函数</a></li>
 <li><a href="/20181"><strong>5</strong> axios完整接口调用顺序</a></li>
 <li><a href="/15023"><strong>4</strong> 图表插件选型</a></li>
@@ -191,9 +191,30 @@ document.addEventListener('DOMContentLoaded', function () {
 
 <script src="/js/book-menu.js"></script>
 
-        <div class="book-sidebar-bottom"></div>
+        <div class="book-sidebar-bottom">
+          <div class="sidebar-title" onclick="changeSidebarSize()">
+            <b>》</b>
+            <span>主题切换</span>
+          </div>
+          <div class="theme-group">
+            <!-- 黄昏之鬃 -->
+            <div
+              style="
+                background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dawn.jpg');
+              "
+              onclick="changeTheme('dawn')"
+            ></div>
+            <!-- 暗影夺辉 -->
+            <div
+              style="
+                background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dark.jpg');
+              "
+              onclick="changeTheme('dark')"
+            ></div>
+          </div>
+        </div>
       </div>
-      <div class="backlogo" onClick="toOldSite()">FLASHBACK</div>
+      <!-- <div class="backlogo" onClick="toOldSite()">FLASHBACK</div> -->
 
       <div
   class="sidebar-toggle"
@@ -220,16 +241,21 @@ document.addEventListener('DOMContentLoaded', function () {
     let sidebar = document.querySelector(".book-sidebar");
     let content = document.querySelector(".off-canvas-content");
     let footerCom = document.querySelector(".footer-com");
+    let backToTop = document.querySelector(".back-to-top");
     if (sidebar_toggle.classList.contains("extend")) {
       // show
       sidebar_toggle.classList.remove("extend");
-      footerCom.style.left = "14rem";
+      footerCom.style.left = "calc(14rem + 6px)";
+      footerCom.style.width = "calc(84% - 13.65rem - 6px)";
+      backToTop.style.left = " calc(84% - 5.35rem)";
       sidebar.classList.remove("hide");
       content.classList.remove("extend");
     } else {
       // hide
-      footerCom.style.left = "0";
+      footerCom.style.left = "4px";
+      footerCom.style.width = "calc(84% - 1.65rem - 12px)";
       sidebar_toggle.classList.add("extend");
+      backToTop.style.left = "calc(84% - 7.75rem)";
       sidebar.classList.add("hide");
       content.classList.add("extend");
     }
@@ -238,6 +264,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
       <div class="off-canvas-content">
+        <div class="back-to-top" onclick="go_top()">回到顶部</div>
         <div class="footer-com"></div>
         <div class="columns">
           <div class="column col-10 col-lg-12">
@@ -264,6 +291,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <a href="/3242"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/')"></div><div class="g-t"><span class="tt">初音未来 歌姬计划 MEGA39's+</span></div><div class="count no_co">暂无截图</div></div></a>
   <a href="/55881"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/objection.png')"></div><div class="g-t"><span class="tt">大逆转裁判2 : 成步堂龙之介的觉悟</span></div><div class="count">35张图片</div></div></a>
   <a href="/4500"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/red.png')"></div><div class="g-t"><span class="tt">荒野大镖客2 : 救赎</span><span class="ver">Epic</span></div><div class="count">29张图片</div></div></a>
+  <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/')"></div><div class="g-t"><span class="tt">死亡搁浅</span></div><div class="count no_co">暂无截图</div></div></a>
   <a href="/53693"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/ac1.png')"></div><div class="g-t"><span class="tt">刺客信条</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
   <a href="/42128"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/ac2.png')"></div><div class="g-t"><span class="tt">刺客信条 2</span><span class="ver">Steam</span></div><div class="count">12张图片</div></div></a>
   <a href="/7897"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/acb.png')"></div><div class="g-t"><span class="tt">刺客信条 : 兄弟会</span><span class="ver">Steam</span></div><div class="count">20张图片</div></div></a>
@@ -318,7 +346,7 @@ document.addEventListener('DOMContentLoaded', function () {
    <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/thebindingofissacafterbirth.png')"></div><div class="g-t"><span class="tt">以撒的结合 : 胎衣 +</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
    <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/undertale.png')"></div><div class="g-t"><span class="tt">Undertale</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
    <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/watchdogs.png')"></div><div class="g-t"><span class="tt">看门狗</span><span class="ver">UPLAY</span></div><div class="count no_co">暂无截图</div></div></a>
-   <a href="/2974"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/watchdogs2.png')"></div><div class="g-t"><span class="tt">看门狗 2</span><span class="ver">Steam</span></div><div class="count">2张图片</div></div></a>
+   <a href="/2974"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/watchdogs2.png')"></div><div class="g-t"><span class="tt">看门狗 2</span><span class="ver">Steam</span></div><div class="count">6张图片</div></div></a>
    <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/xiuru.png')"></div><div class="g-t"><span class="tt">羞辱</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
    <a href="/404"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/xiuru2.png')"></div><div class="g-t"><span class="tt">羞辱 2</span><span class="ver">Steam</span></div><div class="count no_co">暂无截图</div></div></a>
    <a href="/56308"><div class="out"><div class="pc-card" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/GameCovers/PC/forzahorizon4.png')"></div><div class="g-t"><span class="tt">极限竞速：地平线 4</span><span class="ver">微软商店</span></div><div class="count">64张图片</div></div></a>
@@ -485,7 +513,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <a target="_blank" rel="noopener" href="https://space.bilibili.com/128735968" class="link_l">
       <div
         style="
-          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabrFS.png');
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabprFS.png');
         "
       ></div>
       <span>Bilibili</span></a
@@ -531,7 +559,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="clipboard_success">&nbsp;&nbsp;复制成功！</div>
 
     <!-- 切换主题的动画效果 -->
-    <div class="change_theme_animes">
+    <!-- <div class="change_theme_animes">
       <div
         id="cantSeeAnything_white"
         style="
@@ -611,7 +639,7 @@ document.addEventListener('DOMContentLoaded', function () {
           opacity: 0;
         "
       />
-    </div>
+    </div> -->
   </body>
 </html>
 
