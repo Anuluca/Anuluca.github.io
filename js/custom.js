@@ -146,3 +146,7 @@ function changeTheme(type) {
   localStorage.setItem("theme", type);
   getTheme();
 }
+
+function jumpToPage(url) {
+  window.location.href = url;
+}
