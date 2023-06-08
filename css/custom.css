@@ -1,9 +1,21 @@
 @charset "UTF-8";
-/* 博文字体设置 */
+a {
+  color: #30b2fc !important; }
+
+.attention *,
+.tip *,
+.note * {
+  color: #3b4351; }
+
 * {
   scroll-behavior: smooth;
   letter-spacing: 0.6px;
   font-size: 14px; }
+
+.off-canvas-content,
+.cutline b,
+body {
+  background-color: #1c1c1e !important; }
 
 a:link,
 a:visited,
@@ -37,11 +49,8 @@ body {
   .book-menu h1 * {
     font-weight: 800 !important; }
 
-.book-sidebar {
-  background: transparent !important; }
-
 .book-sidebar .book-brand a span {
-  margin-left: calc(0.5rem - 18px) !important; }
+  margin-left: 0.5rem !important; }
 
 .accordion label {
   margin-left: 11px; }
@@ -131,9 +140,10 @@ body {
   box-shadow: 0px 0px 13px #2626268a;
   border: 1px solid #494949; }
   .footer-com .center {
-    width: calc(100% - 148px);
-    margin-left: 34px;
-    line-height: 32px;
+    width: calc(100% - 150px);
+    margin-left: 32px;
+    line-height: 29px;
+    height: 30px;
     font-size: 12px;
     letter-spacing: 1.2px;
     font-family: "siyuan";
@@ -251,8 +261,25 @@ body,
   height: 100%;
   max-width: 12rem !important; }
 
-.book-sidebar {
-  box-shadow: 0px 0 9px 0px #cacacad9; }
+.book-sidebar .book-menu .accordion i.icon-arrow-down::before {
+  border-color: #cecece !important; }
+
+.v[data-class="v"] .status-bar,
+.v[data-class="v"] .veditor,
+.v[data-class="v"] .vinput,
+.v[data-class="v"] p,
+.v[data-class="v"] pre code {
+  color: #eee !important; }
+
+.v[data-class="v"] .vwrap,
+.vsubmit {
+  border: 1px solid #9a9a9a !important; }
+
+.v[data-class="v"] .vwrap .vheader .vinput {
+  border-bottom: 1px dashed white !important; }
+
+code {
+  background: #000000; }
 
 .book-menu-page {
   margin-top: 200px;
@@ -286,6 +313,10 @@ body,
 .off-canvas-content .book-post-info .book-post-meta .author {
   display: flex;
   padding: 10px 10px; }
+
+.off-canvas-content .book-content .book-post h1,
+.off-canvas-content .book-content .book-post h2 {
+  border-bottom: 1px solid #666666 !important; }
 
 .off-canvas-content .book-post-info .book-post-meta .author .author-img {
   display: flex;
@@ -532,9 +563,9 @@ body,
   position: relative;
   overflow: hidden;
   transition: all 0.2s;
-  box-shadow: 0px 1px 5px 0px #a1a1a1; }
+  box-shadow: 0px 2px 10px 0px #000000; }
   .suipai-item:hover {
-    box-shadow: 0px 3px 8px 2px #a1a1a1; }
+    box-shadow: 0px 8px 16px 1px #000000; }
 
 .bp {
   width: 670px;
@@ -647,7 +678,8 @@ body,
   height: calc(3.25rem + 4px) !important;
   background-color: white;
   z-index: 20;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  border-bottom: 1px solid #6d6d6e; }
   .book-sidebar .book-brand a {
     text-align: center;
     margin-left: 2.6rem;
@@ -686,8 +718,21 @@ body,
 .book-sidebar .book-menu {
   width: 14rem !important;
   bottom: 0px; }
+  .book-sidebar .book-menu .current-tab {
+    color: white !important; }
+  .book-sidebar .book-menu h1,
+  .book-sidebar .book-menu h2,
+  .book-sidebar .book-menu h3,
+  .book-sidebar .book-menu h4,
+  .book-sidebar .book-menu h5,
+  .book-sidebar .book-menu h6 {
+    padding: 0 0.6rem 0 1.25rem;
+    margin: 1.25rem 0 0.7rem 0;
+    font-size: 0.7rem; }
 
 .book-sidebar {
+  background: transparent !important;
+  box-shadow: none !important;
   width: 14rem !important;
   overflow: hidden; }
 
@@ -729,7 +774,8 @@ body,
   top: 0;
   padding-top: 15px !important;
   z-index: 20;
-  background-color: transparent !important; }
+  background-color: transparent !important;
+  color: white !important; }
 
 .drink-time {
   position: fixed;
@@ -992,7 +1038,8 @@ html ::-webkit-scrollbar-track {
     z-index: 1; }
 
 .book-sidebar .book-menu .accordion {
-  padding: 0.625rem 0.6rem 0.625rem 2rem !important; }
+  padding: 0.625rem 0.6rem 0.625rem 2rem !important;
+  font-size: 15px; }
 
 .book-sidebar .book-menu h1 {
   padding: 0 0.6rem 0 1.2rem !important;
@@ -1000,7 +1047,8 @@ html ::-webkit-scrollbar-track {
 
 .book-sidebar .book-menu .uncollapsible {
   padding: 0 0.6rem 0 1.25rem;
-  margin: 0 0 0 0; }
+  margin: 0 0 0 0;
+  border-top: 1px solid #343434 !important; }
 
 .book-sidebar .book-menu li {
   margin-top: 1rem !important;
@@ -1084,9 +1132,9 @@ html ::-webkit-scrollbar-track {
     position: relative;
     margin: 30px 20px;
     transition: all 0.2s;
-    box-shadow: 0px 1px 5px 0px #767676; }
+    box-shadow: 0px 2px 10px 0px #000000 !important; }
     .toy_covers .toy_div:hover {
-      box-shadow: 0px 4px 10px 0px #767676; }
+      box-shadow: 0px 4px 14px 2px #000000 !important; }
   .toy_covers .back_black:hover {
     opacity: 0.1; }
   .toy_covers .back_black {
@@ -1137,11 +1185,13 @@ html ::-webkit-scrollbar-track {
   font-weight: bold; }
 
 .book-post h1 a {
+  color: white !important;
   font-size: 1.4rem;
   font-weight: bold; }
-
-.book-post h1 a:visited {
-  color: #0c53cd !important; }
+  .book-post h1 a:visited {
+    color: white !important; }
+  .book-post h1 a:hover {
+    color: #0c53cd !important; }
 
 .platform {
   display: inline-block;
@@ -1247,12 +1297,13 @@ html ::-webkit-scrollbar-track {
   .myPagination > div {
     float: right; }
     .myPagination > div > a > div {
+      border: 1px solid #808080;
+      color: white;
       padding: 0 10px;
       height: 40px;
       text-align: center;
       line-height: 40px;
       margin: 3px;
-      border: 1px solid #36a5df;
       float: left;
       -moz-user-select: none;
       /*火狐*/
@@ -1263,15 +1314,14 @@ html ::-webkit-scrollbar-track {
       -khtml-user-select: none;
       /*早期浏览器*/
       user-select: none;
-      border-radius: 6px;
-      color: #36a5df !important; }
+      border-radius: 6px; }
       .myPagination > div > a > div:hover {
-        background-color: #36a5df;
-        color: white !important;
+        background-color: white;
+        color: black;
         font-weight: bold; }
     .myPagination > div > a > .page_chosen {
-      background-color: #36a5df;
-      color: white !important;
+      background-color: white;
+      color: black !important;
       font-weight: bold;
       border-radius: 6px; }
 
@@ -1282,12 +1332,13 @@ html ::-webkit-scrollbar-track {
   .machinePagination > div {
     float: right; }
     .machinePagination > div > a > div {
+      border: 1px solid #808080;
+      color: white;
       height: 40px;
       text-align: center;
       line-height: 40px;
       margin: 3px;
       padding: 0 10px;
-      border: 1px solid #36a5df;
       float: left;
       -moz-user-select: none;
       /*火狐*/
@@ -1298,15 +1349,14 @@ html ::-webkit-scrollbar-track {
       -khtml-user-select: none;
       /*早期浏览器*/
       user-select: none;
-      border-radius: 6px;
-      color: #36a5df !important; }
+      border-radius: 6px; }
       .machinePagination > div > a > div:hover {
-        background-color: #36a5df;
-        color: white !important;
+        background-color: white;
+        color: black;
         font-weight: bold; }
     .machinePagination > div > a > .page_chosen {
-      background-color: #36a5df;
-      color: white !important;
+      background-color: white;
+      color: black !important;
       font-weight: bold; }
 
 .littlePet {
@@ -1397,7 +1447,7 @@ html ::-webkit-scrollbar-track {
       height: 30px;
       font-size: 12px;
       font-weight: bold;
-      color: #3b4351;
+      color: white;
       position: relative; }
       .ns-cards .out .g-t .tt {
         width: 190px;
@@ -1789,6 +1839,15 @@ html ::-webkit-scrollbar-track {
   .gbc-cards .out:hover .count {
     width: 239px; }
 
+.out:hover .ns-card,
+.out:hover .pc-card,
+.out:hover .gba-card,
+.out:hover .liusi-card,
+.out:hover .gb-card,
+.out:hover .ds-card,
+.out:hover .gbc-card {
+  opacity: 0.7; }
+
 .phone-ke {
   width: 600px;
   height: 750px;
@@ -1906,8 +1965,8 @@ html ::-webkit-scrollbar-track {
   .guidePic:hover {
     box-shadow: 0px 2px 11px 0px #131313d1; }
   .guidePic .title {
-    font-size: 52px;
-    bottom: -26px;
+    font-size: 40px;
+    bottom: -20px;
     position: absolute;
     color: white;
     font-weight: bold;
@@ -2110,7 +2169,7 @@ html ::-webkit-scrollbar-track {
   color: #ed4f38; }
 
 .poke-gen * {
-  border-color: #69696933 !important; }
+  border-color: rgba(255, 255, 255, 0.2) !important; }
 
 .poke-gen tr .ppp {
   text-align: center !important;
@@ -2146,7 +2205,7 @@ html ::-webkit-scrollbar-track {
     height: 40px;
     line-height: 40px;
     vertical-align: middle;
-    background-color: rgba(168, 168, 168, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     padding: 0 10px 0 30px;
     position: relative;
@@ -2249,7 +2308,7 @@ html ::-webkit-scrollbar-track {
       background-position: -5px 0;
       cursor: default;
       color: white;
-      background-image: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.493));
+      background-image: linear-gradient(90deg, transparent, rgba(2, 2, 2, 0.699));
       transition: all 0.2s; }
       .poke-gen tr td .pokemon-move .move:hover {
         box-shadow: 0px 3px 11px 0px #1d1d1d; }
@@ -2650,3 +2709,8 @@ html ::-webkit-scrollbar-track {
   background-clip: text;
   color: transparent;
   background: linear-gradient(to bottom, #fff, transparent); }
+  .pokemon-small-title.home-title {
+    background: linear-gradient(to bottom, #ffffff72, transparent);
+    margin-bottom: 0.2rem;
+    height: 2.5rem;
+    font-size: 2.4rem; }

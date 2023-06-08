@@ -134,7 +134,7 @@
     height: calc(3.6rem + 4px) !important; }
     .book-sidebar .book-brand a {
       zoom: 0.9;
-      margin-left: 40px; }
+      margin-left: 32px !important; }
   .des {
     zoom: 0.7; }
   .swiper-pagination-bullet {

@@ -150,3 +150,5 @@ function changeTheme(type) {
 function jumpToPage(url) {
   window.location.href = url;
 }
+
+function Base64() {}
