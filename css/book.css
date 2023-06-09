@@ -748,7 +748,7 @@ body {
   box-shadow: 0px 0px 13px #2626268a;
   border: 1px solid #494949; }
   .footer-com .center {
-    width: calc(100% - 150px);
+    width: calc(100% - 146px);
     margin-left: 32px;
     line-height: 29px;
     height: 30px;
@@ -1297,7 +1297,7 @@ code {
       text-shadow: 0 0 4px white; }
   .book-sidebar .book-brand span {
     position: relative;
-    margin-top: -2px; }
+    margin-top: 4px; }
     .book-sidebar .book-brand span b {
       position: absolute;
       right: -10px;
@@ -1382,8 +1382,9 @@ code {
   top: 0;
   padding-top: 15px !important;
   z-index: 20;
-  background-color: transparent !important;
-  color: white !important; }
+  background-color: transparent !important; }
+  .book-navbar i {
+    color: #fff !important; }
 
 .drink-time {
   position: fixed;
@@ -3481,4 +3482,6 @@ html ::-webkit-scrollbar-track {
     width: 100% !important; }
   .back-to-top {
     background-color: #43434374;
-    bottom: 10px; } }
+    bottom: 10px; }
+  .book-sidebar-bottom.sidebar-open {
+    height: 260px; } }

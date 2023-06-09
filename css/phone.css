@@ -156,4 +156,6 @@
     width: 100% !important; }
   .back-to-top {
     background-color: #43434374;
-    bottom: 10px; } }
+    bottom: 10px; }
+  .book-sidebar-bottom.sidebar-open {
+    height: 260px; } }
