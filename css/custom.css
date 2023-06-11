@@ -282,27 +282,33 @@ code {
   background: #000000; }
 
 .book-menu-page {
-  margin-top: 200px;
+  margin-top: 60px;
   width: 100%;
-  height: 300px;
+  margin-bottom: 70px;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
   .book-menu-page > div {
     position: relative;
-    cursor: pointer; }
+    cursor: pointer;
+    margin-bottom: 30px; }
+    .book-menu-page > div:hover > div {
+      border-radius: 0;
+      box-shadow: 0 4px 12px #000000a8; }
     .book-menu-page > div > div {
-      width: 160px;
-      height: 90px;
-      background-size: contain;
+      width: 20rem;
+      height: 12.5rem;
+      background-size: 20rem auto;
       background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 0.5rem;
       transition: all 0.2s;
-      transform: scale3d(1, 1, 2); }
-    .book-menu-page > div > span {
-      font-size: 60px;
+      box-shadow: 0 5px 11px #0000003d; }
+    .book-menu-page > div > p {
+      font-size: 1rem !important;
       font-weight: bold;
-      position: absolute;
-      bottom: 0;
-      right: 0; }
+      text-align: center;
+      margin-top: 20px; }
 
 .hide-lg {
   margin-top: -44px;
@@ -886,6 +892,29 @@ code {
 .book-post-info {
   background-color: transparent; }
 
+.b-link {
+  width: 307px;
+  display: flex;
+  justify-content: flex-start;
+  border: 1px solid #c5667d;
+  padding: 8px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #1818186e;
+  transition: all 0.2s; }
+  .b-link > div {
+    width: 30px;
+    height: 30px;
+    background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabprFS.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin-right: 10px; }
+  .b-link > span {
+    font-size: 15px;
+    line-height: 30px; }
+  .b-link:hover {
+    background-color: #0000009c; }
+
 .newGuide {
   width: 62vw;
   height: 450px;
@@ -941,7 +970,7 @@ code {
     .newGuide .guide .jay_guide {
       border-radius: 10px;
       box-shadow: 0 0 14px 0px #1a1a1aad;
-      background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/2145F6682FBCE287815AF6DC59D0C5A5.png"); }
+      background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/photos/2021/DSC00361.JPG"); }
     .newGuide .guide .home_guide {
       border-radius: 10px;
       box-shadow: 0 0 14px 0px #1a1a1aad;
@@ -1294,9 +1323,12 @@ html ::-webkit-scrollbar-track {
 
 .myPagination {
   overflow: hidden;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px; }
   .myPagination > div {
-    float: right; }
+    display: flex;
+    justify-content: center; }
     .myPagination > div > a > div {
       border: 1px solid #808080;
       color: white;
@@ -1453,7 +1485,8 @@ html ::-webkit-scrollbar-track {
       .ns-cards .out .g-t .tt {
         width: 190px;
         display: inline-block;
-        margin-top: 6px; }
+        margin-top: 6px;
+        color: white; }
       .ns-cards .out .g-t .ver {
         position: absolute;
         right: 0;
@@ -1467,7 +1500,8 @@ html ::-webkit-scrollbar-track {
     width: 358px !important; }
     .ns-cards .ringfit .ns-card,
     .ns-cards .ringfit .g-t {
-      width: 358px; }
+      width: 358px;
+      color: white; }
   .ns-cards .out:hover .ns-card {
     box-shadow: 2px 2px 8px 2px black; }
   .ns-cards .out:hover .count {
@@ -1519,7 +1553,8 @@ html ::-webkit-scrollbar-track {
       .pc-cards .out .g-t .tt {
         width: 180px;
         display: inline-block;
-        margin-top: 6px; }
+        margin-top: 6px;
+        color: white; }
       .pc-cards .out .g-t .ver {
         position: absolute;
         right: 0;
@@ -1585,7 +1620,8 @@ html ::-webkit-scrollbar-track {
       .gba-cards .gba-out .g-t .tt {
         width: 180px;
         display: inline-block;
-        margin-top: 6px; }
+        margin-top: 6px;
+        color: white; }
       .gba-cards .gba-out .g-t .ver {
         position: absolute;
         right: 0;
@@ -1645,7 +1681,8 @@ html ::-webkit-scrollbar-track {
       .liusi-cards .liusi-out .g-t .tt {
         width: 180px;
         display: inline-block;
-        margin-top: 6px; }
+        margin-top: 6px;
+        color: white; }
       .liusi-cards .liusi-out .g-t .ver {
         position: absolute;
         right: 0;
@@ -1705,7 +1742,8 @@ html ::-webkit-scrollbar-track {
       .gb-cards .gb-out .g-t .tt {
         width: 180px;
         display: inline-block;
-        margin-top: 6px; }
+        margin-top: 6px;
+        color: white; }
       .gb-cards .gb-out .g-t .ver {
         position: absolute;
         right: 0;
@@ -1764,6 +1802,7 @@ html ::-webkit-scrollbar-track {
       position: relative; }
       .ds-cards .out .g-t .tt {
         width: 190px;
+        color: white;
         display: inline-block;
         margin-top: 6px; }
       .ds-cards .out .g-t .ver {
@@ -1825,6 +1864,7 @@ html ::-webkit-scrollbar-track {
       .gbc-cards .out .g-t .tt {
         width: 100px;
         display: inline-block;
+        color: white;
         margin-top: 6px; }
       .gbc-cards .out .g-t .ver {
         position: absolute;

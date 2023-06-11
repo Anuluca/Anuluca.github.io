@@ -151,4 +151,8 @@ function jumpToPage(url) {
   window.location.href = url;
 }
 
+function openPage(url) {
+  window.open(url);
+}
+
 function Base64() {}
