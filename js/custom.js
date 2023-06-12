@@ -39,7 +39,7 @@ $(document).ready(function () {
 //  获取当前主题
 function getTheme() {
   if (!localStorage.getItem("theme")) {
-    localStorage.setItem("theme", "dark");
+    localStorage.setItem("theme", "dawn");
   }
   $("#body-color").removeClass();
   $("#body-color").addClass(localStorage.getItem("theme"));
@@ -155,4 +155,7 @@ function openPage(url) {
   window.open(url);
 }
 
-function Base64() {}
+function decodeAndOpenPage(url) {
+  let decodedUurl = Base64.decode(url);
+  window.open(decodedUurl);
+}
