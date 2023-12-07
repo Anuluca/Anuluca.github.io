@@ -184,6 +184,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <ul>
 <li><a href="/21283">随拍</a></li>
 <li><a href="/17773">模型 &amp; 毛绒</a></li>
+<li><a href="/21563">自制训练家卡</a></li>
 </ul>
 <!--more-->
 
@@ -211,6 +212,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dark.jpg');
               "
               onclick="changeTheme('dark')"
+            ></div>
+            <!-- 经典 -->
+            <div
+              style="
+                background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dark.jpg');
+              "
+              onclick="changeTheme('classic')"
             ></div>
           </div>
         </div>
@@ -511,6 +519,7 @@ document.addEventListener('DOMContentLoaded', function () {
     series: [
       {
         type: 'radar',
+        animationDuration:2000,
         data: [
           {
             value: [120, 130, 60, 80, 100, 180],
@@ -589,6 +598,7 @@ var typeLineChartDom = document.getElementById('typeLine');
         show: true,
         position: 'inside'
       },
+      animationDuration:2000,
       markLine:{
         label:{
           show:true,
@@ -788,6 +798,7 @@ var levelLineChartDom = document.getElementById('levelLine');
         textBorderColor:'#000',
               color:'#fff',
       },
+      animationDuration:2000,
       lineStyle: {
         color: '#366BB1',
         width: 5,
@@ -1018,7 +1029,7 @@ var levelLineChartDom = document.getElementById('levelLine');
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> 
 <script src="/js/pokemon.js"></script>
 <div class="note">
-<p>由于本站图片资源由jsDelivr加速，为更好地浏览图片，请尽量使用科学上网。</p>
+<p>由于小站图片资源由jsDelivr加速，为更好地浏览图片，请尽量使用科学上网。</p>
 </div>
 
   <a onclick="go_top()"

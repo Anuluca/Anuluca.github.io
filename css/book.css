@@ -504,6 +504,7 @@ img {
     position: fixed;
     top: 3.25rem;
     bottom: 0rem;
+    padding-bottom: 50px;
     width: 12rem;
     overflow-x: hidden;
     overflow-y: auto;
@@ -545,7 +546,8 @@ img {
         border-color: #696969;
         height: 0.3rem;
         width: 0.3rem; }
-    .book-sidebar .book-menu .accordion input:checked ~ .accordion-body, .book-sidebar .book-menu .accordion[open] .accordion-body {
+    .book-sidebar .book-menu .accordion input:checked ~ .accordion-body,
+    .book-sidebar .book-menu .accordion[open] .accordion-body {
       max-height: unset; }
     .book-sidebar .book-menu ul {
       margin-left: 0.5rem; }
@@ -705,11 +707,17 @@ body {
 #body-color.dark .star-back > .star {
   background: #fff; }
 
-#body-color.light .back-color {
-  background: radial-gradient(220% 105% at top center, #bbaec7 10%, #fafff9 30%, #fdfeff 65%, #d8e0d3); }
+#body-color.classic .back-color {
+  background: #1c1c1e; }
 
-#body-color.light .star-back > .star {
-  background: #4400b9; }
+#body-color.classic .star-back > .star {
+  display: none; }
+
+#body-color.persona5Z .back-color {
+  background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/sw8KdH.png"); }
+
+#body-color.persona5Z .star-back > .star {
+  display: none; }
 
 @keyframes rotate {
   0% {
@@ -1099,7 +1107,7 @@ code {
       width: 60px;
       height: 60px;
       justify-content: center;
-      margin: 22px;
+      margin: 9px;
       border-radius: 6px;
       border: 1px solid #08436e;
       transition: all 0.2s;
@@ -1330,8 +1338,7 @@ code {
     border-radius: 4px; }
 
 .book-sidebar .book-menu {
-  width: 14rem !important;
-  bottom: 0px; }
+  width: 14rem !important; }
   .book-sidebar .book-menu .current-tab {
     color: white !important; }
   .book-sidebar .book-menu h1,
@@ -2968,6 +2975,23 @@ html ::-webkit-scrollbar-track {
     display: inline-block !important;
     width: 20%;
     margin: 10px !important; }
+
+.poke-gen .pokemon-appendix {
+  background-color: #ffffffab;
+  color: #000 !important;
+  border-radius: 25px;
+  display: inline-block;
+  width: auto;
+  line-height: 30px;
+  padding: 5px 15px;
+  border: 3px solid #fff !important;
+  padding-right: 18px;
+  cursor: pointer;
+  text-decoration: none !important;
+  transition: all 0.1s;
+  font-weight: bold; }
+  .poke-gen .pokemon-appendix:hover {
+    background-color: #fff; }
 
 .t-normal {
   background-color: #9199a1; }
