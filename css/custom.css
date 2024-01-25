@@ -109,6 +109,13 @@ body {
 #body-color.persona5Z .star-back > .star {
   display: none; }
 
+#body-color.p3r .back-color {
+  background: radial-gradient(80% 150% at top center, #40a4fc 40%, #0716B0);
+  opacity: 0.8; }
+
+#body-color.p3r .star-back > .star {
+  background: #FFFFFF; }
+
 @keyframes rotate {
   0% {
     transform: perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(0); }
@@ -487,18 +494,23 @@ code {
     transition: all 0.2s;
     opacity: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 10px;
     height: 120px;
     flex-wrap: wrap; }
     .book-sidebar-bottom > .theme-group > div {
+      text-align: right;
+      padding-right: 10px;
+      font-style: italic;
+      line-height: 80px;
       background-size: contain;
       width: 60px;
       height: 60px;
+      font-weight: 200;
       justify-content: center;
       margin: 9px;
-      border-radius: 6px;
+      border-radius: 2px;
       border: 1px solid #08436e;
       transition: all 0.2s;
       cursor: pointer; }
@@ -529,7 +541,7 @@ code {
     color: #fff;
     background: #121212f0; }
   .book-sidebar-bottom.sidebar-open {
-    height: 150px;
+    height: 200px;
     color: #fff;
     background: #121212f0; }
     .book-sidebar-bottom.sidebar-open > .theme-group {

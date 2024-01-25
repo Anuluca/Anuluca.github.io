@@ -39,7 +39,7 @@ $(document).ready(function () {
 //  获取当前主题
 function getTheme() {
   if (!localStorage.getItem("theme")) {
-    localStorage.setItem("theme", "dawn");
+    localStorage.setItem("theme", "p3r");
   }
   $("#body-color").removeClass();
   $("#body-color").addClass(localStorage.getItem("theme"));
