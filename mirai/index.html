@@ -16,7 +16,7 @@
   
 
   <title>
-     路卡的自由庭院岛 
+     宝可梦后院 - 路卡的自由庭院岛 
   </title>
 
   <!-- Spectre.css framework -->
@@ -360,42 +360,137 @@ document.addEventListener('DOMContentLoaded', function () {
   </section>
 </header>
 </div>
-            <div class="book-content"><div class='book-archive'>
-  <!-- Title -->
-  
-    <h1>Tags</h1>
-  
+            <div class="book-content"><div class="book-post">
+  <style>
+    .book-post h3 {
+        font-size: 1rem;
+        background-color: black;
+        padding: 10px;
+    }
+</style>
+<div style="position:fixed;top:0;left:0;right:0;bottom:0;background-color:black;z-index:9999;display:flex;justify-content:center;align-items:bottom">
+<img id="TTTemp" src="../js/mirai.png" style="transition:all 1.5s ease-in-out;bottom:-20vh;position:absolute;opacity:0;height:90vh;width:auto"/>
+<div id="eee" style="font-style:italic;width:100vw;height:104px;font-size:78px;background-color:#ffffffaa;color:#000;text-align:center;position:absolute;bottom:calc(20vh - 27px);opacity:0;left:-10vw;transition:all 1.5s ease-in-out">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mirai</div>
+</div>
+<script>
+    const element = document.getElementById('TTTemp')
+    const element1 = document.getElementById('eee')
+    setTimeout(function(){
+        element.style.bottom = '0px'
+    },0)
+       setTimeout(function(){
+        element.style.opacity = '1'
+    },100)
+       setTimeout(function(){
+        element1.style.left = '0'
+    },500)
+       setTimeout(function(){
+        element1.style.opacity = '0.8'
+    },600)
+</script>
+  <a onclick="go_top()"
+    ><div class="to_top"><div class="to-top-triangle"></div></div
+  ></a>
+</div>
 
-  
-    <!-- Split post by year -->
-    
-  
+<div class="drink-time">
+  <img
+    style="text-align: center; margin-top: 20vh; width: 150px; opacity: 0.9"
+    src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/2F65x1.png"
+  />
+  <div style="text-align: center; margin-top: 20px; font-size: 20px">
+    由于某些原因，博客图床于5月26日惨遭爆破，目前正在整理需要的图片并迁移存活的图片到新图床,预计6月10日重新上线网站
+  </div>
+</div>
 
-  
-      <div class="years">
-          <h2>2020</h2>
-          <ul class="archive-list-item">
-          
-              <li>
-                <span>2020-05-19</span>
-                <a href="/36865/">
-                  初步认识ETL设计
-                </a>
-              </li>
-          
-              <li>
-                <span>2020-05-19</span>
-                <a href="/59321/">
-                  初步认识数据仓库
-                </a>
-              </li>
-          
-          </ul>
-      </div>
-  
 
-  
-</div></div>
+<div class="articleBottom">
+  <i></i>
+  <b
+    >&nbsp;&nbsp;<img
+      src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/goDrXd.gif"
+    />&nbsp;
+    <div><span>THE END</span></div>
+    &nbsp;<img
+      src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/god8aT.gif"
+    />&nbsp;&nbsp;</b
+  >
+  <i></i>
+</div>
+<div class="combtn">
+  <div class="valine_btn"><b>游客评论</b></div>
+  <div class="gitalk_btn"><b>使用Github账号评论</b></div>
+  <div class="moving"></div>
+</div>
+<div>&nbsp;</div>
+
+<div class="book-comments">
+<link rel="stylesheet" href="/css/gitalk.css" />
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<div id="gitalk-container"></div>
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: "9ffd086e729163760a2a",
+    clientSecret: "3dc719eec9759df35f5aa9ecb3bcdefd3f5bf9c6",
+    repo: "Anuluca.github.io",
+    owner: "anuluca",
+    admin: ["Anuluca"],
+    id: location.pathname,
+    distractionFreeMode: "true",
+  });
+  gitalk.render("gitalk-container");
+</script>
+ 
+<!--    <link rel="stylesheet" href="https://unpkg.com/valine/dist/Valine.min.js">-->
+<!-- <script src="//unpkg.zhimg.com/valine/dist/Valine.min.js"></script> -->
+<div id="vcomments" style="margin-top: 100px"></div>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  new Valine({
+    el: "#vcomments",
+    appId: "rqHuR8lh2h3Fp2s9v2M8nDYJ-gzGzoHsz",
+    appKey: "9o4oYzzaYVFGG34Vd8ipLztu",
+    notify: false,
+    verify: false,
+    avatar: "mm",
+    placeholder: "说点什么",
+    visitor: true,
+  });
+</script>
+
+</div>
+<a
+  class="aaaaa"
+  style="
+    font-size: 10px;
+    color: #999ca8;
+    width: 55%;
+    text-align: center;
+    padding-top: 100px;
+  "
+>
+  © 2018 - 2024 Anuluca
+</a>
+<span class="frsi">
+  ▌友情链接
+  <a
+    href="https://cutekibry.github.io/"
+    target="_blank"
+    class="friendUrl"
+    style="margin-left: 5px"
+    >Tsuki's blog</a
+  >&nbsp;|
+  <a href="http://pokeamice.com/" target="_blank" class="friendUrl"
+    >Poke amice</a
+  >&nbsp;|
+  <a href="https://austinxt.com/" target="_blank" class="friendUrl">夜航星</a>
+</span>
+
+ 
+<script src="/js/book-post.js"></script>
+
+</div>
           </div>
           <div class="column col-2 hide-lg">
             <div class="book-post-info">
@@ -416,7 +511,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <!-- Author title -->
     <div class="author-title">
       <div>Anuluca</div>
-      <div style="font-family: 等线">Update:</div>
+      <div style="font-family: 等线">Update:2021-11-19</div>
     </div>
   </div>
 
