@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"
+  />
+  <meta name="description" content="Anuluca的个人网站" />
+  <meta
+    name="keywords"
+    content="anuluca,路卡,路卡的自由庭院岛,前端开发,vue,javascript"
+  />
+  
+  <link rel="icon" href="/favicon.png" />
+  
+
+  <title>
+     2023 - 路卡的自由庭院岛 
+  </title>
+
+  <!-- Spectre.css framework -->
+  <link rel="stylesheet" href="/css/spectre-exp.min.css" />
+  <link rel="stylesheet" href="/css/spectre-icons.min.css" />
+  <link rel="stylesheet" href="/css/spectre.min.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="/css/custom.css" />
+  <link rel="stylesheet" href="/css/custom_theme_dark.css" />
+  <link rel="stylesheet" href="/css/phone.css" /> -->
+  <script src="/js/onBoot.js"></script>
+
+  <!-- theme css & js -->
+  
+<link rel="stylesheet" href="/css/book.css">
+ 
+<script src="/js/book.js"></script>
+
+
+  <!-- tocbot -->
+  <script src="/js/tocbot.min.js"></script>
+  <link rel="stylesheet" href="/css/tocbot.css" />
+
+  <!-- jq -->
+  <script src="https://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+  <!-- katex -->
+
+  
+<script src="/js/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+
+  <body>
+    <div id="body-color" class="">
+      <div class="back-color"></div>
+      <div class="star-back"></div>
+    </div>
+
+    <!-- <div class="body-color">
+      <div
+        :class="{
+          'body-color': true,
+          dawn: props.theme === 'dawn',
+          light: props.theme === 'light',
+          night: props.ifDarken
+        }"
+      ></div>
+      <div
+        :class="{ 'star-back': true, dawn: props.theme === 'dawn', light: props.theme === 'light' }"
+      ></div>
+    </div> -->
+
+    <div class="book-container">
+      <div class="book-sidebar">
+        <div class="book-brand">
+  <a href="/">
+    <!-- <img src="/favicon.png"> -->
+    <div>
+      <img
+        id="head_img"
+        src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/g0rY8J.png"
+      />
+    </div>
+    <span>路卡的自由庭院岛</span>
+  </a>
+</div>
+ <div class="book-menu scrollbar">
+  <ul>
+<li><a href="/"><img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/fPOGP1.png" class="l_logo"> 广场</a></li>
+<li><a href="/34223"><img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/fiCMq0.png" class="l_logo"> 公告栏</a></li>
+</ul>
+<h1 id="img-src-https-cdn-jsdelivr-net-gh-Anuluca-anulucImage-main-other-fiCUMR-png-class-l-logo-前端笔记"><a href="/14567"><img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/fiCUMR.png" class="l_logo"> 前端笔记</a></h1>
+<!-- ## 乐理笔记
+* [__1__ 五线谱基础知识](/24257) -->
+<h2 id="Javascript-CSS">Javascript/CSS</h2>
+<ul>
+<li><a href="/60132"><strong>24</strong> 常用utils整合</a></li>
+<li><a href="/9271"><strong>23</strong> 处理blob文件下载抛出json格式异常的问题</a></li>
+<li><a href="/17809"><strong>22</strong> 伪类和伪元素的区别</a></li>
+<li><a href="/28283"><strong>21</strong> CSS三角形</a></li>
+<li><a href="/29473"><strong>20</strong> 样式处理器选型</a></li>
+<li><a href="/57469"><strong>19</strong> Html5文字设置渐变色</a></li>
+<li><a href="/60642"><strong>18</strong> css文本超出隐藏显示省略号</a></li>
+<li><a href="/6329"><strong>17</strong> Flex布局属性浅解</a></li>
+<li><a href="/36608"><strong>16</strong> 浏览器兼容性问题整理</a></li>
+<li><a href="/21732"><strong>15</strong> 原生js实现简易瀑布流</a></li>
+<li><a href="/29471"><strong>14</strong> Base64转文件进行下载</a></li>
+<li><a href="/41455"><strong>13</strong> js实现中文数组拼音排序</a></li>
+<li><a href="/25199"><strong>12</strong> Promise.race的使用</a></li>
+<li><a href="/36370"><strong>11</strong> 如何将json数据转化为data.json并下载</a></li>
+<li><a href="/53556"><strong>10</strong> 如何发现不安全的正则表达式</a></li>
+<li><a href="/6251"><strong>9</strong> 实现一个函数将json数据转换为queryString编码</a></li>
+<li><a href="/12665"><strong>8</strong> setTimeout和Promise执行顺序</a></li>
+<li><a href="/1079"><strong>7</strong> 原生代码实现文本不可复制及复制监听</a></li>
+<li><a href="/3951"><strong>6</strong> js函数判断是否为纯对象</a></li>
+<li><a href="/65473"><strong>5</strong> base64和Blob互转</a></li>
+<li><a href="/23627"><strong>4</strong> 使用viewport对页面做响应式处理</a></li>
+<li><a href="/53717"><strong>3</strong> 解决网页加载后没有清除css和js缓存的问题</a></li>
+<li><a href="/22406"><strong>2</strong> 原生页面的一种图片懒加载思路</a></li>
+<li><a href="/16400"><strong>1</strong> 解决页面移动端点击延迟的问题</a></li>
+</ul>
+<h2 id="Vue-React">Vue/React</h2>
+<ul>
+<li><a href="/52873"><strong>7</strong> React/Vue中的路由基于什么实现原理</a></li>
+<li><a href="/26616"><strong>6</strong> Vue时间戳转换函数</a></li>
+<li><a href="/20181"><strong>5</strong> axios完整接口调用顺序</a></li>
+<li><a href="/15023"><strong>4</strong> 图表插件选型</a></li>
+<li><a href="/8322"><strong>3</strong> vue-property-decorator用法</a></li>
+<li><a href="/57808"><strong>2</strong> vue-class-component对TS的支持</a></li>
+<li><a href="/57928"><strong>1</strong> Grid/treeview控件简要介绍</a></li>
+</ul>
+<h2 id="Element-Antd">Element/Antd</h2>
+<ul>
+<li><a href="/54307"><strong>7</strong> el-table配合sortablejs实现拖拽</a></li>
+<li><a href="/42656"><strong>6</strong> elementUI相同元素合并行</a></li>
+<li><a href="/51249"><strong>5</strong> 去除elementUI打开drawer自带的蓝色框</a></li>
+<li><a href="/527"><strong>4</strong> 监听ElementUItable滚动事件</a></li>
+<li><a href="/33638"><strong>3</strong> ElementUI中Cascader级联选择器动态加载时允许选择任意一级任意一项</a></li>
+<li><a href="/29628"><strong>2</strong> 解决ElementUI中打开Drawer内的dialog黑色遮罩层优先级过高问题</a></li>
+<li><a href="/51077"><strong>1</strong> ElementUI清除el-table的hover样式</a></li>
+</ul>
+<h2 id="Others">Others</h2>
+<ul>
+<li><a href="/9999999999">[Tags]</a></li>
+<li><a href="/4309"><strong>11</strong> 解决Chrome80版本SameSite属性导致Cookie无法跨域的问题</a></li>
+<li><a href="/60761"><strong>10</strong> Gitalk评论插件安装记录</a></li>
+<li><a href="/32529"><strong>9</strong> zsh和bash的切换</a></li>
+<li><a href="/41922"><strong>8</strong> Mac常规安装nvm并下载指定版本node</a></li>
+<li><a href="/52608"><strong>7</strong> Homebrew大陆安装脚本</a></li>
+<li><a href="/39572"><strong>6</strong> 不同文件类型转base64后的前缀</a></li>
+<li><a href="/48737"><strong>5</strong> node is not avalid Win32 application报错解决办法</a></li>
+<li><a href="/35468"><strong>4</strong> 浏览器MixedContent报错</a></li>
+<li><a href="/13573"><strong>3</strong> 修改Mac鼠标滚轮逻辑</a></li>
+<li><a href="/41802"><strong>2</strong> AIX开启及关闭Telnet服务</a></li>
+<li><a href="/58914"><strong>1</strong> 工作中遇到的关于DB2/mysql的一些问题及解决办法</a></li>
+</ul>
+<span id="more"></span>
+<ul>
+<li><a href="/23761"><img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/fPz6u6.png" class="l_logo"> 游戏档案馆</a></li>
+<li><a href="/23678"><img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/fipf1A.png" class="l_logo"> 宝可梦后院</a></li>
+</ul>
+<h1 id="img-src-https-cdn-jsdelivr-net-gh-Anuluca-anulucImage-main-other-fi98gA-png-class-l-logo-杂物室"><a href=""><img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/fi98gA.png" class="l_logo"> 杂物室</a></h1>
+<h2 id="文章">文章</h2>
+<ul>
+<li><a href="/58027">已弃坑的新版个人网站</a></li>
+<li><a href="/2285">关于博客想记录的一些东西</a></li>
+<li><a href="/48446">2020不正确记忆</a></li>
+<li><a href="/41678">Markdown Demo</a></li>
+</ul>
+<h2 id="工具">工具</h2>
+<ul>
+<li><a href="/45597">配色参考</a></li>
+<li><a href="/49833">营销号生成器</a></li>
+</ul>
+<h2 id="影像">影像</h2>
+<ul>
+<li><a href="/21283">日常随拍</a></li>
+<li><a href="/17773">模玩摄影</a></li>
+<li><a href="/10306">绘画</a></li>
+<li><a href="/21563">自制训练家卡</a></li>
+</ul>
+<!--more-->
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+        <div class="book-sidebar-bottom">
+          <div class="sidebar-title" onclick="changeSidebarSize()">
+            <b>》</b>
+            <span>主题切换</span>
+          </div>
+          <div class="theme-group">
+            <!-- 黄昏 -->
+            <div
+              style="background: linear-gradient(to bottom, #071062, #7f4e0e)"
+              onclick="changeTheme('dawn')"
+            >
+              黄昏
+            </div>
+            <!-- 深夜 -->
+            <div
+              style="background: linear-gradient(to bottom, #0b126f, #000000)"
+              onclick="changeTheme('dark')"
+            >
+              深夜
+            </div>
+            <!-- 经典 -->
+            <div
+              style="background-color: #1c1c1e"
+              onclick="changeTheme('classic')"
+            >
+              经典
+            </div>
+            <!-- P3R -->
+            <div
+              style="background: linear-gradient(to bottom, #51A6F4, #0817B1)"
+              onclick="changeTheme('p3r')"
+            >
+              满月
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="backlogo" onClick="toOldSite()">FLASHBACK</div> -->
+
+      <div
+  class="sidebar-toggle"
+  onclick="sidebar_toggle()"
+  onmouseover="add_inner()"
+  onmouseleave="remove_inner()"
+>
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+  function add_inner() {
+    let inner = document.querySelector(".sidebar-toggle-inner");
+    inner.classList.add("show");
+  }
+
+  function remove_inner() {
+    let inner = document.querySelector(".sidebar-toggle-inner");
+    inner.classList.remove("show");
+  }
+
+  function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector(".sidebar-toggle");
+    let sidebar = document.querySelector(".book-sidebar");
+    let content = document.querySelector(".off-canvas-content");
+    let footerCom = document.querySelector(".footer-com");
+    let backToTop = document.querySelector(".back-to-top");
+    if (sidebar_toggle.classList.contains("extend")) {
+      // show
+      sidebar_toggle.classList.remove("extend");
+      footerCom.style.left = "calc(14rem + 6px)";
+      footerCom.style.width = "calc(84% - 13.65rem - 6px)";
+      backToTop.style.left = " calc(84% - 5.35rem)";
+      sidebar.classList.remove("hide");
+      content.classList.remove("extend");
+    } else {
+      // hide
+      footerCom.style.left = "4px";
+      footerCom.style.width = "calc(84% - 1.65rem - 12px)";
+      sidebar_toggle.classList.add("extend");
+      backToTop.style.left = "calc(84% - 7.75rem)";
+      sidebar.classList.add("hide");
+      content.classList.add("extend");
+    }
+  }
+</script>
+
+
+      <div class="off-canvas-content">
+        <div class="back-to-top" onclick="go_top()">回到顶部</div>
+        <div class="footer-com">
+          <div class="center">
+            <div class="expand">
+              <div class="marquee-wrap">
+                <!-- --------------------------------------- -->
+                <span onclick="jumpToPage('/3243')">
+                  <i>「</i>
+                  <b class="pink">初音未来：歌姬计划 Mega39's+\游戏档案馆</b>
+                  <i>」<span>2023-06-07</span></i>
+                </span>
+                <!-- --------------------------------------- -->
+                <span onclick="jumpToPage('/60132')">
+                  <i>「</i>
+                  <b class="blue">常用utils整合\前端笔记</b>
+                  <i>」<span>2023-06-07</span></i>
+                </span>
+                <!-- --------------------------------------- -->
+                <span onclick="jumpToPage('/56308')">
+                  <i>「</i>
+                  <b class="pink">极限竞速：地平线4\游戏档案馆</b>
+                  <i>」<span>2023-06-05</span></i>
+                </span>
+                <!-- --------------------------------------- -->
+                <span onclick="jumpToPage('/36247')">
+                  <i>「</i>
+                  <b class="pink">刺客信条：大革命\游戏档案馆</b>
+                  <i>」<span>2023-06-05</span></i>
+                </span>
+                <!-- --------------------------------------- -->
+                <span onclick="jumpToPage('/55881')">
+                  <i>「</i>
+                  <b class="pink">大逆转裁判2：成步堂龙之介的觉悟\游戏档案馆</b>
+                  <i>」<span>2023-06-05</span></i>
+                </span>
+                <!-- --------------------------------------- -->
+                <span onclick="jumpToPage('/8657')">
+                  <i>「</i>
+                  <b class="green">泽塔奥特曼\皮套摄影</b>
+                  <i>」<span>2023-06-07</span></i>
+                </span>
+                <!-- --------------------------------------- -->
+                <!-- <span onclick="jumpToPage('/60132')">
+                  <i>「</i>
+                  <b class="pink">xxxxxxxx</b>
+                  <i>」<span>2023-06-07</span></i>
+                </span> -->
+                <!-- --------------------------------------- -->
+                <!-- <span onclick="jumpToPage('/60132')">
+                  <i>「</i>
+                  <b class="pink">xxxxxxxx</b>
+                  <i>」<span>2023-06-07</span></i>
+                </span> -->
+                <!-- --------------------------------------- -->
+                <!-- <span onclick="jumpToPage('/60132')">
+                  <i>「</i>
+                  <b class="pink">xxxxxxxx</b>
+                  <i>」<span>2023-06-07</span></i>
+                </span> -->
+                <!-- --------------------------------------- -->
+                <!-- <span onclick="jumpToPage('/60132')">
+                  <i>「</i>
+                  <b class="pink">xxxxxxxx</b>
+                  <i>」<span>2023-06-07</span></i>
+                </span> -->
+                <!-- --------------------------------------- -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column col-10 col-lg-12">
+            <div class="book-navbar"><!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+</div>
+            <div class="book-content"><div class="book-post">
+  <style>
+  img{
+    height: 40%;
+    width: 40%;
+  }
+</style>
+<h1 id="日常随拍-2023"><a href="/21283">日常随拍</a> / 2023</h1>
+<p>（15张）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/photos/2023/IMG_9587.jpg" alt=""><br>
+<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/photos/2023/IMG_9347.jpg" alt=""><br>
+<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/photos/2023/IMG_2317.jpg" alt=""><br>
+<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/photos/2023/IMG_1144.jpg" alt=""><br>
+<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/photos/2023/IMG_2172.jpg" alt=""><br>
+<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/photos/2023/IMG_5052.jpg" alt=""><br>
+<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/photos/2023/IMG_2229.jpg" alt=""><br>
+<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/photos/2023/IMG_3693.jpg" alt=""><br>
+<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/photos/2023/DSC04376.jpg" alt=""><br>
+<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/photos/2023/IMG_5256.jpg" alt=""><br>
+<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/photos/2023/IMG_8551.jpg" alt=""><br>
+<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/photos/2023/IMG_5188.jpg" alt=""><br>
+<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/photos/2023/IMG_3288.jpg" alt=""><br>
+<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/photos/2023/IMG_3333.jpg" alt=""><br>
+<img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/photos/2023/IMG_3356.jpg" alt=""></p>
+<div class="note">
+<p>由于图片资源由jsDelivr加速，为更好地浏览图片，请尽量使用科学上网。</p>
+</div>
+
+  <a onclick="go_top()"
+    ><div class="to_top"><div class="to-top-triangle"></div></div
+  ></a>
+</div>
+
+<div class="drink-time">
+  <img
+    style="text-align: center; margin-top: 20vh; width: 150px; opacity: 0.9"
+    src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/2F65x1.png"
+  />
+  <div style="text-align: center; margin-top: 20px; font-size: 20px">
+    由于某些原因，博客图床于5月26日惨遭爆破，目前正在整理需要的图片并迁移存活的图片到新图床,预计6月10日重新上线网站
+  </div>
+</div>
+
+
+<div class="articleBottom">
+  <i></i>
+  <b
+    >&nbsp;&nbsp;<img
+      src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/goDrXd.gif"
+    />&nbsp;
+    <div><span>THE END</span></div>
+    &nbsp;<img
+      src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/god8aT.gif"
+    />&nbsp;&nbsp;</b
+  >
+  <i></i>
+</div>
+<div class="combtn">
+  <div class="valine_btn"><b>游客评论</b></div>
+  <div class="gitalk_btn"><b>使用Github账号评论</b></div>
+  <div class="moving"></div>
+</div>
+<div>&nbsp;</div>
+
+<div class="book-comments">
+<link rel="stylesheet" href="/css/gitalk.css" />
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<div id="gitalk-container"></div>
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: "9ffd086e729163760a2a",
+    clientSecret: "3dc719eec9759df35f5aa9ecb3bcdefd3f5bf9c6",
+    repo: "Anuluca.github.io",
+    owner: "anuluca",
+    admin: ["Anuluca"],
+    id: location.pathname,
+    distractionFreeMode: "true",
+  });
+  gitalk.render("gitalk-container");
+</script>
+ 
+<!--    <link rel="stylesheet" href="https://unpkg.com/valine/dist/Valine.min.js">-->
+<!-- <script src="//unpkg.zhimg.com/valine/dist/Valine.min.js"></script> -->
+<div id="vcomments" style="margin-top: 100px"></div>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  new Valine({
+    el: "#vcomments",
+    appId: "rqHuR8lh2h3Fp2s9v2M8nDYJ-gzGzoHsz",
+    appKey: "9o4oYzzaYVFGG34Vd8ipLztu",
+    notify: false,
+    verify: false,
+    avatar: "mm",
+    placeholder: "说点什么",
+    visitor: true,
+  });
+</script>
+
+</div>
+<a
+  class="aaaaa"
+  style="
+    font-size: 10px;
+    color: #999ca8;
+    width: 55%;
+    text-align: center;
+    padding-top: 100px;
+  "
+>
+  © 2018 - 2024 Anuluca
+</a>
+<span class="frsi">
+  ▌友情链接
+  <a
+    href="https://cutekibry.github.io/"
+    target="_blank"
+    class="friendUrl"
+    style="margin-left: 5px"
+    >Tsuki's blog</a
+  >&nbsp;|
+  <a href="http://pokeamice.com/" target="_blank" class="friendUrl"
+    >Poke amice</a
+  >&nbsp;|
+  <a href="https://austinxt.com/" target="_blank" class="friendUrl">夜航星</a>
+</span>
+
+ 
+<script src="/js/book-post.js"></script>
+
+</div>
+          </div>
+          <div class="column col-2 hide-lg">
+            <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/me.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Anuluca</div>
+      <div style="font-family: 等线">Update:2024-07-29</div>
+    </div>
+  </div>
+
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot"></div>
+
+<div class="bottom">
+  <span>
+    <p>優しい人にならなくちゃ、</p>
+    <p>心が悴む前に。</p>
+  </span>
+  <div class="links">
+    <a target="_blank" rel="noopener" href="https://twitter.com/TILucario" class="link_l">
+      <div
+        style="
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabyWQ.png');
+        "
+      ></div>
+      <span>推特 ( 𝕏 ) </span></a
+    >
+    <a target="_blank" rel="noopener" href="https://space.bilibili.com/128735968" class="link_l">
+      <div
+        style="
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabprFS.png');
+        "
+      ></div>
+      <span>Bilibili</span></a
+    >
+    <a target="_blank" rel="noopener" href="https://weibo.com/ryugamine" class="link_l">
+      <div
+        style="
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabrFS.png');
+        "
+      ></div>
+      <span>微博</span></a
+    >
+    <a target="_blank" rel="noopener" href="https://github.com/Anuluca" class="link_l">
+      <div
+        style="
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabBo8.png');
+        "
+      ></div>
+      <span>Github</span></a
+    >
+  </div>
+  <div class="languages">
+    中文 &nbsp;&nbsp;|&nbsp;&nbsp;
+    <a target="_blank" rel="noopener" href="http://AnulucaEn.github.io" class="english">English</a>
+  </div>
+</div>
+
+<script src="/js/book-toc.js"></script>
+
+
+</div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="down-line-zhanwei"></div>
+  <div class="down-line"></div> -->
+      <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+    </div>
+    <div class="bottomline"></div>
+    <script src="/js/nprogress.js"></script>
+    <link rel="stylesheet" href="/css/nprogress.css" />
+    <script src="/js/custom.js"></script>
+    <div class="clipboard_success">&nbsp;&nbsp;复制成功！</div>
+
+    <!-- 切换主题的动画效果 -->
+    <!-- <div class="change_theme_animes">
+      <div
+        id="cantSeeAnything_white"
+        style="
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: white;
+          z-index: 999;
+          opacity: 0;
+          display: none;
+        "
+      ></div>
+      <div
+        id="cantSeeAnything_black"
+        style="
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: black;
+          z-index: 999;
+          opacity: 0;
+          display: none;
+        "
+      ></div>
+      <img
+        id="nike_shine"
+        src="/necrozma_shine.PNG"
+        style="
+          position: fixed;
+          z-index: 998;
+          bottom: -400px;
+          margin: 0 auto;
+          width: 400px;
+          left: calc(50% - 200px);
+        "
+      />
+      <img
+        id="nike_dark"
+        src="/necrozma_dark.PNG"
+        style="
+          position: fixed;
+          z-index: 998;
+          bottom: -400px;
+          margin: 0 auto;
+          width: 400px;
+          left: calc(50% - 200px);
+        "
+      />
+      <img
+        id="shine"
+        src="/tempshine.png"
+        style="
+          position: fixed;
+          z-index: 997;
+          bottom: -100px;
+          margin: 0 auto;
+          width: 100px;
+          height: 100px;
+          left: calc(50% - 50px);
+          opacity: 0;
+        "
+      />
+      <img
+        id="absorb"
+        src="/tempshine.png"
+        style="
+          position: fixed;
+          z-index: 997;
+          bottom: -100vh;
+          margin: 0 auto;
+          width: 100vw;
+          height: 100vh;
+          opacity: 0;
+        "
+      />
+    </div> -->
+  </body>
+</html>
+
+
+<script src="/js/book.js"></script>
+
