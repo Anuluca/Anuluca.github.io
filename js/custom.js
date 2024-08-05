@@ -5,6 +5,15 @@
 // var windowWidth = $(window).width();
 NProgress.start();
 
+const textList = [
+  "優しい人にならなくちゃ、心が悴む前に。",
+  "Take a deep breath.",
+  "have a rest ~ ☕️",
+]
+const introText = "優しい人にならなくちゃ、心が悴む前に。"
+
+document.getElementById('intro_text').innerText=textList.sort(() => 0.5 - Math.random())[0]
+
 // 网页背景 - 繁星
 $(document).ready(function () {
   var stars = 800; /*星星的密集程度，数字越大越多*/

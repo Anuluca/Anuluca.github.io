@@ -58,6 +58,7 @@ code {
 
 .book-sidebar .book-menu .current-tab {
   color: white !important;
+  background-color: red;
 }
 
 .book-sidebar .book-menu h1,
