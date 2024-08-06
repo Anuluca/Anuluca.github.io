@@ -9,6 +9,7 @@ const textList = [
   "優しい人にならなくちゃ、心が悴む前に。",
   "Take a deep breath.",
   "have a rest ~ ☕️",
+  "cursed.",
 ]
 const introText = "優しい人にならなくちゃ、心が悴む前に。"
 

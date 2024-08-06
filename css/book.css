@@ -865,7 +865,7 @@ body,
   color: white !important; }
 
 .book-sidebar .book-menu .accordion {
-  border-top: 1px solid #242426 !important; }
+  border-top: 1px solid #2D2630 !important; }
 
 .book-brand span {
   font-size: 17px; }
@@ -1872,17 +1872,37 @@ html ::-webkit-scrollbar-track {
   position: relative;
   padding: 20px 0;
   border-radius: 24px; }
+  .platform:hover .platform-pic {
+    transform: rotate3d(0.3, 0.8, 0.2, -30deg);
+    opacity: 0; }
+  .platform:hover .inner-text {
+    transform: rotate3d(0, 0, 0, 0);
+    opacity: 1; }
   .platform .platform-pic {
     width: 100%;
     height: 100%;
-    transition: all 0.8s;
+    transition: all 0.4s;
     position: absolute;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    margin-bottom: 10px; }
-    .platform .platform-pic:hover {
-      transform: rotate3d(0.3, 0.8, 0.2, -30deg); }
+    margin-bottom: 10px;
+    opacity: 1; }
+  .platform .inner-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate3d(0.3, 0.8, 0.2, -30deg);
+    text-align: center;
+    color: #000;
+    font-size: 1rem;
+    width: 100%;
+    font-style: italic;
+    margin-top: 40px;
+    opacity: 0;
+    transition: all 0.4s; }
+  .platform a {
+    text-decoration: none !important; }
 
 .pc-pic .platform-pic {
   background-image: url("https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/Machine/pc.png"); }
@@ -2701,7 +2721,7 @@ html ::-webkit-scrollbar-track {
     box-shadow: 0px 2px 11px 0px #131313d1; }
   .guidePic .title {
     font-size: 40px;
-    bottom: -25px;
+    bottom: -35px;
     position: absolute;
     color: white;
     font-weight: bold;
@@ -2719,6 +2739,7 @@ html ::-webkit-scrollbar-track {
   .swiper-container .swiper-slide {
     background-position: center;
     background-size: 100% auto;
+    background-repeat: no-repeat;
     background-color: #3e4b85;
     display: block;
     position: relative; }
