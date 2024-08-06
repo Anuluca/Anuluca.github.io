@@ -10,8 +10,9 @@ const textList = [
   "Take a deep breath.",
   "have a rest ~ ☕️",
   "cursed.",
+  "这里沉睡着Anuluca的灵魂。",
+  "网站越做越重了，已经回不了头了...",
 ]
-const introText = "優しい人にならなくちゃ、心が悴む前に。"
 
 document.getElementById('intro_text').innerText=textList.sort(() => 0.5 - Math.random())[0]
 
