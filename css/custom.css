@@ -2128,7 +2128,7 @@ html ::-webkit-scrollbar-track {
   box-shadow: 0 0 14px 0px #1a1a1aad; }
   .swiper-container .swiper-slide {
     background-position: center;
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: #3e4b85;
     display: block;
