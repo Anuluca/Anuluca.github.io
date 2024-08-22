@@ -1022,7 +1022,7 @@ code {
   right: 0;
   background-color: black;
   opacity: 0.6;
-  background-image: radial-gradient(#fcfcfc38 1px, #000 1px);
+  background-image: radial-gradient(#fcfcfc14 1px, #000000 1px);
   background-size: 4px 4px;
   backdrop-filter: saturate(50%) blur(1px); }
 
