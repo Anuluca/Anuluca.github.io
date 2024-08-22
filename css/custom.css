@@ -226,15 +226,20 @@ body {
 
 /* 标签页设置 */
 .tag-list {
-  margin: 0; }
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
 
 .tag-list-item {
-  float: left;
+  zoom: 2;
   margin-right: 10px;
   padding: 1px 15px 1px 15px;
   list-style: none;
   border: 1px solid silver;
-  border-radius: 2px; }
+  border-radius: 2px;
+  background-color: #121214; }
 
 .uncollapsible:last-of-type {
   display: block;
@@ -871,6 +876,7 @@ code {
 .articlehead {
   width: 100%;
   height: 400px;
+  background-size: cover;
   background-position: center;
   margin-bottom: 20px; }
 
@@ -1111,22 +1117,20 @@ html ::-webkit-scrollbar-track {
     text-shadow: 0 0 4px white; }
 
 .clipboard_success {
-  width: 300px;
-  height: 90px;
+  width: 200px;
+  height: 40px;
   position: fixed;
-  top: calc(50vh - 50px);
-  left: calc(50vw - 150px);
-  border-radius: 20px;
-  font-size: 50px;
-  line-height: 90px;
-  text-align: center;
+  top: 40px;
+  right: -210px;
+  font-size: 16px;
+  line-height: 40px;
   z-index: 2;
-  box-shadow: 0 0 20px 0px #d6d6d6;
-  background-color: rgba(255, 255, 255, 0.829);
+  background-color: #fff;
+  border-left: 4px solid #4482F7;
+  color: #000;
   display: none;
   transition: 1s all;
-  cursor: default;
-  opacity: 0; }
+  cursor: default; }
 
 .machine {
   overflow: hidden; }

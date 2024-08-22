@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"
+  />
+  <meta name="description" content="Anuluca的个人网站" />
+  <meta
+    name="keywords"
+    content="anuluca,路卡,路卡的自由庭院岛,前端开发,vue,javascript"
+  />
+  
+  <link rel="icon" href="/favicon.png" />
+  
+
+  <title>
+     VSCode前端开发自用插件推荐 - 路卡的自由庭院岛 
+  </title>
+
+  <!-- Spectre.css framework -->
+  <link rel="stylesheet" href="/css/spectre-exp.min.css" />
+  <link rel="stylesheet" href="/css/spectre-icons.min.css" />
+  <link rel="stylesheet" href="/css/spectre.min.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="/css/custom.css" />
+  <link rel="stylesheet" href="/css/custom_theme_dark.css" />
+  <link rel="stylesheet" href="/css/phone.css" /> -->
+  <script src="/js/onBoot.js"></script>
+
+  <!-- theme css & js -->
+  
+<link rel="stylesheet" href="/css/book.css">
+ 
+<script src="/js/book.js"></script>
+
+
+  <!-- tocbot -->
+  <script src="/js/tocbot.min.js"></script>
+  <link rel="stylesheet" href="/css/tocbot.css" />
+
+  <!-- jq -->
+  <script src="https://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+  <!-- katex -->
+
+  
+<script src="/js/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+
+  <body>
+    <div id="body-color" class="">
+      <div class="back-color"></div>
+      <div class="star-back"></div>
+    </div>
+
+    <!-- <div class="body-color">
+      <div
+        :class="{
+          'body-color': true,
+          dawn: props.theme === 'dawn',
+          light: props.theme === 'light',
+          night: props.ifDarken
+        }"
+      ></div>
+      <div
+        :class="{ 'star-back': true, dawn: props.theme === 'dawn', light: props.theme === 'light' }"
+      ></div>
+    </div> -->
+
+    <div class="book-container">
+      <div class="book-sidebar">
+        <div class="book-brand">
+  <a href="/">
+    <!-- <img src="/favicon.png"> -->
+    <div>
+      <img
+        id="head_img"
+        src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/g0rY8J.png"
+      />
+    </div>
+    <span>路卡的自由庭院岛</span>
+  </a>
+</div>
+ <div class="book-menu scrollbar">
+  <ul>
+<li><a href="/"><img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/fPOGP1.png" class="l_logo"> 广场</a></li>
+<li><a href="/34223"><img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/fiCMq0.png" class="l_logo"> 更新日志</a></li>
+</ul>
+<h1 id="img-src-https-cdn-jsdelivr-net-gh-Anuluca-anulucImage-main-other-fiCUMR-png-class-l-logo-解惑笔记"><a href="/14567"><img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/fiCUMR.png" class="l_logo"> 解惑笔记</a></h1>
+<!-- ## 乐理笔记
+* [__1__ 五线谱基础知识](/24257) -->
+<h2 id="Javascript-CSS">Javascript/CSS</h2>
+<ul>
+<li><a href="/14022"><strong>38</strong> webpack打包项目时会打包已经import但没用到的模块吗</a></li>
+<li><a href="/59364"><strong>37</strong> browserHistory和hashHistory的差别</a></li>
+<li><a href="/29512"><strong>36</strong> 如何在js中使用class</a></li>
+<li><a href="/10110"><strong>35</strong> Promise的全部用法</a></li>
+<li><a href="/30293"><strong>34</strong> 数组内对象去重</a></li>
+<li><a href="/17750"><strong>33</strong> VSCode 代码片段</a></li>
+<li><a href="/40123"><strong>32</strong> hexo d遇到的问题记录</a></li>
+<li><a href="/7354"><strong>31</strong> 不同端口的localhost的cookie是否共享</a></li>
+<li><a href="/56565"><strong>30</strong> npm-i和npm-ci的区别</a></li>
+<li><a href="/14022"><strong>29</strong> webpack打包项目时会打包已经import但没用到的模块吗</a></li>
+<li><a href="/64820"><strong>28</strong> 如何判断当前环境是移动端还是PC端</a></li>
+<li><a href="/58919"><strong>27</strong> 类数组对象和arguments</a></li>
+<li><a href="/21790"><strong>26</strong> clipboard.js实现复制功能</a></li>
+<li><a href="/15120"><strong>25</strong> 如何删除项目中没有用到的package</a></li>
+<li><a href="/26344"><strong>24</strong> VSCode自定义代码片段</a></li>
+<li><a href="/17809"><strong>23</strong> 伪类和伪元素的区别</a></li>
+<li><a href="/20181"><strong>22</strong> axios完整接口调用顺序</a></li>
+<li><a href="/60132"><strong>21</strong> 常用utils整合</a></li>
+<li><a href="/9271"><strong>20</strong> 处理blob文件下载抛出json格式异常的问题</a></li>
+<li><a href="/46572"><strong>19</strong> ES6新特性总结</a></li>
+<li><a href="/29473"><strong>18</strong> 样式处理器选型</a></li>
+<li><a href="/57469"><strong>17</strong> Html5文字设置渐变色</a></li>
+<li><a href="/60642"><strong>16</strong> css文本超出隐藏显示省略号</a></li>
+<li><a href="/6329"><strong>15</strong> Flex布局属性浅解</a></li>
+<li><a href="/36608"><strong>14</strong> 浏览器兼容性问题整理</a></li>
+<li><a href="/21732"><strong>13</strong> 原生js实现简易瀑布流</a></li>
+<li><a href="/29471"><strong>12</strong> Base64转文件下载</a></li>
+<li><a href="/41455"><strong>11</strong> js实现中文数组拼音排序</a></li>
+<li><a href="/36370"><strong>10</strong> 如何将json数据转化为data.json并下载</a></li>
+<li><a href="/53556"><strong>9</strong> 如何发现不安全的正则表达式</a></li>
+<li><a href="/12665"><strong>8</strong> setTimeout和Promise执行顺序</a></li>
+<li><a href="/1079"><strong>7</strong> js实现文本不可复制及复制监听</a></li>
+<li><a href="/3951"><strong>6</strong> js函数判断是否为纯对象</a></li>
+<li><a href="/65473"><strong>5</strong> base64和Blob转换</a></li>
+<li><a href="/23627"><strong>4</strong> 使用viewport对页面做响应式处理</a></li>
+<li><a href="/53717"><strong>3</strong> 解决网页加载后没有清除css和js缓存的问题</a></li>
+<li><a href="/22406"><strong>2</strong> 个人的一种图片懒加载思路</a></li>
+<li><a href="/16400"><strong>1</strong> 解决页面移动端点击延迟的问题</a></li>
+</ul>
+<h2 id="Vue-React">Vue/React</h2>
+<ul>
+<li><a href="/28864"><strong>4</strong> vue3Setup项目中如何阻止使用浏览器返回键</a></li>
+<li><a href="/15023"><strong>3</strong> 图表插件选型</a></li>
+<li><a href="/57808"><strong>2</strong> vue-class-component对TS的支持</a></li>
+<li><a href="/57928"><strong>1</strong> Grid/treeview控件简要介绍</a></li>
+</ul>
+<h2 id="其它">其它</h2>
+<ul>
+<li><a href="/9999999999">[Tags]</a></li>
+<li><a href="/31087"><strong>11</strong> VSCode前端开发自用插件推荐</a></li>
+<li><a href="/4309"><strong>10</strong> 解决Chrome80版本SameSite属性导致Cookie无法跨域的问题</a></li>
+<li><a href="/32529"><strong>9</strong> zsh和bash的切换</a></li>
+<li><a href="/41922"><strong>8</strong> Mac常规安装nvm并下载指定版本node</a></li>
+<li><a href="/52608"><strong>7</strong> Homebrew大陆安装脚本</a></li>
+<li><a href="/39572"><strong>6</strong> 不同文件类型转base64后的前缀</a></li>
+<li><a href="/48737"><strong>5</strong> node is not avalid Win32 application报错解决办法</a></li>
+<li><a href="/35468"><strong>4</strong> 浏览器MixedContent报错</a></li>
+<li><a href="/13573"><strong>3</strong> 修改Mac鼠标滚轮逻辑</a></li>
+<li><a href="/39020"><strong>2</strong> windows关闭被占用的端口</a></li>
+<li><a href="/58914"><strong>1</strong> 工作中遇到的关于DB2/mysql的一些问题及解决办法</a></li>
+</ul>
+<span id="more"></span>
+<ul>
+<li><a href="/23761"><img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/fPz6u6.png" class="l_logo"> 游戏档案馆</a></li>
+<li><a href="/23678"><img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/fipf1A.png" class="l_logo"> 宝可梦后院</a></li>
+</ul>
+<h1 id="img-src-https-cdn-jsdelivr-net-gh-Anuluca-anulucImage-main-other-fi98gA-png-class-l-logo-杂物室"><a href=""><img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/fi98gA.png" class="l_logo"> 杂物室</a></h1>
+<h2 id="文章">文章</h2>
+<ul>
+<li><a href="/58027">已弃坑的新版个人网站</a></li>
+<li><a href="/2285">庭院岛历史</a></li>
+<li><a href="/48446">2020不正确记忆</a></li>
+<li><a href="/41678">Markdown Demo</a></li>
+</ul>
+<h2 id="工具">工具</h2>
+<ul>
+<li><a href="/60328">HTML常用转义字符</a></li>
+<li><a href="/45597">配色参考</a></li>
+<li><a href="/49833">营销号生成器</a></li>
+</ul>
+<h2 id="影像">影像</h2>
+<ul>
+<li><a href="/21283">日常随拍</a></li>
+<li><a href="/17773">模玩摄影</a></li>
+<li><a href="/10306">绘画</a></li>
+<li><a href="/21563">自制训练家卡</a></li>
+</ul>
+<!--more-->
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+        <div class="book-sidebar-bottom">
+          <div class="sidebar-title" onclick="changeSidebarSize()">
+            <b>》</b>
+            <span>主题切换</span>
+          </div>
+          <div class="theme-group">
+            <!-- 黄昏 -->
+            <div
+              style="background: linear-gradient(to bottom, #071062, #7f4e0e)"
+              onclick="changeTheme('dawn')"
+            >
+              黄昏
+            </div>
+            <!-- 深夜 -->
+            <div
+              style="background: linear-gradient(to bottom, #0b126f, #000000)"
+              onclick="changeTheme('dark')"
+            >
+              深夜
+            </div>
+            <!-- 经典 -->
+            <div
+              style="background-color: #1c1c1e"
+              onclick="changeTheme('classic')"
+            >
+              经典
+            </div>
+            <!-- P3R -->
+            <div
+              style="background: linear-gradient(to bottom, #51A6F4, #0817B1)"
+              onclick="changeTheme('p3r')"
+            >
+              满月
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="backlogo" onClick="toOldSite()">FLASHBACK</div> -->
+
+      <div
+  class="sidebar-toggle"
+  onclick="sidebar_toggle()"
+  onmouseover="add_inner()"
+  onmouseleave="remove_inner()"
+>
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+  function add_inner() {
+    let inner = document.querySelector(".sidebar-toggle-inner");
+    inner.classList.add("show");
+  }
+
+  function remove_inner() {
+    let inner = document.querySelector(".sidebar-toggle-inner");
+    inner.classList.remove("show");
+  }
+
+  function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector(".sidebar-toggle");
+    let sidebar = document.querySelector(".book-sidebar");
+    let content = document.querySelector(".off-canvas-content");
+    let footerCom = document.querySelector(".footer-com");
+    let backToTop = document.querySelector(".back-to-top");
+    if (sidebar_toggle.classList.contains("extend")) {
+      // show
+      sidebar_toggle.classList.remove("extend");
+      footerCom.style.left = "calc(14rem + 6px)";
+      footerCom.style.width = "calc(84% - 13.65rem - 6px)";
+      backToTop.style.left = " calc(84% - 5.35rem)";
+      sidebar.classList.remove("hide");
+      content.classList.remove("extend");
+    } else {
+      // hide
+      footerCom.style.left = "4px";
+      footerCom.style.width = "calc(84% - 1.65rem - 12px)";
+      sidebar_toggle.classList.add("extend");
+      backToTop.style.left = "calc(84% - 7.75rem)";
+      sidebar.classList.add("hide");
+      content.classList.add("extend");
+    }
+  }
+</script>
+
+
+      <div class="off-canvas-content">
+        <div class="back-to-top" onclick="go_top()">回到顶部</div>
+        <div class="footer-com">
+          <div class="center">
+            <div class="expand">
+              <div class="marquee-wrap">
+                <!-- --------------------------------------- -->
+                <span onclick="jumpToPage('/3243')">
+                  <i>「</i>
+                  <b class="pink">初音未来：歌姬计划 Mega39's+\游戏档案馆</b>
+                  <i>」<span>2023-06-07</span></i>
+                </span>
+                <!-- --------------------------------------- -->
+                <span onclick="jumpToPage('/20928')">
+                  <i>「</i>
+                  <b class="blue">戴拿&盖亚奥特曼\皮套摄影
+                  </b>
+                  <i>」<span>2024-08-02</span></i>
+                </span>
+                <!-- --------------------------------------- -->
+                <span onclick="jumpToPage('/10648')">
+                  <i>「</i>
+                  <b class="pink">宝可梦：白金\游戏档案馆</b>
+                  <i>」<span>2023-08-06</span></i>
+                </span>
+                <!-- --------------------------------------- -->
+                <span onclick="jumpToPage('/46604')">
+                  <i>「</i>
+                  <b class="blue">闪焰王牌/模玩摄影</b>
+                  <i>」<span>2024-08-06</span></i>
+                </span>
+                <!-- --------------------------------------- -->
+                <span onclick="jumpToPage('/30810')">
+                  <i>「</i>
+                  <b class="pink">多龙巴鲁托\模玩摄影</b>
+                  <i>」<span>2023-06-05</span></i>
+                </span>
+                <!-- --------------------------------------- -->
+                <span onclick="jumpToPage('/8657')">
+                  <i>「</i>
+                  <b class="green">泽塔奥特曼\皮套摄影</b>
+                  <i>」<span>2023-06-07</span></i>
+                </span>
+                <!-- --------------------------------------- -->
+                <span onclick="jumpToPage('/54991')">
+                  <i>「</i>
+                  <b class="pink">阿尔宙斯\模玩摄影</b>
+                  <i>」<span>2023-06-07</span></i>
+                </span>
+                <!-- --------------------------------------- -->
+                <!-- <span onclick="jumpToPage('/60132')">
+                  <i>「</i>
+                  <b class="pink">xxxxxxxx</b>
+                  <i>」<span>2023-06-07</span></i>
+                </span> -->
+                <!-- --------------------------------------- -->
+                <!-- <span onclick="jumpToPage('/60132')">
+                  <i>「</i>
+                  <b class="pink">xxxxxxxx</b>
+                  <i>」<span>2023-06-07</span></i>
+                </span> -->
+                <!-- --------------------------------------- -->
+                <!-- <span onclick="jumpToPage('/60132')">
+                  <i>「</i>
+                  <b class="pink">xxxxxxxx</b>
+                  <i>」<span>2023-06-07</span></i>
+                </span> -->
+                <!-- --------------------------------------- -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column col-10 col-lg-12">
+            <div class="book-navbar"><!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+</div>
+            <div class="book-content"><div class="book-post">
+  <h1 id="swig￼0-font-color-gray-150-font">VSCode前端开发自用插件推荐 <font color="gray">#150</font></h1>
+<p><strong>Anuluca</strong>     <strong>Date :</strong> 2024-08-22   <strong>Tags :</strong> 1</p>
+<div class = "articlehead" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/Games/p5r/%E5%A5%B3%E7%A5%9E%E5%BC%82%E9%97%BB%E5%BD%955%E7%9A%87%E5%AE%B6%E7%89%882023_5_10_30_28.jpg')"></div>
+<p><em>*排序不分先后</em></p>
+<h4 id="1-翻译-英汉词典">1. 翻译(英汉词典)</h4>
+<p>ID: CodeInChinese.EnglishChineseDictionary<br>
+说明: 本地 77 万词条英汉词典，不依赖任何在线翻译 API，无查询次数限制。可翻译驼峰和下划线命名，及对整个文件中的标识符批量翻译。Translate a selected identifier, or all the recognized identifiers in one source file.<br>
+版本: 1.1.1<br>
+发布者: 中文编程<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=CodeInChinese.EnglishChineseDictionary">https://marketplace.visualstudio.com/items?itemName=CodeInChinese.EnglishChineseDictionary</a></p>
+<h4 id="2-名称-Auto-Close-Tag">2. 名称: Auto Close Tag</h4>
+<p>ID: formulahendry.auto-close-tag<br>
+说明: 自动添加 HTML/XML 关闭标签，与 Sublime Text 相同<br>
+版本: 0.5.15<br>
+发布者: Jun Han<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag">https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag</a></p>
+<h4 id="3-名称-Auto-Rename-Tag">3. 名称: Auto Rename Tag</h4>
+<p>ID: formulahendry.auto-rename-tag<br>
+说明: 自动重命名配对的 HTML/XML 标签<br>
+版本: 0.1.10<br>
+发布者: Jun Han<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag">https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag</a></p>
+<h4 id="4-名称-Auto-Complete-Tag">4. 名称: Auto Complete Tag</h4>
+<p>ID: formulahendry.auto-complete-tag<br>
+说明: 自动为 HTML/XML 添加关闭标签并重命名配对标签<br>
+版本: 0.1.0<br>
+发布者: Jun Han<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-complete-tag">https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-complete-tag</a></p>
+<h4 id="5-名称-Auto-Import">5. 名称: Auto Import</h4>
+<p>ID: steoates.autoimport<br>
+说明: 自动查找、解析并提供所有可用导入的代码操作和代码完成。适用于 Typescript 和 TSX<br>
+版本: 1.5.4<br>
+发布者: steoates<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=steoates.autoimport">https://marketplace.visualstudio.com/items?itemName=steoates.autoimport</a></p>
+<h4 id="6-名称-Class-autocomplete-for-HTML">6. 名称: Class autocomplete for HTML</h4>
+<p>ID: AESSoft.aessoft-class-autocomplete<br>
+说明: HTML 的 class 自动完成功能<br>
+版本: 0.1.0<br>
+发布者: AES Soft<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=AESSoft.aessoft-class-autocomplete">https://marketplace.visualstudio.com/items?itemName=AESSoft.aessoft-class-autocomplete</a></p>
+<h4 id="7-名称-CodeSnap">7. 名称: CodeSnap</h4>
+<p>ID: adpyke.codesnap<br>
+说明: 📷 给你的代码拍张好的照片吧<br>
+版本: 1.3.4<br>
+发布者: adpyke<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap">https://marketplace.visualstudio.com/items?itemName=adpyke.codesnap</a></p>
+<h4 id="8-名称-名称-Highlight-Matching-Tag">8. 名称: 名称: Highlight Matching Tag</h4>
+<p>ID: vincaslt.highlight-matching-tag<br>
+说明: 高亮显示匹配的结束和开始标签<br>
+版本: 0.11.0<br>
+发布者: vincaslt<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag">https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag</a></p>
+<h4 id="9-名称-CSS-Peek">9. 名称: CSS Peek</h4>
+<p>ID: pranaygp.vscode-css-peek<br>
+说明: 允许从 html 文件查看 css ID 和类字符串作为相应 CSS 的定义。允许查看和转到定义。<br>
+版本: 4.4.1<br>
+发布者: Pranay Prakash<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek">https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek</a></p>
+<h4 id="10-名称-Git-History">10. 名称: Git History</h4>
+<p>ID: donjayamanne.githistory<br>
+说明: 查看 git 日志、文件历史记录、比较分支或提交<br>
+版本: 0.6.20<br>
+发布者: Don Jayamanne<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory">https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory</a></p>
+<h4 id="11-名称-GitLens-—-Git-supercharged">11. 名称: GitLens — Git supercharged</h4>
+<p>ID: eamodio.gitlens<br>
+说明: 一目了然地可视化代码作者身份，无缝导航和探索 Git 存储库<br>
+版本: 13.5.0<br>
+发布者: GitKraken<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens">https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens</a></p>
+<h4 id="12-名称-HTML-CSS-JavaScript-Snippets">12. 名称: HTML/CSS/JavaScript Snippets</h4>
+<p>ID: Wscats.html-snippets<br>
+说明: HTML/CSS/JavaScript/Jade/Pug/Less/Sass/Stylus/ES6 片段支持<br>
+版本: 1.0.6<br>
+发布者: Eno Yao<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=Wscats.html-snippets">https://marketplace.visualstudio.com/items?itemName=Wscats.html-snippets</a></p>
+<h4 id="13-名称-Image-Hover-Preview">13. 名称: Image Hover Preview</h4>
+<p>ID: ltaoo.vscode-plugin-image-hover-preview<br>
+说明: 图片预览插件<br>
+版本: 0.5.0<br>
+发布者: ltaoo<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=ltaoo.vscode-plugin-image-hover-preview">https://marketplace.visualstudio.com/items?itemName=ltaoo.vscode-plugin-image-hover-preview</a></p>
+<h4 id="14-名称-IntelliSense-for-CSS-class-names-in-HTML">14. 名称: IntelliSense for CSS class names in HTML</h4>
+<p>ID: Zignd.html-css-class-completion<br>
+说明: 根据工作区中的定义完成 HTML 类属性的 CSS 类名。<br>
+版本: 1.20.0<br>
+发布者: Zignd<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion">https://marketplace.visualstudio.com/items?itemName=Zignd.html-css-class-completion</a></p>
+<h4 id="15-名称-Tailwind-CSS-IntelliSense">15. 名称: Tailwind CSS IntelliSense</h4>
+<p>ID: bradlc.vscode-tailwindcss<br>
+说明: 智能 Tailwind CSS 工具<br>
+版本: 0.12.6<br>
+发布者: Tailwind Labs<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss">https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss</a></p>
+<h4 id="16-名称-JavaScript-ES6-code-snippets">16. 名称: JavaScript (ES6) code snippets</h4>
+<p>ID: xabikos.JavaScriptSnippets<br>
+说明: ES6 语法的 JavaScript 代码片段<br>
+版本: 1.8.0<br>
+发布者: charalampos karypidis<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets">https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets</a></p>
+<h4 id="17-名称-JavaScript-and-TypeScript-Nightly">17. 名称: JavaScript and TypeScript Nightly</h4>
+<p>ID: ms-vscode.vscode-typescript-next<br>
+说明: 启用 typescript@next 来增强 VS Code 的内置 JavaScript 和 TypeScript 支持<br>
+版本: 5.7.20240821<br>
+发布者: Microsoft<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next">https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next</a></p>
+<h4 id="18-名称-jQuery-Code-Snippets">18. 名称: jQuery Code Snippets</h4>
+<p>ID: donjayamanne.jquerysnippets<br>
+说明: 超过 130 个 jQuery 代码片段<br>
+版本: 0.0.1<br>
+发布者: Don Jayamanne<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=donjayamanne.jquerysnippets">https://marketplace.visualstudio.com/items?itemName=donjayamanne.jquerysnippets</a></p>
+<h4 id="19-名称-JS-JSX-Snippets">19. 名称: JS JSX Snippets</h4>
+<p>ID: skyran.js-jsx-snippets<br>
+说明: 使用 Babel 和 ES7 语法在 JS 中扩展 React、Redux<br>
+版本: 11.1.3<br>
+发布者: Nai You Ran<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=skyran.js-jsx-snippets">https://marketplace.visualstudio.com/items?itemName=skyran.js-jsx-snippets</a></p>
+<h4 id="20-名称-JSON-to-TS">20. 名称: JSON to TS</h4>
+<p>ID: MariusAlchimavicius.json-to-ts<br>
+说明: 将 JSON 对象转换为 TypeScript 接口<br>
+版本: 1.8.0<br>
+发布者: MariusAlchimavicius<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=MariusAlchimavicius.json-to-ts">https://marketplace.visualstudio.com/items?itemName=MariusAlchimavicius.json-to-ts</a></p>
+<h4 id="21-名称-Live-Server">21. 名称: Live Server</h4>
+<p>ID: ritwickdey.LiveServer<br>
+说明: 启动具有静态和动态页面实时重新加载功能的开发本地服务器<br>
+版本: 5.7.9<br>
+发布者: Ritwick Dey<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer</a></p>
+<h4 id="22-名称-Markdown-All-in-One">22. 名称: Markdown All in One</h4>
+<p>ID: yzhang.markdown-all-in-one<br>
+说明: 编写 Markdown 所需的一切（键盘快捷键、目录、自动预览等）<br>
+版本: 3.5.1<br>
+发布者: Yu Zhang<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one</a></p>
+<h4 id="23-名称-Material-Icon-Theme">23. 名称: Material Icon Theme</h4>
+<p>ID: PKief.material-icon-theme<br>
+说明: Visual Studio Code 的 Material Design 图标<br>
+版本: 5.9.0<br>
+发布者: Philipp Kief<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme">https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme</a></p>
+<h4 id="24-名称-Material-Theme-Icons-—-Free">24. 名称: Material Theme Icons — Free</h4>
+<p>ID: equinusocio.vsc-material-theme-icons<br>
+说明: Visual Studio Code 和 Material Theme 最精彩的图标主题。<br>
+版本: 3.8.7<br>
+发布者: Equinusocio<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme-icons">https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme-icons</a></p>
+<h4 id="25-名称-open-in-browser">25. 名称: open in browser</h4>
+<p>ID: techer.open-in-browser<br>
+说明: 在默认浏览器或应用程序中打开当前文件。<br>
+版本: 2.0.0<br>
+发布者: TechER<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser">https://marketplace.visualstudio.com/items?itemName=techer.open-in-browser</a></p>
+<h4 id="26-名称-Output-Colorizer">26. 名称: Output Colorizer</h4>
+<p>ID: IBM.output-colorizer<br>
+说明: 日志文件的语法突出显示<br>
+版本: 0.1.2<br>
+发布者: IBM<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer">https://marketplace.visualstudio.com/items?itemName=IBM.output-colorizer</a></p>
+<h4 id="27-名称-Parameter-Hints">27. 名称: Parameter Hints</h4>
+<p>ID: DominicVonk.parameter-hints<br>
+说明: 自动参数提示<br>
+版本: 0.2.7<br>
+发布者: Dominic Vonk<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=DominicVonk.parameter-hints">https://marketplace.visualstudio.com/items?itemName=DominicVonk.parameter-hints</a></p>
+<h4 id="28-名称-Partial-Diff">28. 名称: Partial Diff</h4>
+<p>ID: ryu1kn.partial-diff<br>
+说明: 比较文件内、文件间或剪贴板中的（差异）文本选择<br>
+版本: 1.4.3<br>
+发布者: Ryuichi Inagaki<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=ryu1kn.partial-diff">https://marketplace.visualstudio.com/items?itemName=ryu1kn.partial-diff</a></p>
+<h4 id="29-名称-Path-Intellisense">29. 名称: Path Intellisense</h4>
+<p>ID: christian-kohler.path-intellisense<br>
+说明: 自动完成文件名的 Visual Studio Code 插件<br>
+版本: 2.9.0<br>
+发布者: Christian Kohler<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense">https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense</a></p>
+<h4 id="30-名称-path-alias">30. 名称: path-alias</h4>
+<p>ID: IWANABETHATGUY.path-alias<br>
+说明: 一个可以解决路径别名提示，跳转的 vscode 插件<br>
+版本: 0.12.3<br>
+发布者: victor<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=IWANABETHATGUY.path-alias">https://marketplace.visualstudio.com/items?itemName=IWANABETHATGUY.path-alias</a></p>
+<h4 id="31-名称-Peacock">31. 名称: Peacock</h4>
+<p>ID: johnpapa.vscode-peacock<br>
+说明: 巧妙地改变工作区的颜色。当您有多个 VS Code 实例并且想要快速识别哪个是哪个时，这是理想的选择。<br>
+版本: 4.2.2<br>
+发布者: John Papa<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock">https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock</a></p>
+<h4 id="32-名称-Prettier-Code-formatter">32. 名称: Prettier - Code formatter</h4>
+<p>ID: esbenp.prettier-vscode<br>
+说明: 无须多言<br>
+版本: 10.4.0<br>
+发布者: Prettier<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode</a></p>
+<h4 id="33-名称-Project-Manager">33. 名称: Project Manager</h4>
+<p>ID: alefragnani.project-manager<br>
+说明: 轻松在项目之间切换<br>
+版本: 12.8.0<br>
+发布者: Alessandro Fragnani<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager">https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager</a></p>
+<h4 id="34-名称-React-Native-Snippet">34. 名称: React Native Snippet</h4>
+<p>ID: jundat95.react-native-snippet<br>
+说明: React Native、Typescript React Native、StyleSheet、Redux 代码片段<br>
+版本: 0.5.6<br>
+发布者: jundat95<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=jundat95.react-native-snippet">https://marketplace.visualstudio.com/items?itemName=jundat95.react-native-snippet</a></p>
+<h4 id="35-名称-React-Redux-ES6-Snippets">35. 名称: React Redux ES6 Snippets</h4>
+<p>ID: timothymclane.react-redux-es6-snippets<br>
+说明: 带有 React-Redux 箭头函数的 ES6 代码片段<br>
+版本: 2.1.0<br>
+发布者: Timothy McLane<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=timothymclane.react-redux-es6-snippets">https://marketplace.visualstudio.com/items?itemName=timothymclane.react-redux-es6-snippets</a></p>
+<h4 id="36-名称-sneak-mark">36. 名称: sneak mark</h4>
+<p>ID: wangzy.sneak-mark<br>
+说明: 检测英文语句中的中文符号<br>
+版本: 0.0.6<br>
+发布者: wangzy<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=wangzy.sneak-mark">https://marketplace.visualstudio.com/items?itemName=wangzy.sneak-mark</a></p>
+<h4 id="37-名称-Stylelint">37. 名称: Stylelint</h4>
+<p>ID: stylelint.vscode-stylelint<br>
+说明: Stylelint<br>
+版本: 1.3.0<br>
+发布者: Stylelint<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint">https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint</a></p>
+<h4 id="38-名称-vscode-pets">38. 名称: vscode-pets</h4>
+<p>ID: tonybaloney.vscode-pets<br>
+说明: 养宠物<br>
+版本: 1.27.0<br>
+发布者: Anthony Shaw<br>
+VS Marketplace 链接: <a target="_blank" rel="noopener" href="https://marketplace.visualstudio.com/items?itemName=tonybaloney.vscode-pets">https://marketplace.visualstudio.com/items?itemName=tonybaloney.vscode-pets</a></p>
+<h4 id="39-名称-background">39. 名称: background</h4>
+<p>ID: shalldie.background<br>
+说明: 增加自定义背景图片<br>
+版本: 1.2.13<br>
+发布者: shalldie</p>
+<h4 id="40-名称-Color-Manager">40. 名称: Color Manager</h4>
+<p>ID: royaction.color-manager<br>
+说明: 侧边栏快捷颜色选择器和调色板<br>
+版本: 0.7.5<br>
+发布者: Roy Action</p>
+<h4 id="41-名称-colorize">41. 名称: colorize</h4>
+<p>ID: kamikillerto.vscode-colorize<br>
+说明: vscode 扩展有助于可视化文件中的 css 颜色。<br>
+版本: 0.11.1<br>
+发布者: kamikillerto</p>
+<h4 id="42-名称-Error-Lens">42. 名称: Error Lens</h4>
+<p>ID: usernamehw.errorlens<br>
+说明: 改进错误、警告和其他语言诊断的突出显示。<br>
+版本: 3.8.0<br>
+发布者: Alexander</p>
+
+  <a onclick="go_top()"
+    ><div class="to_top"><div class="to-top-triangle"></div></div
+  ></a>
+</div>
+
+<div class="drink-time">
+  <img
+    style="text-align: center; margin-top: 20vh; width: 150px; opacity: 0.9"
+    src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/2F65x1.png"
+  />
+  <div style="text-align: center; margin-top: 20px; font-size: 20px">
+    由于某些原因，博客图床于5月26日惨遭爆破，目前正在整理需要的图片并迁移存活的图片到新图床,预计6月10日重新上线网站
+  </div>
+</div>
+
+
+<div class="articleBottom">
+  <i></i>
+  <b
+    >&nbsp;&nbsp;<img
+      src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/goDrXd.gif"
+    />&nbsp;
+    <div><span>THE END</span></div>
+    &nbsp;<img
+      src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/god8aT.gif"
+    />&nbsp;&nbsp;</b
+  >
+  <i></i>
+</div>
+<div class="combtn">
+  <div class="valine_btn"><b>游客评论</b></div>
+  <div class="gitalk_btn"><b>使用Github账号评论</b></div>
+  <div class="moving"></div>
+</div>
+<div>&nbsp;</div>
+
+<div class="book-comments">
+<link rel="stylesheet" href="/css/gitalk.css" />
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<div id="gitalk-container"></div>
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: "9ffd086e729163760a2a",
+    clientSecret: "3dc719eec9759df35f5aa9ecb3bcdefd3f5bf9c6",
+    repo: "Anuluca.github.io",
+    owner: "anuluca",
+    admin: ["Anuluca"],
+    id: location.pathname,
+    distractionFreeMode: "true",
+  });
+  gitalk.render("gitalk-container");
+</script>
+ 
+<!--    <link rel="stylesheet" href="https://unpkg.com/valine/dist/Valine.min.js">-->
+<!-- <script src="//unpkg.zhimg.com/valine/dist/Valine.min.js"></script> -->
+<div id="vcomments" style="margin-top: 100px"></div>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  new Valine({
+    el: "#vcomments",
+    appId: "rqHuR8lh2h3Fp2s9v2M8nDYJ-gzGzoHsz",
+    appKey: "9o4oYzzaYVFGG34Vd8ipLztu",
+    notify: false,
+    verify: false,
+    avatar: "mm",
+    placeholder: "说点什么",
+    visitor: true,
+  });
+</script>
+
+</div>
+<a
+  class="aaaaa"
+  style="
+    font-size: 10px;
+    color: #999ca8;
+    width: 55%;
+    text-align: center;
+    padding-top: 100px;
+  "
+>
+  © 2018 - 2024 Anuluca
+</a>
+<span class="frsi">
+  ▌友情链接
+  <a
+    href="https://cutekibry.github.io/"
+    target="_blank"
+    class="friendUrl"
+    style="margin-left: 5px"
+    >Tsuki's blog</a
+  >&nbsp;|
+  <a href="http://pokeamice.com/" target="_blank" class="friendUrl"
+    >Poke amice</a
+  >&nbsp;|
+  <a href="https://austinxt.com/" target="_blank" class="friendUrl">夜航星</a>
+</span>
+
+ 
+<script src="/js/book-post.js"></script>
+
+</div>
+          </div>
+          <div class="column col-2 hide-lg">
+            <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/me.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Anuluca</div>
+      <div style="font-family: 等线">Update:2024-08-22</div>
+    </div>
+  </div>
+
+  
+    <div class="divider"></div>
+
+    <div class="link">
+      
+
+      <a class="tag-none-link" href="/tags/web%E5%89%8D%E7%AB%AF/" rel="tag">web前端</a>
+    </div>
+    
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot"></div>
+
+<div class="bottom">
+  <div class="intro">
+    <div id="intro_text">...</div>
+  </div>
+  <div class="links">
+    <a target="_blank" rel="noopener" href="https://twitter.com/TILucario" class="link_l">
+      <div
+        style="
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabyWQ.png');
+        "
+      ></div>
+      <span>推特 ( 𝕏 ) </span></a
+    >
+    <a target="_blank" rel="noopener" href="https://space.bilibili.com/128735968" class="link_l">
+      <div
+        style="
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabprFS.png');
+        "
+      ></div>
+      <span>Bilibili</span></a
+    >
+    <a target="_blank" rel="noopener" href="https://weibo.com/ryugamine" class="link_l">
+      <div
+        style="
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabrFS.png');
+        "
+      ></div>
+      <span>微博</span></a
+    >
+    <a target="_blank" rel="noopener" href="https://github.com/Anuluca" class="link_l">
+      <div
+        style="
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabBo8.png');
+        "
+      ></div>
+      <span>Github</span></a
+    >
+  </div>
+  <div class="languages">
+    中文 &nbsp;&nbsp;|&nbsp;&nbsp;
+    <a target="_blank" rel="noopener" href="http://AnulucaEn.github.io" class="english">English</a>
+  </div>
+</div>
+
+<script src="/js/book-toc.js"></script>
+
+
+</div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="down-line-zhanwei"></div>
+  <div class="down-line"></div> -->
+      <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+    </div>
+    <div class="bottomline"></div>
+    <script src="/js/nprogress.js"></script>
+    <link rel="stylesheet" href="/css/nprogress.css" />
+    <script src="/js/custom.js"></script>
+    <div class="clipboard_success">&nbsp;&nbsp;复制成功！</div>
+
+    <!-- 切换主题的动画效果 -->
+    <!-- <div class="change_theme_animes">
+      <div
+        id="cantSeeAnything_white"
+        style="
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: white;
+          z-index: 999;
+          opacity: 0;
+          display: none;
+        "
+      ></div>
+      <div
+        id="cantSeeAnything_black"
+        style="
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: black;
+          z-index: 999;
+          opacity: 0;
+          display: none;
+        "
+      ></div>
+      <img
+        id="nike_shine"
+        src="/necrozma_shine.PNG"
+        style="
+          position: fixed;
+          z-index: 998;
+          bottom: -400px;
+          margin: 0 auto;
+          width: 400px;
+          left: calc(50% - 200px);
+        "
+      />
+      <img
+        id="nike_dark"
+        src="/necrozma_dark.PNG"
+        style="
+          position: fixed;
+          z-index: 998;
+          bottom: -400px;
+          margin: 0 auto;
+          width: 400px;
+          left: calc(50% - 200px);
+        "
+      />
+      <img
+        id="shine"
+        src="/tempshine.png"
+        style="
+          position: fixed;
+          z-index: 997;
+          bottom: -100px;
+          margin: 0 auto;
+          width: 100px;
+          height: 100px;
+          left: calc(50% - 50px);
+          opacity: 0;
+        "
+      />
+      <img
+        id="absorb"
+        src="/tempshine.png"
+        style="
+          position: fixed;
+          z-index: 997;
+          bottom: -100vh;
+          margin: 0 auto;
+          width: 100vw;
+          height: 100vh;
+          opacity: 0;
+        "
+      />
+    </div> -->
+  </body>
+</html>
+
+
+<script src="/js/book.js"></script>
+

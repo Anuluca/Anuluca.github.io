@@ -6,11 +6,11 @@ clipboard.on('success', function (e) {
     })
     setTimeout(() => {
         $(".clipboard_success").stop().animate({
-            opacity: 1
-        }, 5)
-        $(".clipboard_success").delay(600).animate({
-            opacity: 0
-        }, 150)
+            right: 0
+        }, 0.2)
+        $(".clipboard_success").delay(2400).animate({
+            right: -210
+        }, 0.2)
     }, 0);
 });
 clipboard.on('error', function (e) {});

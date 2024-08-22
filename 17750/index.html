@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"
+  />
+  <meta name="description" content="Anuluca的个人网站" />
+  <meta
+    name="keywords"
+    content="anuluca,路卡,路卡的自由庭院岛,前端开发,vue,javascript"
+  />
+  
+  <link rel="icon" href="/favicon.png" />
+  
+
+  <title>
+     VSCode 代码片段 - 路卡的自由庭院岛 
+  </title>
+
+  <!-- Spectre.css framework -->
+  <link rel="stylesheet" href="/css/spectre-exp.min.css" />
+  <link rel="stylesheet" href="/css/spectre-icons.min.css" />
+  <link rel="stylesheet" href="/css/spectre.min.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="/css/custom.css" />
+  <link rel="stylesheet" href="/css/custom_theme_dark.css" />
+  <link rel="stylesheet" href="/css/phone.css" /> -->
+  <script src="/js/onBoot.js"></script>
+
+  <!-- theme css & js -->
+  
+<link rel="stylesheet" href="/css/book.css">
+ 
+<script src="/js/book.js"></script>
+
+
+  <!-- tocbot -->
+  <script src="/js/tocbot.min.js"></script>
+  <link rel="stylesheet" href="/css/tocbot.css" />
+
+  <!-- jq -->
+  <script src="https://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+  <!-- katex -->
+
+  
+<script src="/js/zooming.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const zooming = new Zooming()
+    zooming.listen('.book-content img')
+})
+</script>
+
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+
+  <body>
+    <div id="body-color" class="">
+      <div class="back-color"></div>
+      <div class="star-back"></div>
+    </div>
+
+    <!-- <div class="body-color">
+      <div
+        :class="{
+          'body-color': true,
+          dawn: props.theme === 'dawn',
+          light: props.theme === 'light',
+          night: props.ifDarken
+        }"
+      ></div>
+      <div
+        :class="{ 'star-back': true, dawn: props.theme === 'dawn', light: props.theme === 'light' }"
+      ></div>
+    </div> -->
+
+    <div class="book-container">
+      <div class="book-sidebar">
+        <div class="book-brand">
+  <a href="/">
+    <!-- <img src="/favicon.png"> -->
+    <div>
+      <img
+        id="head_img"
+        src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/g0rY8J.png"
+      />
+    </div>
+    <span>路卡的自由庭院岛</span>
+  </a>
+</div>
+ <div class="book-menu scrollbar">
+  <ul>
+<li><a href="/"><img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/fPOGP1.png" class="l_logo"> 广场</a></li>
+<li><a href="/34223"><img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/fiCMq0.png" class="l_logo"> 更新日志</a></li>
+</ul>
+<h1 id="img-src-https-cdn-jsdelivr-net-gh-Anuluca-anulucImage-main-other-fiCUMR-png-class-l-logo-解惑笔记"><a href="/14567"><img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/fiCUMR.png" class="l_logo"> 解惑笔记</a></h1>
+<!-- ## 乐理笔记
+* [__1__ 五线谱基础知识](/24257) -->
+<h2 id="Javascript-CSS">Javascript/CSS</h2>
+<ul>
+<li><a href="/14022"><strong>38</strong> webpack打包项目时会打包已经import但没用到的模块吗</a></li>
+<li><a href="/59364"><strong>37</strong> browserHistory和hashHistory的差别</a></li>
+<li><a href="/29512"><strong>36</strong> 如何在js中使用class</a></li>
+<li><a href="/10110"><strong>35</strong> Promise的全部用法</a></li>
+<li><a href="/30293"><strong>34</strong> 数组内对象去重</a></li>
+<li><a href="/17750"><strong>33</strong> VSCode 代码片段</a></li>
+<li><a href="/40123"><strong>32</strong> hexo d遇到的问题记录</a></li>
+<li><a href="/7354"><strong>31</strong> 不同端口的localhost的cookie是否共享</a></li>
+<li><a href="/56565"><strong>30</strong> npm-i和npm-ci的区别</a></li>
+<li><a href="/14022"><strong>29</strong> webpack打包项目时会打包已经import但没用到的模块吗</a></li>
+<li><a href="/64820"><strong>28</strong> 如何判断当前环境是移动端还是PC端</a></li>
+<li><a href="/58919"><strong>27</strong> 类数组对象和arguments</a></li>
+<li><a href="/21790"><strong>26</strong> clipboard.js实现复制功能</a></li>
+<li><a href="/15120"><strong>25</strong> 如何删除项目中没有用到的package</a></li>
+<li><a href="/26344"><strong>24</strong> VSCode自定义代码片段</a></li>
+<li><a href="/17809"><strong>23</strong> 伪类和伪元素的区别</a></li>
+<li><a href="/20181"><strong>22</strong> axios完整接口调用顺序</a></li>
+<li><a href="/60132"><strong>21</strong> 常用utils整合</a></li>
+<li><a href="/9271"><strong>20</strong> 处理blob文件下载抛出json格式异常的问题</a></li>
+<li><a href="/46572"><strong>19</strong> ES6新特性总结</a></li>
+<li><a href="/29473"><strong>18</strong> 样式处理器选型</a></li>
+<li><a href="/57469"><strong>17</strong> Html5文字设置渐变色</a></li>
+<li><a href="/60642"><strong>16</strong> css文本超出隐藏显示省略号</a></li>
+<li><a href="/6329"><strong>15</strong> Flex布局属性浅解</a></li>
+<li><a href="/36608"><strong>14</strong> 浏览器兼容性问题整理</a></li>
+<li><a href="/21732"><strong>13</strong> 原生js实现简易瀑布流</a></li>
+<li><a href="/29471"><strong>12</strong> Base64转文件下载</a></li>
+<li><a href="/41455"><strong>11</strong> js实现中文数组拼音排序</a></li>
+<li><a href="/36370"><strong>10</strong> 如何将json数据转化为data.json并下载</a></li>
+<li><a href="/53556"><strong>9</strong> 如何发现不安全的正则表达式</a></li>
+<li><a href="/12665"><strong>8</strong> setTimeout和Promise执行顺序</a></li>
+<li><a href="/1079"><strong>7</strong> js实现文本不可复制及复制监听</a></li>
+<li><a href="/3951"><strong>6</strong> js函数判断是否为纯对象</a></li>
+<li><a href="/65473"><strong>5</strong> base64和Blob转换</a></li>
+<li><a href="/23627"><strong>4</strong> 使用viewport对页面做响应式处理</a></li>
+<li><a href="/53717"><strong>3</strong> 解决网页加载后没有清除css和js缓存的问题</a></li>
+<li><a href="/22406"><strong>2</strong> 个人的一种图片懒加载思路</a></li>
+<li><a href="/16400"><strong>1</strong> 解决页面移动端点击延迟的问题</a></li>
+</ul>
+<h2 id="Vue-React">Vue/React</h2>
+<ul>
+<li><a href="/28864"><strong>4</strong> vue3Setup项目中如何阻止使用浏览器返回键</a></li>
+<li><a href="/15023"><strong>3</strong> 图表插件选型</a></li>
+<li><a href="/57808"><strong>2</strong> vue-class-component对TS的支持</a></li>
+<li><a href="/57928"><strong>1</strong> Grid/treeview控件简要介绍</a></li>
+</ul>
+<h2 id="其它">其它</h2>
+<ul>
+<li><a href="/9999999999">[Tags]</a></li>
+<li><a href="/31087"><strong>11</strong> VSCode前端开发自用插件推荐</a></li>
+<li><a href="/4309"><strong>10</strong> 解决Chrome80版本SameSite属性导致Cookie无法跨域的问题</a></li>
+<li><a href="/32529"><strong>9</strong> zsh和bash的切换</a></li>
+<li><a href="/41922"><strong>8</strong> Mac常规安装nvm并下载指定版本node</a></li>
+<li><a href="/52608"><strong>7</strong> Homebrew大陆安装脚本</a></li>
+<li><a href="/39572"><strong>6</strong> 不同文件类型转base64后的前缀</a></li>
+<li><a href="/48737"><strong>5</strong> node is not avalid Win32 application报错解决办法</a></li>
+<li><a href="/35468"><strong>4</strong> 浏览器MixedContent报错</a></li>
+<li><a href="/13573"><strong>3</strong> 修改Mac鼠标滚轮逻辑</a></li>
+<li><a href="/39020"><strong>2</strong> windows关闭被占用的端口</a></li>
+<li><a href="/58914"><strong>1</strong> 工作中遇到的关于DB2/mysql的一些问题及解决办法</a></li>
+</ul>
+<span id="more"></span>
+<ul>
+<li><a href="/23761"><img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/fPz6u6.png" class="l_logo"> 游戏档案馆</a></li>
+<li><a href="/23678"><img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/fipf1A.png" class="l_logo"> 宝可梦后院</a></li>
+</ul>
+<h1 id="img-src-https-cdn-jsdelivr-net-gh-Anuluca-anulucImage-main-other-fi98gA-png-class-l-logo-杂物室"><a href=""><img src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/fi98gA.png" class="l_logo"> 杂物室</a></h1>
+<h2 id="文章">文章</h2>
+<ul>
+<li><a href="/58027">已弃坑的新版个人网站</a></li>
+<li><a href="/2285">庭院岛历史</a></li>
+<li><a href="/48446">2020不正确记忆</a></li>
+<li><a href="/41678">Markdown Demo</a></li>
+</ul>
+<h2 id="工具">工具</h2>
+<ul>
+<li><a href="/60328">HTML常用转义字符</a></li>
+<li><a href="/45597">配色参考</a></li>
+<li><a href="/49833">营销号生成器</a></li>
+</ul>
+<h2 id="影像">影像</h2>
+<ul>
+<li><a href="/21283">日常随拍</a></li>
+<li><a href="/17773">模玩摄影</a></li>
+<li><a href="/10306">绘画</a></li>
+<li><a href="/21563">自制训练家卡</a></li>
+</ul>
+<!--more-->
+
+</div>
+
+
+<script src="/js/book-menu.js"></script>
+
+        <div class="book-sidebar-bottom">
+          <div class="sidebar-title" onclick="changeSidebarSize()">
+            <b>》</b>
+            <span>主题切换</span>
+          </div>
+          <div class="theme-group">
+            <!-- 黄昏 -->
+            <div
+              style="background: linear-gradient(to bottom, #071062, #7f4e0e)"
+              onclick="changeTheme('dawn')"
+            >
+              黄昏
+            </div>
+            <!-- 深夜 -->
+            <div
+              style="background: linear-gradient(to bottom, #0b126f, #000000)"
+              onclick="changeTheme('dark')"
+            >
+              深夜
+            </div>
+            <!-- 经典 -->
+            <div
+              style="background-color: #1c1c1e"
+              onclick="changeTheme('classic')"
+            >
+              经典
+            </div>
+            <!-- P3R -->
+            <div
+              style="background: linear-gradient(to bottom, #51A6F4, #0817B1)"
+              onclick="changeTheme('p3r')"
+            >
+              满月
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="backlogo" onClick="toOldSite()">FLASHBACK</div> -->
+
+      <div
+  class="sidebar-toggle"
+  onclick="sidebar_toggle()"
+  onmouseover="add_inner()"
+  onmouseleave="remove_inner()"
+>
+  <div class="sidebar-toggle-inner"></div>
+</div>
+
+<script>
+  function add_inner() {
+    let inner = document.querySelector(".sidebar-toggle-inner");
+    inner.classList.add("show");
+  }
+
+  function remove_inner() {
+    let inner = document.querySelector(".sidebar-toggle-inner");
+    inner.classList.remove("show");
+  }
+
+  function sidebar_toggle() {
+    let sidebar_toggle = document.querySelector(".sidebar-toggle");
+    let sidebar = document.querySelector(".book-sidebar");
+    let content = document.querySelector(".off-canvas-content");
+    let footerCom = document.querySelector(".footer-com");
+    let backToTop = document.querySelector(".back-to-top");
+    if (sidebar_toggle.classList.contains("extend")) {
+      // show
+      sidebar_toggle.classList.remove("extend");
+      footerCom.style.left = "calc(14rem + 6px)";
+      footerCom.style.width = "calc(84% - 13.65rem - 6px)";
+      backToTop.style.left = " calc(84% - 5.35rem)";
+      sidebar.classList.remove("hide");
+      content.classList.remove("extend");
+    } else {
+      // hide
+      footerCom.style.left = "4px";
+      footerCom.style.width = "calc(84% - 1.65rem - 12px)";
+      sidebar_toggle.classList.add("extend");
+      backToTop.style.left = "calc(84% - 7.75rem)";
+      sidebar.classList.add("hide");
+      content.classList.add("extend");
+    }
+  }
+</script>
+
+
+      <div class="off-canvas-content">
+        <div class="back-to-top" onclick="go_top()">回到顶部</div>
+        <div class="footer-com">
+          <div class="center">
+            <div class="expand">
+              <div class="marquee-wrap">
+                <!-- --------------------------------------- -->
+                <span onclick="jumpToPage('/3243')">
+                  <i>「</i>
+                  <b class="pink">初音未来：歌姬计划 Mega39's+\游戏档案馆</b>
+                  <i>」<span>2023-06-07</span></i>
+                </span>
+                <!-- --------------------------------------- -->
+                <span onclick="jumpToPage('/20928')">
+                  <i>「</i>
+                  <b class="blue">戴拿&盖亚奥特曼\皮套摄影
+                  </b>
+                  <i>」<span>2024-08-02</span></i>
+                </span>
+                <!-- --------------------------------------- -->
+                <span onclick="jumpToPage('/10648')">
+                  <i>「</i>
+                  <b class="pink">宝可梦：白金\游戏档案馆</b>
+                  <i>」<span>2023-08-06</span></i>
+                </span>
+                <!-- --------------------------------------- -->
+                <span onclick="jumpToPage('/46604')">
+                  <i>「</i>
+                  <b class="blue">闪焰王牌/模玩摄影</b>
+                  <i>」<span>2024-08-06</span></i>
+                </span>
+                <!-- --------------------------------------- -->
+                <span onclick="jumpToPage('/30810')">
+                  <i>「</i>
+                  <b class="pink">多龙巴鲁托\模玩摄影</b>
+                  <i>」<span>2023-06-05</span></i>
+                </span>
+                <!-- --------------------------------------- -->
+                <span onclick="jumpToPage('/8657')">
+                  <i>「</i>
+                  <b class="green">泽塔奥特曼\皮套摄影</b>
+                  <i>」<span>2023-06-07</span></i>
+                </span>
+                <!-- --------------------------------------- -->
+                <span onclick="jumpToPage('/54991')">
+                  <i>「</i>
+                  <b class="pink">阿尔宙斯\模玩摄影</b>
+                  <i>」<span>2023-06-07</span></i>
+                </span>
+                <!-- --------------------------------------- -->
+                <!-- <span onclick="jumpToPage('/60132')">
+                  <i>「</i>
+                  <b class="pink">xxxxxxxx</b>
+                  <i>」<span>2023-06-07</span></i>
+                </span> -->
+                <!-- --------------------------------------- -->
+                <!-- <span onclick="jumpToPage('/60132')">
+                  <i>「</i>
+                  <b class="pink">xxxxxxxx</b>
+                  <i>」<span>2023-06-07</span></i>
+                </span> -->
+                <!-- --------------------------------------- -->
+                <!-- <span onclick="jumpToPage('/60132')">
+                  <i>「</i>
+                  <b class="pink">xxxxxxxx</b>
+                  <i>」<span>2023-06-07</span></i>
+                </span> -->
+                <!-- --------------------------------------- -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column col-10 col-lg-12">
+            <div class="book-navbar"><!-- For Responsive Layout -->
+
+<header class="navbar">
+  <section class="navbar-section">
+    <a onclick="open_sidebar()">
+      <i class="icon icon-menu"></i>
+    </a>
+  </section>
+</header>
+</div>
+            <div class="book-content"><div class="book-post">
+  <h1 id="swig￼4-font-color-gray-154-font">VSCode 代码片段 <font color="gray">#154</font></h1>
+<p><strong>Anuluca</strong>     <strong>Date :</strong> 2024-08-22   <strong>Tags :</strong> 2</p>
+<div class = "articlehead" style="background-image:url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/Games/p3r/13.jpg')"></div>
+<p>在 Visual Studio Code (VSCode) 中，自定义代码片段可以帮助你快速插入常用的代码模板，从而提高开发效率。以下是如何创建和管理自定义代码片段的步骤。</p>
+<h3 id="创建自定义代码片段">创建自定义代码片段</h3>
+<ol>
+<li>
+<p><strong>打开代码片段管理器：</strong></p>
+<p>在 VSCode 中，按下 <code>Ctrl + Shift + P</code> (Windows/Linux) 或 <code>Cmd + Shift + P</code> (Mac) 打开命令面板，然后输入并选择 <code>Preferences: Configure User Snippets</code>。</p>
+</li>
+<li>
+<p><strong>选择语言或全局代码片段：</strong></p>
+<p>在选择语言时，VSCode 会展示支持的编程语言列表。你可以选择一种编程语言来创建针对该语言的代码片段，或者选择 <code>New Global Snippets file...</code> 来创建全局代码片段（适用于所有文件类型）。</p>
+</li>
+<li>
+<p><strong>定义代码片段：</strong></p>
+<p>选择或创建一个代码片段文件后，你会看到一个 JSON 格式的文件。在这个文件中，你可以添加自定义的代码片段。每个代码片段都是一个独立的 JSON 对象，结构如下：</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;Snippet Name&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;prefix&quot;</span><span class="punctuation">:</span> <span class="string">&quot;trigger&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;body&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">      <span class="string">&quot;line 1&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;line 2&quot;</span></span><br><span class="line">    <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;This is a description for the snippet&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>Snippet Name</strong>：代码片段的名称，用于识别和管理代码片段。</li>
+<li><strong>prefix</strong>：触发代码片段的前缀。当你输入这个前缀并按下 <code>Tab</code> 键时，VSCode 会自动展开为完整的代码片段。</li>
+<li><strong>body</strong>：代码片段的主体内容。可以是多行的字符串数组，每一行代表代码的一行。</li>
+<li><strong>description</strong>：对代码片段的简短描述，便于理解代码片段的用途。</li>
+</ul>
+</li>
+</ol>
+<h3 id="代码片段示例">代码片段示例</h3>
+<p>以下是一些常见的自定义代码片段示例：</p>
+<h4 id="1-JavaScript-函数模板">1. JavaScript 函数模板</h4>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;Function Template&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;prefix&quot;</span><span class="punctuation">:</span> <span class="string">&quot;myfunc&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;body&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">      <span class="string">&quot;function $&#123;1:functionName&#125;($&#123;2:params&#125;) &#123;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;  $&#123;3:// body&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;&#125;&quot;</span></span><br><span class="line">    <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Creates a JavaScript function template&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>当你在 JavaScript 文件中输入 <code>myfunc</code> 并按下 <code>Tab</code> 键时，会自动生成一个函数模板，光标会停留在 <code>functionName</code>，按 <code>Tab</code> 后光标会跳到 <code>params</code>，再按一次 <code>Tab</code> 跳到函数体部分。</li>
+</ul>
+<h4 id="2-Vue-单文件组件模板">2. Vue 单文件组件模板</h4>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;Vue Component&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;prefix&quot;</span><span class="punctuation">:</span> <span class="string">&quot;vuecomp&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;body&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">      <span class="string">&quot;&lt;template&gt;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;  &lt;div&gt;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;    $&#123;1:&lt;!-- Content here --&gt;&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;  &lt;/div&gt;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;&lt;/template&gt;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;&lt;script&gt;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;export default &#123;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;  name: &#x27;$&#123;2:ComponentName&#125;&#x27;,&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;  data() &#123;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;    return &#123;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;      $&#123;3:/* data */&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;    &#125;;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;  &#125;,&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;  methods: &#123;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;    $&#123;4:/* methods */&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;  &#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;&#125;;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;&lt;/script&gt;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;&lt;style scoped&gt;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;&lt;/style&gt;&quot;</span></span><br><span class="line">    <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Vue.js single file component template&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>输入 <code>vuecomp</code> 并按下 <code>Tab</code> 键，VSCode 会生成一个完整的 Vue 组件模板，光标会依次停留在组件名称、data 和 methods 部分。</li>
+</ul>
+<h4 id="3-CSS-Flexbox-容器模板">3. CSS Flexbox 容器模板</h4>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;Flexbox Container&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;prefix&quot;</span><span class="punctuation">:</span> <span class="string">&quot;flex&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;body&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">      <span class="string">&quot;display: flex;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;justify-content: $&#123;1:flex-start&#125;;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;align-items: $&#123;2:stretch&#125;;&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="string">&quot;flex-direction: $&#123;3:row&#125;;&quot;</span></span><br><span class="line">    <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;CSS Flexbox container&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>当你输入 <code>flex</code> 并按下 <code>Tab</code> 键时，会自动生成一个 Flexbox 容器的基础模板。</li>
+</ul>
+<h3 id="使用代码片段">使用代码片段</h3>
+<p>当你在 VSCode 编辑器中编写代码时，输入代码片段的 <code>prefix</code> 并按下 <code>Tab</code> 键，VSCode 会自动将该前缀展开为完整的代码片段。如果代码片段中包含占位符（如 <code>$&#123;1&#125;</code>），按下 <code>Tab</code> 键后，光标会依次跳转到每个占位符位置。</p>
+<h3 id="总结">总结</h3>
+<p>自定义代码片段是 VSCode 中一个非常强大的功能，特别适合编写重复性代码或常用的代码模板。通过合理利用代码片段，你可以大幅提高开发效率，减少手工输入和错误。</p>
+
+  <a onclick="go_top()"
+    ><div class="to_top"><div class="to-top-triangle"></div></div
+  ></a>
+</div>
+
+<div class="drink-time">
+  <img
+    style="text-align: center; margin-top: 20vh; width: 150px; opacity: 0.9"
+    src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/2F65x1.png"
+  />
+  <div style="text-align: center; margin-top: 20px; font-size: 20px">
+    由于某些原因，博客图床于5月26日惨遭爆破，目前正在整理需要的图片并迁移存活的图片到新图床,预计6月10日重新上线网站
+  </div>
+</div>
+
+
+<div class="articleBottom">
+  <i></i>
+  <b
+    >&nbsp;&nbsp;<img
+      src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/goDrXd.gif"
+    />&nbsp;
+    <div><span>THE END</span></div>
+    &nbsp;<img
+      src="https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/god8aT.gif"
+    />&nbsp;&nbsp;</b
+  >
+  <i></i>
+</div>
+<div class="combtn">
+  <div class="valine_btn"><b>游客评论</b></div>
+  <div class="gitalk_btn"><b>使用Github账号评论</b></div>
+  <div class="moving"></div>
+</div>
+<div>&nbsp;</div>
+
+<div class="book-comments">
+<link rel="stylesheet" href="/css/gitalk.css" />
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<div id="gitalk-container"></div>
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: "9ffd086e729163760a2a",
+    clientSecret: "3dc719eec9759df35f5aa9ecb3bcdefd3f5bf9c6",
+    repo: "Anuluca.github.io",
+    owner: "anuluca",
+    admin: ["Anuluca"],
+    id: location.pathname,
+    distractionFreeMode: "true",
+  });
+  gitalk.render("gitalk-container");
+</script>
+ 
+<!--    <link rel="stylesheet" href="https://unpkg.com/valine/dist/Valine.min.js">-->
+<!-- <script src="//unpkg.zhimg.com/valine/dist/Valine.min.js"></script> -->
+<div id="vcomments" style="margin-top: 100px"></div>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  new Valine({
+    el: "#vcomments",
+    appId: "rqHuR8lh2h3Fp2s9v2M8nDYJ-gzGzoHsz",
+    appKey: "9o4oYzzaYVFGG34Vd8ipLztu",
+    notify: false,
+    verify: false,
+    avatar: "mm",
+    placeholder: "说点什么",
+    visitor: true,
+  });
+</script>
+
+</div>
+<a
+  class="aaaaa"
+  style="
+    font-size: 10px;
+    color: #999ca8;
+    width: 55%;
+    text-align: center;
+    padding-top: 100px;
+  "
+>
+  © 2018 - 2024 Anuluca
+</a>
+<span class="frsi">
+  ▌友情链接
+  <a
+    href="https://cutekibry.github.io/"
+    target="_blank"
+    class="friendUrl"
+    style="margin-left: 5px"
+    >Tsuki's blog</a
+  >&nbsp;|
+  <a href="http://pokeamice.com/" target="_blank" class="friendUrl"
+    >Poke amice</a
+  >&nbsp;|
+  <a href="https://austinxt.com/" target="_blank" class="friendUrl">夜航星</a>
+</span>
+
+ 
+<script src="/js/book-post.js"></script>
+
+</div>
+          </div>
+          <div class="column col-2 hide-lg">
+            <div class="book-post-info">
+  
+    <div class="book-post-meta">
+
+  <div class="author">
+
+    <!-- Author image -->
+    <div class="author-img">
+      
+        <figure class="avatar avatar-lg">
+          <img src="/me.jpg" alt="...">
+        </figure>
+      
+    </div>
+
+    <!-- Author title -->
+    <div class="author-title">
+      <div>Anuluca</div>
+      <div style="font-family: 等线">Update:2024-08-22</div>
+    </div>
+  </div>
+
+  
+    <div class="divider"></div>
+
+    <div class="link">
+      
+
+      <a class="tag-none-link" href="/tags/VSCode/" rel="tag">VSCode</a> <a class="tag-none-link" href="/tags/web%E5%89%8D%E7%AB%AF/" rel="tag">web前端</a>
+    </div>
+    
+  
+
+  <div class="divider"></div>
+</div>
+  
+
+  <div class="book-tocbot"></div>
+
+<div class="bottom">
+  <div class="intro">
+    <div id="intro_text">...</div>
+  </div>
+  <div class="links">
+    <a target="_blank" rel="noopener" href="https://twitter.com/TILucario" class="link_l">
+      <div
+        style="
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabyWQ.png');
+        "
+      ></div>
+      <span>推特 ( 𝕏 ) </span></a
+    >
+    <a target="_blank" rel="noopener" href="https://space.bilibili.com/128735968" class="link_l">
+      <div
+        style="
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabprFS.png');
+        "
+      ></div>
+      <span>Bilibili</span></a
+    >
+    <a target="_blank" rel="noopener" href="https://weibo.com/ryugamine" class="link_l">
+      <div
+        style="
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabrFS.png');
+        "
+      ></div>
+      <span>微博</span></a
+    >
+    <a target="_blank" rel="noopener" href="https://github.com/Anuluca" class="link_l">
+      <div
+        style="
+          background-image: url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/dabBo8.png');
+        "
+      ></div>
+      <span>Github</span></a
+    >
+  </div>
+  <div class="languages">
+    中文 &nbsp;&nbsp;|&nbsp;&nbsp;
+    <a target="_blank" rel="noopener" href="http://AnulucaEn.github.io" class="english">English</a>
+  </div>
+</div>
+
+<script src="/js/book-toc.js"></script>
+
+
+</div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="down-line-zhanwei"></div>
+  <div class="down-line"></div> -->
+      <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+    </div>
+    <div class="bottomline"></div>
+    <script src="/js/nprogress.js"></script>
+    <link rel="stylesheet" href="/css/nprogress.css" />
+    <script src="/js/custom.js"></script>
+    <div class="clipboard_success">&nbsp;&nbsp;复制成功！</div>
+
+    <!-- 切换主题的动画效果 -->
+    <!-- <div class="change_theme_animes">
+      <div
+        id="cantSeeAnything_white"
+        style="
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: white;
+          z-index: 999;
+          opacity: 0;
+          display: none;
+        "
+      ></div>
+      <div
+        id="cantSeeAnything_black"
+        style="
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: black;
+          z-index: 999;
+          opacity: 0;
+          display: none;
+        "
+      ></div>
+      <img
+        id="nike_shine"
+        src="/necrozma_shine.PNG"
+        style="
+          position: fixed;
+          z-index: 998;
+          bottom: -400px;
+          margin: 0 auto;
+          width: 400px;
+          left: calc(50% - 200px);
+        "
+      />
+      <img
+        id="nike_dark"
+        src="/necrozma_dark.PNG"
+        style="
+          position: fixed;
+          z-index: 998;
+          bottom: -400px;
+          margin: 0 auto;
+          width: 400px;
+          left: calc(50% - 200px);
+        "
+      />
+      <img
+        id="shine"
+        src="/tempshine.png"
+        style="
+          position: fixed;
+          z-index: 997;
+          bottom: -100px;
+          margin: 0 auto;
+          width: 100px;
+          height: 100px;
+          left: calc(50% - 50px);
+          opacity: 0;
+        "
+      />
+      <img
+        id="absorb"
+        src="/tempshine.png"
+        style="
+          position: fixed;
+          z-index: 997;
+          bottom: -100vh;
+          margin: 0 auto;
+          width: 100vw;
+          height: 100vh;
+          opacity: 0;
+        "
+      />
+    </div> -->
+  </body>
+</html>
+
+
+<script src="/js/book.js"></script>
+
