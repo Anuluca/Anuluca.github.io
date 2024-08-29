@@ -54,6 +54,9 @@ body {
 .accordion label {
   margin-left: 11px; }
 
+.accordion-body {
+  transition: all 0.2s !important; }
+
 .accordion-body ul {
   margin-bottom: 0; }
 

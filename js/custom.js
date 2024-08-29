@@ -12,15 +12,16 @@ const textList = [
   "cursed.",
   "这里沉睡着Anuluca的灵魂。",
   "网站越做越重了，已经回不了头了...",
+  "现在在想什么？不妨记录一下灵感",
 ]
 
 document.getElementById('intro_text').innerText=textList.sort(() => 0.5 - Math.random())[0]
 
 // 网页背景 - 繁星
 $(document).ready(function () {
-  var stars = 800; /*星星的密集程度，数字越大越多*/
+  var stars = 500; /*星星的密集程度，数字越大越多*/
   var $stars = $(".star-back");
-  var r = 1200; /*星星的看起来的距离,值越大越远,可自行调制到自己满意的样子*/
+  var r = 1000; /*星星的看起来的距离,值越大越远,可自行调制到自己满意的样子*/
   for (var i = 0; i < stars; i++) {
     var $star = $("<div/>").addClass("star");
     $stars.append($star);
