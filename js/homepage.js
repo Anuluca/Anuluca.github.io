@@ -4,7 +4,7 @@ $(".note_guide").mouseenter(function () {
   $(".zhegaib,.zhegaic,.zhegaid").stop().animate({ width: "100%" }, 150);
   $(".guidePic").css({
     backgroundImage:
-      "url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/YfLHgA.jpg')",
+      "url('http://cdn.anuluca.com/other/YfLHgA.jpg')",
   });
 });
 $(".nintendo_guide").mouseenter(function () {
@@ -12,7 +12,7 @@ $(".nintendo_guide").mouseenter(function () {
   $(".zhegaia,.zhegaic,.zhegaid").stop().animate({ width: "100%" }, 150);
   $(".guidePic").css({
     backgroundImage:
-      "url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/IMG_6139.JPG')",
+      "url('http://cdn.anuluca.com/other/IMG_6139.jpg')",
   });
 });
 $(".jay_guide").mouseenter(function () {
@@ -20,7 +20,7 @@ $(".jay_guide").mouseenter(function () {
   $(".zhegaia,.zhegaib,.zhegaid").stop().animate({ width: "100%" }, 150);
   $(".guidePic").css({
     backgroundImage:
-      "url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/2145F6682FBCE287815AF6DC59D0C5A5.png')",
+      "url('http://cdn.anuluca.com/other/2145F6682FBCE287815AF6DC59D0C5A5.png')",
   });
 });
 $(".home_guide").mouseenter(function () {
@@ -28,7 +28,7 @@ $(".home_guide").mouseenter(function () {
   $(".zhegaia,.zhegaib,.zhegaic").stop().animate({ width: "100%" }, 150);
   $(".guidePic").css({
     backgroundImage:
-      "url('https://cdn.jsdelivr.net/gh/Anuluca/anulucImage@main/other/waoh6O.jpg')",
+      "url('http://cdn.anuluca.com/other/waoh6O.jpg')",
   });
 });
 
