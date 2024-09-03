@@ -13,50 +13,12 @@ const textList = [
   "这里沉睡着Anuluca的灵魂。",
   "网站越做越重了，已经回不了头了...",
   "现在在想什么？不妨记录一下灵感",
-]
+];
 
-document.getElementById('intro_text').innerText=textList.sort(() => 0.5 - Math.random())[0]
+document.getElementById("intro_text").innerText = textList.sort(
+  () => 0.5 - Math.random()
+)[0];
 
-// 网页背景 - 繁星
-$(document).ready(function () {
-  var stars = 500; /*星星的密集程度，数字越大越多*/
-  var $stars = $(".star-back");
-  var r = 1000; /*星星的看起来的距离,值越大越远,可自行调制到自己满意的样子*/
-  for (var i = 0; i < stars; i++) {
-    var $star = $("<div/>").addClass("star");
-    $stars.append($star);
-  }
-  $(".star").each(function () {
-    var cur = $(this);
-    var s = 0.2 + Math.random() * 1;
-    var curR = r + Math.random() * 300;
-    cur.css({
-      transformOrigin: "0 0 " + curR + "px",
-      transform:
-        " translate3d(0,0,-" +
-        curR +
-        "px) rotateY(" +
-        Math.random() * 360 +
-        "deg) rotateX(" +
-        Math.random() * -50 +
-        "deg) scale(" +
-        s +
-        "," +
-        s +
-        ")",
-    });
-  });
-});
-
-//  获取当前主题
-function getTheme() {
-  if (!localStorage.getItem("theme")) {
-    localStorage.setItem("theme", "p3r");
-  }
-  $("#body-color").removeClass();
-  $("#body-color").addClass(localStorage.getItem("theme"));
-}
-getTheme();
 
 // //获取当前时间
 // var ifDrink = (new Date()).getHours()
@@ -168,6 +130,76 @@ function openPage(url) {
 }
 
 function decodeAndOpenPage(url) {
-  let decodedUurl = Base64.decode(url);
+  let decodedUurl = decodeBase64(url);
   window.open(decodedUurl);
 }
+
+// base64加密
+function encodeBase64(str) {
+  const utf8Bytes = new TextEncoder().encode(str);
+  return btoa(String.fromCharCode(...utf8Bytes));
+}
+
+// base64解密
+function decodeBase64(str) {
+  const bytes = atob(str)
+    .split("")
+    .map((char) => char.charCodeAt(0));
+  return new TextDecoder().decode(new Uint8Array(bytes));
+}
+
+// 页面加密
+const encodePageList = [
+  {
+    id: "oldPhoto",
+    dataId: "M2jkyNTQ=",
+  },
+  {
+    id: "2016",
+    dataId: "NsTM3Nzc=",
+  },
+  {
+    id: "2019",
+    dataId: "NdDA5OTI=",
+  },
+  {
+    id: "2020",
+    dataId: "MljIyNDA=",
+  },
+  {
+    id: "2021",
+    dataId: "MGzg0MzM=",
+  },
+  {
+    id: "2022",
+    dataId: "N0jY2",
+  },
+  {
+    id: "2023",
+    dataId: "NDk3NTU=",
+  },
+];
+encodePageList.map((item) => {
+  $(`#${item.id}`).click(() => {
+    // if (localStorage.getItem("sk") === "9808") {
+    //   let decodedUurl = item.dataId.substring(0, 1) + item.dataId.substring(2);
+    //   window.location.href = "/" + decodeBase64(decodedUurl);
+    // }
+    // localStorage.setItem("sk", "[{}]");
+    localStorage.setItem("egap", item.dataId);
+    window.location.href = "/decode";
+  });
+});
+
+$("#encodeSubmit").click(() => {
+  const base64Answer = encodeBase64($("#encodeInput").val());
+  if (base64Answer === "6L6J") {
+    // localStorage.setItem("sk", "9808");
+    let str = localStorage.getItem("egap");
+    window.location.href =
+      "/" + decodeBase64(str.substring(0, 1) + str.substring(2));
+  }else{
+    $('#encodeInput').val("")
+    $('#encodeInput').attr('placeholder', '密钥错误');
+  }
+});

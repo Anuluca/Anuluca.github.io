@@ -1187,7 +1187,8 @@ code {
 
 .suipai {
   width: 100%;
-  height: auto; }
+  height: auto;
+  margin-bottom: 100px; }
   .suipai a {
     width: 670px;
     display: block; }

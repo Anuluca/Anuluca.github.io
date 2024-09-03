@@ -113,7 +113,7 @@ ga('send', 'pageview');
  <div class="book-menu scrollbar">
   <ul>
 <li><a href="/"><img src="http://cdn.anuluca.com/other/fPOGP1.png" class="l_logo"> 广场</a></li>
-<li><a href="/34223"><img src="http://cdn.anuluca.com/other/fiCMq0.png" class="l_logo"> 更新日志</a></li>
+<li><a href="/changelog"><img src="http://cdn.anuluca.com/other/fiCMq0.png" class="l_logo"> 更新日志</a></li>
 </ul>
 <h1 id="img-src-http-cdn-anuluca-com-other-fiCUMR-png-class-l-logo-笔记"><a href="/14567"><img src="http://cdn.anuluca.com/other/fiCUMR.png" class="l_logo"> 笔记</a></h1>
 <!-- ## 乐理笔记
@@ -388,6 +388,7 @@ ga('send', 'pageview');
   <div class="attention">
 <p><strong>公告(20210827)：</strong> 岛主很懒，基本一年一更。</p>
 </div>
+<div class="tip">
 <h1 id="内容更新日志">内容更新日志</h1>
 <h4 id="2024-08-22">2024/08/22</h4>
 <ol>
@@ -445,12 +446,16 @@ ga('send', 'pageview');
 <li><a href="/49755">影像 - 2023</a></li>
 <li><a href="/666">影像 - 2022</a></li>
 </ol>
+</div>
+<div class="tip">
 <h1 id="功能更新日志">功能更新日志</h1>
-<h4 id="v3-2-2024-08-30">v3.2 - 2024/08/30</h4>
+<h4 id="v3-2-2024-09-03">v3.2 - 2024/09/03</h4>
 <ol>
 <li><strong>+ 添加google analysis服务</strong></li>
 <li><strong>+ 更换域名为“<a target="_blank" rel="noopener" href="http://anuluca.com">anuluca.com</a>”，旧域名anuluca.icu不再使用</strong></li>
 <li><strong>+ 更换主图床为七牛云，进一步降低图片体积，优化速度</strong></li>
+<li><strong>+ 部分页面密码加密</strong></li>
+<li><strong>+ 更新日志页面样式优化</strong></li>
 </ol>
 <h4 id="v3-1-2024-08-02">v3.1 - 2024/08/02</h4>
 <ol>
@@ -621,6 +626,7 @@ ga('send', 'pageview');
 </ul>
 </li>
 </ol>
+</div>
 <style>
 .btn.btn-primary {
     background: #004ed0;
@@ -633,6 +639,28 @@ ga('send', 'pageview');
 .btn.btn-primary:focus, .btn.btn-primary:hover {
     background: #004ed0;
     border-color: #004ed0;
+}
+.book-post{
+    display: flex;
+    flex-wrap: wrap;
+}
+.attention{
+    width:100%
+}
+.tip{
+    background-color: #00000061 !important;
+    border-left: 0.1rem solid #1abc9c;
+    width: calc(50% - 22px);
+    margin-right:0
+}
+.tip:first-of-type{
+    margin-right:16px !important
+}
+.tip:last-of-type{
+    margin-right:0 !important
+}
+.tip *{
+    color:#fff
 }
 </style>
   <a onclick="go_top()"
