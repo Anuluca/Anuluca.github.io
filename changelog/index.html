@@ -19,6 +19,9 @@
      更新日志 - 路卡的自由庭院岛 
   </title>
 
+  <!-- jq -->
+  <script src="https://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+  <script src="/js/onBoot.js"></script>
   <!-- Spectre.css framework -->
   <link rel="stylesheet" href="/css/spectre-exp.min.css" />
   <link rel="stylesheet" href="/css/spectre-icons.min.css" />
@@ -26,21 +29,18 @@
   <!-- <link rel="stylesheet" type="text/css" href="/css/custom.css" />
   <link rel="stylesheet" href="/css/custom_theme_dark.css" />
   <link rel="stylesheet" href="/css/phone.css" /> -->
-  <script src="/js/onBoot1.js"></script>
-
+  
   <!-- theme css & js -->
   
 <link rel="stylesheet" href="/css/book.css">
  
 <script src="/js/book.js"></script>
 
-
+  
   <!-- tocbot -->
   <script src="/js/tocbot.min.js"></script>
   <link rel="stylesheet" href="/css/tocbot.css" />
-
-  <!-- jq -->
-  <script src="https://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+  
   <!-- katex -->
 
   
@@ -107,7 +107,7 @@ ga('send', 'pageview');
         src="http://cdn.anuluca.com/other/g0rY8J.png"
       />
     </div>
-    <span>路卡的自由庭院岛</span>
+    <span>路卡的自由庭院岛 4.0</span>
   </a>
 </div>
  <div class="book-menu scrollbar">
@@ -197,6 +197,7 @@ ga('send', 'pageview');
 <h2 id="工具">工具</h2>
 <ul>
 <li><a href="/60328">HTML常用转义字符</a></li>
+<li><a href="/base64">Base64加解密</a></li>
 <li><a href="/45597">配色参考</a></li>
 <li><a href="/49833">营销号生成器</a></li>
 </ul>
@@ -220,6 +221,55 @@ ga('send', 'pageview');
             <span>主题切换</span>
           </div>
           <div class="theme-group">
+            <!-- Sleep -->
+            <div
+              style="background-image: url('http://cdn.anuluca.com/other/sleep_back.jpg');background-size: cover;"
+              onclick="changeTheme('sleep')"
+            >
+              sleep
+            </div>
+            <!-- 宝可梦 -->
+            <div
+              style="background-image: url('http://cdn.anuluca.com/other/fipf1A.png');background-size:auto;background-repeat: no-repeat;background-position: center;"
+              onclick="changeTheme('pokemon')"
+            >
+              宝可梦
+            </div>
+            <!-- 幽灵诡计 -->
+            <div
+              style="background-image: url('http://cdn.anuluca.com/other/ghosttrick_back.jpg');background-size: cover;"
+              onclick="changeTheme('ghosttrick')"
+            >
+              西塞尔
+            </div>
+            <!-- 朱紫 -->
+            <div
+              style="background-image: url('http://cdn.anuluca.com/other/sv_back3.jpg');background-size: cover;"
+              onclick="changeTheme('scarlet')"
+            >
+              Scarlet
+            </div>
+            <!-- 朱紫 -->
+            <div
+              style="background-image: url('http://cdn.anuluca.com/other/sv_back4.jpg');background-size: cover;"
+              onclick="changeTheme('violet')"
+            >
+              Violet
+            </div>
+            <!-- P5 -->
+            <div
+              style="background-image: url('http://cdn.anuluca.com/other/p5_back.jpg');background-size: cover;"
+              onclick="changeTheme('p5')"
+            >
+              P5
+            </div>
+            <!-- P3R -->
+            <div
+              style="background: linear-gradient(to bottom, #51A6F4, #0817B1)"
+              onclick="changeTheme('p3r')"
+            >
+              满月
+            </div>
             <!-- 黄昏 -->
             <div
               style="background: linear-gradient(to bottom, #071062, #7f4e0e)"
@@ -240,13 +290,6 @@ ga('send', 'pageview');
               onclick="changeTheme('classic')"
             >
               经典
-            </div>
-            <!-- P3R -->
-            <div
-              style="background: linear-gradient(to bottom, #51A6F4, #0817B1)"
-              onclick="changeTheme('p3r')"
-            >
-              满月
             </div>
           </div>
         </div>
@@ -393,28 +436,27 @@ ga('send', 'pageview');
 <h4 id="2024-08-22">2024/08/22</h4>
 <ol>
 <li><a href="/30293">Javascript/CSS - 数组内对象去重</a></li>
-<li><a href="/10110">Javascript/CSS - Promise的全部用法</a></li>
-<li><a href="/29512">Javascript/CSS - 如何在js中使用class</a></li>
-<li><a href="/31087">其它 - VSCode前端开发自用插件推荐</a></li>
-<li><a href="/59364">Javascript/CSS - browserHistory和hashHistory的差别</a></li>
-<li><a href="/28864">Javascript/CSS - vue3Setup项目中如何阻止使用浏览器返回键</a></li>
-<li><a href="/14022">Javascript/CSS - webpack打包项目时会打包已经import但没用到的模块吗</a></li>
-<li><a href="/60328">工具 - HTML常用转义字符</a></li>
+<li><a href="/10110">Javascript/CSS - Promise 的全部用法</a></li>
+<li><a href="/29512">Javascript/CSS - 如何在 js 中使用 class</a></li>
+<li><a href="/31087">其它 - VSCode 前端开发自用插件推荐</a></li>
+<li><a href="/59364">Javascript/CSS - browserHistory 和 hashHistory 的差别</a></li>
+<li><a href="/28864">Javascript/CSS - vue3Setup 项目中如何阻止使用浏览器返回键</a></li>
+<li><a href="/14022">Javascript/CSS - webpack 打包项目时会打包已经 import 但没用到的模块吗</a></li>
 </ol>
 <h4 id="2024-08-12">2024/08/12</h4>
 <ol>
 <li><a href="/55487">游戏 - 以撒的结合：忏悔</a></li>
-<li><a href="/6965">游戏 - 极限竞速：地平线5</a></li>
+<li><a href="/6965">游戏 - 极限竞速：地平线 5</a></li>
 <li><a href="/2684">游戏 - 刺客信条：幻景</a></li>
 <li><a href="/27339">游戏 - COCOON</a></li>
-<li><a href="/51325">游戏 - 不义联盟2</a></li>
-<li><a href="/25244">游戏 - さよならを教えて 〜comment te dire adieu～</a></li>
+<li><a href="/51325">游戏 - 不义联盟 2</a></li>
+<li><a href="/25244">游戏 - さよならを教えて 〜comment te dire adieu ～</a></li>
 <li><a href="/30655">游戏 - 乐高：星球大战 天行者传奇</a></li>
-<li><a href="/32213">游戏 - 女神异闻录3 Reload</a></li>
-<li><a href="/52968">游戏 - 女神异闻录5 战略版</a></li>
-<li><a href="/27484">游戏 - 影子武士3</a></li>
+<li><a href="/32213">游戏 - 女神异闻录 3 Reload</a></li>
+<li><a href="/52968">游戏 - 女神异闻录 5 战略版</a></li>
+<li><a href="/27484">游戏 - 影子武士 3</a></li>
 <li><a href="/18311">游戏 - 人中之龙：极</a></li>
-<li><a href="/46982">游戏 - 人中之龙：极2</a></li>
+<li><a href="/46982">游戏 - 人中之龙：极 2</a></li>
 <li><a href="/3404">游戏 - 人中之龙 维新！：极</a></li>
 <li><a href="/10986">游戏 - 人中之龙 0</a></li>
 <li><a href="/11178">游戏 - 人中之龙 3</a></li>
@@ -436,8 +478,8 @@ ga('send', 'pageview');
 <li><a href="/4329">游戏 - 宝可梦 绿宝石</a></li>
 <li><a href="/9770">游戏 - 宝可梦 钻石</a></li>
 <li><a href="/10648">游戏 - 宝可梦 白金</a></li>
-<li><a href="/44715">游戏 - 宝可梦 白2</a></li>
-<li><a href="/9930">游戏 - 宝可梦 AR搜寻器</a></li>
+<li><a href="/44715">游戏 - 宝可梦 白 2</a></li>
+<li><a href="/9930">游戏 - 宝可梦 AR 搜寻器</a></li>
 </ol>
 <h4 id="2024-08-02">2024/08/02</h4>
 <ol>
@@ -449,18 +491,30 @@ ga('send', 'pageview');
 </div>
 <div class="tip">
 <h1 id="功能更新日志">功能更新日志</h1>
-<h4 id="v3-2-2024-09-03">v3.2 - 2024/09/03</h4>
+<h4 id="v4-0-2024-09-03">v4.0 - 2024/09/03</h4>
 <ol>
-<li><strong>+ 添加google analysis服务</strong></li>
-<li><strong>+ 更换域名为“<a target="_blank" rel="noopener" href="http://anuluca.com">anuluca.com</a>”，旧域名anuluca.icu不再使用</strong></li>
+<li><strong>+ 更换域名为“<a target="_blank" rel="noopener" href="http://anuluca.com">anuluca.com</a>”，旧域名 anuluca.icu 不再使用</strong></li>
 <li><strong>+ 更换主图床为七牛云，进一步降低图片体积，优化速度</strong></li>
-<li><strong>+ 部分页面密码加密</strong></li>
-<li><strong>+ 更新日志页面样式优化</strong></li>
+<li><strong>+ 部分页面增加密钥加密功能</strong></li>
+<li><strong>+ 新增工具：HTML常用转义字符</strong></li>
+<li><strong>+ 新增工具：Base64加解密</strong></li>
 </ol>
-<h4 id="v3-1-2024-08-02">v3.1 - 2024/08/02</h4>
+<h4 id="v3-3-2024-08-02">v3.3 - 2024/08/02</h4>
 <ol>
-<li><strong>！检查所有文章原创性</strong></li>
-<li><strong>+ 增加内容更新日志模块</strong></li>
+<li><strong>+ 更新日志页面样式优化</strong></li>
+<li><strong>+ 添加 google analysis 服务</strong></li>
+</ol>
+<h4 id="v3-2-2024-08-02">v3.2 - 2024/08/02</h4>
+<ol>
+<li>！检查所有文章原创性</li>
+</ol>
+<h4 id="v3-1-2024-06-12">v3.1 - 2024/06/12</h4>
+<ol>
+<li>
+<ul>
+<li>增加内容更新日志模块</li>
+</ul>
+</li>
 </ol>
 <h4 id="v3-0-2023-06-15">v3.0 - 2023/06/15</h4>
 <ol>
@@ -470,7 +524,7 @@ ga('send', 'pageview');
 <li><strong>+ 新增主题切换功能，新增‘黄昏’、‘深夜’、‘满月’三个主题</strong></li>
 <li>修正右下角模块定位不准的问题</li>
 <li>优化了图片加载速度，但只优化了一点点</li>
-<li>恢复valine评论服务</li>
+<li>恢复 valine 评论服务</li>
 </ol>
 <h4 id="v2-4-2022-04-07">v2.4 - 2022/04/07</h4>
 <ol>
@@ -478,19 +532,19 @@ ga('send', 'pageview');
 <li>新增回到顶部</li>
 <li>样式优化</li>
 <li>优化启动速度</li>
-<li>增加了Z酷炫的夜间模式切换功能</li>
-<li>切换图床服务为github+jsDelivr</li>
+<li>增加了 Z 酷炫的夜间模式切换功能</li>
+<li>切换图床服务为 github+jsDelivr</li>
 </ol>
 <h4 id="v2-3-2022-01-20">v2.3 - 2022/01/20</h4>
 <ol>
 <li>增加训练家卡首页展示</li>
-<li>宝可梦后院重新排版、完善除了3ds以外的页面的信息</li>
+<li>宝可梦后院重新排版、完善除了 3ds 以外的页面的信息</li>
 <li>部分文字显示调整</li>
 </ol>
 <h4 id="v2-2-2021-09-09">v2.2 - 2021/09/09</h4>
 <ol>
 <li>手机端显示优化</li>
-<li>首页新增【最新更新】模块，展示最新更新的5个页面</li>
+<li>首页新增【最新更新】模块，展示最新更新的 5 个页面</li>
 <li>游戏档案馆/Phone 新增没有截图的交互</li>
 <li>缩小笔记页面预览图片大小</li>
 <li>“图册”改为“摄影 &amp; 后期”</li>
@@ -509,13 +563,13 @@ ga('send', 'pageview');
 <h4 id="v2-1-2021-06-10">v2.1 - 2021/06/10</h4>
 <ol>
 <li>部分页面实现分页</li>
-<li>JS按需加载</li>
-<li>图片暂时迁移至gitee作为图床</li>
+<li>JS 按需加载</li>
+<li>图片暂时迁移至 gitee 作为图床</li>
 <li>删除饮茶时间</li>
 <li>删除冗余代码</li>
 <li>修改玩具页排版，标题改为「模玩摄影」</li>
 <li>修改菜单分类</li>
-<li>工具保留网页调色板和营销号生成器，markdown demo移到文章类</li>
+<li>工具保留网页调色板和营销号生成器，markdown demo 移到文章类</li>
 <li>优化字体</li>
 </ol>
 <h4 id="v2-0-2021-05-20">v2.0 - 2021/05/20</h4>
@@ -534,7 +588,7 @@ ga('send', 'pageview');
 </ol>
 <h4 id="v1-3-2021-03-30">v1.3 - 2021/03/30</h4>
 <ol>
-<li>修改子页面url生成逻辑</li>
+<li>修改子页面 url 生成逻辑</li>
 <li>定位控制台报错并解决问题</li>
 <li>友情链接新增<a target="_blank" rel="noopener" href="http://pokeamice.com/">宝可梦友会</a></li>
 </ol>
@@ -550,13 +604,13 @@ ga('send', 'pageview');
 <li>调整左侧侧边栏大小</li>
 <li>新增文本复制插件</li>
 <li>删除冗余内容</li>
-<li>SEO优化</li>
+<li>SEO 优化</li>
 </ol>
 <h4 id="v1-0-2020-09-25">v1.0 - 2020/09/25</h4>
 <ol>
 <li>改善文字排版</li>
-<li>新增Tag页面1. 修复主页头图在部分设备显示异常的问题</li>
-<li>修复22+博文bug <strong>*感谢<a target="_blank" rel="noopener" href="https://kaiiiz.github.io/hexo-theme-book-demo/">Theme-book</a>主题作者<a target="_blank" rel="noopener" href="https://github.com/kaiiiz">You-Kai Zheng</a>的支持</strong></li>
+<li>新增 Tag 页面 1. 修复主页头图在部分设备显示异常的问题</li>
+<li>修复 22+博文 bug <strong>*感谢<a target="_blank" rel="noopener" href="https://kaiiiz.github.io/hexo-theme-book-demo/">Theme-book</a>主题作者<a target="_blank" rel="noopener" href="https://github.com/kaiiiz">You-Kai Zheng</a>的支持</strong></li>
 <li>修改部分页面子链接及标题</li>
 <li>改善部分内容的排版</li>
 <li>网站域名正式更换为<a target="_blank" rel="noopener" href="https://www.anuluca.icu">Anuluca.icu</a></li>
@@ -564,27 +618,27 @@ ga('send', 'pageview');
 <li>暂时关闭英文站点</li>
 <li>bugfix：
 <ul>
-<li>分开显示多出的博文（22+博文bug的零时解决办法）</li>
+<li>分开显示多出的博文（22+博文 bug 的零时解决办法）</li>
 </ul>
 </li>
 </ol>
 <h4 id="v0-5-2020-08-20">v0.5 - 2020/08/20</h4>
 <ol>
-<li>复制仓库到gitee上，方便国内访问。</li>
+<li>复制仓库到 gitee 上，方便国内访问。</li>
 <li>改善了部分内容的排版</li>
 <li>新增“作品”栏</li>
 <li>上线英文版</li>
 <li>bugfix：
 <ul>
 <li>修复了主页面图片加载时显示不正常的问题</li>
-<li>优化js代码</li>
+<li>优化 js 代码</li>
 <li>优化网页打开性能</li>
 </ul>
 </li>
 </ol>
 <h4 id="v0-4-2020-05-21">v0.4 - 2020/05/21</h4>
 <ol>
-<li>Gitalk+Valine双评论端</li>
+<li>Gitalk+Valine 双评论端</li>
 <li>整体优化“回到旧站”页面的显示效果</li>
 <li>优化音乐播放器在手机上的显示效果</li>
 <li>新增音乐播放器</li>
@@ -597,34 +651,27 @@ ga('send', 'pageview');
 </ol>
 <h4 id="v0-3-2020-04-28">v0.3 - 2020/04/28</h4>
 <ol>
-<li>新增404页面；</li>
+<li>新增 404 页面；</li>
 <li>新增<a href="/custom_websites/hi-den" class="hidden-page-button" style = "text-decoration:none;cursor:text">隐藏页面</a>。</li>
 <li>新增“工具”、“图集”、“杂谈”模块；</li>
 <li>新增工具“营销号生成器”；</li>
 <li>Bugfix: 修复点击左侧菜单二级页面后自动折叠所有分类的问题。</li>
 <li>网站域名更换，由原“<a target="_blank" rel="noopener" href="http://Anulife.github.io">Anulife.github.io</a>”改为“<a href="http://Anuluca.github.io">Anuluca.github.io</a>”；</li>
-<li>新增github账号链接；</li>
-<li>将Timeline替换为“关于”。</li>
-<li>用Valine替代Gitalk，Gitalk虽然更美观，但需要登录Github账号，门槛比Valine高，且Valine可以匿名评论，未来考虑双端一起使用，供访客自行选择。</li>
+<li>新增 github 账号链接；</li>
+<li>将 Timeline 替换为“关于”。</li>
+<li>用 Valine 替代 Gitalk，Gitalk 虽然更美观，但需要登录 Github 账号，门槛比 Valine 高，且 Valine 可以匿名评论，未来考虑双端一起使用，供访客自行选择。</li>
 </ol>
 <h4 id="v0-2-2020-04-22">v0.2 - 2020/04/22</h4>
 <ol>
-<li>新增评论模块，使用了Gitalk的评论系统。</li>
-<li>稍微修改了下原hexo-book主题的内容，使网页更易使用；</li>
-<li>修复了markdown-container无法正确显示的bug、特殊字符无法正确显示的bug；</li>
+<li>新增评论模块，使用了 Gitalk 的评论系统。</li>
+<li>稍微修改了下原 hexo-book 主题的内容，使网页更易使用；</li>
+<li>修复了 markdown-container 无法正确显示的 bug、特殊字符无法正确显示的 bug；</li>
 <li>新增“回到旧站”模块。</li>
 </ol>
 <h4 id="v0-1-2020-04-17">v0.1 - 2020/04/17</h4>
 <ol>
 <li>开始重建博客的工作；</li>
-<li>Bugs:
-<ul>
-<li>引号<code>&quot;&quot;</code> <code>''</code> <code>“”</code> <code>‘’</code>全都转换成了全角字符；</li>
-<li>定位项目中的图片的时候很有可能显示不出来，原因暂时没找到，最好还是指向网络图片；</li>
-<li>markdown-container无法正确显示；</li>
-<li>特殊字符无法正确显示。</li>
-</ul>
-</li>
+<li>Bugs: - 引号<code>&quot;&quot;</code> <code>''</code> <code>“”</code> <code>‘’</code>全都转换成了全角字符； - 定位项目中的图片的时候很有可能显示不出来，原因暂时没找到，最好还是指向网络图片； - markdown-container 无法正确显示； - 特殊字符无法正确显示。</li>
 </ol>
 </div>
 <style>
@@ -663,6 +710,7 @@ ga('send', 'pageview');
     color:#fff
 }
 </style>
+
   <a onclick="go_top()"
     ><div class="to_top"><div class="to-top-triangle"></div></div
   ></a>
@@ -837,8 +885,9 @@ ga('send', 'pageview');
     >
   </div>
   <div class="languages">
-    中文 &nbsp;&nbsp;|&nbsp;&nbsp;
-    <a target="_blank" rel="noopener" href="http://AnulucaEn.github.io" class="english">English</a>
+    <span class="inactive">裏站</span>
+    <div>|</div>
+    <span>表站</span> 
   </div>
 </div>
 

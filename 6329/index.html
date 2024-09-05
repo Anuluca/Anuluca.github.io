@@ -19,6 +19,9 @@
      Flex布局属性浅解 - 路卡的自由庭院岛 
   </title>
 
+  <!-- jq -->
+  <script src="https://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+  <script src="/js/onBoot.js"></script>
   <!-- Spectre.css framework -->
   <link rel="stylesheet" href="/css/spectre-exp.min.css" />
   <link rel="stylesheet" href="/css/spectre-icons.min.css" />
@@ -26,21 +29,18 @@
   <!-- <link rel="stylesheet" type="text/css" href="/css/custom.css" />
   <link rel="stylesheet" href="/css/custom_theme_dark.css" />
   <link rel="stylesheet" href="/css/phone.css" /> -->
-  <script src="/js/onBoot1.js"></script>
-
+  
   <!-- theme css & js -->
   
 <link rel="stylesheet" href="/css/book.css">
  
 <script src="/js/book.js"></script>
 
-
+  
   <!-- tocbot -->
   <script src="/js/tocbot.min.js"></script>
   <link rel="stylesheet" href="/css/tocbot.css" />
-
-  <!-- jq -->
-  <script src="https://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+  
   <!-- katex -->
 
   
@@ -107,7 +107,7 @@ ga('send', 'pageview');
         src="http://cdn.anuluca.com/other/g0rY8J.png"
       />
     </div>
-    <span>路卡的自由庭院岛</span>
+    <span>路卡的自由庭院岛 4.0</span>
   </a>
 </div>
  <div class="book-menu scrollbar">
@@ -197,6 +197,7 @@ ga('send', 'pageview');
 <h2 id="工具">工具</h2>
 <ul>
 <li><a href="/60328">HTML常用转义字符</a></li>
+<li><a href="/base64">Base64加解密</a></li>
 <li><a href="/45597">配色参考</a></li>
 <li><a href="/49833">营销号生成器</a></li>
 </ul>
@@ -220,6 +221,55 @@ ga('send', 'pageview');
             <span>主题切换</span>
           </div>
           <div class="theme-group">
+            <!-- Sleep -->
+            <div
+              style="background-image: url('http://cdn.anuluca.com/other/sleep_back.jpg');background-size: cover;"
+              onclick="changeTheme('sleep')"
+            >
+              sleep
+            </div>
+            <!-- 宝可梦 -->
+            <div
+              style="background-image: url('http://cdn.anuluca.com/other/fipf1A.png');background-size:auto;background-repeat: no-repeat;background-position: center;"
+              onclick="changeTheme('pokemon')"
+            >
+              宝可梦
+            </div>
+            <!-- 幽灵诡计 -->
+            <div
+              style="background-image: url('http://cdn.anuluca.com/other/ghosttrick_back.jpg');background-size: cover;"
+              onclick="changeTheme('ghosttrick')"
+            >
+              西塞尔
+            </div>
+            <!-- 朱紫 -->
+            <div
+              style="background-image: url('http://cdn.anuluca.com/other/sv_back3.jpg');background-size: cover;"
+              onclick="changeTheme('scarlet')"
+            >
+              Scarlet
+            </div>
+            <!-- 朱紫 -->
+            <div
+              style="background-image: url('http://cdn.anuluca.com/other/sv_back4.jpg');background-size: cover;"
+              onclick="changeTheme('violet')"
+            >
+              Violet
+            </div>
+            <!-- P5 -->
+            <div
+              style="background-image: url('http://cdn.anuluca.com/other/p5_back.jpg');background-size: cover;"
+              onclick="changeTheme('p5')"
+            >
+              P5
+            </div>
+            <!-- P3R -->
+            <div
+              style="background: linear-gradient(to bottom, #51A6F4, #0817B1)"
+              onclick="changeTheme('p3r')"
+            >
+              满月
+            </div>
             <!-- 黄昏 -->
             <div
               style="background: linear-gradient(to bottom, #071062, #7f4e0e)"
@@ -240,13 +290,6 @@ ga('send', 'pageview');
               onclick="changeTheme('classic')"
             >
               经典
-            </div>
-            <!-- P3R -->
-            <div
-              style="background: linear-gradient(to bottom, #51A6F4, #0817B1)"
-              onclick="changeTheme('p3r')"
-            >
-              满月
             </div>
           </div>
         </div>
@@ -618,8 +661,9 @@ stretch各行将会伸展以占用剩余的空间。剩余空间被所有行平�
     >
   </div>
   <div class="languages">
-    中文 &nbsp;&nbsp;|&nbsp;&nbsp;
-    <a target="_blank" rel="noopener" href="http://AnulucaEn.github.io" class="english">English</a>
+    <span class="inactive">裏站</span>
+    <div>|</div>
+    <span>表站</span> 
   </div>
 </div>
 

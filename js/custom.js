@@ -12,7 +12,7 @@ const textList = [
   "cursed.",
   "这里沉睡着Anuluca的灵魂。",
   "网站越做越重了，已经回不了头了...",
-  "现在在想什么？不妨记录一下灵感",
+  "现在在想什么？不妨记录一下灵感吧！",
 ];
 
 document.getElementById("intro_text").innerText = textList.sort(
@@ -203,3 +203,18 @@ $("#encodeSubmit").click(() => {
     $('#encodeInput').attr('placeholder', '密钥错误');
   }
 });
+
+//  获取当前主题
+function getTheme() {
+  if (!localStorage.getItem("theme")) {
+    localStorage.setItem("theme", "p3r");
+  }
+  $("#body-color").addClass(localStorage.getItem("theme"));
+    $("#body-color").attr("class").split(" ").map(item => {
+      if(item !== localStorage.getItem("theme")){
+
+        $("#body-color").removeClass(item);
+      }
+    })
+}
+getTheme();

@@ -77,7 +77,14 @@ body {
   right: 0;
   bottom: 0;
   overflow: hidden;
-  transition: all 1s; }
+  transition: all 1s;
+  background-color: #1C1C1E; }
+  #body-color * {
+    transition: all 1s; }
+  #body-color .star-back {
+    transition: all 1s; }
+  #body-color .star {
+    transition: all 1s; }
   #body-color .back-color {
     background-attachment: fixed;
     position: fixed;
@@ -87,7 +94,7 @@ body {
     bottom: 0;
     overflow: hidden;
     transition: all 1s;
-    background-color: #000; }
+    background: #000; }
 
 #body-color.dawn .back-color {
   background: radial-gradient(220% 105% at top center, #162649 10%, #65366f 40%, #ae546f 65%, #c5c581);
@@ -105,10 +112,31 @@ body {
 #body-color.classic .star-back > .star {
   display: none; }
 
-#body-color.persona5Z .back-color {
-  background-image: url("http://cdn.anuluca.com/other/sw8KdH.png"); }
+#body-color.p5 .back-color {
+  background-image: url("http://cdn.anuluca.com/other/p5_back.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
-#body-color.persona5Z .star-back > .star {
+#body-color.p5 .star-back > .star {
+  display: none; }
+
+#body-color.scarlet .back-color {
+  background-image: url("http://cdn.anuluca.com/other/sv_back3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+#body-color.scarlet .star-back > .star {
+  display: none; }
+
+#body-color.violet .back-color {
+  background-image: url("http://cdn.anuluca.com/other/sv_back4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+#body-color.violet .star-back > .star {
   display: none; }
 
 #body-color.p3r .back-color {
@@ -117,6 +145,33 @@ body {
 
 #body-color.p3r .star-back > .star {
   background: #ffffff; }
+
+#body-color.ghosttrick .back-color {
+  background-image: url("http://cdn.anuluca.com/other/ghosttrick_back.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+#body-color.ghosttrick .star-back > .star {
+  display: none; }
+
+#body-color.pokemon .back-color {
+  background-image: url("http://cdn.anuluca.com/other/pokemon_back.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+#body-color.pokemon .star-back > .star {
+  display: none; }
+
+#body-color.sleep .back-color {
+  background-image: url("http://cdn.anuluca.com/other/sleep_back.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+#body-color.sleep .star-back > .star {
+  background: #fff; }
 
 @keyframes rotate {
   0% {
@@ -165,7 +220,7 @@ body {
     display: inline-block;
     overflow: hidden; }
     .footer-com .center .expand {
-      background-color: #d7d7d717;
+      background-color: #49494917;
       width: 100%;
       transition: all 1s;
       background-image: radial-gradient(#fcfcfc17 1px, #a9a9a917 1px);
@@ -256,7 +311,10 @@ body {
 
 .book-menu,
 .book-brand {
-  background-color: #242426a5 !important; }
+  background-color: #00000047 !important;
+  backdrop-filter: saturate(80%) blur(2px) hue-rotate(-10deg);
+  background-size: 4px 4px;
+  background-image: radial-gradient(#fcfcfc09 1px, #2c2c2c08 1px); }
 
 body,
 .book-sidebar .book-menu a,
@@ -370,7 +428,10 @@ code {
   left: 0px;
   bottom: 24px;
   box-shadow: 0px 0px 13px #2626268a;
-  background-color: #242426d4; }
+  background-color: #00000094;
+  background-image: radial-gradient(#fcfcfc17 1px, #a9a9a917 1px);
+  background-size: 4px 4px;
+  backdrop-filter: saturate(50%) blur(1px); }
 
 .bottom > .intro {
   color: white;
@@ -409,16 +470,26 @@ code {
   line-height: 38px; }
 
 .languages {
-  display: block;
-  margin-top: 30px;
   text-align: center;
-  color: #888d8f;
-  font-weight: bold;
-  margin-top: 215px; }
+  color: white;
+  margin-top: 215px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .languages > span {
+    width: 80px;
+    display: block;
+    text-align: center; }
+  .languages * {
+    transition: all 1s; }
 
-.english {
-  color: white !important;
-  display: inline !important; }
+.inactive {
+  color: #888d8f !important;
+  cursor: pointer; }
+  .inactive:hover {
+    color: white !important;
+    text-shadow: 0 0 4px white;
+    transform: matrix(10deg); }
 
 .links {
   position: absolute;
@@ -509,16 +580,15 @@ code {
     transition: all 0.2s;
     opacity: 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     padding: 10px;
-    height: 120px;
+    overflow: auto;
+    height: 220px;
     flex-wrap: wrap; }
     .book-sidebar-bottom > .theme-group > div {
       text-align: right;
-      padding-right: 10px;
       font-style: italic;
-      line-height: 80px;
       background-size: contain;
       width: 60px;
       height: 60px;
@@ -528,6 +598,8 @@ code {
       border-radius: 2px;
       border: 1px solid #08436e;
       transition: all 0.2s;
+      padding-right: 5px;
+      line-height: 94px;
       cursor: pointer; }
       .book-sidebar-bottom > .theme-group > div:hover {
         border: 1px solid #d7d7d7;
@@ -556,9 +628,10 @@ code {
     color: #fff;
     background: #121212f0; }
   .book-sidebar-bottom.sidebar-open {
-    height: 200px;
+    height: 220px;
     color: #fff;
-    background: #121212f0; }
+    background: #121212f0;
+    overflow: hidden; }
     .book-sidebar-bottom.sidebar-open > .theme-group {
       opacity: 1; }
     .book-sidebar-bottom.sidebar-open > .sidebar-title > b {
@@ -659,7 +732,7 @@ code {
   box-shadow: 0px 0px 12px 0px #0000004a;
   background-image: radial-gradient(#ffffff0a 1px, #ffffff00 1px);
   background-size: 4px 4px;
-  backdrop-filter: saturate(100%) blur(1px); }
+  backdrop-filter: saturate(100%) blur(3px); }
 
 .shit_title_img {
   width: 300px;
@@ -725,7 +798,7 @@ code {
   border-bottom: 1px solid #6d6d6e; }
   .book-sidebar .book-brand a {
     text-align: center;
-    margin-left: 2.6rem;
+    margin-left: 1.7rem;
     transition: all 0.2s;
     position: relative; }
     .book-sidebar .book-brand a:hover {
@@ -1263,7 +1336,10 @@ html ::-webkit-scrollbar-track {
     color: #0c53cd !important; }
 
 .platform-page {
-  background-color: #ffffff40;
+  background-color: #ffffff2d;
+  backdrop-filter: saturate(80%) blur(4px) hue-rotate(-10deg);
+  background-size: 4px 4px;
+  background-image: radial-gradient(#fcfcfc09 1px, #2c2c2c08 1px);
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
@@ -1302,10 +1378,11 @@ html ::-webkit-scrollbar-track {
     transform: rotate3d(0.3, 0.8, 0.2, -30deg);
     text-align: center;
     color: #000;
-    font-size: 1rem;
+    font-size: 2rem !important;
     width: 100%;
     font-style: italic;
-    margin-top: 40px;
+    font-weight: bold;
+    margin-top: 20px;
     opacity: 0;
     transition: all 0.4s; }
   .platform a {
