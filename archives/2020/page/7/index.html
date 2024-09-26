@@ -81,21 +81,6 @@ ga('send', 'pageview');
       <div class="back-color"></div>
       <div class="star-back"></div>
     </div>
-
-    <!-- <div class="body-color">
-      <div
-        :class="{
-          'body-color': true,
-          dawn: props.theme === 'dawn',
-          light: props.theme === 'light',
-          night: props.ifDarken
-        }"
-      ></div>
-      <div
-        :class="{ 'star-back': true, dawn: props.theme === 'dawn', light: props.theme === 'light' }"
-      ></div>
-    </div> -->
-
     <div class="book-container">
       <div class="book-sidebar">
         <div class="book-brand">
@@ -184,12 +169,12 @@ ga('send', 'pageview');
 <span id="more"></span>
 <ul>
 <li><a href="/23761"><img src="http://cdn.anuluca.com/other/fPz6u6.png" class="l_logo"> 游戏档案馆</a></li>
-<li><a href="/23678"><img src="http://cdn.anuluca.com/other/fipf1A.png" class="l_logo"> 宝可梦后院</a></li>
+<li><a href="/pokemon"><img src="http://cdn.anuluca.com/other/fipf1A.png" class="l_logo"> 宝可梦后院</a></li>
 </ul>
 <h1 id="img-src-http-cdn-anuluca-com-other-fi98gA-png-class-l-logo-杂物室"><a href=""><img src="http://cdn.anuluca.com/other/fi98gA.png" class="l_logo"> 杂物室</a></h1>
 <h2 id="文章">文章</h2>
 <ul>
-<li><a href="/58027">已弃坑的新版个人网站</a></li>
+<li><a href="/58027">弃坑的新版个人网站</a></li>
 <li><a href="/2285">庭院岛历史</a></li>
 <li><a href="/48446">2020不正确记忆</a></li>
 <li><a href="/41678">Markdown Demo</a></li>
@@ -241,6 +226,13 @@ ga('send', 'pageview');
               onclick="changeTheme('ghosttrick')"
             >
               西塞尔
+            </div>
+            <!-- dedsec -->
+            <div
+              style="background-image: url('http://cdn.anuluca.com/other/dedsec.webp');background-size: cover;"
+              onclick="changeTheme('dedsec')"
+            >
+              Dedsec
             </div>
             <!-- 朱紫 -->
             <div
@@ -294,6 +286,14 @@ ga('send', 'pageview');
           </div>
         </div>
       </div>
+      <!-- 提前加载图片资源 -->
+      <img class="img-hide" src="http://cdn.anuluca.com/other/p5_back.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/sv_back3.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/sv_back4.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/ghosttrick_back.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/pokemon_back.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/sleep_back.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/dedsec_back.jpg" alt="">
       <!-- <div class="backlogo" onClick="toOldSite()">FLASHBACK</div> -->
 
       <div
@@ -444,6 +444,83 @@ ga('send', 'pageview');
           <ul class="archive-list-item">
           
               <li>
+                <span>2024-10-01</span>
+                <a href="/pokemon/">
+                  宝可梦后院
+                </a>
+              </li>
+          
+              <li>
+                <span>2024-09-25</span>
+                <a href="/32021/">
+                  宝可梦 X
+                </a>
+              </li>
+          
+              <li>
+                <span>2024-09-25</span>
+                <a href="/37949/">
+                  宝可梦 白金
+                </a>
+              </li>
+          
+              <li>
+                <span>2024-09-25</span>
+                <a href="/37951/">
+                  宝可梦 心金
+                </a>
+              </li>
+          
+              <li>
+                <span>2024-09-25</span>
+                <a href="/53014/">
+                  宝可梦 白2
+                </a>
+              </li>
+          
+              <li>
+                <span>2024-09-25</span>
+                <a href="/37952/">
+                  宝可梦 白
+                </a>
+              </li>
+          
+              <li>
+                <span>2024-09-25</span>
+                <a href="/26975/">
+                  宝可梦 黑
+                </a>
+              </li>
+          
+              <li>
+                <span>2024-09-25</span>
+                <a href="/37948/">
+                  宝可梦 钻石
+                </a>
+              </li>
+          
+              <li>
+                <span>2024-09-25</span>
+                <a href="/63386/">
+                  宝可梦 绿宝石
+                </a>
+              </li>
+          
+              <li>
+                <span>2024-09-25</span>
+                <a href="/14998/">
+                  宝可梦 红宝石
+                </a>
+              </li>
+          
+              <li>
+                <span>2024-09-12</span>
+                <a href="/sideStory/">
+                  裏
+                </a>
+              </li>
+          
+              <li>
                 <span>2024-09-03</span>
                 <a href="/base64/">
                   Base64加解密
@@ -487,13 +564,6 @@ ga('send', 'pageview');
           
               <li>
                 <span>2024-08-22</span>
-                <a href="/17750/">
-                  VSCode 代码片段
-                </a>
-              </li>
-          
-              <li>
-                <span>2024-08-22</span>
                 <a href="/24848/">
                   HTTP相关知识点
                 </a>
@@ -501,8 +571,15 @@ ga('send', 'pageview');
           
               <li>
                 <span>2024-08-22</span>
-                <a href="/31087/">
-                  VSCode前端开发自用插件推荐
+                <a href="/17750/">
+                  VSCode 代码片段
+                </a>
+              </li>
+          
+              <li>
+                <span>2024-08-22</span>
+                <a href="/28864/">
+                  vue3Setup项目中如何阻止使用浏览器返回键
                 </a>
               </li>
           
@@ -515,8 +592,8 @@ ga('send', 'pageview');
           
               <li>
                 <span>2024-08-22</span>
-                <a href="/28864/">
-                  vue3Setup项目中如何阻止使用浏览器返回键
+                <a href="/31087/">
+                  VSCode前端开发自用插件推荐
                 </a>
               </li>
           
@@ -585,20 +662,6 @@ ga('send', 'pageview');
           
               <li>
                 <span>2024-08-07</span>
-                <a href="/59883/">
-                  人中之龙4
-                </a>
-              </li>
-          
-              <li>
-                <span>2024-08-07</span>
-                <a href="/59563/">
-                  人中之龙7:光与暗的去向
-                </a>
-              </li>
-          
-              <li>
-                <span>2024-08-07</span>
                 <a href="/18311/">
                   人中之龙：极
                 </a>
@@ -613,8 +676,8 @@ ga('send', 'pageview');
           
               <li>
                 <span>2024-08-07</span>
-                <a href="/10538/">
-                  人中之龙5
+                <a href="/59563/">
+                  人中之龙7:光与暗的去向
                 </a>
               </li>
           
@@ -627,8 +690,8 @@ ga('send', 'pageview');
           
               <li>
                 <span>2024-08-07</span>
-                <a href="/11178/">
-                  人中之龙3
+                <a href="/10538/">
+                  人中之龙5
                 </a>
               </li>
           
@@ -641,6 +704,20 @@ ga('send', 'pageview');
           
               <li>
                 <span>2024-08-07</span>
+                <a href="/11178/">
+                  人中之龙3
+                </a>
+              </li>
+          
+              <li>
+                <span>2024-08-07</span>
+                <a href="/59883/">
+                  人中之龙4
+                </a>
+              </li>
+          
+              <li>
+                <span>2024-08-07</span>
                 <a href="/27484/">
                   影子武士3
                 </a>
@@ -648,15 +725,15 @@ ga('send', 'pageview');
           
               <li>
                 <span>2024-08-07</span>
-                <a href="/52968/">
-                  女神异闻录5战略版
+                <a href="/30655/">
+                  乐高星球大战 天行者传奇
                 </a>
               </li>
           
               <li>
                 <span>2024-08-07</span>
-                <a href="/30655/">
-                  乐高星球大战 天行者传奇
+                <a href="/52968/">
+                  女神异闻录5战略版
                 </a>
               </li>
           
@@ -690,13 +767,6 @@ ga('send', 'pageview');
           
               <li>
                 <span>2024-08-07</span>
-                <a href="/6965/">
-                  极限竞速：地平线5
-                </a>
-              </li>
-          
-              <li>
-                <span>2024-08-07</span>
                 <a href="/55487/">
                   以撒的结合：忏悔
                 </a>
@@ -704,8 +774,36 @@ ga('send', 'pageview');
           
               <li>
                 <span>2024-08-07</span>
+                <a href="/6965/">
+                  极限竞速：地平线5
+                </a>
+              </li>
+          
+              <li>
+                <span>2024-08-07</span>
                 <a href="/2684/">
                   刺客信条：幻景
+                </a>
+              </li>
+          
+              <li>
+                <span>2024-08-06</span>
+                <a href="/54991/">
+                  掌动 阿尔宙斯
+                </a>
+              </li>
+          
+              <li>
+                <span>2024-08-06</span>
+                <a href="/41241/">
+                  奥特侠影 贝利亚奥特曼
+                </a>
+              </li>
+          
+              <li>
+                <span>2024-08-06</span>
+                <a href="/30810/">
+                  掌动 多龙巴鲁托
                 </a>
               </li>
           
@@ -753,13 +851,6 @@ ga('send', 'pageview');
           
               <li>
                 <span>2024-08-06</span>
-                <a href="/5999/">
-                  宝可梦：VC红
-                </a>
-              </li>
-          
-              <li>
-                <span>2024-08-06</span>
                 <a href="/20830/">
                   宝可梦：VC金
                 </a>
@@ -767,22 +858,8 @@ ga('send', 'pageview');
           
               <li>
                 <span>2024-08-06</span>
-                <a href="/54991/">
-                  掌动 阿尔宙斯
-                </a>
-              </li>
-          
-              <li>
-                <span>2024-08-06</span>
-                <a href="/41241/">
-                  奥特侠影 贝利亚奥特曼
-                </a>
-              </li>
-          
-              <li>
-                <span>2024-08-06</span>
-                <a href="/30810/">
-                  掌动 多龙巴鲁托
+                <a href="/5999/">
+                  宝可梦：VC红
                 </a>
               </li>
           
@@ -823,20 +900,6 @@ ga('send', 'pageview');
           
               <li>
                 <span>2024-07-29</span>
-                <a href="/49755/">
-                  2023
-                </a>
-              </li>
-          
-              <li>
-                <span>2024-07-29</span>
-                <a href="/666/">
-                  2022
-                </a>
-              </li>
-          
-              <li>
-                <span>2024-07-29</span>
                 <a href="/59640/">
                   银河奥特曼 皮套摄影
                 </a>
@@ -846,6 +909,20 @@ ga('send', 'pageview');
                 <span>2024-07-29</span>
                 <a href="/20928/">
                   戴拿&盖亚奥特曼 皮套摄影
+                </a>
+              </li>
+          
+              <li>
+                <span>2024-07-29</span>
+                <a href="/49755/">
+                  2023
+                </a>
+              </li>
+          
+              <li>
+                <span>2024-07-29</span>
+                <a href="/666/">
+                  2022
                 </a>
               </li>
           
@@ -867,41 +944,6 @@ ga('send', 'pageview');
                 <span>2024-07-28</span>
                 <a href="/10306/">
                   绘画
-                </a>
-              </li>
-          
-              <li>
-                <span>2024-03-29</span>
-                <a href="/37949/">
-                  宝可梦后院
-                </a>
-              </li>
-          
-              <li>
-                <span>2024-03-29</span>
-                <a href="/37951/">
-                  宝可梦后院
-                </a>
-              </li>
-          
-              <li>
-                <span>2024-03-29</span>
-                <a href="/37948/">
-                  宝可梦后院
-                </a>
-              </li>
-          
-              <li>
-                <span>2024-03-29</span>
-                <a href="/37948/">
-                  宝可梦后院
-                </a>
-              </li>
-          
-              <li>
-                <span>2024-03-27</span>
-                <a href="/37952/">
-                  宝可梦后院
                 </a>
               </li>
           
@@ -956,8 +998,8 @@ ga('send', 'pageview');
           
               <li>
                 <span>2023-06-05</span>
-                <a href="/10519/">
-                  刺客信条：解放
+                <a href="/56310/">
+                  极限竞速：地平线4
                 </a>
               </li>
           
@@ -970,15 +1012,8 @@ ga('send', 'pageview');
           
               <li>
                 <span>2023-06-05</span>
-                <a href="/56310/">
-                  极限竞速：地平线4
-                </a>
-              </li>
-          
-              <li>
-                <span>2023-06-05</span>
-                <a href="/2621/">
-                  刺客信条：枭雄
+                <a href="/10519/">
+                  刺客信条：解放
                 </a>
               </li>
           
@@ -986,6 +1021,13 @@ ga('send', 'pageview');
                 <span>2023-06-05</span>
                 <a href="/36247/">
                   刺客信条：大革命
+                </a>
+              </li>
+          
+              <li>
+                <span>2023-06-05</span>
+                <a href="/2621/">
+                  刺客信条：枭雄
                 </a>
               </li>
           
@@ -1006,7 +1048,7 @@ ga('send', 'pageview');
               <li>
                 <span>2023-05-26</span>
                 <a href="/58027/">
-                  已弃坑的新版个人网站
+                  弃坑的新版个人网站
                 </a>
               </li>
           
@@ -1026,15 +1068,15 @@ ga('send', 'pageview');
           
               <li>
                 <span>2023-05-23</span>
-                <a href="/15408/">
-                  女神异闻录5：皇家版
+                <a href="/53693/">
+                  刺客信条
                 </a>
               </li>
           
               <li>
                 <span>2023-05-23</span>
-                <a href="/53693/">
-                  刺客信条
+                <a href="/15408/">
+                  女神异闻录5：皇家版
                 </a>
               </li>
           
@@ -1082,14 +1124,14 @@ ga('send', 'pageview');
           
               <li>
                 <span>2023-05-23</span>
-                <a href="/3244/">
+                <a href="/3242/">
                   初音未来 歌姬计划：Mega39s+
                 </a>
               </li>
           
               <li>
                 <span>2023-05-23</span>
-                <a href="/3242/">
+                <a href="/3244/">
                   初音未来 歌姬计划：Mega39s+
                 </a>
               </li>
@@ -1145,8 +1187,8 @@ ga('send', 'pageview');
           
               <li>
                 <span>2022-04-18</span>
-                <a href="/46678/">
-                  古墓丽影：暗影
+                <a href="/35958/">
+                  返校
                 </a>
               </li>
           
@@ -1159,15 +1201,15 @@ ga('send', 'pageview');
           
               <li>
                 <span>2022-04-18</span>
-                <a href="/24156/">
-                  大富翁4：超时空之旅
+                <a href="/46678/">
+                  古墓丽影：暗影
                 </a>
               </li>
           
               <li>
                 <span>2022-04-18</span>
-                <a href="/35958/">
-                  返校
+                <a href="/24156/">
+                  大富翁4：超时空之旅
                 </a>
               </li>
           
@@ -1208,7 +1250,7 @@ ga('send', 'pageview');
           
               <li>
                 <span>2022-01-20</span>
-                <a href="/32021/">
+                <a href="/32024/">
                   宝可梦后院
                 </a>
               </li>
@@ -1216,13 +1258,6 @@ ga('send', 'pageview');
               <li>
                 <span>2022-01-20</span>
                 <a href="/32022/">
-                  宝可梦后院
-                </a>
-              </li>
-          
-              <li>
-                <span>2022-01-20</span>
-                <a href="/32024/">
                   宝可梦后院
                 </a>
               </li>
@@ -1299,6 +1334,13 @@ ga('send', 'pageview');
           
               <li>
                 <span>2021-09-03</span>
+                <a href="/13248/">
+                  帝皇龙甲兽
+                </a>
+              </li>
+          
+              <li>
+                <span>2021-09-03</span>
                 <a href="/29656/">
                   Draw & Guess
                 </a>
@@ -1306,14 +1348,14 @@ ga('send', 'pageview');
           
               <li>
                 <span>2021-09-03</span>
-                <a href="/14909/">
+                <a href="/14907/">
                   异度神剑
                 </a>
               </li>
           
               <li>
                 <span>2021-09-03</span>
-                <a href="/14907/">
+                <a href="/14909/">
                   异度神剑
                 </a>
               </li>
@@ -1329,13 +1371,6 @@ ga('send', 'pageview');
                 <span>2021-09-03</span>
                 <a href="/35219/">
                   蝙蝠侠：阿卡姆疯人院
-                </a>
-              </li>
-          
-              <li>
-                <span>2021-09-03</span>
-                <a href="/13248/">
-                  帝皇龙甲兽
                 </a>
               </li>
           
@@ -1432,127 +1467,8 @@ ga('send', 'pageview');
           
               <li>
                 <span>2021-08-30</span>
-                <a href="/20942/">
-                  宝可梦：太阳
-                </a>
-              </li>
-          
-              <li>
-                <span>2021-08-30</span>
-                <a href="/55773/">
-                  宝可梦：欧米伽红宝石
-                </a>
-              </li>
-          
-              <li>
-                <span>2021-08-30</span>
-                <a href="/27560/">
-                  宝可梦：X
-                </a>
-              </li>
-          
-              <li>
-                <span>2021-08-30</span>
-                <a href="/60070/">
-                  宝可梦：白
-                </a>
-              </li>
-          
-              <li>
-                <span>2021-08-30</span>
-                <a href="/9769/">
-                  宝可梦：心金
-                </a>
-              </li>
-          
-              <li>
-                <span>2021-08-30</span>
-                <a href="/8484/">
-                  Pokémon TCG Online
-                </a>
-              </li>
-          
-              <li>
-                <span>2021-08-30</span>
-                <a href="/7875/">
-                  伊苏 塞尔塞塔的树海
-                </a>
-              </li>
-          
-              <li>
-                <span>2021-08-30</span>
-                <a href="/10861/">
-                  GRIEFSYNDROME
-                </a>
-              </li>
-          
-              <li>
-                <span>2021-08-30</span>
-                <a href="/60720/">
-                  初音未來-Project DIVA- F 2nd
-                </a>
-              </li>
-          
-              <li>
-                <span>2021-08-30</span>
-                <a href="/13245/">
-                  Pokémon Masters EX
-                </a>
-              </li>
-          
-              <li>
-                <span>2021-08-30</span>
-                <a href="/62660/">
-                  魔法纪录
-                </a>
-              </li>
-          
-              <li>
-                <span>2021-08-30</span>
-                <a href="/46777/">
-                  我的世界
-                </a>
-              </li>
-          
-              <li>
-                <span>2021-08-30</span>
-                <a href="/63252/">
-                  Loveplus+
-                </a>
-              </li>
-          
-              <li>
-                <span>2021-08-30</span>
-                <a href="/41403/">
-                  乐高 复仇者联盟
-                </a>
-              </li>
-          
-              <li>
-                <span>2021-08-30</span>
-                <a href="/5414/">
-                  仮面ライダーバトライド・ウォー創生
-                </a>
-              </li>
-          
-              <li>
-                <span>2021-08-30</span>
-                <a href="/60387/">
-                  刺客信条启示录
-                </a>
-              </li>
-          
-              <li>
-                <span>2021-08-30</span>
-                <a href="/60870/">
-                  失落的龙约
-                </a>
-              </li>
-          
-              <li>
-                <span>2021-08-30</span>
-                <a href="/30393/">
-                  明日方舟
+                <a href="/40080/">
+                  宝可梦战斗棋
                 </a>
               </li>
           
@@ -1572,13 +1488,6 @@ ga('send', 'pageview');
           
               <li>
                 <span>2021-08-30</span>
-                <a href="/40080/">
-                  宝可梦战斗棋
-                </a>
-              </li>
-          
-              <li>
-                <span>2021-08-30</span>
                 <a href="/449/">
                   K.K.
                 </a>
@@ -1588,6 +1497,132 @@ ga('send', 'pageview');
                 <span>2021-08-30</span>
                 <a href="/22518/">
                   多美卡 合集
+                </a>
+              </li>
+          
+              <li>
+                <span>2021-08-30</span>
+                <a href="/20942/">
+                  宝可梦：太阳
+                </a>
+              </li>
+          
+              <li>
+                <span>2021-08-30</span>
+                <a href="/27560/">
+                  宝可梦：X
+                </a>
+              </li>
+          
+              <li>
+                <span>2021-08-30</span>
+                <a href="/55773/">
+                  宝可梦：欧米伽红宝石
+                </a>
+              </li>
+          
+              <li>
+                <span>2021-08-30</span>
+                <a href="/60070/">
+                  宝可梦：白
+                </a>
+              </li>
+          
+              <li>
+                <span>2021-08-30</span>
+                <a href="/9769/">
+                  宝可梦：心金
+                </a>
+              </li>
+          
+              <li>
+                <span>2021-08-30</span>
+                <a href="/7875/">
+                  伊苏 塞尔塞塔的树海
+                </a>
+              </li>
+          
+              <li>
+                <span>2021-08-30</span>
+                <a href="/60720/">
+                  初音未來-Project DIVA- F 2nd
+                </a>
+              </li>
+          
+              <li>
+                <span>2021-08-30</span>
+                <a href="/10861/">
+                  GRIEFSYNDROME
+                </a>
+              </li>
+          
+              <li>
+                <span>2021-08-30</span>
+                <a href="/13245/">
+                  Pokémon Masters EX
+                </a>
+              </li>
+          
+              <li>
+                <span>2021-08-30</span>
+                <a href="/8484/">
+                  Pokémon TCG Online
+                </a>
+              </li>
+          
+              <li>
+                <span>2021-08-30</span>
+                <a href="/46777/">
+                  我的世界
+                </a>
+              </li>
+          
+              <li>
+                <span>2021-08-30</span>
+                <a href="/62660/">
+                  魔法纪录
+                </a>
+              </li>
+          
+              <li>
+                <span>2021-08-30</span>
+                <a href="/41403/">
+                  乐高 复仇者联盟
+                </a>
+              </li>
+          
+              <li>
+                <span>2021-08-30</span>
+                <a href="/63252/">
+                  Loveplus+
+                </a>
+              </li>
+          
+              <li>
+                <span>2021-08-30</span>
+                <a href="/5414/">
+                  仮面ライダーバトライド・ウォー創生
+                </a>
+              </li>
+          
+              <li>
+                <span>2021-08-30</span>
+                <a href="/60870/">
+                  失落的龙约
+                </a>
+              </li>
+          
+              <li>
+                <span>2021-08-30</span>
+                <a href="/60387/">
+                  刺客信条启示录
+                </a>
+              </li>
+          
+              <li>
+                <span>2021-08-30</span>
+                <a href="/30393/">
+                  明日方舟
                 </a>
               </li>
           
@@ -1698,13 +1733,6 @@ ga('send', 'pageview');
           
               <li>
                 <span>2021-06-08</span>
-                <a href="/7897/">
-                  刺客信条兄弟会
-                </a>
-              </li>
-          
-              <li>
-                <span>2021-06-08</span>
                 <a href="/35185/">
                   蜘蛛侠（PS4 ver）
                 </a>
@@ -1718,16 +1746,16 @@ ga('send', 'pageview');
               </li>
           
               <li>
-                <span>2021-05-24</span>
-                <a href="/25682/">
-                  刺客信条3：重置版
+                <span>2021-06-08</span>
+                <a href="/7897/">
+                  刺客信条兄弟会
                 </a>
               </li>
           
               <li>
                 <span>2021-05-24</span>
-                <a href="/33481/">
-                  刺客信条起源
+                <a href="/25682/">
+                  刺客信条3：重置版
                 </a>
               </li>
           
@@ -1761,6 +1789,13 @@ ga('send', 'pageview');
           
               <li>
                 <span>2021-05-24</span>
+                <a href="/29998/">
+                  Batman Arkham Knight
+                </a>
+              </li>
+          
+              <li>
+                <span>2021-05-24</span>
                 <a href="/35782/">
                   刺客信条奥德赛
                 </a>
@@ -1768,7 +1803,21 @@ ga('send', 'pageview');
           
               <li>
                 <span>2021-05-24</span>
+                <a href="/32453/">
+                  Batman Arkham City
+                </a>
+              </li>
+          
+              <li>
+                <span>2021-05-24</span>
                 <a href="/33480/">
+                  刺客信条起源
+                </a>
+              </li>
+          
+              <li>
+                <span>2021-05-24</span>
+                <a href="/33481/">
                   刺客信条起源
                 </a>
               </li>
@@ -1782,36 +1831,8 @@ ga('send', 'pageview');
           
               <li>
                 <span>2021-05-24</span>
-                <a href="/29998/">
-                  Batman Arkham Knight
-                </a>
-              </li>
-          
-              <li>
-                <span>2021-05-24</span>
-                <a href="/32453/">
-                  Batman Arkham City
-                </a>
-              </li>
-          
-              <li>
-                <span>2021-05-24</span>
                 <a href="/1141/">
                   LIMBO
-                </a>
-              </li>
-          
-              <li>
-                <span>2021-05-24</span>
-                <a href="/38373/">
-                  星のカービィ 夢の泉の物語
-                </a>
-              </li>
-          
-              <li>
-                <span>2021-05-24</span>
-                <a href="/16665/">
-                  异界锁链
                 </a>
               </li>
           
@@ -1824,7 +1845,21 @@ ga('send', 'pageview');
           
               <li>
                 <span>2021-05-24</span>
-                <a href="/51072/">
+                <a href="/16665/">
+                  异界锁链
+                </a>
+              </li>
+          
+              <li>
+                <span>2021-05-24</span>
+                <a href="/38373/">
+                  星のカービィ 夢の泉の物語
+                </a>
+              </li>
+          
+              <li>
+                <span>2021-05-24</span>
+                <a href="/51068/">
                   异度神剑2
                 </a>
               </li>
@@ -1838,7 +1873,7 @@ ga('send', 'pageview');
           
               <li>
                 <span>2021-05-24</span>
-                <a href="/51068/">
+                <a href="/51072/">
                   异度神剑2
                 </a>
               </li>
@@ -1852,13 +1887,6 @@ ga('send', 'pageview');
           
               <li>
                 <span>2021-05-24</span>
-                <a href="/63057/">
-                  塞尔达传说：旷野之息
-                </a>
-              </li>
-          
-              <li>
-                <span>2021-05-24</span>
                 <a href="/63058/">
                   塞尔达传说：旷野之息
                 </a>
@@ -1867,6 +1895,13 @@ ga('send', 'pageview');
               <li>
                 <span>2021-05-24</span>
                 <a href="/63056/">
+                  塞尔达传说：旷野之息
+                </a>
+              </li>
+          
+              <li>
+                <span>2021-05-24</span>
+                <a href="/63057/">
                   塞尔达传说：旷野之息
                 </a>
               </li>
@@ -1894,20 +1929,6 @@ ga('send', 'pageview');
           
               <li>
                 <span>2021-05-24</span>
-                <a href="/63053/">
-                  塞尔达传说：旷野之息
-                </a>
-              </li>
-          
-              <li>
-                <span>2021-05-24</span>
-                <a href="/63061/">
-                  塞尔达传说：旷野之息
-                </a>
-              </li>
-          
-              <li>
-                <span>2021-05-24</span>
                 <a href="/39711/">
                   前进！奇诺比奥队长
                 </a>
@@ -1917,6 +1938,20 @@ ga('send', 'pageview');
                 <span>2021-05-24</span>
                 <a href="/55778/">
                   超级马力欧：3D世界 + 狂怒世界
+                </a>
+              </li>
+          
+              <li>
+                <span>2021-05-24</span>
+                <a href="/63053/">
+                  塞尔达传说：旷野之息
+                </a>
+              </li>
+          
+              <li>
+                <span>2021-05-24</span>
+                <a href="/63061/">
+                  塞尔达传说：旷野之息
                 </a>
               </li>
           
@@ -1966,13 +2001,6 @@ ga('send', 'pageview');
                 <span>2021-05-12</span>
                 <a href="/28360/">
                   八度空间
-                </a>
-              </li>
-          
-              <li>
-                <span>2021-05-12</span>
-                <a href="/23678/">
-                  宝可梦后院
                 </a>
               </li>
           
@@ -2223,6 +2251,20 @@ ga('send', 'pageview');
           
               <li>
                 <span>2020-09-01</span>
+                <a href="/1461/">
+                  集合啦！动物森友会
+                </a>
+              </li>
+          
+              <li>
+                <span>2020-09-01</span>
+                <a href="/1463/">
+                  集合啦！动物森友会
+                </a>
+              </li>
+          
+              <li>
+                <span>2020-09-01</span>
                 <a href="/1465/">
                   集合啦！动物森友会
                 </a>
@@ -2231,13 +2273,6 @@ ga('send', 'pageview');
               <li>
                 <span>2020-09-01</span>
                 <a href="/1464/">
-                  集合啦！动物森友会
-                </a>
-              </li>
-          
-              <li>
-                <span>2020-09-01</span>
-                <a href="/1463/">
                   集合啦！动物森友会
                 </a>
               </li>
@@ -2258,7 +2293,7 @@ ga('send', 'pageview');
           
               <li>
                 <span>2020-09-01</span>
-                <a href="/1461/">
+                <a href="/1458/">
                   集合啦！动物森友会
                 </a>
               </li>
@@ -2266,13 +2301,6 @@ ga('send', 'pageview');
               <li>
                 <span>2020-09-01</span>
                 <a href="/1459/">
-                  集合啦！动物森友会
-                </a>
-              </li>
-          
-              <li>
-                <span>2020-09-01</span>
-                <a href="/1458/">
                   集合啦！动物森友会
                 </a>
               </li>
@@ -2342,48 +2370,6 @@ ga('send', 'pageview');
           
               <li>
                 <span>2020-05-27</span>
-                <a href="/57143/">
-                  ポッ拳 POKKÉN TOURNAMENT DX
-                </a>
-              </li>
-          
-              <li>
-                <span>2020-05-27</span>
-                <a href="/8070/">
-                  超级马力欧：奥德赛
-                </a>
-              </li>
-          
-              <li>
-                <span>2020-05-27</span>
-                <a href="/14090/">
-                  宝可梦：剑
-                </a>
-              </li>
-          
-              <li>
-                <span>2020-05-27</span>
-                <a href="/14089/">
-                  宝可梦：剑
-                </a>
-              </li>
-          
-              <li>
-                <span>2020-05-27</span>
-                <a href="/14088/">
-                  宝可梦：剑
-                </a>
-              </li>
-          
-              <li>
-                <span>2020-05-27</span>
-                <a href="/22234/">
-                  Splatoon 2
-                </a>
-              </li>
-          
-              <li>
-                <span>2020-05-27</span>
                 <a href="/25320/">
                   突击野狼
                 </a>
@@ -2391,15 +2377,15 @@ ga('send', 'pageview');
           
               <li>
                 <span>2020-05-27</span>
-                <a href="/35412/">
-                  穗乃果通常
+                <a href="/28880/">
+                  穗乃果舞台服
                 </a>
               </li>
           
               <li>
                 <span>2020-05-27</span>
-                <a href="/28880/">
-                  穗乃果舞台服
+                <a href="/35412/">
+                  穗乃果通常
                 </a>
               </li>
           
@@ -2447,13 +2433,6 @@ ga('send', 'pageview');
           
               <li>
                 <span>2020-05-27</span>
-                <a href="/45942/">
-                  泽塔奥特曼（alpha-edge ver.）
-                </a>
-              </li>
-          
-              <li>
-                <span>2020-05-27</span>
                 <a href="/20747/">
                   钢铁加鲁鲁
                 </a>
@@ -2463,6 +2442,13 @@ ga('send', 'pageview');
                 <span>2020-05-27</span>
                 <a href="/5330/">
                   战斗暴龙兽
+                </a>
+              </li>
+          
+              <li>
+                <span>2020-05-27</span>
+                <a href="/45942/">
+                  泽塔奥特曼（alpha-edge ver.）
                 </a>
               </li>
           
@@ -2489,15 +2475,15 @@ ga('send', 'pageview');
           
               <li>
                 <span>2020-05-27</span>
-                <a href="/43758/">
-                  HG | 白兵
+                <a href="/14388/">
+                  SHF | 假面骑士Black(2.0 ver.)
                 </a>
               </li>
           
               <li>
                 <span>2020-05-27</span>
-                <a href="/14388/">
-                  SHF | 假面骑士Black(2.0 ver.)
+                <a href="/43758/">
+                  HG | 白兵
                 </a>
               </li>
           
@@ -2512,6 +2498,48 @@ ga('send', 'pageview');
                 <span>2020-05-27</span>
                 <a href="/10595/">
                   Aniplex | 马修·姬列莱特
+                </a>
+              </li>
+          
+              <li>
+                <span>2020-05-27</span>
+                <a href="/8070/">
+                  超级马力欧：奥德赛
+                </a>
+              </li>
+          
+              <li>
+                <span>2020-05-27</span>
+                <a href="/22234/">
+                  Splatoon 2
+                </a>
+              </li>
+          
+              <li>
+                <span>2020-05-27</span>
+                <a href="/57143/">
+                  ポッ拳 POKKÉN TOURNAMENT DX
+                </a>
+              </li>
+          
+              <li>
+                <span>2020-05-27</span>
+                <a href="/14090/">
+                  宝可梦：剑
+                </a>
+              </li>
+          
+              <li>
+                <span>2020-05-27</span>
+                <a href="/14089/">
+                  宝可梦：剑
+                </a>
+              </li>
+          
+              <li>
+                <span>2020-05-27</span>
+                <a href="/14088/">
+                  宝可梦：剑
                 </a>
               </li>
           
@@ -2545,6 +2573,13 @@ ga('send', 'pageview');
           
               <li>
                 <span>2020-04-28</span>
+                <a href="/29254/">
+                  日常随拍 2015 ~ 1998
+                </a>
+              </li>
+          
+              <li>
+                <span>2020-04-28</span>
                 <a href="/40992/">
                   日常随拍2019
                 </a>
@@ -2554,13 +2589,6 @@ ga('send', 'pageview');
                 <span>2020-04-28</span>
                 <a href="/53777/">
                   2016
-                </a>
-              </li>
-          
-              <li>
-                <span>2020-04-28</span>
-                <a href="/29254/">
-                  日常随拍 2015 ~ 1998
                 </a>
               </li>
           
@@ -2659,6 +2687,7 @@ ga('send', 'pageview');
   <div class="book-tocbot"></div>
 
 <div class="bottom">
+  <div id="clock-button"></div>
   <div class="intro">
     <div id="intro_text">...</div>
   </div>
@@ -2697,9 +2726,9 @@ ga('send', 'pageview');
     >
   </div>
   <div class="languages">
-    <span class="inactive">裏站</span>
+    <span id="side-story" data-id="c22lkZVN0b3J5">裏</span>
     <div>|</div>
-    <span>表站</span> 
+    <span>表</span> 
   </div>
 </div>
 

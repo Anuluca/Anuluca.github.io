@@ -81,21 +81,6 @@ ga('send', 'pageview');
       <div class="back-color"></div>
       <div class="star-back"></div>
     </div>
-
-    <!-- <div class="body-color">
-      <div
-        :class="{
-          'body-color': true,
-          dawn: props.theme === 'dawn',
-          light: props.theme === 'light',
-          night: props.ifDarken
-        }"
-      ></div>
-      <div
-        :class="{ 'star-back': true, dawn: props.theme === 'dawn', light: props.theme === 'light' }"
-      ></div>
-    </div> -->
-
     <div class="book-container">
       <div class="book-sidebar">
         <div class="book-brand">
@@ -184,12 +169,12 @@ ga('send', 'pageview');
 <span id="more"></span>
 <ul>
 <li><a href="/23761"><img src="http://cdn.anuluca.com/other/fPz6u6.png" class="l_logo"> 游戏档案馆</a></li>
-<li><a href="/23678"><img src="http://cdn.anuluca.com/other/fipf1A.png" class="l_logo"> 宝可梦后院</a></li>
+<li><a href="/pokemon"><img src="http://cdn.anuluca.com/other/fipf1A.png" class="l_logo"> 宝可梦后院</a></li>
 </ul>
 <h1 id="img-src-http-cdn-anuluca-com-other-fi98gA-png-class-l-logo-杂物室"><a href=""><img src="http://cdn.anuluca.com/other/fi98gA.png" class="l_logo"> 杂物室</a></h1>
 <h2 id="文章">文章</h2>
 <ul>
-<li><a href="/58027">已弃坑的新版个人网站</a></li>
+<li><a href="/58027">弃坑的新版个人网站</a></li>
 <li><a href="/2285">庭院岛历史</a></li>
 <li><a href="/48446">2020不正确记忆</a></li>
 <li><a href="/41678">Markdown Demo</a></li>
@@ -241,6 +226,13 @@ ga('send', 'pageview');
               onclick="changeTheme('ghosttrick')"
             >
               西塞尔
+            </div>
+            <!-- dedsec -->
+            <div
+              style="background-image: url('http://cdn.anuluca.com/other/dedsec.webp');background-size: cover;"
+              onclick="changeTheme('dedsec')"
+            >
+              Dedsec
             </div>
             <!-- 朱紫 -->
             <div
@@ -294,6 +286,14 @@ ga('send', 'pageview');
           </div>
         </div>
       </div>
+      <!-- 提前加载图片资源 -->
+      <img class="img-hide" src="http://cdn.anuluca.com/other/p5_back.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/sv_back3.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/sv_back4.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/ghosttrick_back.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/pokemon_back.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/sleep_back.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/dedsec_back.jpg" alt="">
       <!-- <div class="backlogo" onClick="toOldSite()">FLASHBACK</div> -->
 
       <div
@@ -621,6 +621,7 @@ ga('send', 'pageview');
   <div class="book-tocbot"></div>
 
 <div class="bottom">
+  <div id="clock-button"></div>
   <div class="intro">
     <div id="intro_text">...</div>
   </div>
@@ -659,9 +660,9 @@ ga('send', 'pageview');
     >
   </div>
   <div class="languages">
-    <span class="inactive">裏站</span>
+    <span id="side-story" data-id="c22lkZVN0b3J5">裏</span>
     <div>|</div>
-    <span>表站</span> 
+    <span>表</span> 
   </div>
 </div>
 

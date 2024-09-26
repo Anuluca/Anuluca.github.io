@@ -81,21 +81,6 @@ ga('send', 'pageview');
       <div class="back-color"></div>
       <div class="star-back"></div>
     </div>
-
-    <!-- <div class="body-color">
-      <div
-        :class="{
-          'body-color': true,
-          dawn: props.theme === 'dawn',
-          light: props.theme === 'light',
-          night: props.ifDarken
-        }"
-      ></div>
-      <div
-        :class="{ 'star-back': true, dawn: props.theme === 'dawn', light: props.theme === 'light' }"
-      ></div>
-    </div> -->
-
     <div class="book-container">
       <div class="book-sidebar">
         <div class="book-brand">
@@ -184,12 +169,12 @@ ga('send', 'pageview');
 <span id="more"></span>
 <ul>
 <li><a href="/23761"><img src="http://cdn.anuluca.com/other/fPz6u6.png" class="l_logo"> 游戏档案馆</a></li>
-<li><a href="/23678"><img src="http://cdn.anuluca.com/other/fipf1A.png" class="l_logo"> 宝可梦后院</a></li>
+<li><a href="/pokemon"><img src="http://cdn.anuluca.com/other/fipf1A.png" class="l_logo"> 宝可梦后院</a></li>
 </ul>
 <h1 id="img-src-http-cdn-anuluca-com-other-fi98gA-png-class-l-logo-杂物室"><a href=""><img src="http://cdn.anuluca.com/other/fi98gA.png" class="l_logo"> 杂物室</a></h1>
 <h2 id="文章">文章</h2>
 <ul>
-<li><a href="/58027">已弃坑的新版个人网站</a></li>
+<li><a href="/58027">弃坑的新版个人网站</a></li>
 <li><a href="/2285">庭院岛历史</a></li>
 <li><a href="/48446">2020不正确记忆</a></li>
 <li><a href="/41678">Markdown Demo</a></li>
@@ -241,6 +226,13 @@ ga('send', 'pageview');
               onclick="changeTheme('ghosttrick')"
             >
               西塞尔
+            </div>
+            <!-- dedsec -->
+            <div
+              style="background-image: url('http://cdn.anuluca.com/other/dedsec.webp');background-size: cover;"
+              onclick="changeTheme('dedsec')"
+            >
+              Dedsec
             </div>
             <!-- 朱紫 -->
             <div
@@ -294,6 +286,14 @@ ga('send', 'pageview');
           </div>
         </div>
       </div>
+      <!-- 提前加载图片资源 -->
+      <img class="img-hide" src="http://cdn.anuluca.com/other/p5_back.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/sv_back3.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/sv_back4.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/ghosttrick_back.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/pokemon_back.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/sleep_back.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/dedsec_back.jpg" alt="">
       <!-- <div class="backlogo" onClick="toOldSite()">FLASHBACK</div> -->
 
       <div
@@ -440,97 +440,13 @@ ga('send', 'pageview');
 
   
       <div class="years">
-          <h2>2024</h2>
-          <ul class="archive-list-item">
-          
-              <li>
-                <span>2024-08-22</span>
-                <a href="/24848/">
-                  HTTP相关知识点
-                </a>
-              </li>
-          
-              <li>
-                <span>2024-08-22</span>
-                <a href="/59364/">
-                  browserHistory和hashHistory的区别
-                </a>
-              </li>
-          
-              <li>
-                <span>2024-08-22</span>
-                <a href="/28864/">
-                  vue3Setup项目中如何阻止使用浏览器返回键
-                </a>
-              </li>
-          
-              <li>
-                <span>2024-08-21</span>
-                <a href="/29512/">
-                  如何在js中使用class
-                </a>
-              </li>
-          
-              <li>
-                <span>2024-08-14</span>
-                <a href="/10110/">
-                  Promise的全部用法
-                </a>
-              </li>
-          
-              <li>
-                <span>2024-08-14</span>
-                <a href="/30293/">
-                  数组内对象去重
-                </a>
-              </li>
-          
-          </ul>
-      </div>
-  
-      <div class="years">
-          <h2>2023</h2>
-          <ul class="archive-list-item">
-          
-              <li>
-                <span>2023-05-29</span>
-                <a href="/54307/">
-                  el-table配合sortablejs实现拖拽
-                </a>
-              </li>
-          
-              <li>
-                <span>2023-05-29</span>
-                <a href="/60132/">
-                  常用utils整合
-                </a>
-              </li>
-          
-          </ul>
-      </div>
-  
-      <div class="years">
-          <h2>2022</h2>
-          <ul class="archive-list-item">
-          
-              <li>
-                <span>2022-03-31</span>
-                <a href="/9271/">
-                  处理blob文件下载抛出json格式异常的问题
-                </a>
-              </li>
-          
-          </ul>
-      </div>
-  
-      <div class="years">
           <h2>2021</h2>
           <ul class="archive-list-item">
           
               <li>
-                <span>2021-07-13</span>
-                <a href="/21732/">
-                  原生js实现简易瀑布流
+                <span>2021-01-25</span>
+                <a href="/20181/">
+                  axios完整接口调用顺序
                 </a>
               </li>
           
@@ -538,10 +454,6 @@ ga('send', 'pageview');
       </div>
   
 
-  
-    <nav class="pager">
-        <span class="page-number current">1</span><a class="page-number" href="/tags/JS/page/2/">2</a><a class="page-number" href="/tags/JS/page/3/">3</a><a class="extend next" rel="next" href="/tags/JS/page/2/">Next</a>
-    </nav>
   
 </div></div>
           </div>
@@ -577,6 +489,7 @@ ga('send', 'pageview');
   <div class="book-tocbot"></div>
 
 <div class="bottom">
+  <div id="clock-button"></div>
   <div class="intro">
     <div id="intro_text">...</div>
   </div>
@@ -615,9 +528,120 @@ ga('send', 'pageview');
     >
   </div>
   <div class="languages">
-    <span class="inactive">裏站</span>
+    <span id="side-story" data-id="c22lkZVN0b3J5">裏</span>
     <div>|</div>
-    <span>表站</span> 
+    <span>表</span> 
+  </div>
+</div>
+
+<script src="/js/book-toc.js"></script>
+
+
+</div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="down-line-zhanwei"></div>
+  <div class="down-line"></div> -->
+      <a class="off-canvas-overlay" onclick="hide_canvas()"></a>
+    </div>
+    <div class="bottomline"></div>
+    <script src="/js/nprogress.js"></script>
+    <link rel="stylesheet" href="/css/nprogress.css" />
+    <script src="/js/custom.js"></script>
+    <div class="clipboard_success">&nbsp;&nbsp;复制成功！</div>
+
+    <!-- 切换主题的动画效果 -->
+    <!-- <div class="change_theme_animes">
+      <div
+        id="cantSeeAnything_white"
+        style="
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: white;
+          z-index: 999;
+          opacity: 0;
+          display: none;
+        "
+      ></div>
+      <div
+        id="cantSeeAnything_black"
+        style="
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: black;
+          z-index: 999;
+          opacity: 0;
+          display: none;
+        "
+      ></div>
+      <img
+        id="nike_shine"
+        src="/necrozma_shine.PNG"
+        style="
+          position: fixed;
+          z-index: 998;
+          bottom: -400px;
+          margin: 0 auto;
+          width: 400px;
+          left: calc(50% - 200px);
+        "
+      />
+      <img
+        id="nike_dark"
+        src="/necrozma_dark.PNG"
+        style="
+          position: fixed;
+          z-index: 998;
+          bottom: -400px;
+          margin: 0 auto;
+          width: 400px;
+          left: calc(50% - 200px);
+        "
+      />
+      <img
+        id="shine"
+        src="/tempshine.png"
+        style="
+          position: fixed;
+          z-index: 997;
+          bottom: -100px;
+          margin: 0 auto;
+          width: 100px;
+          height: 100px;
+          left: calc(50% - 50px);
+          opacity: 0;
+        "
+      />
+      <img
+        id="absorb"
+        src="/tempshine.png"
+        style="
+          position: fixed;
+          z-index: 997;
+          bottom: -100vh;
+          margin: 0 auto;
+          width: 100vw;
+          height: 100vh;
+          opacity: 0;
+        "
+      />
+    </div> -->
+  </body>
+</html>
+
+
+<script src="/js/book.js"></script>
+
+N0b3J5">裏</span>
+    <div>|</div>
+    <span>表</span> 
   </div>
 </div>
 

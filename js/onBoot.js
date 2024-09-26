@@ -4,9 +4,9 @@ function toOldSite() {
   window.location.href = "/1840";
 }
 
-if(location.protocol!=='http:'){
-  window.location.href = "http://www.anuluca.com"+location.pathname;
-}
+// if(location.protocol!=='http:'){
+//   window.location.href = "http://www.anuluca.com"+location.pathname;
+// }
 
 if(location.pathname!=='/temp/'){
   window.location.href = "/temp";

@@ -16,7 +16,7 @@
   
 
   <title>
-     宝可梦后院 - 路卡的自由庭院岛 
+     宝可梦 心金 - 路卡的自由庭院岛 
   </title>
 
   <!-- jq -->
@@ -81,21 +81,6 @@ ga('send', 'pageview');
       <div class="back-color"></div>
       <div class="star-back"></div>
     </div>
-
-    <!-- <div class="body-color">
-      <div
-        :class="{
-          'body-color': true,
-          dawn: props.theme === 'dawn',
-          light: props.theme === 'light',
-          night: props.ifDarken
-        }"
-      ></div>
-      <div
-        :class="{ 'star-back': true, dawn: props.theme === 'dawn', light: props.theme === 'light' }"
-      ></div>
-    </div> -->
-
     <div class="book-container">
       <div class="book-sidebar">
         <div class="book-brand">
@@ -184,12 +169,12 @@ ga('send', 'pageview');
 <span id="more"></span>
 <ul>
 <li><a href="/23761"><img src="http://cdn.anuluca.com/other/fPz6u6.png" class="l_logo"> 游戏档案馆</a></li>
-<li><a href="/23678"><img src="http://cdn.anuluca.com/other/fipf1A.png" class="l_logo"> 宝可梦后院</a></li>
+<li><a href="/pokemon"><img src="http://cdn.anuluca.com/other/fipf1A.png" class="l_logo"> 宝可梦后院</a></li>
 </ul>
 <h1 id="img-src-http-cdn-anuluca-com-other-fi98gA-png-class-l-logo-杂物室"><a href=""><img src="http://cdn.anuluca.com/other/fi98gA.png" class="l_logo"> 杂物室</a></h1>
 <h2 id="文章">文章</h2>
 <ul>
-<li><a href="/58027">已弃坑的新版个人网站</a></li>
+<li><a href="/58027">弃坑的新版个人网站</a></li>
 <li><a href="/2285">庭院岛历史</a></li>
 <li><a href="/48446">2020不正确记忆</a></li>
 <li><a href="/41678">Markdown Demo</a></li>
@@ -241,6 +226,13 @@ ga('send', 'pageview');
               onclick="changeTheme('ghosttrick')"
             >
               西塞尔
+            </div>
+            <!-- dedsec -->
+            <div
+              style="background-image: url('http://cdn.anuluca.com/other/dedsec.webp');background-size: cover;"
+              onclick="changeTheme('dedsec')"
+            >
+              Dedsec
             </div>
             <!-- 朱紫 -->
             <div
@@ -294,6 +286,14 @@ ga('send', 'pageview');
           </div>
         </div>
       </div>
+      <!-- 提前加载图片资源 -->
+      <img class="img-hide" src="http://cdn.anuluca.com/other/p5_back.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/sv_back3.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/sv_back4.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/ghosttrick_back.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/pokemon_back.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/sleep_back.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/dedsec_back.jpg" alt="">
       <!-- <div class="backlogo" onClick="toOldSite()">FLASHBACK</div> -->
 
       <div
@@ -428,7 +428,7 @@ ga('send', 'pageview');
 </header>
 </div>
             <div class="book-content"><div class="book-post">
-  <h1 id="⬅︎-宝可梦后院-「宝可梦-心金」游戏记录"><a href="/23678">⬅︎ 宝可梦后院</a> /「宝可梦 心金」游戏记录</h1>
+  <h1 id="⬅︎-宝可梦后院-「宝可梦-心金」游戏记录"><a href="/pokemon">⬅︎ 宝可梦后院</a> /「宝可梦 心金」游戏记录</h1>
 <style>
     .book-post h3 {
         font-size: 1rem;
@@ -440,11 +440,23 @@ ga('send', 'pageview');
 <tr><td colspan="2" class="ppp"  style='background-image:url("http://cdn.anuluca.com/MyPokemonDaily/icons/宝可梦_心金_商标_日文.png")'>
     <img src="http://cdn.anuluca.com/MyPokemonDaily/cards/hg.png">
     <div class="pokemon-pixel ">
-        <span><b>名字：</b>Luca <b class="boy">♂︎</b></span><span><b>冒险时间：</b>77:37</span>
-        <span><b>数据更新日期：</b>2024-3-29</span>
+        <span>名字：<b>Luca </b></span>
+        <b class="boy">♂︎</b>
+        <span>ID：<b>59005 </b></span>
+        <span>游戏时间：<b>77:37</b></span>
+        <span>开始日期：<b>2020-07-18</b></span>
+        <span>数据更新日期：<b>2024-09-25</b></span>
     </div>
 </td></tr>
 </table>
+<div class="pokemon-controller">
+    <div onclick="slideTo(0)" style="background-image:url('http://cdn.anuluca.com/MyPokemonDaily/Partners/160 2.3.png')"><span>あB</span></div>
+    <div onclick="slideTo(1)" style="background-image:url('http://cdn.anuluca.com/MyPokemonDaily/Partners/162 1.8.png')"><span>あJ</span></div>
+    <div onclick="slideTo(2)" style="background-image:url('http://cdn.anuluca.com/MyPokemonDaily/Partners/169 1.8（2）.png')"><span>あX</span></div>
+    <div onclick="slideTo(3)" style="background-image:url('http://cdn.anuluca.com/MyPokemonDaily/Partners/181 1.4.png')"><span>あM</span></div>
+    <div onclick="slideTo(4)" style="background-image:url('http://cdn.anuluca.com/MyPokemonDaily/Partners/059 1.9.png')"><span>あQ</span></div>
+    <div onclick="slideTo(5)" style="background-image:url('http://cdn.anuluca.com/MyPokemonDaily/Partners/473 2.5.png')"><span>あT</span></div>
+</div>
 <div 
     class="pokemon-swiper-container" 
     style="background-image: url('http://cdn.anuluca.com/MyPokemonDaily/detail/心金_背景.jpg');">
@@ -491,8 +503,10 @@ ga('send', 'pageview');
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> 
 <script>
-new Swiper(".pokemon-swiper-container", {
-  autoplay: true, //自动滑动
+let mySwiper = new Swiper(".pokemon-swiper-container", {
+  autoplay: {
+    delay: 4000,
+  },
   loop: false, // 循环模式选项
   parallax: false,
   speed: 400,
@@ -505,8 +519,10 @@ new Swiper(".pokemon-swiper-container", {
     prevEl: ".swiper-button-prev",
   },
 });
+function slideTo(index){
+    mySwiper.slideTo(index);
+}
 </script>
-
   <a onclick="go_top()"
     ><div class="to_top"><div class="to-top-triangle"></div></div
   ></a>
@@ -630,7 +646,7 @@ new Swiper(".pokemon-swiper-container", {
     <!-- Author title -->
     <div class="author-title">
       <div>Anuluca</div>
-      <div style="font-family: 等线">Update:2024-03-29</div>
+      <div style="font-family: 等线">Update:2024-09-25</div>
     </div>
   </div>
 
@@ -643,6 +659,7 @@ new Swiper(".pokemon-swiper-container", {
   <div class="book-tocbot"></div>
 
 <div class="bottom">
+  <div id="clock-button"></div>
   <div class="intro">
     <div id="intro_text">...</div>
   </div>
@@ -681,9 +698,9 @@ new Swiper(".pokemon-swiper-container", {
     >
   </div>
   <div class="languages">
-    <span class="inactive">裏站</span>
+    <span id="side-story" data-id="c22lkZVN0b3J5">裏</span>
     <div>|</div>
-    <span>表站</span> 
+    <span>表</span> 
   </div>
 </div>
 

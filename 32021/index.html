@@ -16,7 +16,7 @@
   
 
   <title>
-     宝可梦后院 - 路卡的自由庭院岛 
+     宝可梦 X - 路卡的自由庭院岛 
   </title>
 
   <!-- jq -->
@@ -81,21 +81,6 @@ ga('send', 'pageview');
       <div class="back-color"></div>
       <div class="star-back"></div>
     </div>
-
-    <!-- <div class="body-color">
-      <div
-        :class="{
-          'body-color': true,
-          dawn: props.theme === 'dawn',
-          light: props.theme === 'light',
-          night: props.ifDarken
-        }"
-      ></div>
-      <div
-        :class="{ 'star-back': true, dawn: props.theme === 'dawn', light: props.theme === 'light' }"
-      ></div>
-    </div> -->
-
     <div class="book-container">
       <div class="book-sidebar">
         <div class="book-brand">
@@ -184,12 +169,12 @@ ga('send', 'pageview');
 <span id="more"></span>
 <ul>
 <li><a href="/23761"><img src="http://cdn.anuluca.com/other/fPz6u6.png" class="l_logo"> 游戏档案馆</a></li>
-<li><a href="/23678"><img src="http://cdn.anuluca.com/other/fipf1A.png" class="l_logo"> 宝可梦后院</a></li>
+<li><a href="/pokemon"><img src="http://cdn.anuluca.com/other/fipf1A.png" class="l_logo"> 宝可梦后院</a></li>
 </ul>
 <h1 id="img-src-http-cdn-anuluca-com-other-fi98gA-png-class-l-logo-杂物室"><a href=""><img src="http://cdn.anuluca.com/other/fi98gA.png" class="l_logo"> 杂物室</a></h1>
 <h2 id="文章">文章</h2>
 <ul>
-<li><a href="/58027">已弃坑的新版个人网站</a></li>
+<li><a href="/58027">弃坑的新版个人网站</a></li>
 <li><a href="/2285">庭院岛历史</a></li>
 <li><a href="/48446">2020不正确记忆</a></li>
 <li><a href="/41678">Markdown Demo</a></li>
@@ -241,6 +226,13 @@ ga('send', 'pageview');
               onclick="changeTheme('ghosttrick')"
             >
               西塞尔
+            </div>
+            <!-- dedsec -->
+            <div
+              style="background-image: url('http://cdn.anuluca.com/other/dedsec.webp');background-size: cover;"
+              onclick="changeTheme('dedsec')"
+            >
+              Dedsec
             </div>
             <!-- 朱紫 -->
             <div
@@ -294,6 +286,14 @@ ga('send', 'pageview');
           </div>
         </div>
       </div>
+      <!-- 提前加载图片资源 -->
+      <img class="img-hide" src="http://cdn.anuluca.com/other/p5_back.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/sv_back3.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/sv_back4.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/ghosttrick_back.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/pokemon_back.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/sleep_back.jpg" alt="">
+      <img class="img-hide" src="http://cdn.anuluca.com/other/dedsec_back.jpg" alt="">
       <!-- <div class="backlogo" onClick="toOldSite()">FLASHBACK</div> -->
 
       <div
@@ -428,218 +428,70 @@ ga('send', 'pageview');
 </header>
 </div>
             <div class="book-content"><div class="book-post">
-  <h1 id="⬅︎-宝可梦后院-「宝可梦-X」游戏记录"><a href="/23678">⬅︎ 宝可梦后院</a> /「宝可梦 X」游戏记录</h1>
-<style>
-    .book-post h3 {
-        font-size: 1rem;
-        background-color: black;
-        padding: 10px;
-    }
-</style>
+  <h1 id="⬅︎-宝可梦后院-「宝可梦-X」游戏记录"><a href="/pokemon">⬅︎ 宝可梦后院</a> /「宝可梦 X」游戏记录</h1>
 <table class="poke-gen">
 <tr><td colspan="2" class="ppp" style='background-image:url("http://cdn.anuluca.com/MyPokemonDaily/icons/宝可梦_Ｘ_商标_日文.png")'>
     <img src="http://cdn.anuluca.com/MyPokemonDaily/cards/Trainer_Card_XY_Gree2n.png">
-    <div class="pokemon-pixel ">
-        <span><b>名字：</b>finalé <b class="girl">♀</b></span><span><b>冒险时间：</b>42:39 时</span>
-        <img src="http://cdn.anuluca.com/MyPokemonDaily/smallImg/an0wl-zrwdh.png">
-        <img src="http://cdn.anuluca.com/MyPokemonDaily/smallImg/a6qpd-k7fso.png">
-        <img src="http://cdn.anuluca.com/MyPokemonDaily/smallImg/448MS8.png">
-        <img src="http://cdn.anuluca.com/MyPokemonDaily/smallImg/asneq-62xm8.png">
-        <img src="http://cdn.anuluca.com/MyPokemonDaily/smallImg/amcld-nuwjv.png">
-        <img src="http://cdn.anuluca.com/MyPokemonDaily/smallImg/ajifa-xtcxd.png">
-        <img src="http://cdn.anuluca.com/MyPokemonDaily/smallImg/akh9t-plevp.png">
-        <span><b>数据更新日期：</b>2022-2-11</span>
+    <div class="pokemon-pixel ">  
+        <span>名字：<b>finalé </b></span>
+        <b class="girl">♀</b>
+        <span>ID：<b>45689 </b></span>
+        <span>游戏时间：<b>42:39</b></span>
+        <span>开始日期：<b>2020-1-18</b></span>
+        <span>数据更新日期：<b>2024-9-25</b></span>
+    </div>
     </div>
 </td></tr>
-<tr>
-    <td class="pokemon-td">
-        <img src="http://cdn.anuluca.com/MyPokemonDaily/Partners/Spr_6x_655.png" class="po-i">
-        <div class="pokemon-name"><b>Igni</b><span>（妖火红狐<span class="girl">♀</span>）</span></div>
-        <div class="pokemon-back" style="background-image: url('http://cdn.anuluca.com/MyPokemonDaily/bigImg/600px-655Delphox.png');right: -4%;
-">
+</table>
+<div class="pokemon-controller">
+    <div onclick="slideTo(0)" style="background-image:url('http://cdn.anuluca.com/MyPokemonDaily/Partners/Spr_6x_655.png')"><span>Igni</span></div>
+    <div onclick="slideTo(1)" style="background-image:url('http://cdn.anuluca.com/MyPokemonDaily/Partners/009 1.6.png')"><span>Hape</span></div>
+    <div onclick="slideTo(2)" style="background-image:url('http://cdn.anuluca.com/MyPokemonDaily/Partners/Spr_6x_448M.png')"><span>Luca</span></div>
+    <div onclick="slideTo(3)" style="background-image:url('http://cdn.anuluca.com/MyPokemonDaily/Partners/Spr_6x_359M.png')"><span>Abso</span></div>
+    <div onclick="slideTo(4)" style="background-image:url('http://cdn.anuluca.com/MyPokemonDaily/Partners/666 1.2.png')"><span>Homu</span></div>
+    <div onclick="slideTo(5)" style="background-image:url('http://cdn.anuluca.com/MyPokemonDaily/Partners/Spr_6x_142M.png')"><span>Aero</span></div>
+    <div onclick="slideTo(5)" style="background-image:url('http://cdn.anuluca.com/MyPokemonDaily/Partners/678 0.6.png')"><span>Meowstic</span></div>
+</div>
+<div 
+    class="pokemon-swiper-container" 
+    style="background-image: url('http://cdn.anuluca.com/MyPokemonDaily/detail/x_背景.jpg');">
+    <div class="swiper-wrapper">
+        <!-- 0-------------------- -->
+        <div class="swiper-slide" 
+            style="background-image: url('http://cdn.anuluca.com/MyPokemonDaily/detail/x_妖火红狐.png')">
         </div>
-        <div class="pokemon-ball" style="background-image:url('http://cdn.anuluca.com/MyPokemonDaily/balls/精灵球.png')"></div>
-    </td>
-    <td class="pokemon-move-td">
-        <div class="pokemon-base"><div>
-                <div class="pokemon-type"><div class="level">Lv.75</div><div class="type t-fire">火</div><div class="type t-psycho">超能力</div></div>
-                <div class="pokemon-line1"><span><b>初训家：</b>finalé</span><span><b>特性：</b>猛火</span></div>
-                <div class="pokemon-line1"><span><b>性格：</b>乐天</span><span>224/144/137/190/150/203</span></div>
-                <div class="pokemon-line1"><span><b>2020年1月18日，在名水镇遇见了当时Lv.5的火狐狸。</b></span></div>
-                <div class="pokemon-line1" style="margin-top: -4px;margin-left:-10px">
-                    <img src="http://cdn.anuluca.com/MyPokemonDaily/smallImg/ask6q-vdswj.png">➜
-                    <img src="http://cdn.anuluca.com/MyPokemonDaily/smallImg/aiapo-gsb6w.png">➜
-                    <img src="http://cdn.anuluca.com/MyPokemonDaily/smallImg/an0wl-zrwdh.png">
-                </div>
-        </div></div>
-        <div class="pokemon-move">
-            <div class="move t-psycho">精神强念</div>
-            <div class="move t-fire">喷射火焰</div>
-            <div class="move t-grass">打草结</div>
-            <div class="move t-normal">居合劈</div>
+        <!-- 1-------------------- -->
+        <div class="swiper-slide" 
+            style="background-image: url('http://cdn.anuluca.com/MyPokemonDaily/detail/x_水箭龟.png')">
         </div>
-    </td>
-</tr>
-<tr>
-    <td class="pokemon-td">
-        <img src="http://cdn.anuluca.com/MyPokemonDaily/Partners/009 1.6.png" class="po-i">
-        <div class="pokemon-name"><b>Hape</b><span>（水箭龟<span class="girl">♀</span>）</span></div>
-        <div class="pokemon-back" style="background-image: url('http://cdn.anuluca.com/MyPokemonDaily/bigImg/600px-009Blastoise-Mega.png');top: -26%;right: -1%;">
+        <!-- 2-------------------- -->
+        <div class="swiper-slide" 
+            style="background-image: url('http://cdn.anuluca.com/MyPokemonDaily/detail/x_路卡利欧.png')">
         </div>
-        <div class="pokemon-ball" style="background-image:url('http://cdn.anuluca.com/MyPokemonDaily/balls/精灵球.png')"></div>
-    </td>
-    <td class="pokemon-move-td">
-        <div class="pokemon-base"><div>
-                <div class="pokemon-type"><div class="level">Lv.75</div><div class="type t-water">水</div></div>
-                <div class="pokemon-line1"><span><b>初训家：</b>finalé</span><span><b>特性：</b>激流</span></div>
-                <div class="pokemon-line1"><span><b>性格：</b>乐天</span><span>225/171/183/148/165/163</span></div>
-                <div class="pokemon-line1"><span><b>2020年1月21日，在密阿雷市遇见了当时Lv.5的杰尼龟。</b></span></div>
-                <div class="pokemon-line1" style="margin-top: -4px;margin-left:-10px">
-                    <img src="http://cdn.anuluca.com/MyPokemonDaily/smallImg/ak99b-dnpgv.png">➜
-                    <img src="http://cdn.anuluca.com/MyPokemonDaily/smallImg/ak99b-dnpgv.png">➜
-                    <img src="http://cdn.anuluca.com/MyPokemonDaily/smallImg/ak99b-dnpgv.png">
-                </div>
-        </div></div>
-        <div class="pokemon-move">
-            <div class="move t-ground">地震</div>
-            <div class="move t-water">攀瀑</div>
-            <div class="move t-water">冲浪</div>
-            <div class="move t-ice">冰冻光束</div>
+        <!-- 3-------------------- -->
+        <div class="swiper-slide" 
+            style="background-image: url('http://cdn.anuluca.com/MyPokemonDaily/detail/x_阿勃梭鲁.png')">
         </div>
-    </td>
-</tr>
-<tr>
-    <td class="pokemon-td">
-        <img src="http://cdn.anuluca.com/MyPokemonDaily/Partners/Spr_6x_448M.png" class="po-i">
-        <div class="pokemon-name"><b>Luca</b><span>（路卡利欧<span class="boy">♂︎</span>）</span></div>
-        <div class="pokemon-back" style="background-image: url('http://cdn.anuluca.com/MyPokemonDaily/bigImg/300px-448Lucario-Mega.webp');">
+        <!-- 4-------------------- -->
+        <div class="swiper-slide" 
+            style="background-image: url('http://cdn.anuluca.com/MyPokemonDaily/detail/x_彩粉蝶.png')">
         </div>
-        <div class="pokemon-ball" style="background-image:url('http://cdn.anuluca.com/MyPokemonDaily/balls/精灵球.png')"></div>
-    </td>
-    <td class="pokemon-move-td">
-        <!-- <div class="pokemon-base"><div>
-                <div class="pokemon-type"><div class="level">Lv.53</div><div class="type t-water">水</div><div class="type t-fly">飞行</div></div>
-                <div class="pokemon-line1"><span><b>初训家：</b>finalé</span><span><b>特性：</b>/</span></div>
-                <div class="pokemon-line1"><span><b>性格：</b>/</span><span>191/170/120/140/126/</span></div>
-                <div class="pokemon-line1"><span><b>2021年10月9日，在宝可梦中心遇见了当时lv.5的鲤鱼王。</b></span></div>
-                <div class="pokemon-line1"><b>当前所在版本：<span class="red-text">红（Virtual Console）</span></b></div>
-                <div class="pokemon-line1"><span><b>之后前往了北上乡、生态巨蛋继续旅行</b></span></div>
-                <div class="pokemon-line1" style="margin-top: -4px;margin-left:-10px">
-                    <img src="http://cdn.anuluca.com/MyPokemonDaily/smallImg/">
-                </div>
-        </div></div>
-        <div class="pokemon-move">
-            <div class="move t-water">冲浪</div>
-            <div class="move t-fire">大字爆炎</div>
-            <div class="move t-ice">冷冻光束</div>
-            <div class="move t-normal">咬住</div>
-        </div> -->
-    </td>
-</tr>
-<tr>
-    <td class="pokemon-td">
-        <img src="http://cdn.anuluca.com/MyPokemonDaily/Partners/Spr_6x_359M.png" class="po-i">
-        <div class="pokemon-name"><b>Abso</b><span>（阿勃梭鲁<span class="boy">♂︎</span>）</span></div>
-        <div class="pokemon-back" style="background-image: url('http://cdn.anuluca.com/MyPokemonDaily/bigImg/600px-359Absol-Mega.png');right: -7%;">
+        <!-- 5-------------------- -->
+        <div class="swiper-slide" 
+            style="background-image: url('http://cdn.anuluca.com/MyPokemonDaily/detail/x_化石翼龙.png')">
         </div>
-        <div class="pokemon-ball" style="background-image:url('http://cdn.anuluca.com/MyPokemonDaily/balls/纪念球.png')"></div>
-    </td>
-    <td class="pokemon-move-td">
-        <div class="pokemon-base"><div>
-                <div class="pokemon-type"><div class="level">Lv.72</div><div class="type t-dark">恶</div></div>
-                <div class="pokemon-line1"><span><b>初训家：</b>finalé</span><span><b>特性：</b>压迫感</span></div>
-                <div class="pokemon-line1"><span><b>性格：</b>固执</span><span>198/245/103/134/106/152</span></div>
-                <div class="pokemon-line1"><span><b>2020年1月24日，在8号道路遇到了它。</b></span></div>
-                <div class="pokemon-line1" style="margin-top: -4px;margin-left:-10px">
-                    <img src="http://cdn.anuluca.com/MyPokemonDaily/smallImg/">
-                </div>
-        </div></div>
-        <div class="pokemon-move">
-            <div class="move t-dark">暗袭要害</div>
-            <div class="move t-fight">碎岩</div>
-            <div class="move t-psycho">精神利刃</div>
-            <div class="move t-normal">怪力</div>
+        <!-- 6-------------------- -->
+        <div class="swiper-slide" 
+            style="background-image: url('http://cdn.anuluca.com/MyPokemonDaily/detail/x_超能妙喵.png')">
         </div>
-    </td>
-</tr>
-<tr>
-    <td class="pokemon-td">
-        <img src="http://cdn.anuluca.com/MyPokemonDaily/Partners/666 1.2.png" class="po-i">
-        <div class="pokemon-name"><b>Homu</b><span>（彩粉蝶<span class="boy">♂︎</span>）</span></div>
-        <div class="pokemon-back" style="background-image: url('http://cdn.anuluca.com/MyPokemonDaily/bigImg/666Vivillon_Elegant_Dream.png');top: -53%;right: -4%;">
-        </div>
-        <div class="pokemon-ball" style="background-image:url('http://cdn.anuluca.com/MyPokemonDaily/balls/精灵球.png')"></div>
-    </td>
-    <td class="pokemon-move-td">
-        <div class="pokemon-base"><div>
-                <div class="pokemon-type"><div class="level">Lv.72</div><div class="type t-bug">虫</div><div class="type t-fly">飞行</div></div>
-                <div class="pokemon-line1"><span><b>初训家：</b>finalé</span><span><b>特性：</b>鳞粉</span></div>
-                <div class="pokemon-line1"><span><b>性格：</b>急躁</span><span>223/124/86/151/86/185</span></div>
-                <div class="pokemon-line1"><span><b>2020年1月18日，在2号道路遇到了它。</b></span></div>
-                <div class="pokemon-line1" style="margin-top: -4px;margin-left:-10px">
-                    <img src="http://cdn.anuluca.com/MyPokemonDaily/smallImg/">
-                </div>
-        </div></div>
-        <div class="pokemon-move">
-            <div class="move t-grass">能量球</div>
-            <div class="move t-fly">暴风</div>
-            <div class="move t-bug">虫鸣</div>
-            <div class="move t-bug">蝶舞</div>
-        </div>
-    </td>
-</tr>
-<tr>
-    <td class="pokemon-td">
-        <img src="http://cdn.anuluca.com/MyPokemonDaily/Partners/Spr_6x_142M.png" class="po-i">
-        <div class="pokemon-name"><b>Aero</b><span>（化石翼龙<span class="boy">♂︎</span>）</span></div>
-        <div class="pokemon-back" style="background-image: url('http://cdn.anuluca.com/MyPokemonDaily/bigImg/600px-142Aerodactyl-Mega.png');   top: -41%;right: -7%;">
-        </div>
-        <div class="pokemon-ball" style="background-image:url('http://cdn.anuluca.com/MyPokemonDaily/balls/精灵球.png')"></div>
-    </td>
-    <td class="pokemon-move-td">
-        <div class="pokemon-base"><div>
-                <div class="pokemon-type"><div class="level">Lv.69</div><div class="type t-rock">岩石</div><div class="type t-fly">飞行</div></div>
-                <div class="pokemon-line1"><span><b>初训家：</b>finalé</span><span><b>特性：</b>坚硬脑袋</span></div>
-                <div class="pokemon-line1"><span><b>性格：</b>怕寂寞</span><span>214/198/94/117/116/212</span></div>
-                <div class="pokemon-line1"><span><b>2020年1月24日，在古香镇遇到了它。</b></span></div>
-                <div class="pokemon-line1" style="margin-top: -4px;margin-left:-10px">
-                    <img src="http://cdn.anuluca.com/MyPokemonDaily/smallImg/">
-                </div>
-        </div></div>
-        <div class="pokemon-move">
-            <div class="move t-ground">地震</div>
-            <div class="move t-fly">飞翔</div>
-            <div class="move t-rock">岩石封锁</div>
-            <div class="move t-iron">铁头</div>
-        </div>
-    </td>
-</tr>
-<tr>
-    <td class="pokemon-td">
-        <img src="http://cdn.anuluca.com/MyPokemonDaily/Partners/678 0.6.png" class="po-i">
-        <div class="pokemon-name"><b>Meowstic</b><span>（超能妙喵<span class="girl">♀</span>）</span></div>
-        <div class="pokemon-back" style="background-image: url('http://cdn.anuluca.com/MyPokemonDaily/bigImg/600px-678Meowstic-Male.png');   top: -27%;right: -3%;">
-        </div>
-        <div class="pokemon-ball" style="background-image:url('http://cdn.anuluca.com/MyPokemonDaily/balls/精灵球.png')"></div>
-    </td>
-    <td class="pokemon-move-td">
-        <div class="pokemon-base"><div>
-                <div class="pokemon-type"><div class="level">Lv.36</div><div class="type t-psycho">超能力</div></div>
-                <div class="pokemon-line1"><span><b>初训家：</b>finalé</span><span><b>特性：</b>锐利目光</span></div>
-                <div class="pokemon-line1"><span><b>性格：</b>顽皮</span><span>102/51/65/69/60/89</span></div>
-                <div class="pokemon-line1"><span><b>2020年1月23日，在6号道路遇到了它。</b></span></div>
-                <div class="pokemon-line1" style="margin-top: -4px;margin-left:-10px">
-                    <img src="http://cdn.anuluca.com/MyPokemonDaily/smallImg/">
-                </div>
-        </div></div>
-        <div class="pokemon-move">
-            <div class="move t-ghost">暗影球</div>
-            <div class="move t-fairy">魅惑之声</div>
-            <div class="move t-normal">居合斩</div>
-            <div class="move t-psycho">神通力</div>
-        </div>
-    </td>
-</tr>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+<table class="poke-gen">
 <tr>
     <td class="pokemon-screenshot" colspan="2">
 <h4 id="附录">附录</h4>
@@ -647,6 +499,29 @@ ga('send', 'pageview');
 </td>
 </tr>
 </table>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> 
+<script>
+let mySwiper = new Swiper(".pokemon-swiper-container", {
+  autoplay: {
+    delay: 4000,
+  },
+  loop: false, // 循环模式选项
+  parallax: false,
+  speed: 400,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+function slideTo(index){
+    mySwiper.slideTo(index);
+}
+</script>
 
   <a onclick="go_top()"
     ><div class="to_top"><div class="to-top-triangle"></div></div
@@ -771,7 +646,7 @@ ga('send', 'pageview');
     <!-- Author title -->
     <div class="author-title">
       <div>Anuluca</div>
-      <div style="font-family: 等线">Update:2022-01-20</div>
+      <div style="font-family: 等线">Update:2024-09-25</div>
     </div>
   </div>
 
@@ -784,6 +659,7 @@ ga('send', 'pageview');
   <div class="book-tocbot"></div>
 
 <div class="bottom">
+  <div id="clock-button"></div>
   <div class="intro">
     <div id="intro_text">...</div>
   </div>
@@ -822,9 +698,9 @@ ga('send', 'pageview');
     >
   </div>
   <div class="languages">
-    <span class="inactive">裏站</span>
+    <span id="side-story" data-id="c22lkZVN0b3J5">裏</span>
     <div>|</div>
-    <span>表站</span> 
+    <span>表</span> 
   </div>
 </div>
 

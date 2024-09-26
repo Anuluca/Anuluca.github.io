@@ -35,7 +35,7 @@ body,
 }
 
 .book-sidebar {
-  box-shadow: none !important;
+  box-shadow: 0 0 8px #0000005e;
 }
 
 code {

@@ -11,14 +11,12 @@ const textList = [
   "have a rest ~ ☕️",
   "cursed.",
   "这里沉睡着Anuluca的灵魂。",
-  "网站越做越重了，已经回不了头了...",
   "现在在想什么？不妨记录一下灵感吧！",
 ];
 
 document.getElementById("intro_text").innerText = textList.sort(
   () => 0.5 - Math.random()
 )[0];
-
 
 // //获取当前时间
 // var ifDrink = (new Date()).getHours()
@@ -178,6 +176,10 @@ const encodePageList = [
     id: "2023",
     dataId: "NDk3NTU=",
   },
+  {
+    id: "side-story",
+    dataId: "c22lkZVN0b3J5",
+  },
 ];
 encodePageList.map((item) => {
   $(`#${item.id}`).click(() => {
@@ -198,9 +200,9 @@ $("#encodeSubmit").click(() => {
     let str = localStorage.getItem("egap");
     window.location.href =
       "/" + decodeBase64(str.substring(0, 1) + str.substring(2));
-  }else{
-    $('#encodeInput').val("")
-    $('#encodeInput').attr('placeholder', '密钥错误');
+  } else {
+    $("#encodeInput").val("");
+    $("#encodeInput").attr("placeholder", "密钥错误");
   }
 });
 
@@ -210,11 +212,67 @@ function getTheme() {
     localStorage.setItem("theme", "p3r");
   }
   $("#body-color").addClass(localStorage.getItem("theme"));
-    $("#body-color").attr("class").split(" ").map(item => {
-      if(item !== localStorage.getItem("theme")){
-
+  $("#body-color")
+    .attr("class")
+    .split(" ")
+    .map((item) => {
+      if (item !== localStorage.getItem("theme")) {
         $("#body-color").removeClass(item);
       }
-    })
+    });
 }
 getTheme();
+
+// 实时时间展示
+function displayTime() {
+  const now = new Date();
+  const month = now.getMonth() + 1; // 月份从 0 开始，所以要加 1
+  const date = now.getDate();
+  const hours = now.getHours();
+  const minutes = ("0" + now.getMinutes()).slice(-2); // 分钟加 0
+
+  let timeString = `${month}月${date}日 ${hours}:${minutes}`;
+  document.getElementById("clock-button").innerHTML = timeString.replace(
+    ":",
+    "<span>:</span>"
+  );
+}
+displayTime();
+setInterval(displayTime, 60000); // 每60秒更新一次
+let clockStatus = false
+$("#clock-button").click(() => {
+  clockStatus = !clockStatus
+  const hideEles = [
+    $(".book-sidebar"),
+    $(".sidebar-toggle"),
+    $(".footer-com"),
+    $(".back-to-top"),
+    $(".book-content"),
+    $(".intro"),
+    $(".links"),
+    $(".languages"),
+    $(".book-post-meta"),
+    $(".book-tocbot"),
+  ];
+  if(clockStatus){
+    hideEles.forEach((item) => {
+      item.addClass("transition-1");
+      item.addClass("opacity-0");
+    });
+    $(".bottom").addClass('not-show')
+    $("#clock-button").addClass('bigger')
+  }else{
+    hideEles.forEach((item) => {
+      item.removeClass("opacity-0");
+      setTimeout(() => {
+        item.removeClass("transition-1");
+      }, 1000);
+    });
+    $(".bottom").removeClass('not-show')
+    $("#clock-button").removeClass('bigger')
+  }
+});
+
+$("#side-exit").click(()=>{
+  location.href="http://www.anuluca.com"
+})
