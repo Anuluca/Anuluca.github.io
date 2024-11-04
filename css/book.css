@@ -726,7 +726,7 @@ body {
   display: none; }
 
 #body-color.p5 .back-color {
-  background-image: url("http://pic.anuluca.com/other/p5_back.jpg");
+  background-image: url("../../images/other/p5_back.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -735,7 +735,7 @@ body {
   display: none; }
 
 #body-color.scarlet .back-color {
-  background-image: url("http://pic.anuluca.com/other/sv_back3.jpg");
+  background-image: url("../../images/other/sv_back3.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -744,7 +744,7 @@ body {
   display: none; }
 
 #body-color.violet .back-color {
-  background-image: url("http://pic.anuluca.com/other/sv_back4.jpg");
+  background-image: url("../../images/other/sv_back4.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -760,7 +760,7 @@ body {
   background: #ffffff; }
 
 #body-color.ghosttrick .back-color {
-  background-image: url("http://pic.anuluca.com/other/ghosttrick_back.jpg");
+  background-image: url("../../images/other/ghosttrick_back.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -769,7 +769,7 @@ body {
   display: none; }
 
 #body-color.pokemon .back-color {
-  background-image: url("http://pic.anuluca.com/other/pokemon_back.jpg");
+  background-image: url("../../images/other/pokemon_back.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -778,7 +778,7 @@ body {
   display: none; }
 
 #body-color.sleep .back-color {
-  background-image: url("http://pic.anuluca.com/other/sleep_back.jpg");
+  background-image: url("../../images/other/sleep_back.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -787,7 +787,7 @@ body {
   background-color: #686868; }
 
 #body-color.dedsec .back-color {
-  background-image: url("http://pic.anuluca.com/other/dedsec_back.jpg");
+  background-image: url("../../images/other/dedsec_back.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -1658,7 +1658,7 @@ code {
   .b-link > div {
     width: 30px;
     height: 30px;
-    background-image: url("http://pic.anuluca.com/other/dabprFS.png");
+    background-image: url("../../images/other/dabprFS.png");
     background-repeat: no-repeat;
     background-position: 0 0;
     margin-right: 10px; }
@@ -1715,19 +1715,19 @@ code {
     .newGuide .guide .note_guide {
       border-radius: 10px;
       box-shadow: 0 0 14px 0px #1a1a1aad;
-      background-image: url("http://pic.anuluca.com/other/YfLHgA.jpg"); }
+      background-image: url("../../images/other/YfLHgA.jpg"); }
     .newGuide .guide .nintendo_guide {
       border-radius: 10px;
       box-shadow: 0 0 14px 0px #1a1a1aad;
-      background-image: url("http://pic.anuluca.com/other/IMG_6139.jpg"); }
+      background-image: url("../../images/other/IMG_6139.jpg"); }
     .newGuide .guide .jay_guide {
       border-radius: 10px;
       box-shadow: 0 0 14px 0px #1a1a1aad;
-      background-image: url("http://pic.anuluca.com/photos/2021/DSC00361.jpg"); }
+      background-image: url("../../images/photos/2021/DSC00361.jpg"); }
     .newGuide .guide .home_guide {
       border-radius: 10px;
       box-shadow: 0 0 14px 0px #1a1a1aad;
-      background-image: url("http://pic.anuluca.com/other/waoh6O.jpg");
+      background-image: url("../../images/other/waoh6O.jpg");
       background-position: bottom;
       border: 0; }
 
@@ -1957,7 +1957,7 @@ html ::-webkit-scrollbar-track {
 .pokemon-form .pokemon-background-pic {
   width: 100%;
   height: 300px;
-  background-image: url("http://pic.anuluca.com/other/2F65x1.png");
+  background-image: url("../../images/other/2F65x1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-color: red; }
@@ -2031,37 +2031,37 @@ html ::-webkit-scrollbar-track {
     text-decoration: none !important; }
 
 .pc-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/Machine/pc.png"); }
+  background-image: url("../../images/Machine/pc.png"); }
 
 .switch-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/Machine/switch.jpg"); }
+  background-image: url("../../images/Machine/switch.jpg"); }
 
 .threeds-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/Machine/3ds.png"); }
+  background-image: url("../../images/Machine/3ds.png"); }
 
 .ds-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/Machine/ds.png"); }
+  background-image: url("../../images/Machine/ds.png"); }
 
 .sixfour-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/Machine/64.png"); }
+  background-image: url("../../images/Machine/64.png"); }
 
 .ngc-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/Machine/ngc.png"); }
+  background-image: url("../../images/Machine/ngc.png"); }
 
 .gba-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/Machine/gba.png"); }
+  background-image: url("../../images/Machine/gba.png"); }
 
 .gbc-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/Machine/gbc.png"); }
+  background-image: url("../../images/Machine/gbc.png"); }
 
 .gb-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/Machine/gb.png"); }
+  background-image: url("../../images/Machine/gb.png"); }
 
 .psv-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/Machine/psv.png"); }
+  background-image: url("../../images/Machine/psv.png"); }
 
 .phone-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/Machine/phone.png"); }
+  background-image: url("../../images/Machine/phone.png"); }
 
 .myPagination {
   overflow: hidden;
@@ -2194,7 +2194,7 @@ html ::-webkit-scrollbar-track {
     z-index: 100;
     background-size: 100% auto;
     background-position: contain;
-    background-image: url("http://pic.anuluca.com/other/recommended.png");
+    background-image: url("../../images/other/recommended.png");
     display: none; }
   .ns-cards .out {
     width: 220px;
@@ -2276,7 +2276,7 @@ html ::-webkit-scrollbar-track {
     z-index: 100;
     background-size: 100% auto;
     background-position: contain;
-    background-image: url("http://pic.anuluca.com/other/recommended.png");
+    background-image: url("../../images/other/recommended.png");
     display: none; }
   .pc-cards .out {
     width: 220px;
@@ -2352,7 +2352,7 @@ html ::-webkit-scrollbar-track {
     z-index: 100;
     background-size: 100% auto;
     background-position: contain;
-    background-image: url("http://pic.anuluca.com/other/recommended.png");
+    background-image: url("../../images/other/recommended.png");
     display: none; }
   .gba-cards .gba-en {
     height: 260px !important; }
@@ -2433,7 +2433,7 @@ html ::-webkit-scrollbar-track {
     z-index: 100;
     background-size: 100% auto;
     background-position: contain;
-    background-image: url("http://pic.anuluca.com/other/recommended.png");
+    background-image: url("../../images/other/recommended.png");
     display: none; }
   .liusi-cards .liusi-out {
     width: 220px;
@@ -2508,7 +2508,7 @@ html ::-webkit-scrollbar-track {
     z-index: 100;
     background-size: 100% auto;
     background-position: contain;
-    background-image: url("http://pic.anuluca.com/other/recommended.png");
+    background-image: url("../../images/other/recommended.png");
     display: none; }
   .gb-cards .gb-out {
     width: 220px;
@@ -2583,7 +2583,7 @@ html ::-webkit-scrollbar-track {
     z-index: 100;
     background-size: 100% auto;
     background-position: contain;
-    background-image: url("http://pic.anuluca.com/other/recommended.png");
+    background-image: url("../../images/other/recommended.png");
     display: none; }
   .ds-cards .out {
     width: 240px;
@@ -2658,7 +2658,7 @@ html ::-webkit-scrollbar-track {
     z-index: 100;
     background-size: 100% auto;
     background-position: contain;
-    background-image: url("http://pic.anuluca.com/other/recommended.png");
+    background-image: url("../../images/other/recommended.png");
     display: none; }
   .gbc-cards .out {
     width: 239px;
@@ -2764,7 +2764,7 @@ html ::-webkit-scrollbar-track {
     height: 700px;
     background-size: 100% auto;
     background-position: contain;
-    background-image: url("http://pic.anuluca.com/Games/dragolia_lost/Screenshot_20200513-010224.jpg");
+    background-image: url("../../images/Games/dragolia_lost/Screenshot_20200513-010224.jpg");
     position: relative;
     box-shadow: inset 0px 0 8px 0px #000000; }
     .phone-ke .back-screen .up-left {
@@ -3297,121 +3297,121 @@ html ::-webkit-scrollbar-track {
     margin-top: 200px; }
 
 .ranger1-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/20111228142552!Pokémon_Ranger_logo.png"); }
+  background-image: url("../../images/MyPokemonDaily/icons/20111228142552!Pokémon_Ranger_logo.png"); }
 
 .ranger2-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/1600px-Pokémon_Ranger_SoA_logo.png"); }
+  background-image: url("../../images/MyPokemonDaily/icons/1600px-Pokémon_Ranger_SoA_logo.png"); }
 
 .ranger3-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/Pokémon_Ranger_Tracks_of_Light_Japanese_logo.png"); }
+  background-image: url("../../images/MyPokemonDaily/icons/Pokémon_Ranger_Tracks_of_Light_Japanese_logo.png"); }
 
 .column1-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/"); }
+  background-image: url("../../images/MyPokemonDaily/icons/"); }
 
 .column2-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/"); }
+  background-image: url("../../images/MyPokemonDaily/icons/"); }
 
 .column3-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/"); }
+  background-image: url("../../images/MyPokemonDaily/icons/"); }
 
 .column4-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/"); }
+  background-image: url("../../images/MyPokemonDaily/icons/"); }
 
 .column5-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/"); }
+  background-image: url("../../images/MyPokemonDaily/icons/"); }
 
 .column6-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/"); }
+  background-image: url("../../images/MyPokemonDaily/icons/"); }
 
 .dungen1-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/"); }
+  background-image: url("../../images/MyPokemonDaily/icons/"); }
 
 .dungen2-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/"); }
+  background-image: url("../../images/MyPokemonDaily/icons/"); }
 
 .dungen3-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/"); }
+  background-image: url("../../images/MyPokemonDaily/icons/"); }
 
 .dungen4-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/"); }
+  background-image: url("../../images/MyPokemonDaily/icons/"); }
 
 .dungen5-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/"); }
+  background-image: url("../../images/MyPokemonDaily/icons/"); }
 
 .dungen6-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/"); }
+  background-image: url("../../images/MyPokemonDaily/icons/"); }
 
 .dungen7-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/"); }
+  background-image: url("../../images/MyPokemonDaily/icons/"); }
 
 .dungen8-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/"); }
+  background-image: url("../../images/MyPokemonDaily/icons/"); }
 
 .s-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/宝可梦_朱_商标_简体中文.png"); }
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦_朱_商标_简体中文.png"); }
 
 .moon-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/精靈寶可夢_月亮_商標_簡體中文.png"); }
+  background-image: url("../../images/MyPokemonDaily/icons/精靈寶可夢_月亮_商標_簡體中文.png"); }
 
 .eevee-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/精靈寶可夢_Let's_Go！伊布_商標_繁體中文.png"); }
+  background-image: url("../../images/MyPokemonDaily/icons/精靈寶可夢_Let's_Go！伊布_商標_繁體中文.png"); }
 
 .ruby-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/宝可梦_红宝石_商标_日文.png"); }
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦_红宝石_商标_日文.png"); }
 
 .emblem-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/宝可梦_绿宝石_商标_日文.png"); }
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦_绿宝石_商标_日文.png"); }
 
 .diamond-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/宝可梦_钻石_商标_日文.png"); }
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦_钻石_商标_日文.png"); }
 
 .x-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/宝可梦_Ｘ_商标_日文.png"); }
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦_Ｘ_商标_日文.png"); }
 
 .pla-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/宝可梦传说_阿尔宙斯_商标_简体中文.png"); }
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦传说_阿尔宙斯_商标_简体中文.png"); }
 
 .sw-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/寶可夢_劍_商標_繁體中文.png"); }
+  background-image: url("../../images/MyPokemonDaily/icons/寶可夢_劍_商標_繁體中文.png"); }
 
 .or-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/寶可夢_歐米加紅寶石_圖標_日文.png"); }
+  background-image: url("../../images/MyPokemonDaily/icons/寶可夢_歐米加紅寶石_圖標_日文.png"); }
 
 .sun-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/精靈寶可夢_太陽_商標_繁體中文.png"); }
+  background-image: url("../../images/MyPokemonDaily/icons/精靈寶可夢_太陽_商標_繁體中文.png"); }
 
 .white2-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/寶可夢_白２_商標_日文.png"); }
+  background-image: url("../../images/MyPokemonDaily/icons/寶可夢_白２_商標_日文.png"); }
 
 .white-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/宝可梦_白_商标_日文.png"); }
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦_白_商标_日文.png"); }
 
 .black-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/宝可梦_黑_商标_日文.png"); }
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦_黑_商标_日文.png"); }
 
 .platium-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/宝可梦_白金_商标_日文.png"); }
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦_白金_商标_日文.png"); }
 
 .red-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/宝可梦_红_商标_日文.png"); }
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦_红_商标_日文.png"); }
 
 .yellow-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/宝可梦_皮卡丘_商标_日文.png"); }
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦_皮卡丘_商标_日文.png"); }
 
 .bd-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/宝可梦_晶灿钻石_商标_简体中文.png"); }
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦_晶灿钻石_商标_简体中文.png"); }
 
 .sp-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/寶可夢_明亮珍珠_商標_繁體中文.png"); }
+  background-image: url("../../images/MyPokemonDaily/icons/寶可夢_明亮珍珠_商標_繁體中文.png"); }
 
 .hg-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/宝可梦_心金_商标_日文.png"); }
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦_心金_商标_日文.png"); }
 
 .silver-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/宝可梦_银_商标_日文.png"); }
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦_银_商标_日文.png"); }
 
 .crystal-pic .platform-pic {
-  background-image: url("http://pic.anuluca.com/MyPokemonDaily/icons/宝可梦_水晶版_商标_日文.png"); }
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦_水晶版_商标_日文.png"); }
 
 .no-a {
   opacity: 0.5; }
@@ -3490,7 +3490,7 @@ html ::-webkit-scrollbar-track {
 
 .pokemon-container {
   width: 40rem;
-  background-image: url("http://pic.anuluca.com/other/WechatIMG31.png");
+  background-image: url("../../images/other/WechatIMG31.png");
   background-size: 100% 100%;
   margin-right: 50px;
   margin-bottom: 20px;
@@ -3526,7 +3526,7 @@ html ::-webkit-scrollbar-track {
   width: calc(100% - 50px);
   backdrop-filter: blur(6px);
   height: 500px;
-  background-image: url("http://pic.anuluca.com/other/WechatIMG29.png");
+  background-image: url("../../images/other/WechatIMG29.png");
   background-size: 100% 100%;
   margin-bottom: 30px; }
 
@@ -3534,7 +3534,7 @@ html ::-webkit-scrollbar-track {
   width: calc(100% - 50px);
   backdrop-filter: blur(6px);
   height: 700px;
-  background-image: url("http://pic.anuluca.com/other/WechatIMG29.png");
+  background-image: url("../../images/other/WechatIMG29.png");
   background-size: 100% 100%;
   margin-bottom: 30px; }
 
@@ -3542,7 +3542,7 @@ html ::-webkit-scrollbar-track {
   width: calc(100% - 50px);
   backdrop-filter: blur(6px);
   height: 500px;
-  background-image: url("http://pic.anuluca.com/other/WechatIMG29.png");
+  background-image: url("../../images/other/WechatIMG29.png");
   background-size: 100% 100%;
   margin-bottom: 30px; }
 
