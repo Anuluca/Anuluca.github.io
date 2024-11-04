@@ -210,7 +210,7 @@ $("#encodeSubmit").click(() => {
 //  获取当前主题
 function getTheme() {
   if (!localStorage.getItem("theme")) {
-    localStorage.setItem("theme", "p3r");
+    localStorage.setItem("theme", "sleep");
   }
   $("#body-color").addClass(localStorage.getItem("theme"));
   $("#body-color")
