@@ -11,7 +11,8 @@ const textList = [
   "have a rest ~ ☕️",
   "cursed.",
   "这里沉睡着Anuluca的灵魂。",
-  "现在在想什么？不妨记录一下灵感吧！",
+  "不妨记录一下现在灵感吧！",
+  "就像一张破碎的脸",
 ];
 
 document.getElementById("intro_text").innerText = textList.sort(
