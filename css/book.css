@@ -3626,10 +3626,16 @@ html ::-webkit-scrollbar-track {
   height: 22.5rem;
   position: relative;
   border-radius: 5px;
-  background-size: 100% 100%;
-  box-shadow: 15px 15px  0px #1a1a1a22; }
+  background-size: auto 100%;
+  background-color: #ffffff15;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 20px #1a1a1aab;
+  background-repeat: no-repeat;
+  background-position: center; }
   .pokemon-swiper-container .swiper-slide {
-    background-size: 100% 100%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
     display: block;
     position: relative; }
     .pokemon-swiper-container .swiper-slide * {

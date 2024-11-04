@@ -8,9 +8,9 @@ function toOldSite() {
 //   window.location.href = "http://www.anuluca.com"+location.pathname;
 // }
 
-if(location.pathname!=='/temp/'){
-  window.location.href = "/temp";
-}
+// if(location.pathname!=='/temp/'){
+//   window.location.href = "/temp";
+// }
 
 
 // 网页背景 - 繁星

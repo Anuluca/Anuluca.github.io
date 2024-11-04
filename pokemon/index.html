@@ -434,32 +434,30 @@ ga('send', 'pageview');
     }
 </style>
 <div class="book-post-custom-title" style="margin-top:10px"> 宝可梦后院 </div>
-<div class="book-post-custom-describe">—————————— 数据更新时间：2024年10月01日 ——————————</div>
-<!-- <div class="book-post-custom-describe">——————————本页面还在建设中——————————</div> -->
+<div class="book-post-custom-describe">—————————— 数据更新时间：2024年10月07日 ——————————</div>
 <div class="pokemon-small-title">数据中心</div>
 <div class="pokemon-data-list">
 </div>
 <div class="pokemon-count-container">
     <div>
       <p>总时间</p>
-      <div>68小时</div>
+      <div>2667:12 小时</div>
     </div>
     <div>
       <p>通关宝数量</p>
-      <div>68</div>
+      <div>118 只</div>
     </div>
     <div>
       <p>已通关版本</p>
-      <div>68</div>
+      <div>19</div>
     </div>
     <div>
       <p>未通关版本</p>
-      <div>68</div>
+      <div>20</div>
     </div>
   </div>
 <div id="typeLine"></div>
 <div id="gameTimeLine"></div>
-<div id="levelLine"></div>
 <script src="../js/echarts.js"></script>
 <script src="../js/dataList.js"></script>
 <script>
@@ -469,7 +467,6 @@ var typeLineChartDom = document.getElementById('typeLine');
   let typeLineOption = {
    title: {
     text: '属性数量',
-    subtext: '包括双属性宝可梦',
     textStyle:{
       color:'#fff'
     },
@@ -504,14 +501,17 @@ var typeLineChartDom = document.getElementById('typeLine');
       }
   },
   yAxis: {
-    type: 'value',
-    axisLine: {
-      show: true,
-      lineStyle: {
-        color: '#fff'
-      }
-    },
-    formatter: "{value} 只",
+      type: 'value',
+      axisLabel: {
+        formatter: '{value} 只',
+        interval: 0
+      },
+      axisLine: {
+        show: true,
+        lineStyle: {
+          color: '#fff'
+        }
+      },
   },
   series: [
     {
@@ -578,17 +578,15 @@ var gameTimeLineChartDom = document.getElementById('gameTimeLine');
     {
       type: 'value',
       axisLabel: {
+        formatter: '{value} 小时',
         interval: 0
       },
-          axisLabel: {
-        formatter: '{value} 小时'
+      axisLine: {
+        show: true,
+        lineStyle: {
+          color: '#fff'
+        }
       },
-    axisLine: {
-      show: true,
-      lineStyle: {
-        color: '#fff'
-      }
-    },
     }
   ],
   yAxis: [
@@ -604,8 +602,6 @@ var gameTimeLineChartDom = document.getElementById('gameTimeLine');
         '黑白',
         '黑白2',
         'XY',
-        '四色VC',
-        'GSC VC',
         'ORAS',
         '日月',
         'LGPE',
@@ -625,135 +621,6 @@ var gameTimeLineChartDom = document.getElementById('gameTimeLine');
   series:gameTimeList
   };
   gameTimeLineOption && gameTimeLineChart.setOption(gameTimeLineOption);
-  // 等级列表
-var levelLineChartDom = document.getElementById('levelLine');
-  var levelLineChart = echarts.init(levelLineChartDom);
-  let levelLineOption = {
-  title: {
-    text: '平均等级',
-    subtext: '多版本取总和',
-    textStyle: {
-      color: '#fff'
-    },
-    top:30,
-    left:30
-  },
-  tooltip: {
-    trigger: 'axis',
-    axisPointer: {
-      type: 'shadow'
-    },
-    // formatter: function (params) {
-    //   let res = '';
-    //   let unit = '';
-    //   params.forEach((item, index) => {
-    //     unit += 'Lv.',item.data;
-    //     if (item.data !== 0) {
-    //       res += item.marker + item.seriesName + ':  ' + unit + '<br/>';
-    //     }
-    //     unit = '';
-    //   });
-    //   return res;
-    // }
-  },
-  grid: {
-    left: '5%',
-    right: '3%',
-    bottom: '8%',
-    top: '20%',
-    containLabel: true
-  },
-  xAxis: [
-    {
-      type: 'category',
-      axisLabel: {
-        interval: 0
-      },
-       data: [
-        '四色',
-        'GSC',
-        '宝石',
-        '火叶',
-        'DPPT',
-        'HGSS',
-        '黑白',
-        '黑白2',
-        'XY',
-        '四色VC',
-        'GSC VC',
-        'ORAS',
-        '日月',
-        'LGPE',
-        '剑盾',
-        '阿尔宙斯',
-        'BDSP',
-        '朱紫'
-      ],
-    axisLine: {
-      show: true,
-      lineStyle: {
-        color: '#fff'
-      }
-    },
-    }
-  ],
-  yAxis: [
-    {
-      type: 'value',
-      axisLine: {
-        show: true,
-        lineStyle: {
-          color: '#fff'
-        },
-      },
-       axisLabel: {
-        formatter: 'Lv.{value}'
-      },
-    }
-  ],
-  series:[
-    {
-      label: {
-        show: true,
-        position: 'top',
-        textBorderColor:'#000',
-              color:'#fff',
-      },
-      animationDuration:2000,
-      lineStyle: {
-        color: '#366BB1',
-        width: 5,
-      },
-      markPoint: {
-        data: [
-          { type: 'max', name: 'Max' },
-          { type: 'min', name: 'Min' }
-        ]
-      },
-      markLine: {
-        data: [{ type: 'average', name: 'Avg' ,lineStyle: {
-        color: '#366BB1',
-        width: 3,
-      },}]
-      },
-      areaStyle: {
-        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
-          {
-            offset: 0,
-            color: '#F6D247'
-          },
-          {
-            offset: 1,
-            color: '#CBAD39'
-          }
-        ])
-      },
-      data: [10,20,30,40,50,60,70,80,90,100,90,80,70,60,50,40,30,20],
-      type: 'line'
-    }
-  ]
-  };
-  levelLineOption && levelLineChart.setOption(levelLineOption);
 </script>
 <div class="pokemon-small-title">游戏记录 正统作</div>
 <h2 id="第九世代">第九世代</h2>
@@ -785,7 +652,7 @@ var levelLineChartDom = document.getElementById('levelLine');
   <a href="/32021"><div class="platform-pic"></div></a><div class="platform-name">宝可梦 X</div>
 </div>
 <div class="pokemon-generation or-pic no-a">
-  <a><div class="platform-pic"></div></a><div class="platform-name">宝可梦 欧米伽红宝石</div>
+  <a href="/17891"><div class="platform-pic"></div></a><div class="platform-name">宝可梦 欧米伽红宝石</div>
 </div>
 <h2 id="第五世代">第五世代</h2>
 <div class="pokemon-generation black-pic">
@@ -826,7 +693,7 @@ var levelLineChartDom = document.getElementById('levelLine');
   <a href="/32017"><div class="platform-pic"></div></a><div class="platform-name">宝可梦 红（VC）</div>
 </div>
 <div class="pokemon-generation yellow-pic">
-  <a href="/32017"><div class="platform-pic"></div></a><div class="platform-name">宝可梦 皮卡丘（VC）</div>
+  <a href="/16009"><div class="platform-pic"></div></a><div class="platform-name">宝可梦 皮卡丘（VC）</div>
 </div>
 <!-- ## 竞技场系列
 
@@ -1086,7 +953,7 @@ var levelLineChartDom = document.getElementById('levelLine');
     <!-- Author title -->
     <div class="author-title">
       <div>Anuluca</div>
-      <div style="font-family: 等线">Update:2024-10-01</div>
+      <div style="font-family: 等线">Update:2024-10-07</div>
     </div>
   </div>
 
