@@ -12,7 +12,7 @@ $(".nintendo_guide").mouseenter(function () {
   $(".zhegaia,.zhegaic,.zhegaid").stop().animate({ width: "100%" }, 150);
   $(".guidePic").css({
     backgroundImage:
-      "url('../../images/other/IMG_6139.jpg')",
+      "url('../../images/other/IMG_6139.JPG')",
   });
 });
 $(".jay_guide").mouseenter(function () {

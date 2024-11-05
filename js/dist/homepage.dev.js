@@ -34,7 +34,7 @@ $(".nintendo_guide").mouseenter(function () {
   );
   $(".guidePic").css({
     backgroundImage:
-      "url('../../images/other/IMG_6139.jpg')",
+      "url('../../images/other/IMG_6139.JPG')",
   });
 });
 $(".jay_guide").mouseenter(function () {
