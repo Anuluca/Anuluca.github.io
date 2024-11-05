@@ -262,6 +262,7 @@ $("#clock-button").click(() => {
     });
     $(".bottom").addClass('not-show')
     $("#clock-button").addClass('bigger')
+    $("body").addClass('ovh')
   }else{
     hideEles.forEach((item) => {
       item.removeClass("opacity-0");
@@ -271,6 +272,7 @@ $("#clock-button").click(() => {
     });
     $(".bottom").removeClass('not-show')
     $("#clock-button").removeClass('bigger')
+    $("body").removeClass('ovh')
   }
 });
 

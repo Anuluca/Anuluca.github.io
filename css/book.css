@@ -3714,7 +3714,7 @@ html ::-webkit-scrollbar-track {
     right: 10rem;
     top: 10rem;
     font-size: 4rem;
-    opacity: 0.5;
+    opacity: 0.8;
     height: auto; }
     #clock-button.bigger span {
       font-size: 4rem !important; }
@@ -3724,17 +3724,22 @@ html ::-webkit-scrollbar-track {
     opacity: 0.8; }
 
 #clock-button span {
-  animation: blink 1s step-start infinite; }
+  animation: blink 2s linear infinite; }
 
 @keyframes blink {
   50% {
-    opacity: 0; } }
+    opacity: 0; }
+  30% {
+    opacity: 1; } }
 
 .opacity-0 {
   opacity: 0 !important; }
 
 .transition-1 {
   transition: all 1s !important; }
+
+.ovh {
+  overflow: hidden; }
 
 @media (max-width: 959px) {
   * {
