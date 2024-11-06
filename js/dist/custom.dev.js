@@ -63,25 +63,6 @@ function showOrHideToTop() {
   }
 } //gitalk&valine双评论端
 
-
-$(".gitalk_btn").click(function () {
-  $("#vcomments").css({
-    display: "none"
-  });
-  $("#gitalk-container").css({
-    display: "block"
-  });
-  $(".valine_btn").css({
-    color: "black"
-  });
-  $(".gitalk_btn").css({
-    color: "blue"
-  });
-  $(".moving").animate({
-    "width": "180px",
-    "marginLeft": "120px"
-  });
-});
 $(".valine_btn").click(function () {
   $("#gitalk-container").css({
     display: "none"
