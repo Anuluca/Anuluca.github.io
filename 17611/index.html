@@ -55,14 +55,16 @@ document.addEventListener('DOMContentLoaded', function () {
   
 <!-- Google Analytics -->
 
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-FEZS2B4N4L"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEZS2B4N4L"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-FEZS2B4N4L');
-</script> -->
+  setTimeout(() => {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-FEZS2B4N4L');
+  }, 10000);
+</script>
 
 <!-- End Google Analytics -->
 
