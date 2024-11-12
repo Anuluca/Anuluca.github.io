@@ -1397,4 +1397,1734 @@ html ::-webkit-scrollbar-track {
     transition: all 0.4s;
     position: absolute;
     background-position: center;
-    background-repeat: no-re
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 10px;
+    opacity: 1; }
+  .platform .inner-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate3d(0.3, 0.8, 0.2, -30deg);
+    text-align: center;
+    color: #000;
+    font-size: 2rem !important;
+    width: 100%;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 20px;
+    opacity: 0;
+    transition: all 0.4s; }
+  .platform a {
+    text-decoration: none !important; }
+
+.pc-pic .platform-pic {
+  background-image: url("../../images/Machine/pc.png"); }
+
+.switch-pic .platform-pic {
+  background-image: url("../../images/Machine/switch.jpg"); }
+
+.threeds-pic .platform-pic {
+  background-image: url("../../images/Machine/3ds.png"); }
+
+.ds-pic .platform-pic {
+  background-image: url("../../images/Machine/ds.png"); }
+
+.sixfour-pic .platform-pic {
+  background-image: url("../../images/Machine/64.png"); }
+
+.ngc-pic .platform-pic {
+  background-image: url("../../images/Machine/ngc.png"); }
+
+.gba-pic .platform-pic {
+  background-image: url("../../images/Machine/gba.png"); }
+
+.gbc-pic .platform-pic {
+  background-image: url("../../images/Machine/gbc.png"); }
+
+.gb-pic .platform-pic {
+  background-image: url("../../images/Machine/gb.png"); }
+
+.psv-pic .platform-pic {
+  background-image: url("../../images/Machine/psv.png"); }
+
+.phone-pic .platform-pic {
+  background-image: url("../../images/Machine/phone.png"); }
+
+.myPagination {
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  .myPagination > div {
+    display: flex;
+    justify-content: center; }
+    .myPagination > div > a > div {
+      border: 1px solid #808080;
+      color: white;
+      padding: 0 10px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      margin: 3px;
+      float: left;
+      -moz-user-select: none;
+      /*火狐*/
+      -webkit-user-select: none;
+      /*webkit浏览器*/
+      -ms-user-select: none;
+      /*IE10*/
+      -khtml-user-select: none;
+      /*早期浏览器*/
+      user-select: none;
+      border-radius: 6px; }
+      .myPagination > div > a > div:hover {
+        background-color: white;
+        color: black;
+        font-weight: bold; }
+    .myPagination > div > a > .page_chosen {
+      background-color: white;
+      color: black !important;
+      font-weight: bold;
+      border-radius: 6px; }
+
+.machinePagination {
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 50px; }
+  .machinePagination > div {
+    float: right; }
+    .machinePagination > div > a > div {
+      border: 1px solid #808080;
+      color: white;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      margin: 3px;
+      padding: 0 10px;
+      float: left;
+      -moz-user-select: none;
+      /*火狐*/
+      -webkit-user-select: none;
+      /*webkit浏览器*/
+      -ms-user-select: none;
+      /*IE10*/
+      -khtml-user-select: none;
+      /*早期浏览器*/
+      user-select: none;
+      border-radius: 6px; }
+      .machinePagination > div > a > div:hover {
+        background-color: white;
+        color: black;
+        font-weight: bold; }
+    .machinePagination > div > a > .page_chosen {
+      background-color: white;
+      color: black !important;
+      font-weight: bold; }
+
+.littlePet {
+  width: 100px;
+  height: 100px;
+  cursor: default !important;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  bottom: 30px;
+  right: 18.66666667%;
+  transition: all 0.7s;
+  z-index: 200; }
+  .littlePet:after {
+    content: "/";
+    margin-left: -170px;
+    margin-top: -28px;
+    width: 200px;
+    /* height: 58px; */
+    background-color: white;
+    transition: all 0.3s;
+    color: black;
+    display: none;
+    padding: 10px;
+    border-radius: 15px; }
+
+.littlePet:hover {
+  width: 150px;
+  height: 150px; }
+  .littlePet:hover:after {
+    content: "交换场地！";
+    display: block; }
+
+.pet-poly:hover {
+  transform: rotate(360deg); }
+  .pet-poly:hover:after {
+    margin-left: -210px;
+    content: ".. -....- .-- .- -. - -....- - --- -....- --. --- -....- -... .- -.-. -.- -....- - --- -....- ..--- ----- .---- ---.. "; }
+
+.pet-luca:hover:after {
+  content: "愿波导之力与你同在。"; }
+
+.pet-spr:hover:after {
+  content: "火焰球！"; }
+
+.pet-cha:hover:after {
+  content: ""; }
+
+.ns-cards {
+  overflow: hidden;
+  padding-left: -10px;
+  padding-top: 30px; }
+  .ns-cards .recommended {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    z-index: 100;
+    background-size: 100% auto;
+    background-position: contain;
+    background-image: url("../../images/other/recommended.png");
+    display: none; }
+  .ns-cards .out {
+    width: 220px;
+    height: 398px;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    transition: all 0.1s;
+    position: relative; }
+    .ns-cards .out.is-recc .recommended {
+      display: block; }
+    .ns-cards .out .ns-card {
+      width: 220px;
+      height: 358px;
+      display: inline-block;
+      background-size: 100% 100%;
+      padding: 0;
+      margin: 0;
+      transition: all 0.2s;
+      box-shadow: 0px 2px 7px 1px #000000a3; }
+    .ns-cards .out .count {
+      width: 0px;
+      height: 40px;
+      background-color: rgba(126, 252, 0, 0.534);
+      overflow: hidden;
+      text-align: center;
+      color: white;
+      font-size: 16px;
+      line-height: 40px;
+      top: 160px;
+      right: 0;
+      z-index: 100;
+      position: absolute;
+      transition: all 0.2s; }
+    .ns-cards .out .no_co {
+      background-color: rgba(255, 0, 0, 0.548); }
+    .ns-cards .out .g-t {
+      width: 220px;
+      height: 30px;
+      font-size: 12px;
+      font-weight: bold;
+      color: white;
+      position: relative; }
+      .ns-cards .out .g-t .tt {
+        width: 190px;
+        display: inline-block;
+        margin-top: 6px;
+        color: white; }
+      .ns-cards .out .g-t .ver {
+        position: absolute;
+        right: 0;
+        bottom: 9px;
+        color: #adadad;
+        font-size: 10px;
+        line-height: 10px;
+        font-weight: normal;
+        zoom: 0.81; }
+  .ns-cards .ringfit {
+    width: 358px !important; }
+    .ns-cards .ringfit .ns-card,
+    .ns-cards .ringfit .g-t {
+      width: 358px;
+      color: white; }
+  .ns-cards .out:hover .ns-card {
+    box-shadow: 2px 2px 8px 2px black; }
+  .ns-cards .out:hover .count {
+    width: 220px; }
+
+.pc-cards {
+  overflow: hidden;
+  padding-left: -10px;
+  padding-top: 30px; }
+  .pc-cards .recommended {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    z-index: 100;
+    background-size: 100% auto;
+    background-position: contain;
+    background-image: url("../../images/other/recommended.png");
+    display: none; }
+  .pc-cards .out {
+    width: 220px;
+    height: 314px;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    transition: all 0.1s;
+    position: relative; }
+    .pc-cards .out.is-recc .recommended {
+      display: block; }
+    .pc-cards .out .pc-card {
+      width: 220px;
+      height: 274px;
+      display: inline-block;
+      background-size: 100% auto;
+      padding: 0;
+      margin: 0;
+      transition: all 0.2s;
+      box-shadow: 0px 2px 7px 1px #000000a3; }
+    .pc-cards .out .count {
+      width: 0px;
+      height: 40px;
+      background-color: rgba(126, 252, 0, 0.534);
+      overflow: hidden;
+      text-align: center;
+      color: white;
+      font-size: 16px;
+      line-height: 40px;
+      top: 120px;
+      right: 0;
+      z-index: 100;
+      position: absolute;
+      transition: all 0.2s; }
+    .pc-cards .out .no_co {
+      background-color: rgba(255, 0, 0, 0.548); }
+    .pc-cards .out .g-t {
+      width: 220px;
+      height: 30px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #3b4351;
+      position: relative; }
+      .pc-cards .out .g-t .tt {
+        width: 180px;
+        display: inline-block;
+        margin-top: 6px;
+        color: white; }
+      .pc-cards .out .g-t .ver {
+        position: absolute;
+        right: 0;
+        bottom: 9px;
+        color: #adadad;
+        font-size: 10px;
+        line-height: 10px;
+        font-weight: normal;
+        zoom: 0.81; }
+  .pc-cards .out:hover .pc-card {
+    box-shadow: 2px 2px 8px 2px black; }
+  .pc-cards .out:hover .count {
+    width: 220px; }
+
+.gba-cards {
+  overflow: hidden;
+  padding-left: -10px;
+  padding-top: 30px; }
+  .gba-cards .recommended {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    z-index: 100;
+    background-size: 100% auto;
+    background-position: contain;
+    background-image: url("../../images/other/recommended.png");
+    display: none; }
+  .gba-cards .gba-en {
+    height: 260px !important; }
+    .gba-cards .gba-en .gba-card {
+      height: 220px !important; }
+    .gba-cards .gba-en .count {
+      top: 100px !important; }
+  .gba-cards .gba-out {
+    width: 220px;
+    height: 180px;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    transition: all 0.1s;
+    position: relative; }
+    .gba-cards .gba-out.is-recc .recommended {
+      display: block; }
+    .gba-cards .gba-out .gba-card {
+      width: 220px;
+      height: 140px;
+      display: inline-block;
+      background-size: 100% 100%;
+      padding: 0;
+      margin: 0;
+      transition: all 0.2s; }
+    .gba-cards .gba-out .count {
+      width: 0px;
+      height: 40px;
+      background-color: rgba(126, 252, 0, 0.534);
+      overflow: hidden;
+      text-align: center;
+      color: white;
+      font-size: 16px;
+      line-height: 40px;
+      top: 50px;
+      right: 0;
+      z-index: 100;
+      position: absolute;
+      transition: all 0.2s; }
+    .gba-cards .gba-out .no_co {
+      background-color: rgba(255, 0, 0, 0.548); }
+    .gba-cards .gba-out .g-t {
+      width: 220px;
+      height: 30px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #3b4351;
+      position: relative; }
+      .gba-cards .gba-out .g-t .tt {
+        width: 180px;
+        display: inline-block;
+        margin-top: 6px;
+        color: white; }
+      .gba-cards .gba-out .g-t .ver {
+        position: absolute;
+        right: 0;
+        bottom: 9px;
+        color: #adadad;
+        font-size: 10px;
+        line-height: 10px;
+        font-weight: normal;
+        zoom: 0.81; }
+  .gba-cards .gba-out:hover .gba-card {
+    box-shadow: 2px 2px 8px 2px black; }
+  .gba-cards .gba-out:hover .count {
+    width: 220px; }
+
+.liusi-cards {
+  overflow: hidden;
+  padding-left: -10px;
+  padding-top: 30px; }
+  .liusi-cards .recommended {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    z-index: 100;
+    background-size: 100% auto;
+    background-position: contain;
+    background-image: url("../../images/other/recommended.png");
+    display: none; }
+  .liusi-cards .liusi-out {
+    width: 220px;
+    height: 340px;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    transition: all 0.1s;
+    position: relative; }
+    .liusi-cards .liusi-out.is-recc .recommended {
+      display: block; }
+    .liusi-cards .liusi-out .liusi-card {
+      width: 220px;
+      height: 300px;
+      display: inline-block;
+      background-size: 100% auto;
+      padding: 0;
+      margin: 0;
+      transition: all 0.2s; }
+    .liusi-cards .liusi-out .count {
+      width: 0px;
+      height: 40px;
+      background-color: rgba(126, 252, 0, 0.534);
+      overflow: hidden;
+      text-align: center;
+      color: white;
+      font-size: 16px;
+      line-height: 40px;
+      top: 120px;
+      right: 0;
+      z-index: 100;
+      position: absolute;
+      transition: all 0.2s; }
+    .liusi-cards .liusi-out .no_co {
+      background-color: rgba(255, 0, 0, 0.548); }
+    .liusi-cards .liusi-out .g-t {
+      width: 220px;
+      height: 30px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #3b4351;
+      position: relative; }
+      .liusi-cards .liusi-out .g-t .tt {
+        width: 180px;
+        display: inline-block;
+        margin-top: 6px;
+        color: white; }
+      .liusi-cards .liusi-out .g-t .ver {
+        position: absolute;
+        right: 0;
+        bottom: 9px;
+        color: #adadad;
+        font-size: 10px;
+        line-height: 10px;
+        font-weight: normal;
+        zoom: 0.81; }
+  .liusi-cards .liusi-out:hover .liusi-card {
+    box-shadow: 2px 2px 8px 2px black; }
+  .liusi-cards .liusi-out:hover .count {
+    width: 220px; }
+
+.gb-cards {
+  overflow: hidden;
+  padding-left: -10px;
+  padding-top: 30px; }
+  .gb-cards .recommended {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    z-index: 100;
+    background-size: 100% auto;
+    background-position: contain;
+    background-image: url("../../images/other/recommended.png");
+    display: none; }
+  .gb-cards .gb-out {
+    width: 220px;
+    height: 280px;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    transition: all 0.1s;
+    position: relative; }
+    .gb-cards .gb-out.is-recc .recommended {
+      display: block; }
+    .gb-cards .gb-out .gb-card {
+      width: 220px;
+      height: 280px;
+      display: inline-block;
+      background-size: 100% 100%;
+      padding: 0;
+      margin: 0;
+      transition: all 0.2s; }
+    .gb-cards .gb-out .count {
+      width: 0px;
+      height: 40px;
+      background-color: rgba(126, 252, 0, 0.534);
+      overflow: hidden;
+      text-align: center;
+      color: white;
+      font-size: 16px;
+      line-height: 40px;
+      top: 120px;
+      right: 0;
+      z-index: 100;
+      position: absolute;
+      transition: all 0.2s; }
+    .gb-cards .gb-out .no_co {
+      background-color: rgba(255, 0, 0, 0.548); }
+    .gb-cards .gb-out .g-t {
+      width: 220px;
+      height: 30px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #3b4351;
+      position: relative; }
+      .gb-cards .gb-out .g-t .tt {
+        width: 180px;
+        display: inline-block;
+        margin-top: 6px;
+        color: white; }
+      .gb-cards .gb-out .g-t .ver {
+        position: absolute;
+        right: 0;
+        bottom: 9px;
+        color: #adadad;
+        font-size: 10px;
+        line-height: 10px;
+        font-weight: normal;
+        zoom: 0.81; }
+  .gb-cards .gb-out:hover .gb-card {
+    box-shadow: 2px 2px 8px 2px black; }
+  .gb-cards .gb-out:hover .count {
+    width: 220px; }
+
+.ds-cards {
+  overflow: hidden;
+  padding-left: -10px;
+  padding-top: 30px; }
+  .ds-cards .recommended {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    z-index: 100;
+    background-size: 100% auto;
+    background-position: contain;
+    background-image: url("../../images/other/recommended.png");
+    display: none; }
+  .ds-cards .out {
+    width: 240px;
+    height: 220px;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 60px;
+    transition: all 0.1s;
+    position: relative; }
+    .ds-cards .out.is-recc .recommended {
+      display: block; }
+    .ds-cards .out .ds-card {
+      width: 240px;
+      height: 220px;
+      display: inline-block;
+      background-size: 100% 100%;
+      padding: 0;
+      margin: 0;
+      transition: all 0.2s; }
+    .ds-cards .out .count {
+      width: 0px;
+      height: 40px;
+      background-color: rgba(126, 252, 0, 0.534);
+      overflow: hidden;
+      text-align: center;
+      color: white;
+      font-size: 16px;
+      line-height: 40px;
+      top: 100px;
+      right: 0;
+      z-index: 100;
+      position: absolute;
+      transition: all 0.2s; }
+    .ds-cards .out .no_co {
+      background-color: rgba(255, 0, 0, 0.548); }
+    .ds-cards .out .g-t {
+      width: 240px;
+      height: 30px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #3b4351;
+      position: relative; }
+      .ds-cards .out .g-t .tt {
+        width: 190px;
+        color: white;
+        display: inline-block;
+        margin-top: 6px; }
+      .ds-cards .out .g-t .ver {
+        position: absolute;
+        right: 0;
+        bottom: 9px;
+        color: #adadad;
+        font-size: 10px;
+        line-height: 10px;
+        font-weight: normal;
+        zoom: 0.81; }
+  .ds-cards .out:hover .ds-card {
+    box-shadow: 2px 2px 8px 2px black; }
+  .ds-cards .out:hover .count {
+    width: 240px; }
+
+.gbc-cards {
+  overflow: hidden;
+  padding-left: -10px;
+  padding-top: 30px; }
+  .gbc-cards .recommended {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    z-index: 100;
+    background-size: 100% auto;
+    background-position: contain;
+    background-image: url("../../images/other/recommended.png");
+    display: none; }
+  .gbc-cards .out {
+    width: 239px;
+    height: 300px;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 60px;
+    transition: all 0.1s;
+    position: relative; }
+    .gbc-cards .out.is-recc .recommended {
+      display: block; }
+    .gbc-cards .out .gbc-card {
+      width: 239px;
+      height: 300px;
+      display: inline-block;
+      background-size: 100% 100%;
+      padding: 0;
+      margin: 0;
+      transition: all 0.2s; }
+    .gbc-cards .out .count {
+      width: 0px;
+      height: 40px;
+      background-color: rgba(126, 252, 0, 0.534);
+      overflow: hidden;
+      text-align: center;
+      color: white;
+      font-size: 16px;
+      line-height: 40px;
+      top: 120px;
+      right: 0;
+      z-index: 100;
+      position: absolute;
+      transition: all 0.2s; }
+    .gbc-cards .out .no_co {
+      background-color: rgba(255, 0, 0, 0.548); }
+    .gbc-cards .out .g-t {
+      width: 239px;
+      height: 30px;
+      font-size: 12px;
+      font-weight: bold;
+      color: #3b4351;
+      position: relative; }
+      .gbc-cards .out .g-t .tt {
+        width: 100px;
+        display: inline-block;
+        color: white;
+        margin-top: 6px; }
+      .gbc-cards .out .g-t .ver {
+        position: absolute;
+        right: 0;
+        bottom: 9px;
+        color: #adadad;
+        font-size: 10px;
+        line-height: 10px;
+        font-weight: normal;
+        zoom: 0.81; }
+  .gbc-cards .out:hover .gbc-card {
+    box-shadow: 2px 2px 8px 2px black; }
+  .gbc-cards .out:hover .count {
+    width: 239px; }
+
+.out:hover .ns-card,
+.out:hover .pc-card,
+.out:hover .gba-card,
+.out:hover .liusi-card,
+.out:hover .gb-card,
+.out:hover .ds-card,
+.out:hover .gbc-card {
+  opacity: 0.7; }
+
+.phone-ke {
+  width: 600px;
+  height: 750px;
+  padding-top: 25px;
+  background-color: #1d1d1d;
+  position: relative;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 10px;
+  transition: all 0.2s;
+  box-shadow: 0px 3px 8px 1px #000000; }
+  .phone-ke:hover {
+    box-shadow: 0px 8px 15px 3px #000000; }
+  .phone-ke .camera {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: black;
+    left: calc(50% - 50px);
+    top: 7px; }
+  .phone-ke .sound {
+    width: 80px;
+    height: 10px;
+    border-radius: 5px;
+    position: absolute;
+    background-color: black;
+    left: calc(50% - 30px);
+    top: 7px; }
+  .phone-ke .back-screen {
+    margin-left: 25px;
+    width: calc(100% - 50px);
+    height: 700px;
+    background-size: 100% auto;
+    background-position: contain;
+    background-image: url("../../images/Games/dragolia_lost/Screenshot_20200513-010224.jpg");
+    position: relative;
+    box-shadow: inset 0px 0 8px 0px #000000; }
+    .phone-ke .back-screen .up-left {
+      color: white;
+      margin-left: 8px;
+      line-height: 28px;
+      display: inline-block; }
+    .phone-ke .back-screen .up-center {
+      color: white;
+      position: absolute;
+      line-height: 25px;
+      display: inline-block;
+      top: 2px;
+      left: calc(50% - 15px); }
+    .phone-ke .back-screen .down {
+      width: 150px;
+      height: 5px;
+      border-radius: 5px;
+      position: absolute;
+      background-color: white;
+      left: 200px;
+      left: calc(50% - 70px);
+      bottom: 10px; }
+    .phone-ke .back-screen .out-screen {
+      width: 100%;
+      height: 650px;
+      overflow: scroll; }
+      .phone-ke .back-screen .out-screen::-webkit-scrollbar-thumb {
+        display: none; }
+      .phone-ke .back-screen .out-screen .inner-screen {
+        vertical-align: top;
+        text-align: center;
+        padding-top: 10px; }
+        .phone-ke .back-screen .out-screen .inner-screen .app-out {
+          width: 100px;
+          height: 115px;
+          overflow: hidden;
+          display: inline-block;
+          margin-left: 10px;
+          margin-right: 10px;
+          margin-top: 8px; }
+          .phone-ke .back-screen .out-screen .inner-screen .app-out .app-logo {
+            width: 70px;
+            height: 70px;
+            margin-left: 15px;
+            background-size: 100% 100%;
+            line-height: 70px;
+            border-radius: 10px;
+            margin-top: 5px;
+            transition: all 0.1s;
+            background-color: #2b2a2a;
+            font-weight: bold;
+            color: transparent;
+            box-shadow: 0px 1px 3px 0px #000000; }
+          .phone-ke .back-screen .out-screen .inner-screen .app-out .app-logo:hover {
+            box-shadow: 0px 2px 7px 1px #000000; }
+          .phone-ke .back-screen .out-screen .inner-screen .app-out .nopic:hover {
+            box-shadow: 0px 0 7px 1px red !important;
+            background-image: none !important;
+            color: red; }
+          .phone-ke .back-screen .out-screen .inner-screen .app-out .tt {
+            width: 100%;
+            font-size: 12px;
+            display: block;
+            text-align: center;
+            color: white !important;
+            margin-top: 8px;
+            text-shadow: 0 0 2px black; }
+
+.guidePic {
+  width: calc(75% - 10px);
+  height: 100%;
+  float: left;
+  background-position: center;
+  border-radius: 10px;
+  background-size: 100% auto;
+  position: relative;
+  transition: all 0.2s; }
+  .guidePic:hover {
+    box-shadow: 0px 2px 11px 0px #131313d1; }
+  .guidePic .title {
+    font-size: 40px;
+    bottom: -35px;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    left: 20px;
+    z-index: 2; }
+
+.swiper-container {
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 14px 0px #1a1a1aad; }
+  .swiper-container .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #3e4b85;
+    display: block;
+    position: relative; }
+    .swiper-container .swiper-slide * {
+      color: white !important; }
+  .swiper-container .swiper-pagination-bullet {
+    width: 30px;
+    border-radius: 3px;
+    height: 6px;
+    opacity: 0.6; }
+  .swiper-container .swiper-button-prev,
+  .swiper-container .swiper-button-next {
+    opacity: 0;
+    transition: all 0.2s; }
+  .swiper-container .swiper-pagination-bullet-active {
+    background-color: white;
+    opacity: 1; }
+  .swiper-container .des {
+    right: 35px;
+    bottom: 22px;
+    position: absolute; }
+    .swiper-container .des .route {
+      font-size: 18px;
+      text-shadow: 1px 1px 2px black; }
+    .swiper-container .des .route-title {
+      font-size: 38px;
+      text-shadow: 1px 1px 2px black;
+      font-weight: bold; }
+    .swiper-container .des .update-time {
+      font-size: 10px;
+      text-shadow: 1px 1px 2px black; }
+
+.swiper-container:hover .swiper-button-prev,
+.swiper-container:hover .swiper-button-next {
+  opacity: 1; }
+
+.card-container {
+  width: 30rem;
+  margin: 0 auto;
+  overflow: hidden;
+  z-index: 1;
+  height: 300px;
+  border-radius: 6px 0 0 6px;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 2px 16px 0px #00000057;
+  border-radius: 10px;
+  position: relative; }
+  .card-container .swiper-slide {
+    display: block;
+    position: relative; }
+    .card-container .swiper-slide div {
+      width: 80%;
+      height: 280px;
+      margin: 0 auto;
+      vertical-align: middle;
+      position: relative; }
+      .card-container .swiper-slide div img {
+        width: auto;
+        height: 100%;
+        position: absolute;
+        border-radius: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+      .card-container .swiper-slide div span {
+        height: 100%;
+        vertical-align: middle;
+        display: inline-block; }
+    .card-container .swiper-slide * {
+      color: white !important; }
+  .card-container .swiper-pagination-bullet {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.719);
+    opacity: 0.6; }
+  .card-container .swiper-pagination-bullet-active {
+    background-color: white;
+    opacity: 1; }
+  .card-container .swiper-pagination {
+    bottom: 0 !important; }
+
+.ps-container {
+  width: 35rem;
+  margin: 0 auto;
+  overflow: hidden;
+  z-index: 1;
+  height: 600px;
+  border-radius: 6px 0 0 6px;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 2px 16px 0px #00000057;
+  border-radius: 10px;
+  position: relative; }
+  .ps-container .swiper-slide {
+    display: block;
+    position: relative; }
+    .ps-container .swiper-slide div {
+      width: 80%;
+      height: 560px;
+      margin: 0 auto;
+      vertical-align: middle;
+      position: relative; }
+      .ps-container .swiper-slide div img {
+        width: auto;
+        height: auto;
+        position: absolute;
+        border-radius: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -52%); }
+      .ps-container .swiper-slide div span {
+        height: 100%;
+        vertical-align: middle;
+        display: inline-block; }
+    .ps-container .swiper-slide * {
+      color: white !important; }
+  .ps-container .swiper-pagination-bullet {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.719);
+    opacity: 0.6; }
+  .ps-container .swiper-pagination-bullet-active {
+    background-color: white;
+    opacity: 1; }
+  .ps-container .swiper-pagination {
+    bottom: 0 !important; }
+
+.table-wrapper {
+  overflow: visible !important; }
+
+@media (max-width: 600px) {
+  .poke-gen .ppp {
+    background-image: none !important; }
+  .poke-gen tr td .pokemon-base > div .pokemon-type .type {
+    margin-top: 0 !important; } }
+
+.poke-gen {
+  width: 100% !important; }
+  .poke-gen td:not(.ppp):not(.pokemon-screenshot) {
+    height: 200px; }
+  .poke-gen .pokemon-td {
+    width: 300px;
+    overflow: hidden;
+    padding: 20px 0 !important; }
+    .poke-gen .pokemon-td > img {
+      margin-top: 5px;
+      height: 150px;
+      width: auto; }
+  .poke-gen .pokemon-move-td {
+    width: calc(100% - 280px); }
+  .poke-gen .boy {
+    color: #6fa6d8; }
+  .poke-gen .girl {
+    color: #ed4f38; }
+  .poke-gen * {
+    border-color: rgba(255, 255, 255, 0.2) !important; }
+  .poke-gen tr .ppp {
+    text-align: center !important;
+    background-color: rgba(204, 204, 204, 0.1);
+    background-repeat: no-repeat;
+    background-position: right 18px bottom 17px;
+    background-size: auto 20%; }
+    .poke-gen tr .ppp > img {
+      margin: 0 auto !important;
+      margin-top: 5px !important;
+      border-radius: 10px;
+      position: relative;
+      height: 100%;
+      z-index: 1; }
+    .poke-gen tr .ppp .back-text {
+      font-size: 300px;
+      width: 100%;
+      font-weight: bold;
+      opacity: 0.1;
+      z-index: 0; }
+    .poke-gen tr .ppp .left-text {
+      text-align: left;
+      position: absolute;
+      top: 0px;
+      left: -30px; }
+    .poke-gen tr .ppp .right-text {
+      text-align: right;
+      position: absolute;
+      top: -100px;
+      right: -40px; }
+    .poke-gen tr .ppp .pokemon-pixel {
+      line-height: 40px;
+      vertical-align: middle;
+      padding: 0 10px 0 30px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      justify-items: center;
+      position: relative;
+      z-index: 1; }
+      .poke-gen tr .ppp .pokemon-pixel > span,
+      .poke-gen tr .ppp .pokemon-pixel > b {
+        line-height: 40px;
+        margin-right: 30px; }
+      .poke-gen tr .ppp .pokemon-pixel > span {
+        display: block; }
+      .poke-gen tr .ppp .pokemon-pixel > b {
+        text-shadow: 0 0 1px #000; }
+      .poke-gen tr .ppp .pokemon-pixel img {
+        display: inline-block !important;
+        width: auto !important;
+        margin: 0 !important;
+        vertical-align: middle; }
+      .poke-gen tr .ppp .pokemon-pixel img:last-of-type {
+        margin-right: 15px !important; }
+  .poke-gen tr .pokemon-back {
+    background-position: top 0 left 0;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    top: -19%;
+    right: -13%;
+    z-index: 0;
+    opacity: 0.2; }
+  .poke-gen tr td {
+    position: relative; }
+    .poke-gen tr td .po-i {
+      position: relative;
+      z-index: 1; }
+    .poke-gen tr td .pokemon-base {
+      float: left;
+      width: 58%;
+      height: 100%;
+      margin-left: 2%; }
+      .poke-gen tr td .pokemon-base > div .pokemon-line1 span {
+        margin-right: 20px; }
+      .poke-gen tr td .pokemon-base > div .pokemon-line1 > img {
+        display: inline-block !important;
+        width: 40px !important;
+        margin: 0 !important;
+        margin-right: 5px !important;
+        vertical-align: -6px; }
+      .poke-gen tr td .pokemon-base > div .pokemon-type {
+        overflow: hidden;
+        margin: 5px auto;
+        vertical-align: middle;
+        margin-top: 8px; }
+        .poke-gen tr td .pokemon-base > div .pokemon-type .level {
+          font-size: 24px;
+          font-weight: bold;
+          float: left;
+          margin-right: 20px; }
+        .poke-gen tr td .pokemon-base > div .pokemon-type .type {
+          width: 50px;
+          height: 20px;
+          border-radius: 5px;
+          margin-top: 10px;
+          color: white;
+          float: left;
+          text-align: center;
+          margin-right: 10px; }
+    .poke-gen tr td .pokemon-ball {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      z-index: 2;
+      left: 6px;
+      bottom: 21px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      opacity: 0.8; }
+    .poke-gen tr td .pokemon-name {
+      margin-top: -3px;
+      text-align: center;
+      position: relative;
+      z-index: 1; }
+      .poke-gen tr td .pokemon-name b {
+        font-size: 18px; }
+    .poke-gen tr td .pokemon-move {
+      float: left;
+      width: 40%;
+      margin-top: 24px; }
+      .poke-gen tr td .pokemon-move .move {
+        width: calc(50% - 40px);
+        display: inline-block;
+        height: 50px;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 50px;
+        margin: 5px;
+        text-align: center;
+        border-radius: 25px;
+        background-size: 150%;
+        background-position: -5px 0;
+        cursor: default;
+        color: white;
+        background-image: linear-gradient(90deg, transparent, rgba(2, 2, 2, 0.699));
+        transition: all 0.2s; }
+        .poke-gen tr td .pokemon-move .move:hover {
+          box-shadow: 0px 3px 11px 0px #1d1d1d; }
+  .poke-gen tr .pokemon-screenshot {
+    text-align: center !important; }
+    .poke-gen tr .pokemon-screenshot img {
+      display: inline-block !important;
+      width: 20%;
+      margin: 10px !important; }
+
+.pokemon-appendix {
+  background-color: #ffffffab;
+  color: #000 !important;
+  border-radius: 25px;
+  display: inline-block;
+  width: auto;
+  line-height: 30px;
+  padding: 5px 15px;
+  border: 3px solid #fff !important;
+  padding-right: 18px;
+  cursor: pointer;
+  text-decoration: none !important;
+  transition: all 0.1s;
+  font-weight: bold;
+  margin-bottom: 10px; }
+  .pokemon-appendix:hover {
+    background-color: #fff; }
+
+.t-normal {
+  background-color: #9199a1; }
+
+.t-fire {
+  background-color: #fc9c5c; }
+
+.t-water {
+  background-color: #5292d3; }
+
+.t-elec {
+  background-color: #f3d14c; }
+
+.t-grass {
+  background-color: #65ba5f; }
+
+.t-ice {
+  background-color: #77cebf; }
+
+.t-fight {
+  background-color: #cb436b; }
+
+.t-poison {
+  background-color: #a86dc6; }
+
+.t-ground {
+  background-color: #d6784a; }
+
+.t-fly {
+  background-color: #8fa9dc; }
+
+.t-psycho {
+  background-color: #f7727b; }
+
+.t-bug {
+  background-color: #92bf3b; }
+
+.t-rock {
+  background-color: #c5b78e; }
+
+.t-ghost {
+  background-color: #536baa; }
+
+.t-dragon {
+  background-color: #166fc0; }
+
+.t-dark {
+  background-color: #5a5465; }
+
+.t-iron {
+  background-color: #5c8da0; }
+
+.t-fairy {
+  background-color: #ea92e4; }
+
+.shining-pearl-text {
+  color: #e6acbd;
+  font-style: italic; }
+
+.diamond-text {
+  color: #88d2ed; }
+
+.platium-text {
+  color: #b59d20; }
+
+.heartgold-text {
+  color: #f7c748;
+  font-style: italic; }
+
+.white-text {
+  color: #d3d3d3;
+  font-weight: 600; }
+
+.red-text {
+  color: #cd3131; }
+
+.silver-text {
+  color: #d6d6d6; }
+
+.sword-text {
+  color: #1ba3e6;
+  font-style: italic; }
+
+.pokemon-generation {
+  display: inline-block;
+  margin: 0 20px;
+  width: 285px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
+  padding: 20px 0; }
+  .pokemon-generation .platform-pic {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    transition: all 0.2s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .pokemon-generation .platform-name {
+    font-size: 25px;
+    text-align: center;
+    line-height: 55px;
+    font-weight: bold;
+    margin-top: 200px; }
+
+.ranger1-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/20111228142552!Pokémon_Ranger_logo.png"); }
+
+.ranger2-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/1600px-Pokémon_Ranger_SoA_logo.png"); }
+
+.ranger3-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/Pokémon_Ranger_Tracks_of_Light_Japanese_logo.png"); }
+
+.column1-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/"); }
+
+.column2-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/"); }
+
+.column3-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/"); }
+
+.column4-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/"); }
+
+.column5-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/"); }
+
+.column6-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/"); }
+
+.dungen1-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/"); }
+
+.dungen2-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/"); }
+
+.dungen3-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/"); }
+
+.dungen4-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/"); }
+
+.dungen5-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/"); }
+
+.dungen6-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/"); }
+
+.dungen7-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/"); }
+
+.dungen8-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/"); }
+
+.s-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦_朱_商标_简体中文.png"); }
+
+.moon-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/精靈寶可夢_月亮_商標_簡體中文.png"); }
+
+.eevee-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/精靈寶可夢_Let's_Go！伊布_商標_繁體中文.png"); }
+
+.ruby-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦_红宝石_商标_日文.png"); }
+
+.emblem-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦_绿宝石_商标_日文.png"); }
+
+.diamond-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦_钻石_商标_日文.png"); }
+
+.x-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦_Ｘ_商标_日文.png"); }
+
+.pla-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦传说_阿尔宙斯_商标_简体中文.png"); }
+
+.sw-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/寶可夢_劍_商標_繁體中文.png"); }
+
+.or-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/寶可夢_歐米加紅寶石_圖標_日文.png"); }
+
+.sun-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/精靈寶可夢_太陽_商標_繁體中文.png"); }
+
+.white2-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/寶可夢_白２_商標_日文.png"); }
+
+.white-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦_白_商标_日文.png"); }
+
+.black-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦_黑_商标_日文.png"); }
+
+.platium-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦_白金_商标_日文.png"); }
+
+.red-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦_红_商标_日文.png"); }
+
+.yellow-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦_皮卡丘_商标_日文.png"); }
+
+.bd-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦_晶灿钻石_商标_简体中文.png"); }
+
+.sp-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/寶可夢_明亮珍珠_商標_繁體中文.png"); }
+
+.hg-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦_心金_商标_日文.png"); }
+
+.silver-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦_银_商标_日文.png"); }
+
+.crystal-pic .platform-pic {
+  background-image: url("../../images/MyPokemonDaily/icons/宝可梦_水晶版_商标_日文.png"); }
+
+.no-a {
+  opacity: 0.5; }
+
+.pokemon-generation:not(.no-a):hover {
+  text-shadow: 0 0 10px #fff; }
+  .pokemon-generation:not(.no-a):hover .platform-pic {
+    transform: scale(1.05); }
+
+.pokemon-data-list {
+  display: flex;
+  justify-content: flex-start; }
+
+.saikyo-img {
+  width: auto;
+  height: auto;
+  position: absolute;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -52%); }
+
+.saikyo-describe {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  font-size: 30px !important;
+  transform: rotateY(20deg) rotateX(-30deg);
+  font-weight: bold;
+  box-shadow: 5px 5px 0 #fff;
+  padding: 3px 6px; }
+
+.saikyo-describe.full {
+  color: #000;
+  background-color: #fff;
+  box-shadow: 10px 10px 0 #000; }
+
+.saikyo-describe.atk {
+  background-color: #cb2c39; }
+
+.saikyo-describe.spa {
+  background-color: #3376cd; }
+
+.saikyo-describe.def {
+  background-color: #a97643; }
+
+.saikyo-describe.spd {
+  background-color: #626262; }
+
+.saikyo-describe.hp {
+  background-color: #ae546f; }
+
+.saikyo-describe.sp {
+  background-color: #f5d247; }
+
+.saikyo-name {
+  position: absolute !important;
+  height: 100px !important;
+  bottom: 0;
+  right: left;
+  transform: rotateY(20deg) rotateX(30deg); }
+  .saikyo-name p {
+    font-size: 50px !important;
+    font-weight: bold; }
+  .saikyo-name .saikyo-prod {
+    margin-top: -15px;
+    margin-left: -10px !important;
+    width: auto !important;
+    height: 40px !important; }
+
+#saikyoRadar {
+  width: 25rem;
+  height: 200px;
+  margin-left: -300px;
+  z-index: 2; }
+
+.pokemon-container {
+  width: 40rem;
+  background-image: url("../../images/other/WechatIMG31.png");
+  background-size: 100% 100%;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  z-index: 1;
+  height: 300px;
+  border-radius: 6px 0 0 6px;
+  position: relative; }
+  .pokemon-container .swiper-slide {
+    display: block;
+    position: relative; }
+    .pokemon-container .swiper-slide div {
+      width: 100%;
+      height: 260px;
+      margin: 0 auto;
+      vertical-align: middle;
+      position: relative; }
+    .pokemon-container .swiper-slide * {
+      color: white !important; }
+  .pokemon-container .swiper-pagination-bullet {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.719);
+    opacity: 0.6; }
+  .pokemon-container .swiper-pagination-bullet-active {
+    background-color: white;
+    opacity: 1; }
+  .pokemon-container .swiper-pagination {
+    bottom: 0 !important; }
+
+#typeLine {
+  width: calc(100% - 50px);
+  backdrop-filter: blur(6px);
+  height: 500px;
+  background-image: url("../../images/other/WechatIMG29.png");
+  background-size: 100% 100%;
+  margin-bottom: 30px; }
+
+#gameTimeLine {
+  width: calc(100% - 50px);
+  backdrop-filter: blur(6px);
+  height: 700px;
+  background-image: url("../../images/other/WechatIMG29.png");
+  background-size: 100% 100%;
+  margin-bottom: 30px; }
+
+#levelLine {
+  width: calc(100% - 50px);
+  backdrop-filter: blur(6px);
+  height: 500px;
+  background-image: url("../../images/other/WechatIMG29.png");
+  background-size: 100% 100%;
+  margin-bottom: 30px; }
+
+.pokemon-count-container {
+  width: calc(100% - 50px);
+  height: 150px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between; }
+  .pokemon-count-container > div {
+    width: 300px;
+    height: 150px;
+    margin: 0 10px;
+    background-image: url("./WechatIMG32.png");
+    background-size: 100% 100%; }
+    .pokemon-count-container > div > p {
+      font-size: 20px;
+      text-align: center;
+      padding-top: 35px; }
+    .pokemon-count-container > div > div {
+      font-size: 40px;
+      font-weight: bold;
+      color: #f1c40f;
+      text-align: center;
+      margin-top: -15px; }
+
+.pokemon-small-title {
+  display: inline-block;
+  font-size: 3rem;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  height: 3.5rem;
+  position: relative;
+  z-index: 20;
+  -webkit-background-clip: text !important;
+  background-clip: text;
+  color: transparent;
+  background: linear-gradient(to bottom, #fff, transparent); }
+  .pokemon-small-title.home-title {
+    background: linear-gradient(to bottom, #ffffff72, transparent);
+    margin-bottom: 0.2rem;
+    height: 2.5rem;
+    font-size: 2.4rem; }
+
+.pokemon-controller {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  margin-bottom: 20px; }
+  .pokemon-controller > div {
+    width: 100px;
+    height: 100px;
+    margin: 0 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    opacity: 0.7;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center; }
+    .pokemon-controller > div span {
+      text-align: center;
+      margin-bottom: -30px;
+      transition: all 0.2s; }
+    .pokemon-controller > div:hover {
+      opacity: 1;
+      transform: scale(1.1); }
+      .pokemon-controller > div:hover span {
+        text-shadow: 0 0 10px #fff; }
+
+.pokemon-swiper-container {
+  margin: 0 auto;
+  width: 40.9rem !important;
+  overflow: hidden;
+  z-index: 1;
+  height: 22.5rem;
+  position: relative;
+  border-radius: 5px;
+  background-size: auto 100%;
+  background-color: #ffffff15;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 20px #1a1a1aab;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .pokemon-swiper-container .swiper-slide {
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    position: relative; }
+    .pokemon-swiper-container .swiper-slide * {
+      color: white !important; }
+  .pokemon-swiper-container .swiper-pagination-bullet {
+    width: 30px;
+    border-radius: 3px;
+    height: 6px;
+    opacity: 0.6; }
+  .pokemon-swiper-container .swiper-button-prev,
+  .pokemon-swiper-container .swiper-button-next {
+    opacity: 0;
+    transition: all 0.2s;
+    background-color: #00000071;
+    border-radius: 10px; }
+    .pokemon-swiper-container .swiper-button-prev:after,
+    .pokemon-swiper-container .swiper-button-next:after {
+      padding: 10px;
+      font-size: 18px;
+      font-weight: bold !important;
+      color: #fff; }
+    .pokemon-swiper-container .swiper-button-prev:hover,
+    .pokemon-swiper-container .swiper-button-next:hover {
+      background-color: #000000b0; }
+  .pokemon-swiper-container .swiper-pagination-bullet-active {
+    background-color: white;
+    opacity: 1; }
+  .pokemon-swiper-container .swiper-pagination {
+    bottom: 0px !important; }
+  .pokemon-swiper-container .des {
+    right: 35px;
+    bottom: 22px;
+    position: absolute; }
+    .pokemon-swiper-container .des .route {
+      font-size: 18px;
+      text-shadow: 1px 1px 2px black; }
+    .pokemon-swiper-container .des .route-title {
+      font-size: 38px;
+      text-shadow: 1px 1px 2px black;
+      font-weight: bold; }
+    .pokemon-swiper-container .des .update-time {
+      font-size: 10px;
+      text-shadow: 1px 1px 2px black; }
+
+.pokemon-swiper-container:hover .swiper-button-prev,
+.pokemon-swiper-container:hover .swiper-button-next {
+  opacity: 1; }
+
+.book-comments {
+  backdrop-filter: brightness(80%) blur(4px);
+  background-color: transparent;
+  padding: 30px !important;
+  box-shadow: 0 0 17px #0000003d;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px; }
+
+#clock-button {
+  position: absolute;
+  top: calc(-1.45rem - 10px);
+  font-size: 1.5rem;
+  font-weight: bold;
+  right: 0;
+  opacity: 0.2;
+  height: 1.45rem;
+  overflow: hidden;
+  cursor: pointer;
+  transition: opacity 1s; }
+  #clock-button span {
+    transition: none !important;
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+    margin: 0 2px; }
+  #clock-button.bigger {
+    position: fixed;
+    right: 10rem;
+    top: 10rem;
+    font-size: 4rem;
+    opacity: 0.8;
+    height: auto; }
+    #clock-button.bigger span {
+      font-size: 4rem !important; }
+    #clock-button.bigger:hover {
+      opacity: 1; }
+  #clock-button:hover {
+    opacity: 0.8; }
+
+#clock-button span {
+  animation: blink 2s linear infinite; }
+
+@keyframes blink {
+  50% {
+    opacity: 0; }
+  30% {
+    opacity: 1; } }
+
+.opacity-0 {
+  opacity: 0 !important; }
+
+.transition-1 {
+  transition: all 1s !important; }
+
+.ovh {
+  overflow: hidden; }
