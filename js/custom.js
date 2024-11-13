@@ -266,7 +266,7 @@ $("#clock-button").click(() => {
 });
 
 $("#side-exit").click(()=>{
-  location.href="http://www.anuluca.com"
+  location.href="http://www.anuluca.cn"
 })
 
 
