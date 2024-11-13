@@ -16,7 +16,7 @@ $(".note_guide").mouseenter(function () {
   );
   $(".guidePic").css({
     backgroundImage:
-      "url('http://cdn.anuluca.com/other/YfLHgA.jpg')",
+      "url('../../images/other/YfLHgA.jpg')",
   });
 });
 $(".nintendo_guide").mouseenter(function () {
@@ -34,7 +34,7 @@ $(".nintendo_guide").mouseenter(function () {
   );
   $(".guidePic").css({
     backgroundImage:
-      "url('http://cdn.anuluca.com/other/IMG_6139.JPG')",
+      "url('../../images/other/IMG_6139.JPG')",
   });
 });
 $(".jay_guide").mouseenter(function () {
@@ -52,7 +52,7 @@ $(".jay_guide").mouseenter(function () {
   );
   $(".guidePic").css({
     backgroundImage:
-      "url('http://cdn.anuluca.com/other/2145F6682FBCE287815AF6DC59D0C5A5.png')",
+      "url('../../images/other/2145F6682FBCE287815AF6DC59D0C5A5.png')",
   });
 });
 $(".home_guide").mouseenter(function () {
@@ -70,7 +70,7 @@ $(".home_guide").mouseenter(function () {
   );
   $(".guidePic").css({
     backgroundImage:
-      "url('http://cdn.anuluca.com/other/waoh6O.jpg')",
+      "url('../../images/other/waoh6O.jpg')",
   });
 }); // $(".slide-a").click(function(){
 //     window.location.href = "/"
