@@ -20,7 +20,7 @@ body{
 .title{
 	width: 100%;
 	height: 650px;
-	background-image: url("../images/homePage/titleback.png");
+	background-image: url("../images/homePage/titleback.jpg");
 	background-size: cover;
 	background-position:bottom;
 	padding-top: 30px;
@@ -66,7 +66,7 @@ body{
 	border: 100px double orangered;
 	z-index: 0;
 	/*background-color: #222222;*/
-	background-image: url("../images/homePage/circleback.png");
+	background-image: url("../images/homePage/circleback.jpg");
 	background-position: center;
 }
 .titlebg{
@@ -485,7 +485,7 @@ body{
 .foot{
 	width: 100%;
 	height: 210px;
-	background-image: url("../images/homePage/footback.png");
+	background-image: url("../images/homePage/footback.jpg");
     border-top: 1px solid #003b3d;
 }
 .footin{
